@@ -1,0 +1,231 @@
+﻿/* GUI Template */
+/* PS3Xploit Team 2018 / ps3xploit.com */
+
+/* thanks @ErikPshat for all the HTML and CSS help */
+
+#gui_title {
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 2em;
+	font-weight: bold;
+}
+#gui_team {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 16px;
+}
+#fwVerText {
+	float: right;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 16px;
+}
+#search_setup {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 20px;
+}
+#gui_txt_search_found_offsets {
+	margin-bottom: 20px;
+}
+#buttons_launch {
+	text-align: left;
+	margin-top: 3px;
+}
+
+
+#exploit {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#trigger {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#result {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#log {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#footer {
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+
+textarea {
+    vertical-align: middle;
+    margin: 3px 0 5px 0;
+	resize: none;
+}
+input {
+    vertical-align: middle;
+    margin: 3px 5px 5px 5px;
+}
+select, button {
+    vertical-align: middle;
+    margin: 3px 0 4px 0;
+}
+a {
+	color: RoyalBlue;
+	text-decoration: none;
+}
+a:hover {
+	color: Red;
+	text-decoration: underline;
+}
+body {
+    background-color: #000000;
+    max-width: 100%;
+}
+
+.red {
+    color: red;
+}
+.red_small {
+    color: red;
+	font-size: 16px;
+}
+.red_smaller {
+    color: red;
+	font-size: 14px;
+}
+.red_smallest {
+    color: red;
+	font-size: 10px;
+}
+.blue {
+    color: blue;
+}
+.blue_small {
+    color: blue;
+	font-size: 16px;
+}
+.blue_smaller {
+    color: blue;
+	font-size: 14px;
+}
+.blue_smallest {
+    color: blue;
+	font-size: 10px;
+}
+.green {
+    color: green;
+}
+.green_small {
+    color: green;
+	font-size: 16px;
+}
+.green_smaller {
+    color: green;
+	font-size: 14px;
+}
+.green_smallest {
+    color: green;
+	font-size: 10px;
+}
+.black {
+    color: black;
+}
+.black_small {
+    color: black;
+	font-size: 16px;
+}
+.black_smaller {
+    color: black;
+	font-size: 14px;
+}
+.black_smallest {
+    color: black;
+	font-size: 10px;
+}
+.orange {
+    color: #F80;
+}
+.orange_small {
+    color: #F80;
+	font-size: 16px;
+}
+.orange_smaller {
+    color: #F80;
+	font-size: 14px;
+}
+.orange_smallest {
+    color: #F80;
+	font-size: 10px;
+}
+.yellow {
+    color: #EFDD01;
+}
+.yellow_small {
+    color: #EFDD01;
+	font-size: 16px;
+}
+.yellow_smaller {
+    color: #F80;
+	font-size: 14px
+}
+.yellow_smallest {
+    color: #F80;
+	font-size: 10px;
+}
+.teal {
+    color: #01E1EF;
+}
+.teal_small {
+    color: #01E1EF;
+	font-size: 16px;
+}
+.teal_smaller {
+    color: #01E1EF;
+	font-size: 13px;
+	font-weight: bold;
+}
+.teal_smallest {
+    color: #01E1EF;
+	font-size: 10px;
+}
+.pink {
+    color: #FF69B4;
+}
+.pink_small {
+    color: #FF69B4;
+	font-size: 16px;
+}
+.pink_smaller {
+    color: #FF69B4;
+	font-size: 14px;
+}
+.pink_smallest {
+    color: #FF69B4;
+	font-size: 10px;
+}
+.white {
+    color: white;
+}
+.white_small {
+    color: white;
+	font-size: 16px;
+}
+.white_smallest {
+    color: white;
+	font-size: 10px;
+}
+
+
+/* Hide Stuff */
+#gui_chk_default_settings {
+	display: none;
+}
+#default_settings {
+	display: none;
+}

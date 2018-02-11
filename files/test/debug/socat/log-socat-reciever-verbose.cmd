@@ -1,0 +1,1 @@
+socat -v -u udp-recv:18194 stdout

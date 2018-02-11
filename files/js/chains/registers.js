@@ -1,0 +1,71 @@
+// PS3 Register Values
+// PS3Xploit Team 2018 / ps3xploit.com
+
+
+// Default
+var r0=0x80140000
+var r1=0x80140010
+var r2=0x80140020
+var r3=0x80140030
+var r4=0x80140040
+var r5=0x80140050
+var r6=0x80140060
+var r7=0x80140070
+var r8=0x80140080
+var r9=0x80140090
+var r10=0x80140100
+var r11=0x80140110
+var r12=0x80140120
+var r13=0x80140130
+var r14=0x80140140
+var r15=0x80140150
+var r16=0x80140160
+var r17=0x80140170
+var r18=0x80140180
+var r19=0x80140190
+var r20=0x80140200
+var r21=0x80140210
+var r22=0x80140220
+var r23=0x80140230
+var r24=0x80140240
+var r25=0x80140250
+var r26=0x80140260
+var r27=0x80140270
+var r28=0x80140280
+var r29=0x80140290
+var r30=0x80140300
+var r31=0x80140310
+
+// Temp Registers (these will get overwritten at some point)
+var r0_temp=0x80140000
+var r1_temp=0x80140010
+var r2_temp=0x80140020
+var r3_temp=0x80140030
+var r4_temp=0x80140040
+var r5_temp=0x80140050
+var r6_temp=0x80140060
+var r7_temp=0x80140070
+var r8_temp=0x80140080
+var r9_temp=0x80140090
+var r10_temp=0x80140100
+var r11_temp=0x80140110
+var r12_temp=0x80140120
+var r13_temp=0x80140130
+var r14_temp=0x80140140
+var r15_temp=0x80140150
+var r16_temp=0x80140160
+var r17_temp=0x80140170
+var r18_temp=0x80140180
+var r19_temp=0x80140190
+var r20_temp=0x80140200
+var r21_temp=0x80140210
+var r22_temp=0x80140220
+var r23_temp=0x80140230
+var r24_temp=0x80140240
+var r25_temp=0x80140250
+var r26_temp=0x80140260
+var r27_temp=0x80140270
+var r28_temp=0x80140280
+var r29_temp=0x80140290
+var r30_temp=0x80140300
+var r31_temp=0x80140310

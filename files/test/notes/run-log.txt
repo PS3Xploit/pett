@@ -1,0 +1,59 @@
+Superslim NOR CEX
+
+base: 0x801EA424
+stackframe: 0x801E2E64
+jump2: 0x801EA544
+jump1: 0x801EA174
+
+base: 0x801E2304
+stackframe: 0x801E4874
+jump2: 0x801E2894
+jump1: 0x801E6994
+
+base: 0x801EC794
+stackframe: 0x801ED114
+jump2: 0x801F4C24
+jump1: 0x801DAFF4
+
+base: 0x801F43A4
+stackframe: 0x802BBB44
+jump2: 0x801EE254
+jump1: 0x801EBF74
+
+base: 0x801DE184
+stackframe: 0x801E36D4
+jump2: 0x801F0114
+jump1: 0x801DE674
+
+base: 0x801F2B44
+stackframe: 0x801ED2B4
+jump2: 0x801F03A4
+jump1: 0x801E9E44
+
+base: 0x801DF504
+stackframe: 0x801AD294
+jump2: 0x802810C4
+jump1: 0x80212954
+
+
+AVERAGES
+
+base: 0x801E4D1A
+stackframe: 0x801CB212
+jump2: 0x80237322
+jump1: 0x801FBF42
+
+
+
+
+Slim 2501A NOR DEX
+
+
+base: 0x801EE994
+stackframe: 0x801F29F4
+jump2: 0x801E1F24
+jump1: 0x801F5FB4
+
+
+
+
