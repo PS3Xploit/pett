@@ -3,7 +3,9 @@ ps3xploit.com
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/0IW641p.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/fSYgMSz.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/7YrCVYR.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/q4hY5tc.png)
 
 
 PS3 Webkit ROP Tutorial Thread:
@@ -13,22 +15,25 @@ http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-deb
 SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESULTS!!
 
 
-============================================================
-Multi-Language Translator Credits
-============================================================
 
-Brazilian Portuguese	@HollowChris/@Caio99BR
-Italian                	@neno20115
-Russian					@ErikPshat
-Spanish LA             	@Ripp3RkoS
-Spanish Spain			@Ivoyko
+Multi-Language Translator Credits<br/>
 
-
+Brazilian Portuguese	@HollowChris/@Caio99BR<br/>
+Italian                	@neno20115<br/>
+Polish					@Roxu14<br/>
+Russian					@ErikPshat<br/>
+Spanish LA             	@Ripp3RkoS<br/>
+Spanish Spain			@Ivoyko<br/>
 
 
-============================================================
-Version History
-============================================================
+
+
+Version History<br/>
+
+v0.1.2
+- Added Polish (thanks NiHuShu @Roxu14)
+- Updated Multi-Language Files
+- Pushed 1st Commit To GitHub
 
 v0.1.1
 - Fixed fail message if strings not found
