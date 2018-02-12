@@ -53,7 +53,7 @@ var msg_mount_test="** В ФАЗЕ ТЕСТИРОВАНИЯ **!\n\nЭто буд
 // File Operations
 var msg_default_size="Используется размер по умолчанию 0x140";
 var msg_new_size="Новый размер файла: ";
-var msg_destination_path_set_new="New Path Set To:\n\n";
+var msg_destination_path_set_new="Установлен новый путь на:\n\n";
 var msg_destination_path_incorrect="Путь назначения некорректен!\n\nОн должен быть выставлен перед изменением Title ID.";
 
 // Trigger Messages
@@ -330,7 +330,7 @@ var gui_txt_option_xmb_mp4_btn="Нажмите &#x25B3 для MP4";
 var gui_txt_option_xmb_save_msg="&#x2192 Файл &#x2192 Сохранить цель &#x2192 Хранилище";
 
 var gui_txt_group_payload_type="Тип Payload ";
-var gui_txt_group_payload_type_help="<b><i>Замение payloads по умолчанию своими файлами, используя такие же названия, и положите в папку TEMPLATE/payloads/ из-под HTML источника</b></i>";
+var gui_txt_group_payload_type_help="Замение payloads по умолчанию своими файлами, используя такие же названия, и положите в папку TEMPLATE/payloads/ из-под HTML источника";
 
 // String Search
 var gui_txt_group_string_search="Поиск:";
@@ -344,7 +344,7 @@ var gui_chk_search_verify_jumps="Проверка цепочек:";
 var gui_chk_search_verify_stackframe="Фрейм стека:";
 var gui_chk_search_debug_output="Отладка:";
 
-var gui_txt_search_found_offsets="<b>Найдено: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b>";
+var gui_txt_search_found_offsets="Найдено: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Инициировать ROP";
