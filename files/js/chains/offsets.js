@@ -606,6 +606,7 @@ function ps3chk(){
 						g_sc_set_r3_from_r10=0x31FA88;
 						g_fopen_write_close=0x423B14;
 						g_mount_hdd1=0x631160;
+						g_unk_game_debug_pafjob=0x0D103C;
 						g_mount_flash=0x602B88;
 						g_init_reboot=0x0C526C;
 						g_init_shutdown=0x0C5234;
@@ -641,6 +642,7 @@ function ps3chk(){
 						//g_fsopen_write_close=0x25E850;
 						//g_fsopen_write_close=0x0E11EC;
 						g_mount_hdd1=0x638D7C;
+						g_unk_game_debug_pafjob=0x0D64DC;
 						//g_tty_write=0x0AD31C;
 						g_init_reboot=0x0C6768;
 						g_init_shutdown=0x0C6730;
@@ -671,6 +673,7 @@ function ps3chk(){
 					g_sc_set_r3_from_r10=0x31FA8C;
 					g_fopen_write_close=0x423B18;
 					g_mount_hdd1=0x631AFC;
+					g_unk_game_debug_pafjob=0x0D103C;
 					g_init_reboot=0x0C526C;
 					g_init_shutdown=0x0C5234;
 					g_exit_chain=0x2BACB8;

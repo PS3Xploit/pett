@@ -39,6 +39,7 @@ var g_sc_set_r3_from_r10;// set r3 from r10 and sc
 var g_fopen_write_close;
 var g_fsopen_write_close;
 var g_mount_hdd1;
+var g_unk_game_debug_pafjob;
 var g_mount_flash;
 var g_tty_write;
 var g_exit_chain;// graceful exit
