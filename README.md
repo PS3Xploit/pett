@@ -31,6 +31,8 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.3
+- Fixed Typo In messages.js [pt_br]
+- Updated GUI For Russian
 - Fixed Memory Dump Options On Load
 - Fixed Alert Message Text Not Loading Value From JS
 
