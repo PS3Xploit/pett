@@ -1769,7 +1769,7 @@ function setTitleID(id){
 	if (y===game_path) {
 		setValueToHTML("path_dest","");
 		setValueToHTML("path_dest",y+title_id.toUpperCase()+z);
-		alert("New Path Set To:\n\n"+path_display);
+		alert(msg_destination_path_set_new+path_display);
 	} else {
 		alert(msg_destination_path_incorrect);
 		path_dest_type.focus();
