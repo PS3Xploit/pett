@@ -53,7 +53,7 @@ var msg_mount_test="** В ФАЗЕ ТЕСТИРОВАНИЯ **!\n\nЭто буд
 // File Operations
 var msg_default_size="Используется размер по умолчанию 0x140";
 var msg_new_size="Новый размер файла: ";
-var msg_destination_path_set_new="New Path Set To:\n\n";
+var msg_destination_path_set_new="Установлен новый путь на:\n\n";
 var msg_destination_path_incorrect="Путь назначения некорректен!\n\nОн должен быть выставлен перед изменением Title ID.";
 
 // Trigger Messages
