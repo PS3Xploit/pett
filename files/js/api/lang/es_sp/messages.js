@@ -167,6 +167,7 @@ var gui_txt_option_beep_test="Prueba de pitido";
 var gui_txt_option_power_test="Prueba de energía";
 var gui_txt_option_minver_check="Mirar versión minima";
 var gui_txt_option_sys_game_get_temperature="Enseñar temp. de CELL/RSX";
+var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
 var gui_txt_option_console_write_test="Prueba de escritura en la consola";
 var gui_txt_option_sys_tty_read="Prueba de lectura TTY";
 var gui_txt_option_sys_tty_write="Prueba de escritura TTY";

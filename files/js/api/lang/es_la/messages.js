@@ -167,6 +167,7 @@ var gui_txt_option_beep_test="Prueba Bips";
 var gui_txt_option_power_test="Prueba de Energia";
 var gui_txt_option_minver_check="Version Minima de Fabrica";
 var gui_txt_option_sys_game_get_temperature="Mostrar Temperatura";
+var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
 var gui_txt_option_console_write_test="Prueba de Escritura en Consola";
 var gui_txt_option_sys_tty_read="Prueba de Lectura TTY";
 var gui_txt_option_sys_tty_write="Prueba de Escritura TTY";

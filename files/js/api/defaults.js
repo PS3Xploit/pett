@@ -782,6 +782,28 @@ function syscallRebootOnly(mode,lpar_param,lpar_size)
 	a3_jumpto=g_sc_A0;
 }
 
+function callExportAndExit(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31,export_addr)
+{
+	a1_r3=r3;
+	a1_r4=r4;
+	a1_r5=r5;
+	a1_r6=r6;
+	a1_r7=r7;
+	a1_r8=r8;
+	a1_r9=r9;
+	a1_r10=r10;
+	a1_r11=r11;
+	a1_r29=r29;
+	a1_r30=r30;
+	a1_r31=r31;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_from_r29;
+	a3_jumpto=export_addr;
+	a4_r11=restore_stack;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_exit_chain;
+}
+
 function useCustomStackFrame()
 {
 	switch(chain_stackframe)
@@ -812,6 +834,22 @@ function useCustomStackFrame()
 		// does not use embedded restore_stack
 		case "minver_check":
 		syscallAndExit(0x00006011,0x00000001,temp_addr_8C,0,0,0,0,0,update_manager_if,temp_addr_8A,temp_addr_8B);
+		break;
+		
+		// uses restore_stack1
+		// thread stopped at 000D7430 48299C99 bl         0x003710C8 
+		// 000D6544 4829AD45 bl         0x00371288
+		// 000D6644 48008C7D bl         0x000DF2C0
+		// 000D6728 480092FD bl         0x000DFA24
+		// 000D6A20 48558651 bl         0x0062F070
+		// 000D6F90 485321F5 bl         0x00609184
+		// memcontainer?? 000D6604 4BFF0591 bl         0x000C6B94 
+		// 000D6644 48008C7D bl         0x000DF2C0
+		// dev game_debug 000D671C 4855A27D bl         0x00630998 
+		// bdp_plugin 000D72C0 482826C9 bl         0x00359988
+		// 000D6644 48008C7D bl         0x000DF2C0
+		case "game_debug_pafjob_test":
+		callExportAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_no_of_beeps,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,g_unk_game_debug_pafjob)
 		break;
 		
 		// does not use embedded restore_stack
@@ -1257,6 +1295,10 @@ function setChainOptions(chain)
 		break;
 		
 		case "minver_check":
+		init_rop.focus();
+		break;
+		
+		case "game_debug_pafjob_test":
 		init_rop.focus();
 		break;
 		

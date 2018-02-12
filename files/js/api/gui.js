@@ -44,6 +44,7 @@ function showGuiText()
 	document.getElementById('gui_txt_option_power_test').innerHTML=gui_txt_option_power_test;
 	document.getElementById('gui_txt_option_minver_check').innerHTML=gui_txt_option_minver_check;
 	document.getElementById('gui_txt_option_sys_game_get_temperature').innerHTML=gui_txt_option_sys_game_get_temperature;
+	//document.getElementById('gui_txt_option_game_debug_pafjob_test').innerHTML=gui_txt_option_game_debug_pafjob_test;
 	// document.getElementById('gui_txt_option_console_write_test').innerHTML=gui_txt_option_console_write_test;
 	// document.getElementById('gui_txt_option_sys_tty_read').innerHTML=gui_txt_option_sys_tty_read;
 	// document.getElementById('gui_txt_option_sys_tty_write').innerHTML=gui_txt_option_sys_tty_write;

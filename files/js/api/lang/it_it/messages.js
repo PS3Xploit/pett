@@ -167,6 +167,7 @@ var gui_txt_option_beep_test="Beep Test";
 var gui_txt_option_power_test="Power Test";
 var gui_txt_option_minver_check="Minimum Version Check";
 var gui_txt_option_sys_game_get_temperature="Show CELL/RSX Temps";
+var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
 var gui_txt_option_console_write_test="Console Write Test";
 var gui_txt_option_sys_tty_read="TTY Read Test";
 var gui_txt_option_sys_tty_write="TTY Write Test";

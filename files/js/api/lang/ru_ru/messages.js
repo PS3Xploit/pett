@@ -167,6 +167,7 @@ var gui_txt_option_beep_test="Тест сигнала";
 var gui_txt_option_power_test="Тест питания";
 var gui_txt_option_minver_check="Тест мин. версии";
 var gui_txt_option_sys_game_get_temperature="CELL/RSX температура";
+var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
 var gui_txt_option_console_write_test="Тест записи консоли";
 var gui_txt_option_sys_tty_read="Тест чтения TTY";
 var gui_txt_option_sys_tty_write="Тест записи TTY";
