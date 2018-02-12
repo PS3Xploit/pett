@@ -19,12 +19,12 @@ function setDefaults()
 	disableElement("load_rop", true);
 	disableElement("marked_chmod", true);
 	disableElement("marked_chown", true);
-	//disableElement("copy_payload_media", true);
-	//disableMemDumpOptions();
+	
 	disableElement("marked_memdump_addr", true);
 	disableElement("marked_memdump_size", true);
-	//disableElement("marked_memdump_range", true);
-	//disableElement("marked_reboot", true);
+	disableElement("marked_memdump_addr_edit", true);
+	disableElement("marked_memdump_size_edit", true);
+	disableElement("memdump_save_new_values", true);
 	
 	// Reset Paths
 	setValueToHTML("path_src","");
@@ -1266,6 +1266,9 @@ function setChainOptions(chain)
 		disableElement("path_src_type",true);
 		disableElement("marked_memdump_addr", false);
 		disableElement("marked_memdump_size", false);
+		disableElement("marked_memdump_addr_edit", false);
+		disableElement("marked_memdump_size_edit", false);
+		disableElement("memdump_save_new_values", false);
 		setValueToHTML("path_dest",path_usb_memdump8);
 		//setMemDumpAddress();
 		//setMemDumpSize();
