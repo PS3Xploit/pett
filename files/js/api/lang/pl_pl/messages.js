@@ -185,7 +185,7 @@ var gui_txt_option_dump_idps_from_flash="Zrzuć IDPS Z Pamięci Flash";
 var gui_txt_preset_chains_file_system="System Plików";
 var gui_txt_option_db_rebuild="Odbudowanie Bazy Danych";
 var gui_txt_option_file_read_write_test="Test Odczytu/Zapisu Plików";
-var gui_txt_option_dir_read_write_test=">Test Odczytu/Zapisu Folderów";
+var gui_txt_option_dir_read_write_test="Test Odczytu/Zapisu Folderów";
 
 // Fun
 var gui_txt_preset_chains_fun="Zabawa";
@@ -330,7 +330,7 @@ var gui_txt_option_xmb_mp4_btn="Press &#x25B3 For MP4";
 var gui_txt_option_xmb_save_msg="&#x2192 Plik &#x2192 Zapisz &#x2192 Pamięć Wewnętrzna";
 
 var gui_txt_group_payload_type="Typ Ładunku (payload) ";
-var gui_txt_group_payload_type_help="<b><i>Zamień domyślne ładunki z własnymi plikami, używając tych samych nazw, i umieść w folderze TEMPLATE/payloads/</i></b>";
+var gui_txt_group_payload_type_help="Zamień domyślne ładunki z własnymi plikami, używając tych samych nazw, i umieść w folderze TEMPLATE/payloads/";
 
 // String Search
 var gui_txt_group_string_search="Szukaj:";
@@ -344,7 +344,7 @@ var gui_chk_search_verify_jumps="Verify Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
 var gui_chk_search_debug_output="Debgowanie:";
 
-var gui_txt_search_found_offsets="<b>Znaleziono Offsety: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b>";
+var gui_txt_search_found_offsets="Znaleziono Offsety: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Zainicjuj ROP Chain";

@@ -29,6 +29,10 @@
 #gui_txt_search_found_offsets {
 	margin-bottom: 20px;
 }
+#gui_txt_group_payload_type_help {
+		font-weight: bold;
+		font-style: italic;
+}
 #buttons_launch {
 	text-align: left;
 	margin-top: 3px;
@@ -90,6 +94,7 @@ body {
 
 .red {
     color: red;
+	font-weight: bold;
 }
 .red_small {
     color: red;

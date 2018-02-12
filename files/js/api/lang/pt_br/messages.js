@@ -330,7 +330,7 @@ var gui_txt_option_xmb_mp4_btn="Pressione &#x25B3 Para MP4";
 var gui_txt_option_xmb_save_msg="<br>&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
 
 var gui_txt_group_payload_type="Tipo de Payload ";
-var gui_txt_group_payload_type_help="<b><i>Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML/i></b>";
+var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML";
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
@@ -344,7 +344,7 @@ var gui_chk_search_verify_jumps="<br>Vericar Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:"; // DON'T NEED TO BE TRANSLATED
 var gui_chk_search_debug_output="Debug:"; // DON'T NEED TO BE TRANSLATED
 
-var gui_txt_search_found_offsets="<b>Offsets encontrados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b>";
+var gui_txt_search_found_offsets="Offsets encontrados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Iniciar a Cadeia ROP";

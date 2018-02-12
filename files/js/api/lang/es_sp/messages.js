@@ -330,7 +330,7 @@ var gui_txt_option_xmb_mp4_btn="Pulsa &#x25B3 para MP4";
 var gui_txt_option_xmb_save_msg="&#x2192 Archivo &#x2192 Guardar destino &#x2192 Almacenamiento de sistema";
 
 var gui_txt_group_payload_type="Payload Type ";
-var gui_txt_group_payload_type_help="<b><i>Reemplaza los payloads por defecto con tus propios archivos, usando los mismos nombres, y colocalos en la carpeta TEMPLATE/payloads/ folder under HTML source</i></b>";
+var gui_txt_group_payload_type_help="Reemplaza los payloads por defecto con tus propios archivos, usando los mismos nombres, y colocalos en la carpeta TEMPLATE/payloads/ folder under HTML source";
 
 // String Search
 var gui_txt_group_string_search="Buscar:";
@@ -344,7 +344,7 @@ var gui_chk_search_verify_jumps="Verificar Saltos:";
 var gui_chk_search_verify_stackframe="Armazón:";
 var gui_chk_search_debug_output="Depurar:";
 
-var gui_txt_search_found_offsets="<b>Offsets encontrados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b>";
+var gui_txt_search_found_offsets="Offsets encontrados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Iniciar Cadena ROP";
