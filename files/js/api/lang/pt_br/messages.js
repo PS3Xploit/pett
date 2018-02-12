@@ -330,7 +330,7 @@ var gui_txt_option_xmb_mp4_btn="Pressione &#x25B3 Para MP4";
 var gui_txt_option_xmb_save_msg="<br>&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
 
 var gui_txt_group_payload_type="Tipo de Payload ";
-var gui_txt_group_payload_type_help="<b><i>Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML/i></b>";
+var gui_txt_group_payload_type_help="<b><i>Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML</i></b>";
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
