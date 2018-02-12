@@ -138,7 +138,7 @@ var msg_cannot_continue="No se puede continuar....¡Regresando!";
 var msg_invalid_title_id="¡ALERTA!\n\n¡El ID de título introducido tiene un tamaño invalido!\n\nUsando ID por defecto.";
 
 // index GUI text
-var gui_title="Plantilla del tutorial para el Exploit de PS3 <font color='#FFF' size='3'>v0.1.2</font>";
+var gui_title="Plantilla del tutorial para el Exploit de PS3 <font color='#FFF' size='3'>v0.1.3</font>";
 var gui_team="por PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Muchas gracias a xerpi por portar a PS3 el exploit de pérdida de memoria en modo usuario, zecoxao & Joonie por su soporte rápido y continuo, mysis por documentar la exportación vsh y complementos, por supuesto a los contribuidores de psdevwiki, STLcardsWS por su contribución de larga duración y a toda la comunidad de hackers y desarrolladores de PS3 pasados y actuales, vosotros sabeis quienes sois. Gracias a littlebalup también por darme la idea e implementar el js relacionado que usamos para hacer la edición HDD de las herramientas de volcado y flasheo... ¡Gracias a B7U3 C50SS, Endless, y 0x1991337 por probar las llamadas al sistema de este tutorial! <font color='yellow'>Mas detalles y noticias en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Pagina oficial: <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

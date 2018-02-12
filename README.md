@@ -30,6 +30,10 @@ Spanish Spain			@Ivoyko<br/>
 
 Version History<br/>
 
+v0.1.3
+- Fixed Memory Dump Options On Load
+- Fixed Alert Message Text Not Loading Value From JS
+
 v0.1.2
 - Added Polish (thanks NiHuShu @Roxu14)
 - Updated Multi-Language Files
