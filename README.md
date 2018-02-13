@@ -33,6 +33,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.3
+- Updated Português label on Language Selection index (thanks @gustavo1617)
 - Added Dutch NL Translation (thanks @CompanyFart)
 - Added French Translation (thanks @valentinbreiz)
 - Fixed Typo In messages.js [pt_br]
