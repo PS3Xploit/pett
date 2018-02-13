@@ -25,6 +25,7 @@ Polish					@Roxu14<br/>
 Russian					@ErikPshat<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
+French			@valentinbreiz<br/>
 
 
 
