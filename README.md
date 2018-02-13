@@ -19,6 +19,7 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 Multi-Language Translator Credits<br/>
 
 Brazilian Portuguese	@HollowChris/@Caio99BR<br/>
+French					@valentinbreiz<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
 Russian					@ErikPshat<br/>
@@ -31,6 +32,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.3
+- Added French Translation (thanks @valentinbreiz)
 - Fixed Typo In messages.js [pt_br]
 - Updated GUI For Russian
 - Fixed Memory Dump Options On Load
