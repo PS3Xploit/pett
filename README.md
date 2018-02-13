@@ -3,9 +3,9 @@ ps3xploit.com
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/a2H8ml2.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/7YrCVYR.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/q4hY5tc.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/ouGxZ5b.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/cNNA2Zq.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/29bkrI3.png)
 
 
 PS3 Webkit ROP Tutorial Thread:
@@ -33,7 +33,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.4
-- 
+
 
 v0.1.3
 - Updated Português label on Language Selection index (thanks @gustavo1617)
