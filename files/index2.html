@@ -1,9 +1,6 @@
 ﻿<!-- PS3 ROP Chain Template -->
 <!-- PS3Xploit Team 2018 / ps3xploit.com -->
 
-<!-- [English US] -->
-
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -13,9 +10,18 @@
 <!-- GUI Styling -->
 <link rel="stylesheet" href="css/gui.css">
 
+<script type="text/javascript">
+    var lang = document.cookie;
+    sc = document.createElement('script');
+    sc.setAttribute('src','js/api/lang/'+lang+'/messages.js');
+    document.getElementsByTagName("head")[0].appendChild(sc);
+</script>
+
+
 <!-- Load These 1st -->
 <script src="js/api/init.js"></script>
-<script src="js/api/lang/en_us/messages.js"></script> <!-- English US -->
+
+<!-- <script src="js/api/lang/en_us/messages.js"></script>-->
 <script src="js/api/gui.js"></script> <!-- GUI Scripting Loads All Text -->
 
 <!-- Load These Variables Next -->
@@ -39,7 +45,7 @@
 
 </head>
 	<body id="BodyID" class="bg" onload="setDefaults();">
-	
+
 		<div id="HeaderID">
 			<div class="orange" id="gui_title"></div>
 			<table width="100%" cellpadding="0" cellspacing="0">
@@ -401,6 +407,8 @@
 				<option value="0x0000270F">9999</option>
 				</select> &nbsp;
 				
+				<br>
+
 				<b><span class="white" id="gui_txt_group_filesize"></span></b>
 				<textarea id="file_size_edit" name="file_size_edit" cols="10" rows="1">0x140</textarea>&nbsp; <!-- 0x38C0 test payload -->
 				<button id="btn_file_size_edit" onclick="setFileSize();"><span id="gui_txt_btn_set_filesize"></span></button> &nbsp;
