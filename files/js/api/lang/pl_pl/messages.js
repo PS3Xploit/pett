@@ -138,7 +138,7 @@ var msg_cannot_continue="Cannot Continue....Returning!";
 var msg_invalid_title_id="UWAGA!\n\nThe Title ID Entered Has An Invalid Size!\n\nUsing Default ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.3</font>";
+var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Podziękowania dla xerpi za userland memory exploit, zecoxao i Joonie za ich długotrwałe wsparcie, mysis za dokumentowanie zrzutów vsh i wtyczki, twórców psdevwiki bez których projekt by nie powstał, STLcardsWS za jego długotrwałe wsparcie i dla całej społeczności ps3 a zwłaszcza dla hakerów i programistów. Dzięki littlebalup za podrzucenie pomysłu i implementacje js dzięki której zrobiliśmy wersję HDD Dumperów i Flasherów. Dziękuję również B7U3 C50SS, Endless i 0x1991337 za tutorial, testowanie syscall i inną pomoc! <font color='yellow'>Więcej szczegółów i informacji na <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Oficjalna Strona Projektu <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

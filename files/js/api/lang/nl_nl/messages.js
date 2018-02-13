@@ -138,7 +138,7 @@ var msg_invalid_title_id="ALERT!\n\De ingevoerde titel ID heeft een ongeldige gr
 
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.3</font>";
+var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="<b>Veel dank aan xerpi voor de userland geheugenlek exploit ps3 port, zecoxao & Joonie voor hun vroege & voortdurende steun, mysis voor het documenteren van vsh exports & plug-ins, de psdevwiki-bijdragers natuurlijk, STLcardsWS voor zijn langdurige bijdrage & alle ps3 community hackers / devs verleden & heden, je weet wie je bent. Dankzij littlebalup en het idee en de bijbehorende js-implementatie die we gebruikten om de HDD-editie van de Dumpers en Flasher te maken. Ook dankzij B7U3 C50SS, Endless en 0x1991337 voor tutorial syscall testen en andere hulp! </ Font> <font color = '# white_smaller'> <b> Meer details & nieuws over <a href = 'http: // www. psx-place.com '> http://www.psx-place.com </a>. Officiële website op <a href='http://ps3xploit.com'> http://ps3xploit.com </a> </ b>";
 

@@ -138,7 +138,7 @@ var msg_cannot_continue="Не удаётся продолжить... Возвр�
 var msg_invalid_title_id="ВНИМАНИЕ!\n\nНе верный размер введённого Title ID!\n\Используется ID по умолчанию.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.3</font>";
+var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
 var gui_team="от команды PS3Xploit: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Большое спасибо xerpi за порт эксплоита утечки памяти на PS3, zecoxao & Joonie за поддержку, mysis за документацию по vsh экспортам и плагинам, авторов psdevwiki, STLcardsWS за постоянный вклад, всё PS3 сообщество хакеров/разработчиков. Благодарим littlebalup за идеи с реализацией js для создания HDD-версии Дамперов и Флешера. Так же благодарим B7U3 C50SS, Endless и 0x1991337 за инструктаж по тестированию системных вызовов и другую помощь! <font color='yellow'>Больше деталей и новостей на <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Официальный сайт: <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

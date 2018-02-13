@@ -27,10 +27,13 @@ Russian					@ErikPshat<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
 
-
+<br/><br/>
 
 
 Version History<br/>
+
+v0.1.4
+- 
 
 v0.1.3
 - Updated Português label on Language Selection index (thanks @gustavo1617)
