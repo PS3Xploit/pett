@@ -1,4 +1,4 @@
-﻿// Mensajes Predeterminados PS3 [Spanish LA]
+// Mensajes Predeterminados PS3 [Spanish LA]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Translation Credits: @Ripp3RkoS
@@ -19,14 +19,14 @@ var compat_msg_success2=", el cual es Compatible con PS3Xploit! Disfruta!";
 var msg_option_not_available="Esta Opcion Aun no esta Disponible!";
 
 // Settings
-var msg_settings_load="Esto es experimental y carga opciones desde una cookie!!";
+var msg_settings_load="Esto es experimental y carga opciones desde una cookie!";
 var msg_settings_save="Esto es experimental y guarda opciones a una cookie!";
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
 var msg_minver_start="Tu Version Minima para Downgrade es  ";
-var msg_minver_mid="y este ";
-var msg_minver_end=" a la fecha es compatible con CFW!";
+var msg_minver_mid="y este, a la Fecha ";
+var msg_minver_end=" es compatible con CFW!";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
@@ -38,11 +38,11 @@ var msg_temps_celcius=" Celcius";
 var msg_memdump_warning="Advertencia!\n\nEsta Prueba se colgara si toca un area de memoria sin asignar durante el proceso Dump!\n\nAun asi obtendras un dump valido hasta el cuelgue!";
 var msg_memdump_idps_vsh="Solo FW 4.66/4.81/4.82 esta soportado para el Dump  IDPS Directo de Memoria VSH!\n\nLas Cadenas Basadas en la extraccion Flash IDPS es Diferente.\n\nTodas las Demas Versiones de FW probalemente solo den 0.";
 var msg_memdump_size="Raw VSH MemDump Values\n\nSize: 0x";
-var msg_memdump_start_addr="\nStart Address: 0x";
-var msg_memdump_end_addr="\nEnd Address: 0x";
+var msg_memdump_start_addr="\nDireccion Inicio: 0x";
+var msg_memdump_end_addr="\nDireccion Fin: 0x";
 
 // Warnings
-var msg_fd_close_warning="Actualmente Los Descriptores de Archivos No se cierran Automaticamente!";
+var msg_fd_close_warning=" Los Descriptores de Archivos No se cierran Automaticamente!";
 var msg_remove_dir_warning="ADVERTENCIA!\n\nSe cuidadoso con esta syscall.\n\nPodrias eliminar un Directorio Importante y deberas Reinstalar Firmware !";
 var msg_warning_write_protection="Proteccion contra Escritura Deshabilitada!\n\nProcede con Cuidado!!!";
 
@@ -53,7 +53,7 @@ var msg_mount_test="** En Fase de Prueba **!\n\nEsto Montara /dev_hdd1/\n\nAl Mo
 // File Operations
 var msg_default_size="Usando Peso Predet. 0x140";
 var msg_new_size="Nuevo Peso: ";
-var msg_destination_path_set_new="New Path Set To:\n\n";
+var msg_destination_path_set_new="Nuevo Directorio Fijado a:\n\n";
 var msg_destination_path_incorrect="Directorio Destino Incorrecto!\n\nDebes Fijarlo antes de cambiar la ID del Juego.";
 
 // Trigger Messages
@@ -92,7 +92,7 @@ var experimental="Convierte esta pagina en tu principal!\n\nUsa bajo tu responsa
 
 // Other Messages
 var msg_prerelease="ESTO ES UNA VERSION ALFA!\n\nSOPORTE PARA FIRMWARES ANTIGUOS ESTA PARCIALMENTE IMPLEMENTADO!\n\n4.81/4.82 SOLO HASTA EL PROXIMO RELEASE!";
-var msg_anti_piracy="Descargo de Responsabilidad\n\nNo Aprobamos Ni Apoyamos la pirateria de cualquier tipo!\n\nal Usar este Tutorial, y aceptar, Acuerdas usarlo con fines didacticos!";
+var msg_anti_piracy="Descargo de Responsabilidad\n\nNo Aprobamos Ni Apoyamos la pirateria de ningun tipo!\n\nal Usar este Tutorial, y aceptar, Acuerdas usarlo con fines didacticos!";
 var msg_anti_piracy_edat="Descargo de Responsabilidad ANTIPIRATERIA!\n\nEsta Opcion esta pensada solo para pruebas y desarrollo, Y no debe abusar de ella!\n\nAl clicar en SI Aceptas Usarlo solo en Titulos que ya compraste!";
 
 var msg_thread_name="Hello_From_PS3Xploit";
@@ -303,8 +303,8 @@ var gui_txt_btn_memdump_set_values="Fijar Nuevos Valores";
 
 var gui_txt_group_user_id="ID Usuario:";
 var gui_txt_option_user_id_default="* Predeterminado *";
-var gui_txt_user_id_new="User ID Set To: ";
-var gui_txt_home_path_new="\n\nNew Home Path Is: \n\n";
+var gui_txt_user_id_new="ID de Usuario Fijado a: ";
+var gui_txt_home_path_new="\n\nNuevo Path Home es: \n\n";
 
 var gui_txt_group_permissions="Permisos:";
 var gui_txt_option_chmod="chmod";
