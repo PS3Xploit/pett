@@ -1,7 +1,7 @@
 ﻿// PS3 Default Messages [French FRA]
 // PS3Xploit Team 2018 / ps3xploit.com
 
-// Language Template
+// Translation Credits: @valentinbreiz
 
 
 var msg_select_vsh_type="utiliser CEX?\n\nSi vous choisissez non les offset DEX seront utilisé";
