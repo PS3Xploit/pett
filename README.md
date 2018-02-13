@@ -3,7 +3,7 @@ ps3xploit.com
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/fSYgMSz.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/a2H8ml2.png)
 ![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/7YrCVYR.png)
 ![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/q4hY5tc.png)
 
@@ -18,10 +18,11 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 
 Multi-Language Translator Credits<br/>
 
-Brazilian Portuguese	@HollowChris/@Caio99BR<br/>
+Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
+Portuguese BR	@HollowChris/@Caio99BR<br/>
 Russian					@ErikPshat<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
@@ -32,6 +33,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.3
+- Added Dutch NL Translation (thanks @CompanyFart)
 - Added French Translation (thanks @valentinbreiz)
 - Fixed Typo In messages.js [pt_br]
 - Updated GUI For Russian
