@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#7700DA'>Did Not Verify All Offs
 var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Did Not Verify All Offsets!</font><font color='#7700DA'> Max Retries Attempted! Please RESTART browser!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>SUCCESS!</font><font color='#7700DA'> <br>You Can Now Execute Your Chain!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>SUCCESS!</font><br><font color='#7700DA'>You Can Now Execute Your Chain!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Chain Executed Successfully!</font></b></h3>";

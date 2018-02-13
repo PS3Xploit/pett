@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#7700DA'>Nie Zweryfikowano Odpow
 var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Nie Zweryfikowano Odpowiedniej Ilości Offsetów!</font><font color='#7700DA'> Maxymalna Ilość Prób Osiągnięta! Zresetuj Przeglądarkę!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>SUKCES!</font><font color='#7700DA'> <br>Możesz Teraz Wykonać Swój Chain!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>SUKCES!</font><br><font color='#7700DA'>Możesz Teraz Wykonać Swój Chain!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Chain Wykonany Prawidłowo!</font></b></h3>";

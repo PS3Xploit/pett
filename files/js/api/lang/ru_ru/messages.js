@@ -4,7 +4,7 @@
 // Translation Credits: @ErikPshat
 
 
-var msg_select_vsh_type="Использовать CEX?\n\При выборе Нет, будут использоваться смещения DEX";
+var msg_select_vsh_type="Использовать CEX?\n\nПри выборе Нет, будут использоваться смещения DEX";
 
 var msg_detected_fw_1="Обнаружена FW: ";
 var msg_detected_fw_2=" ";
@@ -44,7 +44,7 @@ var msg_memdump_end_addr="\nКонечный адрес: 0x";
 // Warnings
 var msg_fd_close_warning="Дескрипторы файлов в настоящее время не закрываются автоматически!";
 var msg_remove_dir_warning="Предупреждение!\n\nБудьте внимательны при использовании этого системного вызова.\n\nВы можете удалить необходимый каталог и переустановить прошивку!";
-var msg_warning_write_protection="Защита от записи отключена!\n\nДействуйте с осторожностью!!!!";
+var msg_warning_write_protection="Защита от записи отключена!\n\nДействуйте с осторожностью!!!";
 
 var msg_cobra_only="ВНИМАНИЕ!\n\nЭто работает ТОЛЬКО с включённой COBRA на CFW!";
 
@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#210003'>Не проверены
 var msg_string_verify_fail_max="<h3><b><font color='#210003'>Не проверены все смещения!</font><font color='#7700DA'> Последняя повторная попытка! Пожалуйста перезагрузите браузер!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>УСПЕШНО!</font><font color='#7700DA'> <br>Теперь вы можете выполнить вашу цепочку!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>УСПЕШНО!</font><br><font color='#7700DA'>Теперь вы можете выполнить вашу цепочку!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Цепочка выполнена успешно!</font></b></h3>";
@@ -108,7 +108,7 @@ var msg_debug_placeholder="Ленивый XP +1";
 var msg_stackframe_check="Это проверит стековый фрейм по умолчанию для выявления возможных проблем.\n\nЕсли произошёл крах системы или не отображается сообщение об успешном завершении, то значит возникла проблема!";
 
 // String Matching
-var verify_fail="<font color='#210003'>НЕУДАЧА: Строки не совпадают с памятью!</font>";
+var verify_fail="<font color='#7700DA'>НЕУДАЧА: Строки не совпадают с памятью!</font>";
 var verify_success="<font color='#2a1003'>УСПЕШНО: Строки совпадают с памятью!</font>";
 var verify_skip="<font color='#2a1003'>УСПЕШНО: Не проверять строки в памяти!</font>";
 
@@ -135,7 +135,7 @@ var msg_no_chain_selected="Не выбрана цепочка ROP в хекс\n\
 var msg_media_not_supported="Этот выбор Медиа еще не реализован!";
 var msg_cannot_continue="Не удаётся продолжить... Возвращаемся!";
 
-var msg_invalid_title_id="ВНИМАНИЕ!\n\nНе верный размер введённого Title ID!\n\Используется ID по умолчанию.";
+var msg_invalid_title_id="ВНИМАНИЕ!\n\nНе верный размер введённого Title ID!\n\nИспользуется ID по умолчанию.";
 
 // index GUI text
 var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
@@ -167,7 +167,7 @@ var gui_txt_option_beep_test="Тест сигнала";
 var gui_txt_option_power_test="Тест питания";
 var gui_txt_option_minver_check="Тест мин. версии";
 var gui_txt_option_sys_game_get_temperature="CELL/RSX температура";
-var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
+var gui_txt_option_game_debug_pafjob_test="Тест отладки игры PafJob";
 var gui_txt_option_console_write_test="Тест записи консоли";
 var gui_txt_option_sys_tty_read="Тест чтения TTY";
 var gui_txt_option_sys_tty_write="Тест записи TTY";

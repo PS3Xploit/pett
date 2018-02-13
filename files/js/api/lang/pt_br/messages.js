@@ -44,7 +44,7 @@ var msg_memdump_end_addr="\nEnderenço final: 0x";
 // Warnings
 var msg_fd_close_warning="Os descritores de arquivos (FDs) atualmente não são fechados automaticamente!";
 var msg_remove_dir_warning="ATENÇÃO!\n\nTome cuidado ao usar este chamada do sistema (syscall).\n\nVocê pode remover uma pasta essencial e ter que reinstalar todo o firmware!";
-var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\nCONTINUE COM CUIDADO!!!!";
+var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\nCONTINUE COM CUIDADO!!!";
 
 var msg_cobra_only="ALERTA!\n\nIsto só FUNCIONA com o COBRA ativado na CFW!";
 
@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#7700DA'>Não verificou todos os
 var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Não verificou todos os offsets!</font><font color='#7700DA'> Máximo de tentativas alcançada! Por favor, REINICIE o navegador!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>SUCESSO!</font><font color='#7700DA'> <br>Agora você pode executar sua cadeia!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>SUCESSO!</font><br><font color='#7700DA'>Agora você pode executar sua cadeia!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Cadeia executada com sucesso!</font></b></h3>";
@@ -95,7 +95,7 @@ var msg_prerelease="ESTE É UM LANÇAMENTO PRÉVIO INICIAL!\n\nSUPORTE A FIRMWAR
 var msg_anti_piracy="AVISO LEGAL\n\nNós NÃO toleramos ou aprovamos PIRATARIA de qualquer tipo!\n\nAo usar este tutorial, e clicando em SIM, você concorda em usá-lo APENAS para fins educacionais!";
 var msg_anti_piracy_edat="AVISO LEGAL ANTI-PIRATARIA!\n\nEsta opção destina-se apenas a fins de teste e desenvolvimento, e não deve ser abusada!\n\nAo clicar em SIM, você aceita usar isso apenas com títulos que foram comprados!";
 
-var msg_thread_name="Hello_From_PS3Xploit"; // DON'T NEED TO BE TRANSLATED
+var msg_thread_name="Hello_From_PS3Xploit";
 
 // Devices
 var msg_device_loaded_into_mem="Dispositivo retornado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
@@ -103,7 +103,7 @@ var msg_get_device_info1="Dispositivo Retornado: ";
 var msg_get_device_info2="\n\nUse ito para a cadeia sys_storage_report_devices";
 
 // Debugging
-var msg_debug_placeholder="Lazy XP +1"; // DON'T NEED TO BE TRANSLATED
+var msg_debug_placeholder="Lazy XP +1";
 
 var msg_stackframe_check="Isto vai checar o stackframe padrão procurando por problemas.\n\nSe isso travar ou não mostrar uma mensagem de sucesso, então existe um problema!";
 
@@ -115,7 +115,7 @@ var verify_skip="<font color='#2a1003'>SUCCESS: Sequência não verificada na me
 var msg_search_flash_type_start="Procurar parâmetros definidos para ";
 var msg_search_flash_type_end=" Flash!";
 
-var msg_check_memory="checkMemory: "; // DON'T NEED TO BE TRANSLATED
+var msg_check_memory="checkMemory: ";
 var msg_chk_mem_arg_error="Erro nos argumentos da função checkMemory! size=0x";
 var msg_malformed_html="HTML Inválido!";
 var msg_string_located=" Encontrado no offset: 0x";
@@ -124,11 +124,11 @@ var msg_string_not_located="não pode ser encontrado no intervalo";
 // Found Offsets
 var msg_found_offsets="Offsets Encontrados: ";
 var msg_verified_offsets="Offsets Verificados: ";
-var offset_find_success="success"; // DON'T NEED TO BE TRANSLATED
-var offset_find_base_fp="base_fp"; // DON'T NEED TO BE TRANSLATED
-var offset_find_stack_frame="stack_frame"; // DON'T NEED TO BE TRANSLATED
-var offset_find_jump2="jump2"; // DON'T NEED TO BE TRANSLATED
-var offset_find_jump1="jump1"; // DON'T NEED TO BE TRANSLATED
+var offset_find_success="success";
+var offset_find_base_fp="base_fp";
+var offset_find_stack_frame="stack_frame";
+var offset_find_jump2="jump2";
+var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Argumentos da pagina não definidos!\n\nClique no botão de Argumentos e tente novamente!";
 var msg_no_chain_selected="Nenhuma Cadeia HEX ROP selecionada\n\nUtilize a Caixa de Seleção para escolher uma cadeia";
@@ -138,20 +138,20 @@ var msg_cannot_continue="Não foi possível continuar... Retornando!";
 var msg_invalid_title_id="ALERTA!\n\nO Title ID inserido tem um tamanho invalido!\n\nUsando ID padrão.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>"; // DON'T NEED TO BE TRANSLATED
-var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>"; // DON'T NEED TO BE TRANSLATED
+var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
+var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Agradeço à @xerpi pelo port para o PS3 do exploit de vazamento de memória no ambiente de usuário, à @zecoxao e @Joonie pelo suporte inicial e contínuo, à @mysis por documentar os plugins e exports VSH, aos contribuidores da #psdevwiki claro, à @STLcardsWS pelo sua contribuição ao longo do tempo e toda a comunidade PS3 de hacker/devs do passado e do presente, vocês sabem quem são vocês. Obrigado também à @littlebalup pela ideia e a implementação js que nós usamos para fazer a edição HDD dos Dumpers e Flasher. Obrigrado também à @B7U3 C50SS, @Endless, e @0x1991337 pelo tutorial de teste da syscall e outras ajudas! <font color='yellow'>Mais detalhes e notícias: <a href='http://www.psx-place.com'>psx-place.com</a>. Site Oficial: <a href='http://ps3xploit.com'>ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Configurações padrão:";
 var gui_chk_disable_trigger="Desabilitar o gatilho:";
 var gui_chk_write_protect="Proteção contra escrita:";
-var gui_chk_flash_type_nand="NAND:"; // DON'T NEED TO BE TRANSLATED
-var gui_chk_flash_type_nor="NOR:"; // DON'T NEED TO BE TRANSLATED
-var gui_chk_flash_type_emmc="eMMC:"; // DON'T NEED TO BE TRANSLATED
+var gui_chk_flash_type_nand="NAND:";
+var gui_chk_flash_type_nor="NOR:";
+var gui_chk_flash_type_emmc="eMMC:";
 
 // Reboot Mode
-var gui_chk_reboot_mode="<br>Modo de reiniciar:";
+var gui_chk_reboot_mode="Modo de reiniciar:";
 var gui_chk_reboot_mode_select="* Selecione o modo *";
 var gui_chk_reboot_mode_soft="Reiniciar via software";
 var gui_chk_reboot_mode_hard="Reiniciar";
@@ -197,76 +197,76 @@ var gui_txt_option_fun_test="Teste do Beep";
 // Memory/Syatem
 var gui_txt_syscall_group_mem_sys="Memória/Sistema: ";
 var gui_txt_syscall_chains_mem_sys="* Memória *";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="* Armazenamento *";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_storage_open="sys_storage_open"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_storage_read="sys_storage_read"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_chown="sys_fs_chown"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_link="sys_fs_link"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_mount="sys_fs_mount"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_rename="sys_fs_rename"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_stat="sys_fs_stat"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
+var gui_txt_option_sys_storage_open="sys_storage_open";
+var gui_txt_option_sys_storage_read="sys_storage_read";
+var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
+var gui_txt_option_sys_fs_chown="sys_fs_chown";
+var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
+var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
+var gui_txt_option_sys_fs_link="sys_fs_link";
+var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
+var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
+var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
+var gui_txt_option_sys_fs_mount="sys_fs_mount";
+var gui_txt_option_sys_fs_rename="sys_fs_rename";
+var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
+var gui_txt_option_sys_fs_stat="sys_fs_stat";
+var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
+var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
+var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="* Sistema *";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Processo/Tarefas: ";
 var gui_txt_syscall_chains_proc_thread="* Processos *";
-var gui_txt_option_sys_process_exit="sys_process_exit"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_process_kill="sys_process_kill"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_sys_process_exit="sys_process_exit";
+var gui_txt_option_sys_process_kill="sys_process_kill";
 
 var gui_txt_syscall_chains_process="* ID do Processo *";
 
 // Threads
 var gui_txt_syscall_chains_threads="* Tarefas *";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
+var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
+var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
+var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
+var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
+var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
+var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="* ID da Tarefa *";
 
 // Network
 var gui_txt_syscall_group_network="Rede: ";
-var gui_txt_syscall_chains_sys_net="* Ação pela Rede *"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_syscall_chains_sys_net="* Ação pela Rede *";
+var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
+var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
+var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
+var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
-var gui_txt_option_url="URL: "; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Depuração: ";
 var gui_txt_syscall_chains_debug_sc="* Chamadas do Sistema (syscalls) *";
-var gui_txt_option_debug_placeholder="beep_test"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";
 var gui_txt_syscall_chains_led="* Selecione a cadeia *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
+var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="* Mudar a cor *";
 var gui_txt_option_led_color_green="Verde";
@@ -307,21 +307,21 @@ var gui_txt_user_id_new="ID do Usuário definido para: ";
 var gui_txt_home_path_new="\n\nO novo caminho para a pagina inicial é: \n\n";
 
 var gui_txt_group_permissions="Permissões:";
-var gui_txt_option_chmod="chmod"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_chown="chown"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_chmod="chmod";
+var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Tamanho do Arquivo:";
-var gui_txt_group_titleid="<br>TitleID:"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_group_titleid="<br>TitleID:";
 
 var gui_txt_btn_set_filesize="Definir";
-var gui_txt_set_titleid="PS3XPLOIT"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Definir";
 
 var gui_txt_group_path_source="Origem:";
-var gui_txt_group_path_destination="Destino:";
+var gui_txt_group_path_destination="Destino: ";
 
 // XMB Transfer
-var gui_txt_syscall_group_xmb_transfer="* Opções de Transferência pela XMB *";
+var gui_txt_syscall_group_xmb_transfer="Opções de Transferência pela XMB";
 var gui_txt_option_xmb_photo="Foto";
 var gui_txt_option_xmb_music="Música";
 var gui_txt_option_xmb_video="Vídeo";
@@ -335,15 +335,15 @@ var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquiv
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
-var gui_txt_option_search_size="Size"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_search_base="Base"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_search_stack="Stack"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_search_range="Range"; // DON'T NEED TO BE TRANSLATED
-var gui_txt_option_search_loops="Loops"; // DON'T NEED TO BE TRANSLATED
+var gui_txt_option_search_size="Size";
+var gui_txt_option_search_base="Base";
+var gui_txt_option_search_stack="Stack";
+var gui_txt_option_search_range="Range";
+var gui_txt_option_search_loops="Loops";
 
-var gui_chk_search_verify_jumps="<br>Vericar Jumps:";
-var gui_chk_search_verify_stackframe="Stackframe:"; // DON'T NEED TO BE TRANSLATED
-var gui_chk_search_debug_output="Debug:"; // DON'T NEED TO BE TRANSLATED
+var gui_chk_search_verify_jumps="Vericar Jumps:";
+var gui_chk_search_verify_stackframe="Stackframe:";
+var gui_chk_search_debug_output="Debug:";
 
 var gui_txt_search_found_offsets="Offsets encontrados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 

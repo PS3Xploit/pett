@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#7700DA'>N'a pas vérifié tous 
 var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>N'a pas vérifié tous les Offsets!</font><font color='#7700DA'> Max Tentatives essayer! Veuillez redémarrer le navigateur!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>SUCCÈS!</font><font color='#7700DA'> <br>Vous pouvez maintenant exécuter votre chaîne!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>SUCCÈS!</font><br><font color='#7700DA'>Vous pouvez maintenant exécuter votre chaîne!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Chaîne exécutée avec succès!</font></b></h3>";

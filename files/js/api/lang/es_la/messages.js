@@ -73,7 +73,7 @@ var msg_string_verify_fail="<h3><b><font color='#7700DA'>Imposible Verificar tod
 var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Imposible Verificar todos los Offsets!</font><font color='#7700DA'> Reintentos maximos! Reinicia el Navegador!</font></b></h3>";
 
 // Init Success
-var msg_success_init="<h3><b><font color='#386E38'>EXITO!</font><font color='#7700DA'> <br>Ahora Puedes ejecutar tu Cadena ROP!</font></b></h3>";
+var msg_success_init="<h3><b><font color='#386E38'>EXITO!</font><br><font color='#7700DA'>Ahora Puedes ejecutar tu Cadena ROP!</font></b></h3>";
 
 // Exec Success
 var success_chain_exec="<h3><b><font color='#386E38'>Cadena Ejecutada Exitosamente!</font></b></h3>";
