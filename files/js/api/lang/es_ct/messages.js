@@ -138,7 +138,7 @@ var msg_cannot_continue="No es pot continuar .... ¡Tornant!";
 var msg_invalid_title_id="¡ALERTA!\n\n¡La identificació de títol introduït té una mida invàlid!\n\nUsant ID per defecte.";
 
 // index GUI text
-var gui_title="Plantilla del tutorial per al Exploit de PS3 <font color='#FFF' size='3'>v0.1.4</font>";
+var gui_title="Plantilla del tutorial per al Exploit de PS3 <font color='#FFF' size='3'>v0.1.5</font>";
 var gui_team="per PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Moltes gràcies a xerpi per portar a PS3 l'exploit de pèrdua de memòria en mode usuari, zecoxao & Joonie per la seva suport ràpid i continu, mysis per documentar l'exportació VSH i complements, per descomptat als contribuïdors de psdevwiki, STLcardsWS, NereidaDev per la seva contribució llarga durada ia tota la comunitat de hackers i desenvolupadors de PS3 passats i actuals, vosaltres sabeu qui sou. Gràcies a littlebalup també per donar-me la idea i implementar el js relacionat que fem servir per fer l'edició HDD de les eines de bolcat i flasheo ... Gràcies a B7U3 C50SS, Endless, i 0x1991337 per provar les crides al sistema d'aquest tutorial! <font color='yellow'>Mas detalls i notícies en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. pàgina oficial: <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

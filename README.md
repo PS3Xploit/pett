@@ -27,7 +27,7 @@ French					@valentinbreiz<br/>
 German					@FlatracerMod<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
-Portuguese BR	@HollowChris/@Caio99BR<br/>
+Portuguese BR			@HollowChris/@Caio99BR<br/>
 Russian					@ErikPshat<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
@@ -36,6 +36,9 @@ Spanish Spain			@Ivoyko<br/>
 
 
 Version History<br/>
+
+v0.1.5
+
 
 v0.1.4
 - Added Català Espanya Translation (thanks @minicm94123)

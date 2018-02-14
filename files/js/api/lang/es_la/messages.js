@@ -138,7 +138,7 @@ var msg_cannot_continue="No se puede Continuar....Regresando!";
 var msg_invalid_title_id="ALERTA!\n\nLa ID del Juego Introducido es Incorrecto!\n\nUsando ID Predeterminada.";
 
 // index GUI text
-var gui_title="Plantilla para Tutorial PS3Xploit <font color='#FFF' size='3'>v0.1.4</font>";
+var gui_title="Plantilla para Tutorial PS3Xploit <font color='#FFF' size='3'>v0.1.5</font>";
 var gui_team="por PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Agradecimientos a xerpi por el port del exploit de memoria de usuario del PS3, a zecoxao y Joonie por su soporte temprano y continuo, mysis por documentar vsh exports y plugins, desde luego a los contribuidores del psdevwiki, a STLcardsWS por su prologada y efectiva contribucion y a toda la Comunidad PS3 de Hackers/Desarrolladores pasados y presentes, Tu sabes quien eres. Gracias tambien a littlebalup por dar la idea y la implementacion js que usamos para elaborar la edicion HDD de Dumpers y Flasher. gracias ademas a B7U3 C50SS, Endless, y 0x1991337 por testear los syscall del tutorial  y otra ayuda! <font color='yellow'>Mas Detalles y Noticias en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Sitio Oficial <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

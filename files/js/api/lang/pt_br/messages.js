@@ -138,7 +138,7 @@ var msg_cannot_continue="Não foi possível continuar... Retornando!";
 var msg_invalid_title_id="ALERTA!\n\nO Title ID inserido tem um tamanho invalido!\n\nUsando ID padrão.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.4</font>";
+var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Agradeço à @xerpi pelo port para o PS3 do exploit de vazamento de memória no ambiente de usuário, à @zecoxao e @Joonie pelo suporte inicial e contínuo, à @mysis por documentar os plugins e exports VSH, aos contribuidores da #psdevwiki claro, à @STLcardsWS pelo sua contribuição ao longo do tempo e toda a comunidade PS3 de hacker/devs do passado e do presente, vocês sabem quem são vocês. Obrigado também à @littlebalup pela ideia e a implementação js que nós usamos para fazer a edição HDD dos Dumpers e Flasher. Obrigrado também à @B7U3 C50SS, @Endless, e @0x1991337 pelo tutorial de teste da syscall e outras ajudas! <font color='yellow'>Mais detalhes e notícias: <a href='http://www.psx-place.com'>psx-place.com</a>. Site Oficial: <a href='http://ps3xploit.com'>ps3xploit.com</a></font>";
 
