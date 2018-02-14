@@ -34,7 +34,10 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.4
-
+- Added German Translation (thanks @FlatracerMod)
+- Updated Spanish LA (thanks @Ripp3RkoS)
+- Updated Nederlands label on Language Selection index (thanks @CompanyFart)
+- Misc Fixes In All Language Strings (thanks @ErikPshat)
 
 v0.1.3
 - Updated Português label on Language Selection index (thanks @gustavo1617)
