@@ -189,7 +189,7 @@ var sc_sys_storage_write=0x0000025B;
 // sys_fs_stat Parameters
 var sc_sys_fs_stat=0x00000328;
 var sys_fs_stat_path=0x00000000;
-var sys_fs_stat_sb=0x00000000;
+var sys_fs_stat_sb=0x8A000000;
 
 // sys_fs_fstat  Parameters
 var sc_sys_fs_fstat =0x00000329;

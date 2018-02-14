@@ -26,6 +26,7 @@ var g_set_r3_from_r29;// set r3 from r29
 var g_set_r3_with_ld;
 var g_set_r3_and_clear;
 var g_set_r3_and_sc;
+var g_set_r5_from_r29;
 var g_set_r20_thru_r31;
 var g_set_r31_from_r23;
 var g_set_r31_E8;
@@ -207,6 +208,8 @@ var rosdump_addr=0x8D000000;
 var step_sector=0x1;
 var file_size=0x00000140;
 var file_size_display="0x00000140";
+var file_size_input=0x00000140;
+var file_size_input_addr=0x8A000100;
 
 var file_descriptor;
 var db_rebuild_bytes=0x000003E9;

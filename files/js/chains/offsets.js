@@ -623,6 +623,7 @@ function ps3chk(){
 						g_set_high_only=g_set_r4_thru_r11+0x7C;
 						g_set_r3_from_r29=0x43552C;
 						g_set_r3_with_ld=0x1A43FC;
+						g_set_r5_from_r29=0x4C7EF0;
 						//g_set_r31_E8=0x62ABD8;
 						g_set_r31_F8=0x62E84C;
 						g_set_r31_108=0x62FA14;
