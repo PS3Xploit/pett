@@ -3,7 +3,7 @@ ps3xploit.com
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/ouGxZ5b.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/yf38VIp.png)
 ![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/cNNA2Zq.png)
 ![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/29bkrI3.png)
 
@@ -20,6 +20,7 @@ Multi-Language Translator Credits<br/>
 
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
+German					@FlatracerMod<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
 Portuguese BR	@HollowChris/@Caio99BR<br/>
