@@ -1,7 +1,7 @@
 ﻿<!-- PS3 ROP Chain Template -->
 <!-- PS3Xploit Team 2018 / ps3xploit.com -->
 
-<!-- [German DE] -->
+<!-- [English US] -->
 
 
 <html>
@@ -13,9 +13,17 @@
 <!-- GUI Styling -->
 <link rel="stylesheet" href="css/gui.css">
 
+<!-- Load Language File [thanks ghost]-->
+<script src="js/api/lang/en_us/messages.js"></script>
+<script type="text/javascript">
+    var lang = document.cookie;
+    sc = document.createElement('script');
+    sc.setAttribute('src','js/api/lang/'+lang+'/messages.js');
+    document.getElementsByTagName("head")[0].appendChild(sc);
+</script>
+
 <!-- Load These 1st -->
 <script src="js/api/init.js"></script>
-<script src="js/api/lang/de_de/messages.js"></script> <!-- German DE -->
 <script src="js/api/gui.js"></script> <!-- GUI Scripting Loads All Text -->
 
 <!-- Load These Variables Next -->
@@ -416,7 +424,8 @@
 				<option value="/dev_usb000/PS3Xploit.bin">/dev_usb000/PS3Xploit.bin</option>
 				<option value="/dev_hdd0/PS3Xploit.bin">/dev_hdd0/PS3Xploit.bin</option>
 				<option value="/dev_usb000/payload.self">/dev_usb000/payload.self</option>
-				<option value="/dev_usb000/game/PS3XPLOIT/USRDIR/payload.self">/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self</option>
+				<option value="/dev_usb000/EBOOT.BIN">/dev_usb000/EBOOT.BIN</option>
+				<option value="/dev_usb000/EBOOT.BIN.BAK">/dev_usb000/EBOOT.BIN.BAK</option>
 				<option value="/dev_hdd0/PS3Xploit/hello.txt">/dev_hdd0/PS3Xploit/hello.txt</option>
 				<option value="/dev_usb000/PS3Xploit/hello.txt">/dev_usb000/PS3Xploit/hello.txt</option>
 				<option value="/dev_hdd0/">/dev_hdd0/</option>
@@ -464,7 +473,7 @@
 				<option value="/dev_hdd0/drm/marlin/SS_LC.dat">/dev_hdd0/drm/marlin/nphome/SS_LC.dat</option>
 				</select>
 				
-				<textarea id="path_src" name="path_src" cols="56" rows="1"></textarea>
+				<textarea id="path_src" name="path_src" cols="52" rows="1"></textarea>
 				
 				<br>
 				
@@ -473,7 +482,8 @@
 				<option value="/dev_usb000/PS3Xploit.bin">/dev_usb000/PS3Xploit.bin</option>
 				<option value="/dev_hdd0/PS3Xploit.bin">/dev_hdd0/PS3Xploit.bin</option>
 				<option value="/dev_usb000/payload.self">/dev_hdd0/payload.self</option>
-				<option value="/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self">/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self</option>
+				<option value="/dev_usb000/EBOOT.BIN">/dev_usb000/EBOOT.BIN</option>
+				<option value="/dev_usb000/EBOOT.BIN.BAK">/dev_usb000/EBOOT.BIN.BAK</option>
 				<option value="/dev_hdd0/PS3Xploit/hello.txt">/dev_hdd0/PS3Xploit/hello.txt</option>
 				<option value="/dev_usb000/PS3Xploit/hello.txt">/dev_usb000/PS3Xploit/hello.txt</option>
 				<option value="/dev_hdd0/">/dev_hdd0/</option>
@@ -521,7 +531,7 @@
 				<option value="/dev_hdd0/drm/marlin/SS_LC.dat">/dev_hdd0/drm/marlin/nphome/SS_LC.dat</option>
 				</select> 
 				
-				<textarea id="path_dest" name="path_dest" cols="56" rows="1"></textarea>
+				<textarea id="path_dest" name="path_dest" cols="52" rows="1"></textarea>
 			</div>
 			
 			<div id="xmb_transfer_options">

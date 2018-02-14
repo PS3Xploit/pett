@@ -34,6 +34,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.4
+- Updated Language Selection index to load messages.js dynamically (thanks ghost)
 - Added German Translation (thanks @FlatracerMod)
 - Updated Spanish LA (thanks @Ripp3RkoS)
 - Updated Nederlands label on Language Selection index (thanks @CompanyFart)
