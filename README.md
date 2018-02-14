@@ -1,5 +1,10 @@
 # PS3 Exploitation Tutorial Template
-ps3xploit.com
+https://ps3xploit.com
+<br/>
+https://ps3xploit.github.io/pett/
+<br/>
+PS3 Webkit ROP Tutorial Thread:
+http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-debugging-ps3-development.15826/
 <br/>
 <br/>
 
@@ -8,8 +13,6 @@ ps3xploit.com
 ![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/29bkrI3.png)
 
 
-PS3 Webkit ROP Tutorial Thread:
-http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-debugging-ps3-development.15826/
 
 
 SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESULTS!!
