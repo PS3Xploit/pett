@@ -111,6 +111,9 @@ var hdd_fd2;
 var fd;
 var fd2;
 
+var code_cave_1=0x20900000;// 0x20900000-0x209FFFFF
+var code_cave_2=0xC0900000;// 0xC0900000-0xC1C00000
+
 var write_bytes=0x00000000;// used for db_rebuild and others
 var dummy_text="Hello From PS3Xploit Team!";
 
