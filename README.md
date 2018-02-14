@@ -21,6 +21,7 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 
 Multi-Language Translator Credits<br/>
 
+Català Espanya			@minicm94123<br/>
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
 German					@FlatracerMod<br/>
@@ -37,6 +38,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.4
+- Added Català Espanya Translation (thanks @minicm94123)
 - Added German Translation (thanks @FlatracerMod)
 - Updated Spanish LA (thanks @Ripp3RkoS)
 - Updated Nederlands label on Language Selection index (thanks @CompanyFart)
