@@ -29,7 +29,7 @@ var msg_minver_mid=" and is ";
 var msg_minver_end=" compatible with CFW at this time!";
 
 // CELL/RSX Temperatures
-var msg_temps_loaded_into_mem="CELL/RSX Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_temps_loaded_into_mem="CELL/RSX (CPU/GPU) Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_temps_cell="CELL Temperature: ";
 var msg_temps_rsx="\n\nRSX Temperature: ";
 var msg_temps_celcius=" Celcius";
@@ -92,10 +92,11 @@ var experimental="Set Your Home Page To This Page!\n\nUSE AT YOUR OWN RISK!\nThe
 
 // Other Messages
 var msg_prerelease="THIS IS AN EARLY PREVIEW RELEASE!\n\nOLDER FIRMWARE SUPPORT HAS ONLY BEEN PARTIALLY IMPLEMENTED!\n\n4.81/4.82 ONLY UNTIL NEXT RELEASE!";
+var msg_thread_name="Hello_From_PS3Xploit";
+
+// Anti-Piracy Warning
 var msg_anti_piracy="DISCLAIMER\n\nWe DO NOT condone or endorse PIRACY of any kind!\n\nBy using this tutorial, and clicking YES, you agree to use it for educational purposes ONLY!";
 var msg_anti_piracy_edat="ANTI-PIRACY DISCLAIMER!\n\nThis option is intended for testing and development purposes only, and should not be abused!\n\nBy clicking YES you agree to ONLY use this for titles that have been purchased!";
-
-var msg_thread_name="Hello_From_PS3Xploit";
 
 // Devices
 var msg_device_loaded_into_mem="Device Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
@@ -249,7 +250,7 @@ var gui_txt_syscall_chains_thread_id="Thread ID";
 
 // Network
 var gui_txt_syscall_group_network="Network: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
+var gui_txt_syscall_chains_sys_net="Network Action";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
 var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
