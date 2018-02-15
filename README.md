@@ -21,6 +21,7 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 
 Multi-Language Translator Credits<br/>
 
+Arabic					@Azooz_yos<br/>
 Català Espanya			@minicm94123<br/>
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
@@ -38,6 +39,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.5
+- Added Arabic Translation (thanks @Azooz_yos)
 - Updated Language Selection Layout (thanks ErikPshat)
 
 v0.1.4
