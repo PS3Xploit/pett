@@ -8,9 +8,9 @@ http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-deb
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/yf38VIp.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/cNNA2Zq.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/29bkrI3.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/0AdHEM3.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/6LliP1e.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/DULXvm0.png)
 
 
 
@@ -38,7 +38,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.5
-
+- Updated Language Selection Layout (thanks ErikPshat)
 
 v0.1.4
 - Added Català Espanya Translation (thanks @minicm94123)
