@@ -57,7 +57,7 @@ function initROP()
 		
 		total_loops++;
 		
-		// reset string search message to fail if total=max
+		// reset string search message to fail if total=max (fix later)
 		if(total_loops===max_loops){result_msg=msg_string_verify_fail;}
 		
 		toggleDisableButtons(true);
@@ -105,6 +105,9 @@ function initROP()
 		
 		// Set bytes to write for db_rebuild and restore_stack for others
 		if(chain_stackframe==="db_rebuild"){write_bytes=db_rebuild_bytes;}else{write_bytes=restore_stack;}
+		
+		// Set values for AutoSize Read/Write Chains
+		if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
 		
 		// Set mount params
 		if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2=" CELL_FS_SIMPLEFS";path_src_fp=" /dev_hdd1";}

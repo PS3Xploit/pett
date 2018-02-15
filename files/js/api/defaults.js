@@ -771,6 +771,90 @@ function syscallReadWriteFile(src,dest,size)
 	a25_r11=restore_stack;
 }
 
+function syscallReadWriteFileAuto(src,dest)
+{
+	a1_r3=src;
+	a1_r4=sys_fs_stat_sb;
+	a1_r11=sc_sys_fs_stat;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_from_r29;
+	a3_jumpto=g_sc_A0;
+	
+	file_size_input_addr=sc_sys_fs_stat+0x28;// Size addr will be sys_fs_stat_sb+0x28
+	
+	a4_r3=file_size_input_addr;// r29 moving size into r5
+	a4_r4=open_flag_read;
+	a4_r5=0x140;
+	a4_r6=usb_fp_addr;
+	a4_r7=open_mode;
+	a4_r8=0x0;
+	a4_r9=hdd_fd_addr-0x14;// moves into r0
+	a4_r11=sc_sys_fs_open;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_set_r5_from_r29;
+	a6_jumpto=g_sc_A0;
+	// a7_r3=sc_buzzer_arg1;
+	// a7_r4=sc_buzzer_arg2;
+	// a7_r5=sc_buzzer_arg3;
+	// a7_r11=sc_sys_sm_ring_buzzer;
+	// a7_jumpto=g_set_r4_thru_r11;
+	// a8_jumpto=g_set_r3_from_r29;
+	// a9_jumpto=g_sc_A0;
+	// a10_r3=sc_buzzer_arg1;
+	// a10_r4=sc_buzzer_arg2;
+	// a10_r5=sc_buzzer_arg3;
+	// a10_r11=sc_sys_sm_ring_buzzer;
+	// a10_jumpto=g_set_r4_thru_r11;
+	// a11_jumpto=g_set_r3_from_r29;
+	// a12_jumpto=g_sc_A0;
+	// a13_r3=sc_buzzer_arg1;
+	// a13_r4=sc_buzzer_arg2;
+	// a13_r5=sc_buzzer_arg3;
+	// a13_r11=sc_sys_sm_ring_buzzer;
+	// a13_jumpto=g_set_r4_thru_r11;
+	// a14_jumpto=g_set_r3_from_r29;
+	// a15_jumpto=g_sc_A0;
+	// a16_r3=sc_buzzer_arg1;
+	// a16_r4=sc_buzzer_arg2;
+	// a16_r5=sc_buzzer_arg3;
+	// a16_r11=sc_sys_sm_ring_buzzer;
+	// a16_jumpto=g_set_r4_thru_r11;
+	// a17_jumpto=g_set_r3_from_r29;
+	// a18_jumpto=g_sc_A0;
+	// a19_r3=sc_buzzer_arg1;
+	// a19_r4=sc_buzzer_arg2;
+	// a19_r5=sc_buzzer_arg3;
+	// a19_r11=sc_sys_sm_ring_buzzer;
+	// a19_jumpto=g_set_r4_thru_r11;
+	// a20_jumpto=g_set_r3_from_r29;
+	// a21_jumpto=g_sc_A0;
+	// a22_r3=sc_buzzer_arg1;
+	// a22_r4=sc_buzzer_arg2;
+	// a22_r5=sc_buzzer_arg3;
+	// a22_r11=sc_sys_sm_ring_buzzer;
+	// a22_jumpto=g_set_r4_thru_r11;
+	// a23_jumpto=g_set_r3_from_r29;
+	// a24_jumpto=g_sc_A0;
+	// a25_r3=sc_buzzer_arg1;
+	// a25_r4=sc_buzzer_arg2;
+	// a25_r5=sc_buzzer_arg3;
+	// a25_r11=sc_sys_sm_ring_buzzer;
+	// a25_jumpto=g_set_r4_thru_r11;
+	// a26_jumpto=g_set_r3_from_r29;
+	// a27_jumpto=g_sc_A0;
+	// a28_r3=sc_buzzer_arg1;
+	// a28_r4=sc_buzzer_arg2;
+	// a28_r5=sc_buzzer_arg3;
+	// a28_r11=sc_sys_sm_ring_buzzer;
+	// a28_jumpto=g_set_r4_thru_r11;
+	// a29_jumpto=g_set_r3_from_r29;
+	// a30_jumpto=g_sc_A0;
+	// a31_r11=restore_stack;
+	// a31_jumpto=g_set_r4_thru_r11;
+	// a32_jumpto=g_exit_chain;
+	//a33_jumpto=g_exit_chain;
+}
+
 function syscallRebootOnly(mode,lpar_param,lpar_size)
 {
 	a1_r3=mode;
@@ -913,7 +997,14 @@ function useCustomStackFrame()
 		*/
 		
 		case "file_read_write_test":
-		syscallReadWriteFile(path_src_fp_addr,path_dest_fp_addr,file_size);
+		if(useAutoSize)
+		{
+			syscallReadWriteFileAuto(path_src_fp_addr,path_dest_fp_addr);
+		}
+		else
+		{
+			syscallReadWriteFile(path_src_fp_addr,path_dest_fp_addr,file_size);
+		}
 		break;
 		
 		case "sys_net_dump":
@@ -1321,8 +1412,7 @@ function setChainOptions(chain)
 		case "file_read_write_test":
 		setValueToHTML("path_src",path_usb_test_bin);
 		setValueToHTML("path_dest",path_hdd_test_bin);
-		//alert(msg_fd_close_warning);
-		file_size_edit.focus();
+		if(useAutoSize){alert(msg_option_not_available);init_rop.focus();}else{file_size_edit.focus();}
 		break;
 		
 		case "dir_read_write_test":
@@ -1462,7 +1552,7 @@ function setChainOptions(chain)
 		case "sys_fs_stat":
 		setValueToHTML("path_src",dev_hdd0);
 		setValueToHTML("path_dest",fs_stat_dump);
-		init_rop.focus();
+		path_src_type.focus();
 		break;
 		
 		case "sys_fs_link":

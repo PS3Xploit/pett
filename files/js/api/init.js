@@ -213,6 +213,7 @@ var file_size=0x00000140;
 var file_size_display="0x00000140";
 var file_size_input=0x00000140;
 var file_size_input_addr=0x8A000100;
+var useAutoSize=false;
 
 var file_descriptor;
 var db_rebuild_bytes=0x000003E9;
