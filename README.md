@@ -21,14 +21,14 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 
 Multi-Language Translator Credits<br/>
 
-Català Espanya			@minicm94123<br/>
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
 German					@FlatracerMod<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
-Portuguese BR			@HollowChris/@Caio99BR<br/>
+Portuguese BR	@HollowChris/@Caio99BR<br/>
 Russian					@ErikPshat<br/>
+Spanish Català			@minicm94123<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
 

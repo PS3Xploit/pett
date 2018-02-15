@@ -1,4 +1,4 @@
-// Mensajes Predeterminados PS3 [Spanish LA]
+﻿// Mensajes Predeterminados PS3 [Spanish LA]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Translation Credits: @Ripp3RkoS

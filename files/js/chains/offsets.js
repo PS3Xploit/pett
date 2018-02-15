@@ -1,4 +1,4 @@
-// PS3 Compatibility Check and Gadget Offsets
+﻿// PS3 Compatibility Check and Gadget Offsets
 // PS3Xploit Team 2018 / ps3xploit.com
 
 

@@ -1,4 +1,4 @@
-// PS3 Init Variables
+﻿// PS3 Init Variables
 // PS3Xploit Team 2018 / ps3xploit.com
 
 

@@ -1,4 +1,4 @@
-// PS3 missatges predefinits [Català Espanya]
+﻿// PS3 missatges predefinits [Català Espanya]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Translation Credits: @minicm94123
