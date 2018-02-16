@@ -250,7 +250,7 @@ var gui_txt_syscall_chains_thread_id="* ID da Tarefa *";
 
 // Network
 var gui_txt_syscall_group_network="Rede: ";
-var gui_txt_syscall_chains_sys_net="* Ação pela Rede *";
+var gui_txt_syscall_chains_sys_net="sys_net";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
 var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
@@ -298,7 +298,7 @@ var gui_txt_memdump_size="* Tamanho do Dump da Memória *";
 var gui_txt_memdump_range_presets="Predefinições:";
 var gui_txt_option_memdump_presets_default="* Nenhuma predifinição selecionada *";
 
-var gui_txt_memdump_address_start="<br>Início:";
+var gui_txt_memdump_address_start="Início:";
 var gui_txt_memdump_address_end="Fim:";
 var gui_txt_btn_memdump_set_values="Definir novos valores";
 
@@ -312,7 +312,7 @@ var gui_txt_option_chmod="chmod";
 var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Tamanho do Arquivo:";
-var gui_txt_group_titleid="<br>TitleID:";
+var gui_txt_group_titleid="TitleID:";
 
 var gui_txt_btn_set_filesize="Definir";
 var gui_txt_set_titleid="PS3XPLOIT";
@@ -329,7 +329,7 @@ var gui_txt_option_xmb_video="Vídeo";
 var gui_txt_option_xmb_jpg_btn="Pressione &#x25B3 Para JPG";
 var gui_txt_option_xmb_mp3_btn="Pressione &#x25B3 Para MP3";
 var gui_txt_option_xmb_mp4_btn="Pressione &#x25B3 Para MP4";
-var gui_txt_option_xmb_save_msg="<br>&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
+var gui_txt_option_xmb_save_msg="&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
 
 var gui_txt_group_payload_type="Tipo de Payload ";
 var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML";
