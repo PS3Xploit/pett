@@ -1150,7 +1150,7 @@ function useCustomStackFrame()
 		break;
 		
 		case "sys_fs_stat":
-		syscallFwriteAndExit(path_src_fp_addr,temp_addr_8C,0,0,0,0,0,0,sc_sys_fs_stat,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,0x40,temp_addr_8C);
+		syscallFwriteAndExit(path_src_fp_addr,temp_addr_8C,0,0,0,0,0,0,sc_sys_fs_stat,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,0x34,temp_addr_8C);
 		break;
 		
 		// uses restore_stack1
