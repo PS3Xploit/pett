@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="Valore di ritorno di MinVer caricato in Memoria!
 var msg_minver_start="La tua Versione minima di Downgrade e' ";
 var msg_minver_mid=" ed e' ";
 var msg_minver_end=" compatible with CFW at this time! compatibile con i CFW al momento";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="alore di ritorno di CELL/RSX Temp caricato in Memoria!\n\nPremi Esegui un'altra volta per leggerlo e visualizzarlo!";

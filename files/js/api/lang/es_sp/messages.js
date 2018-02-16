@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="¡El valor de MinVer ha sido cargado en la memor
 var msg_minver_start="¡Tu versión minima para Downgrade es ";
 var msg_minver_mid=" y es ";
 var msg_minver_end=" compatible con CFW ahora!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="¡El valor de temperatura CELL/RSX ha sido cargado en la memoria!\n\n¡Pulsa el botón Ejecutar de nuevo para mostrarla!";

@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="MinVer Return Value Loaded Into Memory!\n\nPress
 var msg_minver_start="ادنى اصدار يمكن الرجوع عليه في جهازك هو ";
 var msg_minver_mid=" وهو ";
 var msg_minver_end=" متوافق مع التهكير في الوقت الحالي";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";

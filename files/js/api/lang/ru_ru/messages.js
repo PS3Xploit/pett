@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="Возвращённое значение MinVer
 var msg_minver_start="Ваша минимальная версия  понижения ";
 var msg_minver_mid=" является ";
 var msg_minver_end=" совместимой с CFW в данное время!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Возвращённые значения CELL/RSX температуры загружены в память!\n\nНажмите снова кнопку «Выполнить цепочку» для чтения и отображения!";

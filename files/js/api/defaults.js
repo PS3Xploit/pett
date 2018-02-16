@@ -324,7 +324,7 @@ function compatCheck(version)
 {
 	if(version<"3.56"){isFW356=false;isCompatCFW=true;return "";}// compatible
 	if(version==="3.56"){isFW356=true;isCompatCFW=true;return "";}// compatible
-	if(version>"3.56"){isFW356=false;isCompatCFW=false;return "NOT";}// not compatible
+	if(version>"3.56"){isFW356=false;isCompatCFW=false;return msg_minver_compat_not;}// not compatible
 }
 
 function showReturnValue(addr)

@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="MinVer Zwraca Wartość Zapisaną w Pamięci!\n\
 var msg_minver_start="Minimalna Wersja Systemu Twojego PS3 to: ";
 var msg_minver_mid=" i jest ona ";
 var msg_minver_end=" kompatybilna z CFW na ten moment!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Temperatury Procesora/Karty Graficznej (CELL/RSX) Zwracają Wartości Zapisane w Pamięci!\n\nNaciśnij Ponownie Wykonaj aby Odczytać i Wyświetlić!";

@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="MinVer Retourwaarde geladen in het geheugen!\n\n
 var msg_minver_start="Uw minimale downgrade-versie is ";
 var msg_minver_mid=" en is ";
 var msg_minver_end=" compatibel met CFW op dit moment!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL / RSX Temp. Retourwaarden worden in het geheugen geladen!\n\nDruk nogmaals op Execute-knop om te lezen en te laten zien";

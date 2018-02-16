@@ -27,6 +27,7 @@ var msg_minver_loaded_into_mem="MinVer in den Arbeitsspeicher geladen!\n\nKlicke
 var msg_minver_start="Deine minimale Downgrade Version ist ";
 var msg_minver_mid=" und ist ";
 var msg_minver_end=" kompatibel mit einer CFW!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temperaturen in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
