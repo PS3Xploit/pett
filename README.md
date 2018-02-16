@@ -26,7 +26,7 @@ Català Espanya			@minicm94123<br/>
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
 German					@FlatracerMod<br/>
-Hindi					@minicm94123<br/>
+Hindi IN				@minicm94123<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
 Portuguese BR			@HollowChris/@Caio99BR<br/>
@@ -40,7 +40,7 @@ Spanish Spain			@Ivoyko<br/>
 Version History<br/>
 
 v0.1.5
-- Added Hindi Translation (thanks @minicm94123)
+- Added Hindi India Translation (thanks @minicm94123)
 - Added Arabic Translation (thanks @Azooz_yos)
 - Updated Language Selection Layout (thanks ErikPshat)
 
