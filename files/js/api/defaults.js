@@ -315,7 +315,6 @@ function loadSettings(data)
 
 function saveSettings(data)
 {
-	var data=
 	setCookie(data);
 	alert(msg_settings_save);
 }
