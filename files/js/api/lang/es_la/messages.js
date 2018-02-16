@@ -27,7 +27,7 @@ var msg_minver_loaded_into_mem="MinVer Devuelve el valor cargado en memoria!\n\n
 var msg_minver_start="Tu Version Minima para Downgrade es  ";
 var msg_minver_mid="y este, a la Fecha ";
 var msg_minver_end=" es compatible con CFW!";
-var msg_minver_compat_not="NOT";
+var msg_minver_compat_not="NO";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
@@ -106,7 +106,7 @@ var msg_get_device_info2="\n\nUsa para cadena sys_storage_report_devices";
 // Debugging
 var msg_debug_placeholder="Lazy XP +1";
 
-var msg_stackframe_check="This will check the default stackframe for problems.\n\nIf it crashes or does not display a success message, then there is an issue!";
+var msg_stackframe_check="Esto Verificara los Marcos de pila por Errores.\n\nSi se cuelga o no muestra el Mensaje Exito, Entonces hay Problemas!";
 
 // String Matching
 var verify_fail="<font color='#7700DA'>FALLO: Cadenas No coinciden en memoria!</font>";
