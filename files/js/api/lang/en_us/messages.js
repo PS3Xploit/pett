@@ -1,4 +1,4 @@
-﻿// PS3 Default Messages [English US]
+// PS3 Default Messages [English US]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Language Template
@@ -162,7 +162,7 @@ var gui_chk_reboot_mode_off="Power Down";
 
 // Preset Chains
 var gui_txt_preset_chains="Preset Chains: ";
-var gui_txt_preset_chains_default="Default/Testing";
+var gui_txt_preset_chains_default="* Default/Testing *";
 var gui_txt_option_stackframe_test="Stackframe Test";
 var gui_txt_option_beep_test="Beep Test";
 var gui_txt_option_power_test="Power Test";
@@ -174,7 +174,7 @@ var gui_txt_option_sys_tty_read="TTY Read Test";
 var gui_txt_option_sys_tty_write="TTY Write Test";
 
 // Dumping
-var gui_txt_preset_chains_dumping="Dumping";
+var gui_txt_preset_chains_dumping="* Dumping *";
 var gui_txt_option_system_info_multi_dump="System Info Multi Dump";
 var gui_txt_option_dump_lv2_syscall_table="Dump LV2 Syscall Table";
 var gui_txt_option_mem_dump_test="Dump Raw VSH Memory";
@@ -184,24 +184,24 @@ var gui_txt_option_sys_net_dump="SysNet Dump";
 var gui_txt_option_dump_idps_from_flash="Dump IDPS From Flash";
 
 // File System
-var gui_txt_preset_chains_file_system="File System";
+var gui_txt_preset_chains_file_system="* File System *";
 var gui_txt_option_db_rebuild="Database Rebuild";
 var gui_txt_option_file_read_write_test="Read/Write File Test";
 var gui_txt_option_dir_read_write_test="Read/Write Directory Test";
 
 // Fun
-var gui_txt_preset_chains_fun="Fun";
+var gui_txt_preset_chains_fun="* Fun *";
 var gui_txt_option_fun_test="Beep Test";
 
 // Other Syscall Chains
 
 // Memory/Syatem
 var gui_txt_syscall_group_mem_sys="Memory/System: ";
-var gui_txt_syscall_chains_mem_sys="Memory";
+var gui_txt_syscall_chains_mem_sys="* Memory *";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
-var gui_txt_syscall_chains_storage="Storage";
+var gui_txt_syscall_chains_storage="* Storage *";
 var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
 var gui_txt_option_sys_storage_open="sys_storage_open";
 var gui_txt_option_sys_storage_read="sys_storage_read";
@@ -222,21 +222,21 @@ var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
 var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
-var gui_txt_syscall_chains_system="System";
+var gui_txt_syscall_chains_system="* System *";
 var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Process/Thread: ";
-var gui_txt_syscall_chains_proc_thread="Process";
+var gui_txt_syscall_chains_proc_thread="* Process *";
 var gui_txt_option_sys_process_exit="sys_process_exit";
 var gui_txt_option_sys_process_kill="sys_process_kill";
 
-var gui_txt_syscall_chains_process="Proc ID";
+var gui_txt_syscall_chains_process="* Proc ID *";
 
 // Threads
-var gui_txt_syscall_chains_threads="Threads";
+var gui_txt_syscall_chains_threads="* Threads *";
 var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
 var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
 var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
@@ -246,11 +246,11 @@ var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
 var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
-var gui_txt_syscall_chains_thread_id="Thread ID";
+var gui_txt_syscall_chains_thread_id="* Thread ID *";
 
 // Network
 var gui_txt_syscall_group_network="Network: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
+var gui_txt_syscall_chains_sys_net="* sys_net *";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
 var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
@@ -260,7 +260,7 @@ var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Debugging: ";
-var gui_txt_syscall_chains_debug_sc="System Calls";
+var gui_txt_syscall_chains_debug_sc="* System Calls *";
 var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
@@ -269,12 +269,12 @@ var gui_txt_syscall_chains_led="* Select Chain *";
 var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
 var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
-var gui_txt_syscall_chains_led_color="Change Color";
+var gui_txt_syscall_chains_led_color="* Change Color *";
 var gui_txt_option_led_color_green="Green";
 var gui_txt_option_led_color_yellow_red="Yellow/Red";
 var gui_txt_option_led_color_off="Off";
 
-var gui_txt_syscall_chains_led_action="Change Action";
+var gui_txt_syscall_chains_led_action="* Change Action *";
 var gui_txt_option_led_action_on="On";
 var gui_txt_option_led_action_off="Off";
 var gui_txt_option_led_action_blink_fast="Blink Fast";
@@ -282,7 +282,7 @@ var gui_txt_option_led_action_blink_slow="Blink Slow";
 
 // Beep Parameters
 var gui_txt_syscall_group_beep_params="Beep Parameters: ";
-var gui_txt_syscall_chains_beeps="# of Beeps";
+var gui_txt_syscall_chains_beeps="* # of Beeps *";
 var gui_txt_option_beep_off="Turn Off";
 var gui_txt_option_beep_3="3 Beeps";
 var gui_txt_option_beep_2="2 Beeps";
@@ -293,8 +293,8 @@ var gui_txt_option_beep_flatline="Flatline";
 
 // Memory Dump
 var gui_txt_syscall_group_memdump="Memory Dump:";
-var gui_txt_memdump_addresses="MemDump Address";
-var gui_txt_memdump_size="MemDump Size";
+var gui_txt_memdump_addresses="* MemDump Address *";
+var gui_txt_memdump_size="* MemDump Size *";
 var gui_txt_memdump_range_presets="Presets:";
 var gui_txt_option_memdump_presets_default="* No Preset Selected *";
 
@@ -308,8 +308,8 @@ var gui_txt_user_id_new="User ID Set To: ";
 var gui_txt_home_path_new="\n\nNew Home Path Is: \n\n";
 
 var gui_txt_group_permissions="Permissions:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
+var gui_txt_option_chmod="* chmod *";
+var gui_txt_option_chown="* chown *";
 
 var gui_txt_group_filesize="File Size:";
 var gui_txt_group_titleid="TitleID:";
@@ -322,7 +322,7 @@ var gui_txt_group_path_source="Source:";
 var gui_txt_group_path_destination="Destination: ";
 
 // XMB Transfer
-var gui_txt_syscall_group_xmb_transfer="XMB Transfer Option ";
+var gui_txt_syscall_group_xmb_transfer="* XMB Transfer Option *";
 var gui_txt_option_xmb_photo="Photo";
 var gui_txt_option_xmb_music="Music";
 var gui_txt_option_xmb_video="Video";
@@ -336,11 +336,11 @@ var gui_txt_group_payload_type_help="Replace default payloads with your own file
 
 // String Search
 var gui_txt_group_string_search="Search:";
-var gui_txt_option_search_size="Size";
-var gui_txt_option_search_base="Base";
-var gui_txt_option_search_stack="Stack";
-var gui_txt_option_search_range="Range";
-var gui_txt_option_search_loops="Loops";
+var gui_txt_option_search_size="* Size *";
+var gui_txt_option_search_base="* Base *";
+var gui_txt_option_search_stack="* Stack *";
+var gui_txt_option_search_range="* Range *";
+var gui_txt_option_search_loops="* Loops *";
 
 var gui_chk_search_verify_jumps="Verify Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
