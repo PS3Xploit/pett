@@ -4,6 +4,10 @@
 // Translation Credits: @HollowChris and @Caio99BR
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0001"
+var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
+
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
 
 var msg_detected_fw_1="Firmware Detectado: ";

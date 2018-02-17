@@ -4,6 +4,10 @@
 // Translation Credits: @valentinbreiz
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="utiliser CEX?\n\nSi vous choisissez non les offset DEX seront utilisé";
 
 var msg_detected_fw_1="FW détecté: ";
