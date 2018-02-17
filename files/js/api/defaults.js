@@ -127,6 +127,16 @@ function chainSucceed(msg)
 	if(debug_mode){logAdd(msg, log_div);}
 }
 
+function logFoundOffsets()
+{
+	logAdd("search_max_threshold: "+search_max_threshold+"\nsearch_max_threshold_backup: "+search_max_threshold_backup+"\nsearch_base_offset: "+search_base_offset+"\nsearch_base_offset_min: "+search_base_offset_min+"\nsearch_base_offset_max: "+search_base_offset_max+"\nsearch_base_offset_adjust: "+search_base_offset_adjust+"\nsearch_base_offset_adjust_jump2: "+search_base_offset_adjust_jump2+"\nsearch_base_offset_adjust_jump1: "+search_range_size+"\nsearch_max_threshold: "+search_range_size);
+}
+
+function logFlashType()
+{
+	logAdd(msg_search_flash_type_start+flash_type_text+msg_search_flash_type_end);
+}
+
 // Search Related
 function setDefaultSearchParams()
 {
@@ -136,42 +146,52 @@ function setDefaultSearchParams()
 		case 0:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x801B0000;
-		search_base_offset_min = 0x801B0000;
+		search_base_offset = 0x80200000;
+		search_base_offset_min = 0x80200000;
 		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xB0000;
-		search_base_offset_adjust_jump2=0x10000;
-		search_base_offset_adjust_jump1=0x8000;
+		search_base_offset_adjust=0xA0000;
+		search_base_offset_adjust_jump2=0x20000;
+		search_base_offset_adjust_jump1=0x30000;
 		search_range_size = 0x200000;
-		//alert(msg_search_flash_type_start+flash_type_text+msg_search_flash_type_end);
+		if(debug_mode){logFoundOffsets();}
+		if(debug_mode){logFlashType();}
 		break;
 		
 		// NOR
 		case 1:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x801B0000;
-		search_base_offset_min = 0x801B0000;
+		search_base_offset = 0x80200000;
+		search_base_offset_min = 0x80200000;
 		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xB0000;
-		search_base_offset_adjust_jump2=0x10000;
-		search_base_offset_adjust_jump1=0x8000;
+		search_base_offset_adjust=0xA0000;
+		search_base_offset_adjust_jump2=0x20000;
+		search_base_offset_adjust_jump1=0x30000;
 		search_range_size = 0x200000;
-		//alert(msg_search_flash_type_start+flash_type_text+msg_search_flash_type_end);
+		if(debug_mode){logFoundOffsets();}
+		if(debug_mode){logFlashType();}
 		break;
 		
 		// eMMC
 		case 2:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x801B0000;
-		search_base_offset_min = 0x801B0000;
+		// search_base_offset = 0x801B0000;
+		// search_base_offset_min = 0x801B0000;
+		// search_base_offset_max = search_base_offset_min+0x230000;
+		// search_base_offset_adjust=0xB0000;
+		// search_base_offset_adjust_jump2=0x10000;
+		// search_base_offset_adjust_jump1=0x8000;
+		// search_range_size = 0x200000;
+		search_base_offset = 0x80200000;
+		search_base_offset_min = 0x80200000;
 		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xB0000;
-		search_base_offset_adjust_jump2=0x10000;
-		search_base_offset_adjust_jump1=0x8000;
+		search_base_offset_adjust=0xA0000;
+		search_base_offset_adjust_jump2=0x20000;
+		search_base_offset_adjust_jump1=0x30000;
 		search_range_size = 0x200000;
-		//alert(msg_search_flash_type_start+flash_type_text+msg_search_flash_type_end);
+		if(debug_mode){logFoundOffsets();}
+		if(debug_mode){logFlashType();}
 		break;
 		
 		default:
@@ -394,11 +414,6 @@ function showFoundOffsets(search)
 	
 	recheckVerifyJump1();
 	
-	color="227700DA";
-	colortext="eb6c03";
-	colorActive="279947";
-	colorSuccess="ffffff";
-	
 	base_fp_color=color;
 	stack_frame_color=color;
 	jump_2_color=color;
@@ -414,6 +429,11 @@ function showFoundOffsets(search)
 	if(stack_frame_addr!=0){stack_frame_color=color;stack_frame_acolor=colorSuccess;}
 	if(jump_2_addr!=0){jump_2_color=color;jump_2_acolor=colorSuccess;}
 	if(jump_1_addr!=0){jump_1_color=color;jump_1_acolor=colorSuccess;}
+	
+	if((base_fp_addr!=0)&&(base_verified)){base_fp_acolor=colorVerified;}
+	if((stack_frame_addr!=0)&&(stk_verified)){stack_frame_acolor=colorVerified;}
+	if((jump_2_addr!=0)&&(j2_verified)){jump_2_acolor=colorVerified;}
+	if((jump_1_addr!=0)&&(j1_verified)){jump_1_acolor=colorVerified;}
 	
 	document.getElementById('outShowOffsets').innerHTML="<h4><b><font color=%22#"+colortext+"%22>"+msg_found_offsets+"</font><font color=%22#"+base_fp_color+"%22>base_fp: </font>"+"<font color=%22#"+base_fp_acolor+"%22>0x"+base_fp_addr.toString(16).toUpperCase()+"</font><font color=%22#"+stack_frame_color+"%22> | stack_frame_addr: </font>"+"<font color=%22#"+stack_frame_acolor+"%22>0x"+stack_frame_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_2_color+"%22> | jump_2_addr: </font>"+"<font color=%22#"+jump_2_acolor+"%22>0x"+jump_2_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_1_color+"%22> | jump_1_addr: </font>"+"<font color=%22#"+jump_1_acolor+"%22>0x"+jump_1_addr.toString(16).toUpperCase()+"</b></h4></font>";
 }
