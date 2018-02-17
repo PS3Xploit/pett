@@ -15,7 +15,7 @@ function showGuiText()
 {
 	// Top Text
 	document.getElementById('fwVerText').innerHTML=msg_detected_fw_1 + vshType + msg_detected_fw_2 + fwVersion + msg_detected_fw_4;
-	document.getElementById('gui_title').innerHTML=gui_title;
+	document.getElementById('gui_title').innerHTML=gui_title + gui_version;
 	document.getElementById('gui_team').innerHTML=gui_team;
 	document.getElementById('gui_credits').innerHTML=gui_credits;
 	

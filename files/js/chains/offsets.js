@@ -6,7 +6,10 @@
 function ps3chk(){
 	compat_msg_wrong_fw=compat_msg_wrong_fw1 + fwVersion + compat_msg_wrong_fw2;
 	compat_msg_success=compat_msg_success1 + fwVersion + compat_msg_success2;
-	
+
+	if (current_minimum_lang_revision != global_minimum_lang_revision)
+		alert(gui_incomplete_lang);
+
 	switch (uaStringCheck) {
 		case "PLAYSTATION":
 			isPlaystation = true;

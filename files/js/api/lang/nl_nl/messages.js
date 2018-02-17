@@ -4,6 +4,10 @@
 // Translation Credits: @CompanyFart
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="CEX gebruiken? nee selecteren zal DEX offsets gebruiken";
 
 var msg_detected_fw_1="gedetecteerde FW: ";
@@ -139,7 +143,7 @@ var msg_cannot_continue="Kan niet doorgaan .... Terugkeren!";
 var msg_invalid_title_id="ALERT!\n\nDe ingevoerde titel ID heeft een ongeldige grootte!\n\nGebruik standaard ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.6</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Veel dank aan xerpi voor de userland geheugenlek exploit ps3 port, zecoxao & Joonie voor hun vroege & voortdurende steun, mysis voor het documenteren van vsh exports & plug-ins, de psdevwiki-bijdragers natuurlijk, STLcardsWS voor zijn langdurige bijdrage & alle ps3 community hackers/devs verleden & heden, je weet wie je bent. Dankzij littlebalup en het idee en de bijbehorende js-implementatie die we gebruikten om de HDD-editie van de Dumpers en Flasher te maken. Ook dankzij B7U3 C50SS, Endless en 0x1991337 voor tutorial syscall testen en andere hulp! <font color='yellow'>Meer details & nieuws over <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Officiële website op <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
