@@ -5,8 +5,8 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0000";
-var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+var current_minimum_lang_revision="0001";
+var gui_incomplete_lang="Текущий перевод неполный, проверьте обновление или пропустите этот диалог";
 
 var msg_select_vsh_type="Использовать CEX?\n\nПри выборе Нет, будут использоваться смещения DEX";
 
