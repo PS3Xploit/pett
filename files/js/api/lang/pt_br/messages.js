@@ -250,7 +250,7 @@ var gui_txt_syscall_chains_thread_id="* ID da Tarefa *";
 
 // Network
 var gui_txt_syscall_group_network="Rede: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
+var gui_txt_syscall_chains_sys_net="* sys_net *";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
 var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
@@ -308,8 +308,8 @@ var gui_txt_user_id_new="ID do Usuário definido para: ";
 var gui_txt_home_path_new="\n\nO novo caminho para a pagina inicial é: \n\n";
 
 var gui_txt_group_permissions="Permissões:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
+var gui_txt_option_chmod="* chmod *";
+var gui_txt_option_chown="* chown *";
 
 var gui_txt_group_filesize="Tamanho do Arquivo:";
 var gui_txt_group_titleid="TitleID:";
@@ -322,7 +322,7 @@ var gui_txt_group_path_source="Origem:";
 var gui_txt_group_path_destination="Destino: ";
 
 // XMB Transfer
-var gui_txt_syscall_group_xmb_transfer="Opções de Transferência pela XMB";
+var gui_txt_syscall_group_xmb_transfer="* Opções de Transferência pela XMB *";
 var gui_txt_option_xmb_photo="Foto";
 var gui_txt_option_xmb_music="Música";
 var gui_txt_option_xmb_video="Vídeo";
@@ -336,11 +336,11 @@ var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquiv
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
-var gui_txt_option_search_size="Size";
-var gui_txt_option_search_base="Base";
-var gui_txt_option_search_stack="Stack";
-var gui_txt_option_search_range="Range";
-var gui_txt_option_search_loops="Loops";
+var gui_txt_option_search_size="* Size *";
+var gui_txt_option_search_base="* Base *";
+var gui_txt_option_search_stack="* Stack *";
+var gui_txt_option_search_range="* Range *";
+var gui_txt_option_search_loops="* Loops *";
 
 var gui_chk_search_verify_jumps="Vericar Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
