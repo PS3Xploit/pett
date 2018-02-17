@@ -4,6 +4,10 @@
 // Translation Credits: NiHuShu (@Roxu14)
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="Użyć CEX?\n\nWybranie NIE spowoduje użycie offsetów DEX";
 
 var msg_detected_fw_1="Wykryte FW: ";
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="MinVer Zwraca Wartość Zapisaną w Pamięci!\n\
 var msg_minver_start="Minimalna Wersja Systemu Twojego PS3 to: ";
 var msg_minver_mid=" i jest ona ";
 var msg_minver_end=" kompatybilna z CFW na ten moment!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Temperatury Procesora/Karty Graficznej (CELL/RSX) Zwracają Wartości Zapisane w Pamięci!\n\nNaciśnij Ponownie Wykonaj aby Odczytać i Wyświetlić!";
@@ -138,7 +143,7 @@ var msg_cannot_continue="Cannot Continue....Returning!";
 var msg_invalid_title_id="UWAGA!\n\nThe Title ID Entered Has An Invalid Size!\n\nUsing Default ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Podziękowania dla xerpi za userland memory exploit, zecoxao i Joonie za ich długotrwałe wsparcie, mysis za dokumentowanie zrzutów vsh i wtyczki, twórców psdevwiki bez których projekt by nie powstał, STLcardsWS za jego długotrwałe wsparcie i dla całej społeczności ps3 a zwłaszcza dla hakerów i programistów. Dzięki littlebalup za podrzucenie pomysłu i implementacje js dzięki której zrobiliśmy wersję HDD Dumperów i Flasherów. Dziękuję również B7U3 C50SS, Endless i 0x1991337 za tutorial, testowanie syscall i inną pomoc! <font color='yellow'>Więcej szczegółów i informacji na <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Oficjalna Strona Projektu <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

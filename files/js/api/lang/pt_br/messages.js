@@ -4,6 +4,10 @@
 // Translation Credits: @HollowChris and @Caio99BR
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0001"
+var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
+
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
 
 var msg_detected_fw_1="Firmware Detectado: ";
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="A versão mínima retorna um valor carregado na 
 var msg_minver_start="Sua versão mínima para Downgrade é ";
 var msg_minver_mid=" e é ";
 var msg_minver_end=" compatível com CFW!";
+var msg_minver_compat_not="NÃO";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="A temperatura do CELL/RSX (CPU/GPU) retorna um valor carregado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
@@ -138,7 +143,7 @@ var msg_cannot_continue="Não foi possível continuar... Retornando!";
 var msg_invalid_title_id="ALERTA!\n\nO Title ID inserido tem um tamanho invalido!\n\nUsando ID padrão.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Agradeço à @xerpi pelo port para o PS3 do exploit de vazamento de memória no ambiente de usuário, à @zecoxao e @Joonie pelo suporte inicial e contínuo, à @mysis por documentar os plugins e exports VSH, aos contribuidores da #psdevwiki claro, à @STLcardsWS pelo sua contribuição ao longo do tempo e toda a comunidade PS3 de hacker/devs do passado e do presente, vocês sabem quem são vocês. Obrigado também à @littlebalup pela ideia e a implementação js que nós usamos para fazer a edição HDD dos Dumpers e Flasher. Obrigrado também à @B7U3 C50SS, @Endless, e @0x1991337 pelo tutorial de teste da syscall e outras ajudas! <font color='yellow'>Mais detalhes e notícias: <a href='http://www.psx-place.com'>psx-place.com</a>. Site Oficial: <a href='http://ps3xploit.com'>ps3xploit.com</a></font>";
 
@@ -249,7 +254,7 @@ var gui_txt_syscall_chains_thread_id="* ID da Tarefa *";
 
 // Network
 var gui_txt_syscall_group_network="Rede: ";
-var gui_txt_syscall_chains_sys_net="* Ação pela Rede *";
+var gui_txt_syscall_chains_sys_net="* sys_net *";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
 var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
@@ -297,7 +302,7 @@ var gui_txt_memdump_size="* Tamanho do Dump da Memória *";
 var gui_txt_memdump_range_presets="Predefinições:";
 var gui_txt_option_memdump_presets_default="* Nenhuma predifinição selecionada *";
 
-var gui_txt_memdump_address_start="<br>Início:";
+var gui_txt_memdump_address_start="Início:";
 var gui_txt_memdump_address_end="Fim:";
 var gui_txt_btn_memdump_set_values="Definir novos valores";
 
@@ -307,11 +312,11 @@ var gui_txt_user_id_new="ID do Usuário definido para: ";
 var gui_txt_home_path_new="\n\nO novo caminho para a pagina inicial é: \n\n";
 
 var gui_txt_group_permissions="Permissões:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
+var gui_txt_option_chmod="* chmod *";
+var gui_txt_option_chown="* chown *";
 
 var gui_txt_group_filesize="Tamanho do Arquivo:";
-var gui_txt_group_titleid="<br>TitleID:";
+var gui_txt_group_titleid="TitleID:";
 
 var gui_txt_btn_set_filesize="Definir";
 var gui_txt_set_titleid="PS3XPLOIT";
@@ -321,25 +326,25 @@ var gui_txt_group_path_source="Origem:";
 var gui_txt_group_path_destination="Destino: ";
 
 // XMB Transfer
-var gui_txt_syscall_group_xmb_transfer="Opções de Transferência pela XMB";
+var gui_txt_syscall_group_xmb_transfer="* Opções de Transferência pela XMB *";
 var gui_txt_option_xmb_photo="Foto";
 var gui_txt_option_xmb_music="Música";
 var gui_txt_option_xmb_video="Vídeo";
 var gui_txt_option_xmb_jpg_btn="Pressione &#x25B3 Para JPG";
 var gui_txt_option_xmb_mp3_btn="Pressione &#x25B3 Para MP3";
 var gui_txt_option_xmb_mp4_btn="Pressione &#x25B3 Para MP4";
-var gui_txt_option_xmb_save_msg="<br>&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
+var gui_txt_option_xmb_save_msg="&#x2192 Arquivo &#x2192 Destino a Salvar &#x2192 Armazenamento do Sistema";
 
 var gui_txt_group_payload_type="Tipo de Payload ";
 var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquivos, usando os mesmos nomes, e coloque na pasta TEMPLATE/payloads/ do site HTML";
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
-var gui_txt_option_search_size="Size";
-var gui_txt_option_search_base="Base";
-var gui_txt_option_search_stack="Stack";
-var gui_txt_option_search_range="Range";
-var gui_txt_option_search_loops="Loops";
+var gui_txt_option_search_size="* Size *";
+var gui_txt_option_search_base="* Base *";
+var gui_txt_option_search_stack="* Stack *";
+var gui_txt_option_search_range="* Range *";
+var gui_txt_option_search_loops="* Loops *";
 
 var gui_chk_search_verify_jumps="Vericar Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";

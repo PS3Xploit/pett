@@ -1,8 +1,12 @@
-﻿// Mensajes Predeterminados PS3 [Spanish LA]
+// Mensajes Predeterminados PS3 [Spanish LA]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Translation Credits: @Ripp3RkoS
 
+
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
 
 var msg_select_vsh_type="Consola CEX?\n\nal Seleccionar NO se tomaran los offsets para DEX";
 		
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="MinVer Devuelve el valor cargado en memoria!\n\n
 var msg_minver_start="Tu Version Minima para Downgrade es  ";
 var msg_minver_mid="y este, a la Fecha ";
 var msg_minver_end=" es compatible con CFW!";
+var msg_minver_compat_not="NO";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
@@ -105,7 +110,7 @@ var msg_get_device_info2="\n\nUsa para cadena sys_storage_report_devices";
 // Debugging
 var msg_debug_placeholder="Lazy XP +1";
 
-var msg_stackframe_check="This will check the default stackframe for problems.\n\nIf it crashes or does not display a success message, then there is an issue!";
+var msg_stackframe_check="Esto Verificara los Marcos de pila por Errores.\n\nSi se cuelga o no muestra el Mensaje Exito, Entonces hay Problemas!";
 
 // String Matching
 var verify_fail="<font color='#7700DA'>FALLO: Cadenas No coinciden en memoria!</font>";
@@ -138,7 +143,7 @@ var msg_cannot_continue="No se puede Continuar....Regresando!";
 var msg_invalid_title_id="ALERTA!\n\nLa ID del Juego Introducido es Incorrecto!\n\nUsando ID Predeterminada.";
 
 // index GUI text
-var gui_title="Plantilla para Tutorial PS3Xploit <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="Plantilla para Tutorial PS3Xploit ";
 var gui_team="por PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Agradecimientos a xerpi por el port del exploit de memoria de usuario del PS3, a zecoxao y Joonie por su soporte temprano y continuo, mysis por documentar vsh exports y plugins, desde luego a los contribuidores del psdevwiki, a STLcardsWS por su prologada y efectiva contribucion y a toda la Comunidad PS3 de Hackers/Desarrolladores pasados y presentes, Tu sabes quien eres. Gracias tambien a littlebalup por dar la idea y la implementacion js que usamos para elaborar la edicion HDD de Dumpers y Flasher. gracias ademas a B7U3 C50SS, Endless, y 0x1991337 por testear los syscall del tutorial  y otra ayuda! <font color='yellow'>Mas Detalles y Noticias en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Sitio Oficial <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

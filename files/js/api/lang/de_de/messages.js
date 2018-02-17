@@ -4,6 +4,10 @@
 // Translation Credits: @FlatracerMOD [Flatracer]
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
 
 var msg_detected_fw_1="Festgestellte FW: ";
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="MinVer in den Arbeitsspeicher geladen!\n\nKlicke
 var msg_minver_start="Deine minimale Downgrade Version ist ";
 var msg_minver_mid=" und ist ";
 var msg_minver_end=" kompatibel mit einer CFW!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temperaturen in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
@@ -138,7 +143,7 @@ var msg_cannot_continue="Fortsetzen nicht möglich....Kehre zurück!";
 var msg_invalid_title_id="VORSICHT!\n\Die angegebene Title ID hat eine ungültige Größe!\n\Nutze Standard ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Vielen Dank an xerpi für den Userland Speicherleck Exploit PS3 Port, zecoxao & Joonie für ihre frühe und fortgesetzte Hilfe, mysis für die Dokumentation der vsh Exporte & plugins, natürlich die PSDevWiki Mitwirkende, STLcardsWS für sein langanhaltendes Mitwirken & alle PS3 Community Hacker/Entwickler frühere & heutige, ihr wisst wer ihr seid. Danke an littlebalup für die Idee und auch für die benötigten JavaScript Implementation, welche wir genutzt haben um die HDD Versionen der 'Dumper' und 'Flasher' zu erstellen. Ebenfalls Dank an B7U3 C50SS, Endless und 0x1991337 für syscall Tests und anderweitige Hilfe! <font color='yellow'>Mehr Infos und Neues auf <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Offizielle Webseite auf <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

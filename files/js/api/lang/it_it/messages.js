@@ -4,6 +4,10 @@
 // Translation Credits: @neno20115
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="Use CEX?\n\nSelecting NO will use DEX offsets";
 
 var msg_detected_fw_1="Rileva FW: ";
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="Valore di ritorno di MinVer caricato in Memoria!
 var msg_minver_start="La tua Versione minima di Downgrade e' ";
 var msg_minver_mid=" ed e' ";
 var msg_minver_end=" compatible with CFW at this time! compatibile con i CFW al momento";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="alore di ritorno di CELL/RSX Temp caricato in Memoria!\n\nPremi Esegui un'altra volta per leggerlo e visualizzarlo!";
@@ -138,7 +143,7 @@ var msg_cannot_continue="Impossibile continuare, uscendo....!";
 var msg_invalid_title_id="ALERT!\n\nThe Title ID Entered Has An Invalid Size!\n\nUsing Default ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Many thanks to xerpi for the userland memory leak exploit ps3 port, zecoxao & Joonie for their early & continued support, mysis for documenting vsh exports & plugins, the psdevwiki contributors of course, STLcardsWS for his long standing contribution & all ps3 community hackers/devs past & present, you know who you are. Thanks to littlebalup as well for providing the idea & the related js implementation we used to make the HDD edition of the Dumpers and Flasher. Also thanks to B7U3 C50SS, Endless, and 0x1991337 for tutorial syscall testing and other help! <font color='yellow'>More details & news on <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Official website at <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 

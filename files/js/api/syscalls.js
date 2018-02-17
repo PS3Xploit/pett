@@ -1,4 +1,4 @@
-﻿// PS3 Default Syscall Arguments
+// PS3 Default Syscall Arguments
 // PS3Xploit Team 2018 / ps3xploit.com
 
 		

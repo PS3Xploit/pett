@@ -8,9 +8,9 @@ http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-deb
 <br/>
 <br/>
 
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/yf38VIp.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/cNNA2Zq.png)
-![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/29bkrI3.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/MQloqyU.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/6LliP1e.png)
+![PS3 Exploitation Tutorial Template Preview](https://i.imgur.com/DULXvm0.png)
 
 
 
@@ -21,14 +21,16 @@ SELECT YOUR LANGUAGE AND THEN SET YOUR INDEX PAGE TO PS3 HOMEPAGE FOR BEST RESUL
 
 Multi-Language Translator Credits<br/>
 
+Arabic					@Azooz_yos<br/>
+Català Espanya			@minicm94123<br/>
 Dutch NL				@CompanyFart<br/>
 French					@valentinbreiz<br/>
 German					@FlatracerMod<br/>
+Hindi IN				@minicm94123<br/>
 Italian                	@neno20115<br/>
 Polish					@Roxu14<br/>
-Portuguese BR	@HollowChris/@Caio99BR<br/>
+Portuguese BR			@HollowChris/@Caio99BR<br/>
 Russian					@ErikPshat<br/>
-Spanish Català			@minicm94123<br/>
 Spanish LA             	@Ripp3RkoS<br/>
 Spanish Spain			@Ivoyko<br/>
 
@@ -37,8 +39,17 @@ Spanish Spain			@Ivoyko<br/>
 
 Version History<br/>
 
-v0.1.5
+v0.1.6
+- IN PROGRESS...
 
+v0.1.5
+- Updated Found and Verify Offset Colors
+- Added new variables for verify and a few others
+- Updated pt_br messages.js (thanks @Caio99BR)
+- Fixed size in last arg in minver chain (only 1st 4 bytes read though for alert) (thanks @hexcsl)
+- Added Hindi India Translation (thanks @minicm94123)
+- Added Arabic Translation (thanks @Azooz_yos)
+- Updated Language Selection Layout (thanks @ErikPshat)
 
 v0.1.4
 - Added Català Espanya Translation (thanks @minicm94123)

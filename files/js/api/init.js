@@ -1,4 +1,4 @@
-﻿// PS3 Init Variables
+// PS3 Init Variables
 // PS3Xploit Team 2018 / ps3xploit.com
 
 
@@ -10,12 +10,19 @@ var d = ("0" + n.getDate()).slice(-2);
 var br="<br>";
 var hr="<hr>";
 
+var cookie_get;
+var cookie_set;
+
 // Supported Firmware Versions
 var fwCompat = ["4.00","4.10","4.11","4.20","4.21","4.25","4.30","4.31","4.40","4.41","4.45","4.46","4.50","4.53","4.55","4.60","4.65","4.66","4.70","4.75","4.76","4.78","4.80","4.81","4.82"];
 var vshType="";
 
-// Auto-Reload Page Flag
-var auto_reload=false;
+// Offsets and Compatibility
+var isPlaystation = false;
+var disableFeatures = false;
+var ua = navigator.userAgent;
+var uaStringCheck = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple") - 7);
+var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
 
 // Set Offset Defaults
 var g_toc;
@@ -43,13 +50,141 @@ var g_mount_hdd1;
 var g_unk_game_debug_pafjob;
 var g_mount_flash;
 var g_tty_write;
+var g_create_new_user;
+var g_remove_act_dat;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
+
+var debug_mode=false;// log debug to screen
+var disable_trigger=false;// used for testing with alert
+
+var page_args_set=false;
+var disable_reboot=true;
+
+// Auto-Reload Page Flag
+var auto_reload=false;
+
+// Memory Searching
+var t_out=0;
+var total_loops=0;
+var max_loops=20;
+var failCount=0;
+var failCountMax=1;
+var search_max_threshold = 70*0x100000;
+var search_max_threshold_backup = 70*0x100000;
+var search_base_offset = 0x80200000;
+var search_base_offset_min = 0x80200000;
+var search_base_offset_max = search_base_offset_min+0x230000;
+var search_base_offset_adjust=0xA0000;
+var search_base_offset_adjust_jump2=0x20000;
+var search_base_offset_adjust_jump1=0x30000;
+var search_range_size = 0x200000;
+var found_offsets=[];// store found offsets
+
+// used for dynamic search
+var _addr;
+		
+// Default PlaceHolder
+var ph=0;
+
+// Path Address Pointers
+var base_fp;
+var stackframe_bin_fp;
+var usb_fp;
+var usb_fp2;
+var hdd_fp;
+var hdd_fp2;
+var path_fp;
+var path_fp2;
+var path_src_fp;
+var path_dest_fp;
+var file_mode_fp;
+
+// File Descriptor
+var usb_fd;
+var usb_fd2;
+var hdd_fd;
+var hdd_fd2;
+var fd;
+var fd2;
+
+// Used for string verification
+var base;
+var stk;
+var j2;
+var j1;
+var base_found=false;
+var stk_found=false;
+var j2_found=false;
+var j1_found=false;
+var base_verified=false;
+var stk_verified=false;
+var j2_verified=false;
+var j1_verified=false;
+var allOffsetsFound=false;
+var allOffsetsVerified=false;
+var result_msg="";
+
+// Required Jumps
+var stack_frame;
+var jump_2;
+var jump_1;
+var verify_offsets=true;
+var verify_stackframe=false;
+var offsets_verified=false;
+var stackframe_verified=false;
+
+// Default Addresses
+var base_fp_addr=0;
+var stackframe_bin_addr=0
+var usb_fp_addr=0;
+var usb_fp2_addr=0;
+var hdd_fp_addr=0;
+var hdd_fp2_addr=0;
+var path_fp_addr=0;
+var path_fp2_addr=0;
+var path_src_fp_addr=0;
+var path_dest_fp_addr=0;
+var fd_addr=0;
+var fd2_addr=0;
+var stack_frame_addr=0;
+var jump_2_addr=0;
+var jump_1_addr=0
+var file_mode_fp_addr=0;
+var write_bytes_addr=0;
+
+var hdd_fp_addr_backup=0;
+var usb_fp_addr_backup=0;
+
+// Search Offset Colors
+var color="#7700DA";
+var colortext="#EB6C03";
+var colorActive="#279947";
+var colorSuccess="#FFFFFF";
+var colorVerified="#EB6C03";
+var base_fp_color=color;
+var stack_frame_color=color;
+var jump_2_color=color;
+var jump_1_color=color;
+var base_fp_acolor=colorActive;
+var stack_frame_acolor=colorActive;
+var jump_2_acolor=colorActive;
+var jump_1_acolor=colorActive;
+
+var code_cave_1=0x20900000;// 0x20900000-0x209FFFFF
+var code_cave_2=0xC0900000;// 0xC0900000-0xC1C00000
 
 var restore_stack=0x8FD8DCC0;
 
 var isCompatCFW=false;
 var isFW356=false;
+
+var write_protect=true;
+
+var str2u_adjusted=false;// used for str2u
+
+var write_bytes=0x00000000;// used for db_rebuild and others
+var dummy_text="Hello From PS3Xploit Team!";
 
 // These used in chain at diff spots
 var restore_stack1=0x8FD8DCC0;
@@ -74,8 +209,6 @@ var restore_stack9=0x8FD8DCC0;
 //var restore_stack8=0x8FD8DCC8;
 //var restore_stack9=0x8FD8DCC9;
 
-var write_protect=true;
-
 var temp_read_addr=0x89F00000;
 
 var thread_id;
@@ -91,96 +224,6 @@ var out_idps="";
 var addr_psid;
 var out_psid="";
 
-// Path Address Pointers
-var base_fp;
-var usb_fp;
-var usb_fp2;
-var hdd_fp;
-var hdd_fp2;
-var path_fp;
-var path_fp2;
-var path_src_fp;
-var path_dest_fp;
-var file_mode_fp;
-
-// File Descriptor
-var usb_fd;
-var usb_fd2;
-var hdd_fd;
-var hdd_fd2;
-var fd;
-var fd2;
-
-var code_cave_1=0x20900000;// 0x20900000-0x209FFFFF
-var code_cave_2=0xC0900000;// 0xC0900000-0xC1C00000
-
-var write_bytes=0x00000000;// used for db_rebuild and others
-var dummy_text="Hello From PS3Xploit Team!";
-
-var _addr;// used for dynamic search
-
-// Used for string verification
-var base;
-var stk;
-var j2;
-var j1;
-var allOffsetsFound=false;
-var result_msg="";
-
-// Required Jumps
-var stack_frame;
-var jump_2;
-var jump_1;
-var verify_offsets=true;
-var verify_stackframe=false;
-var stackframe_verified=false;
-var offsets_verified=false;
-
-// Search Offset Colors
-var color="227700DA";
-var colortext="eb6c03";
-var colorActive="279947";
-var colorSuccess="ffffff";
-var base_fp_color=color;
-var stack_frame_color=color;
-var jump_2_color=color;
-var jump_1_color=color;
-var base_fp_acolor=colorActive;
-var stack_frame_acolor=colorActive;
-var jump_2_acolor=colorActive;
-var jump_1_acolor=colorActive;
-
-// Default Addresses
-var base_fp_addr=0;
-var usb_fp_addr=0;
-var usb_fp2_addr=0;
-var hdd_fp_addr=0;
-var hdd_fp2_addr=0;
-var path_fp_addr=0;
-var path_fp2_addr=0;
-var path_src_fp_addr=0;
-var path_dest_fp_addr=0;
-var fd_addr=0;
-var fd2_addr=0;
-var stack_frame_addr=0;
-var jump_2_addr=0;
-var jump_1_addr=0
-var file_mode_fp_addr=0;
-var write_bytes_addr=0;
-
-var hdd_fp_addr_backup=0;
-var usb_fp_addr_backup=0;
-
-var t_out=0;
-var total_loops=0;
-
-var str2u_adjusted=false;// used for str2u
-
-var cookie_get;
-var cookie_set;
-
-var debug_mode=false;// log debug to screen
-var disable_trigger=false;// used for testing with alert
 var log_div;
 var msg;// generic message text placeholder
 var user_id="00000001";
@@ -188,9 +231,6 @@ var user_home_path=""
 
 var msg_override_text="";// generic message text placeholder
 var msg_override_seen=false;
-		
-// Default PlaceHolder
-var ph=0;
 
 // Flash Types 0=NAND / 1=NOR / 2=EMMC
 var type=1;
@@ -213,8 +253,14 @@ var file_size=0x00000140;
 var file_size_display="0x00000140";
 var file_size_input=0x00000140;
 var file_size_input_addr=0x8A000100;
+var useAutoSize=false;
 
 var file_descriptor;
+var path_type;
+var path_src;
+var path_dest;
+var title_id="PS3XPLOIT";
+
 var db_rebuild_bytes=0x000003E9;
 var memdump_addr=0x80000000;
 var memdump_addr_temp=0x80000000;
@@ -249,24 +295,6 @@ var temp_rsx_hexc=0x00000000;
 var temp_rsx_hex_final=0x00000000;
 var temp_rsx_addr=0x8C000110;
 
-var title_id="PS3XPLOIT";
-
-
-// Memory Searching
-var max_loops=20;
-var failCount=0;
-var failCountMax=1;
-var search_max_threshold = 70*0x100000;
-var search_max_threshold_backup = 70*0x100000;
-var search_base_offset = 0x80200000;
-var search_base_offset_min = 0x80200000;
-var search_base_offset_max = search_base_offset_min+0x230000;
-var search_base_offset_adjust=0x120000;
-var search_base_offset_adjust_jump2=0x20000;
-var search_base_offset_adjust_jump1=0x30000;
-var search_range_size = 0x200000;
-var found_offsets=[];// store found offsets
-
 // Temp Addresses For Storing Values
 var temp_addr;
 var temp_addr_8A=0x8A000000;
@@ -276,19 +304,10 @@ var temp_addr_8D=0x8D000000;
 var temp_addr_8E=0x8E000000;
 var temp_addr_8F=0x8F000000;
 var temp_stack_write=0x80140000;
+var stackframe_storage=0x89000000;
 
 // gadget placeholder will shut down the console
 var gadget_temp=0x0C6730;
-
-// Offsets and Compatibility
-var isPlaystation = false;
-var disableFeatures = false;
-var ua = navigator.userAgent;
-var uaStringCheck = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple") - 7);
-var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
-
-var disable_reboot=true;
-var path_type;
 
 var payload_type;
 var payload_hex="payload";
@@ -296,10 +315,6 @@ var payload_hex_ext="jpg";
 var payload_hex_active=false;
 var payload_hex_select;
 var media_random="";
-
-var page_args_set=false;
-var path_src;
-var path_dest;
 
 var padding1=0x00000000;
 var padding2=0x00000000;

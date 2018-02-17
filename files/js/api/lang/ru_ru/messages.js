@@ -4,6 +4,10 @@
 // Translation Credits: @ErikPshat
 
 
+// After complete translate the language file update it to latest revision (same as en_us)
+var current_minimum_lang_revision="0000";
+var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+
 var msg_select_vsh_type="Использовать CEX?\n\nПри выборе Нет, будут использоваться смещения DEX";
 
 var msg_detected_fw_1="Обнаружена FW: ";
@@ -27,6 +31,7 @@ var msg_minver_loaded_into_mem="Возвращённое значение MinVer
 var msg_minver_start="Ваша минимальная версия  понижения ";
 var msg_minver_mid=" является ";
 var msg_minver_end=" совместимой с CFW в данное время!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Возвращённые значения CELL/RSX температуры загружены в память!\n\nНажмите снова кнопку «Выполнить цепочку» для чтения и отображения!";
@@ -138,7 +143,7 @@ var msg_cannot_continue="Не удаётся продолжить... Возвр�
 var msg_invalid_title_id="ВНИМАНИЕ!\n\nНе верный размер введённого Title ID!\n\nИспользуется ID по умолчанию.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template <font color='#FFF' size='3'>v0.1.5</font>";
+var gui_title="PS3 Exploitation Tutorial Template ";
 var gui_team="от команды PS3Xploit: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="Большое спасибо xerpi за порт эксплоита утечки памяти на PS3, zecoxao & Joonie за поддержку, mysis за документацию по vsh экспортам и плагинам, авторов psdevwiki, STLcardsWS за постоянный вклад, всё PS3 сообщество хакеров/разработчиков. Благодарим littlebalup за идеи с реализацией js для создания HDD-версии Дамперов и Флешера. Так же благодарим B7U3 C50SS, Endless и 0x1991337 за инструктаж по тестированию системных вызовов и другую помощь! <font color='yellow'>Больше деталей и новостей на <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Официальный сайт: <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
