@@ -39,10 +39,17 @@ Spanish Spain			@Ivoyko<br/>
 
 Version History<br/>
 
+v0.1.6
+- IN PROGRESS...
+
 v0.1.5
+- Updated Found and Verify Offset Colors
+- Added new variables for verify and a few others
+- Updated pt_br messages.js (thanks @Caio99BR)
+- Fixed size in last arg in minver chain (only 1st 4 bytes read though for alert) (thanks @hexcsl)
 - Added Hindi India Translation (thanks @minicm94123)
 - Added Arabic Translation (thanks @Azooz_yos)
-- Updated Language Selection Layout (thanks ErikPshat)
+- Updated Language Selection Layout (thanks @ErikPshat)
 
 v0.1.4
 - Added Català Espanya Translation (thanks @minicm94123)
