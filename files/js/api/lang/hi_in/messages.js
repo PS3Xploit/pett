@@ -138,7 +138,7 @@ var msg_cannot_continue="जारी रखने में असमर्थ.
 var msg_invalid_title_id="चेतावनी!\n\nID परिचय गेम गलत है!\n\nका उपयोग करते हुए ID चूक.";
 
 // index GUI text
-var gui_title="ट्यूटोरियल के लिए टेम्पलेट PS3Xploit <font color='#FFF' size='3'>v0.1.6</font>";
+var gui_title="ट्यूटोरियल के लिए टेम्पलेट PS3Xploit ";
 var gui_team="द्वारा PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 var gui_credits="उपयोगकर्ता मेमोरी के बंदरगाह के लिए एक्सर के लिए धन्यवाद PS3, को zecoxao, Nereidadev और Joonie इसकी प्रारंभिक और निरंतर सहायता के लिए, mysis दस्तावेजीकरण के लिए vsh exports y plugins, निश्चित रूप से के योगदानकर्ताओं के लिए psdevwiki, a STLcardsWS इसके प्रस्तावना और प्रभावी योगदान के लिए और पूरे समुदाय के लिए PS3 पिछले और वर्तमान में हैकर्स / डेवलपर्स का, आप जानते हैं कि आप कौन हैं. धन्यवाद करने के लिए भी littlebalup विचार और कार्यान्वयन देने के लिए js कि हम इस संस्करण को तैयार करने के लिए उपयोग करते हैं डंपर्स और फ्लैशर के एचडीडी इसके अतिरिक्त धन्यवाद B7U3 C50SS, Endless, y 0x1991337 परीक्षण करने के लिए syscall ट्यूटोरियल और अन्य मदद! <font color='yellow'>अधिक विवरण और समाचार में <a href='http://www.psx-place.com'>http://www.psx-place.com</a>.आधिकारिक वेबसाइट <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
