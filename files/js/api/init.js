@@ -176,6 +176,10 @@ var base_fp_acolor=colorActive;
 var stack_frame_acolor=colorActive;
 var jump_2_acolor=colorActive;
 var jump_1_acolor=colorActive;
+var base_fp_vcolor=colorVerified;
+var stack_frame_vcolor=colorVerified;
+var jump_2_vcolor=colorVerified;
+var jump_1_vcolor=colorVerified;
 
 var code_cave_1=0x20900000;// 0x20900000-0x209FFFFF
 var code_cave_2=0xC0900000;// 0xC0900000-0xC1C00000

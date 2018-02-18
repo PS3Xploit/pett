@@ -559,6 +559,11 @@ function showTemps()
 	}
 }
 
+function showFoundOffsetsMsg()
+{
+	document.getElementById('outShowOffsets').innerHTML="<h4><b><font color=%22#"+colortext+"%22>"+msg_found_offsets+"</font><font color=%22#"+base_fp_color+"%22>base_fp: </font>"+"<font color=%22#"+base_fp_acolor+"%22>0x"+base_fp_addr.toString(16).toUpperCase()+"</font><font color=%22#"+stack_frame_color+"%22> | stack_frame_addr: </font>"+"<font color=%22#"+stack_frame_acolor+"%22>0x"+stack_frame_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_2_color+"%22> | jump_2_addr: </font>"+"<font color=%22#"+jump_2_acolor+"%22>0x"+jump_2_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_1_color+"%22> | jump_1_addr: </font>"+"<font color=%22#"+jump_1_acolor+"%22>0x"+jump_1_addr.toString(16).toUpperCase()+"</b></h4></font>";
+}
+
 function showFoundOffsets(search)
 {
 	if(base_fp_addr<0){base_fp_addr=0;}
@@ -578,18 +583,21 @@ function showFoundOffsets(search)
 	jump_2_acolor=colorActive;
 	jump_1_acolor=colorActive;
 	
-	if(base_fp_addr!=0){base_fp_color=color;base_fp_acolor=colorSuccess;}
+	if(base_fp_addr!=0){base_fp_acolor=colorSuccess;}
 	if(base_fp_addr===0){stack_frame_acolor=colorActive;}
-	if(stack_frame_addr!=0){stack_frame_color=color;stack_frame_acolor=colorSuccess;}
-	if(jump_2_addr!=0){jump_2_color=color;jump_2_acolor=colorSuccess;}
-	if(jump_1_addr!=0){jump_1_color=color;jump_1_acolor=colorSuccess;}
+	if(stack_frame_addr!=0){stack_frame_acolor=colorSuccess;}
+	if(jump_2_addr!=0){jump_2_acolor=colorSuccess;}
+	if(jump_1_addr!=0){jump_1_acolor=colorSuccess;}
 	
-	if((base_fp_addr!=0)&&(base_verified)){base_fp_acolor=colorVerified;}
-	if((stack_frame_addr!=0)&&(stk_verified)){stack_frame_acolor=colorVerified;}
-	if((jump_2_addr!=0)&&(j2_verified)){jump_2_acolor=colorVerified;}
-	if((jump_1_addr!=0)&&(j1_verified)){jump_1_acolor=colorVerified;}
+	if(allOffsetsFound)
+	{
+		base_fp_acolor=colorVerified;
+		stack_frame_acolor=colorVerified;
+		jump_2_acolor=colorVerified;
+		jump_1_acolor=colorVerified;
+	}
 	
-	document.getElementById('outShowOffsets').innerHTML="<h4><b><font color=%22#"+colortext+"%22>"+msg_found_offsets+"</font><font color=%22#"+base_fp_color+"%22>base_fp: </font>"+"<font color=%22#"+base_fp_acolor+"%22>0x"+base_fp_addr.toString(16).toUpperCase()+"</font><font color=%22#"+stack_frame_color+"%22> | stack_frame_addr: </font>"+"<font color=%22#"+stack_frame_acolor+"%22>0x"+stack_frame_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_2_color+"%22> | jump_2_addr: </font>"+"<font color=%22#"+jump_2_acolor+"%22>0x"+jump_2_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_1_color+"%22> | jump_1_addr: </font>"+"<font color=%22#"+jump_1_acolor+"%22>0x"+jump_1_addr.toString(16).toUpperCase()+"</b></h4></font>";
+	showFoundOffsetsMsg();
 }
 
 // Enable and Disable Stuff
