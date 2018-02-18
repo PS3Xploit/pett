@@ -1267,6 +1267,10 @@ function useCustomStackFrame()
 		syscallFwriteAndExit(fs_get_mount_info_arg1,fs_get_mount_info_arg2,fs_get_mount_info_arg3,0,0,0,0,0,sc_sys_fs_get_mount_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_get_fs_info_dump_size,temp_addr_8C);
 		break;
 		
+		case "sys_sm_get_platform_info":
+		syscallFwriteAndExit(sys_sm_get_platform_info_ptr,0,0,0,0,0,0,0,sc_sys_sm_get_platform_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_sm_get_platform_info_size,temp_addr_8C);
+		break;
+		
 		// uses restore_stack1
 		case "sys_fs_mapped_allocate":
 		syscallAndExit(fs_mapped_allocate_arg1,fs_mapped_allocate_arg2,fs_mapped_allocate_arg3,0,0,0,0,0,sc_sys_fs_mapped_allocate,temp_addr_8A,temp_addr_8B);

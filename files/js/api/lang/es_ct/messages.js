@@ -199,7 +199,7 @@ var gui_txt_option_fun_test="Prova de xiulet";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Memòria / Sistema: ";
 var gui_txt_syscall_chains_mem_sys="memòria";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

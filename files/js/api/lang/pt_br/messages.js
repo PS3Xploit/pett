@@ -199,7 +199,7 @@ var gui_txt_option_fun_test="Teste do Beep";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Memória/Sistema: ";
 var gui_txt_syscall_chains_mem_sys="* Memória *";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

@@ -198,7 +198,7 @@ var gui_txt_option_fun_test="कसौटी Bips";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="मेमोरी / सिस्टम: ";
 var gui_txt_syscall_chains_mem_sys="स्मृति";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
