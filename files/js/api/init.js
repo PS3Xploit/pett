@@ -75,11 +75,17 @@ var search_max_threshold_backup = 70*0x100000;
 var search_base_offset = 0x80200000;
 var search_base_offset_min = 0x80200000;
 var search_base_offset_max = search_base_offset_min+0x230000;
-var search_base_offset_adjust=0xA0000;
+var search_base_offset_adjust=0x160000;
 var search_base_offset_adjust_jump2=0x20000;
 var search_base_offset_adjust_jump1=0x30000;
 var search_range_size = 0x200000;
-var found_offsets=[];// store found offsets
+
+// store found offsets
+var found_offsets=[];
+var base_offsets=[];
+var stack_offsets=[];
+var jump2_offsets=[];
+var jump1_offsets=[];
 
 // used for dynamic search
 var _addr;
@@ -170,6 +176,10 @@ var base_fp_acolor=colorActive;
 var stack_frame_acolor=colorActive;
 var jump_2_acolor=colorActive;
 var jump_1_acolor=colorActive;
+var base_fp_vcolor=colorVerified;
+var stack_frame_vcolor=colorVerified;
+var jump_2_vcolor=colorVerified;
+var jump_1_vcolor=colorVerified;
 
 var code_cave_1=0x20900000;// 0x20900000-0x209FFFFF
 var code_cave_2=0xC0900000;// 0xC0900000-0xC1C00000
