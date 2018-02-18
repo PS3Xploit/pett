@@ -8,9 +8,9 @@
 
 <h3 align="center">Preview Images</h3>
 
-<p align="center"><img src="https://i.imgur.com/MQloqyU.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/6LliP1e.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/DULXvm0.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/ZFZI3NP.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/nYGdjn6.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/7qgQbSD.png" width="75%"></p>
 
 <br/>
 
@@ -40,7 +40,7 @@ Spanish Spain	| es_sp | @[**Ivoyko**](https://twitter.com/Ivoyko)
 <h3>Version History</h3>
 
 v0.1.6
-* IN PROGRESS...
+* Updated Search Functions
 
 v0.1.5
 * Updated Found and Verify Offset Colors
