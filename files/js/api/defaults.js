@@ -271,7 +271,7 @@ function resetOffsetAddresses()
 	fd2_addr=0;
 	file_mode_fp_addr=0;
 	
-	if(!base_verified){base_fp_addr=0;jump_2_addr=0;}
+	if(!base_verified){base_fp_addr=0;}
 	if(!stk_verified){stack_frame_addr=0;}
 	if(!j2_verified){jump_2_addr=0;}
 	if(!j1_verified){jump_1_addr=0}
