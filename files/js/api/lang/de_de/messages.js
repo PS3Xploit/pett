@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0003";
+var current_minimum_lang_revision="0004";
 var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
@@ -101,15 +101,12 @@ var msg_prerelease="DAS IST EINE FRÜHE VORSCHAU!\n\nUNTERSTÜTZUNG ÄLTERER FIR
 var msg_anti_piracy="HAFTUNGSAUSSCHLUSS\n\nWir billigen oder befürworten Piraterie jeglicher Art NICHT!\n\nDurch die Verwendung dieser Anleitung und den Klick auf JA stimmst du zu diese AUSSCHLIEẞLICH für Gründe der Bildung zu verwenden!";
 var msg_anti_piracy_edat="ANTI-PIRATERIE HAFTUNGSAUSSCHLUSS!\n\nDiese Option ist ausschließlich für Test/Entwicklungs-Zwecke gedacht und sollten nicht anderweitig missbraucht werden!\n\nDurch den Klick auf JA stimmst du zu diese AUSSCHLIEẞLICH für gekaufte Titel zu verwenden!";
 
-var msg_thread_name="Hallo_Von_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="Geräte in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
 var msg_get_device_info1="Geräte: ";
 var msg_get_device_info2="\n\nNutze das für sys_storage_report_devices Ketten";
 
 // Debugging
-var msg_debug_placeholder="Lazy XP +1";
 
 var msg_stackframe_check="Das wird den standard Datensatz auf Probleme untersuchen.\n\nSollte es abstürzen oder keine Erfolg-Nachricht anzeigen gibt es ein Problem!";
 
@@ -121,7 +118,6 @@ var verify_skip="<font color='#2a1003'>ERFOLG: Verifiziere Zeichenfolgen nicht i
 var msg_search_flash_type_start="Suchparameter gesetzt auf ";
 var msg_search_flash_type_end=" Speicher Typ!";
 
-var msg_check_memory="checkMemory: ";
 var msg_chk_mem_arg_error="checkMemory Funktion - Argumente Fehler! Größe=0x";
 var msg_malformed_html="Fehlerhaftes HTML!";
 var msg_string_located=" Gefunden an Offset: 0x";
@@ -131,10 +127,6 @@ var msg_string_not_located="Konnte in der Reichweite nicht gefunden werden";
 var msg_found_offsets="Gefundene Offsets: ";
 var msg_verified_offsets="Verifizierte Offsets: ";
 var offset_find_success="erfolg";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Seiten Argumente nicht gesetzt!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="Keine ROP Kette Hex ausgewählt\n\nNutze die Drop-Down Liste um eine auszuwählen";
@@ -145,16 +137,13 @@ var msg_invalid_title_id="VORSICHT!\n\Die angegebene Titel-ID hat eine ungültig
 
 // index GUI text
 var gui_title="PS3 Exploitation Tutorial Template ";
-var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="by ";
 var gui_credits="Vielen Dank an xerpi für den Userland Speicherleck Exploit PS3 Port, zecoxao & Joonie für ihre frühe und fortgesetzte Hilfe, mysis für die Dokumentation der vsh Exporte & plugins, natürlich die PSDevWiki Mitwirkende, STLcardsWS für sein langanhaltendes Mitwirken & alle PS3 Community Hacker/Entwickler frühere & heutige, ihr wisst wer ihr seid. Danke an littlebalup für die Idee und auch für die benötigten JavaScript Implementation, welche wir genutzt haben um die HDD Versionen der 'Dumper' und 'Flasher' zu erstellen. Ebenfalls Dank an B7U3 C50SS, Endless und 0x1991337 für syscall Tests und anderweitige Hilfe! <font color='yellow'>Mehr Infos und Neues auf <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Offizielle Webseite auf <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Standard Einstellungen:";
 var gui_chk_disable_trigger="Auslöser deaktivieren:";
 var gui_chk_write_protect="Schreibschutz:";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Neustart Modus:";
@@ -204,63 +193,30 @@ var gui_txt_option_fun_test="Signalton Test";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Arbeitsspeicher/System: ";
 var gui_txt_syscall_chains_mem_sys="Arbeitsspeicher";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="Speicher";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="System";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Prozess/Thread: ";
 var gui_txt_syscall_chains_proc_thread="Prozess";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="Prozess ID";
 
 // Threads
 var gui_txt_syscall_chains_threads="Threads";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="Thread ID";
 
 // Network
 var gui_txt_syscall_group_network="Netzwerk: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -272,8 +228,6 @@ var gui_txt_option_debug_placeholder="beep_test";
 // LED Control
 var gui_txt_syscall_group_led="LED Kontrolle:";
 var gui_txt_syscall_chains_led="* Kette auswählen *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="Farbe ändern";
 var gui_txt_option_led_color_green="Grün";
@@ -314,14 +268,11 @@ var gui_txt_user_id_new="Benutzer ID gesetzt zu: ";
 var gui_txt_home_path_new="\n\nNeuer 'HOME' Pfad ist: \n\n";
 
 var gui_txt_group_permissions="Berechtigungen:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Dateigröße:";
 var gui_txt_group_titleid="Titel-ID:";
 
 var gui_txt_btn_set_filesize="Festlegen";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Festlegen";
 
 var gui_txt_group_path_source="Quelle:";
@@ -351,8 +302,6 @@ var gui_txt_option_search_loops="Wiederholungen";
 var gui_chk_search_verify_jumps="Jumps verifizieren:";
 var gui_chk_search_verify_stackframe="Datensatz:";
 var gui_chk_search_debug_output="Debug:";
-
-var gui_txt_search_found_offsets="Offsets gefunden: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="ROP-Kette initialisieren";
