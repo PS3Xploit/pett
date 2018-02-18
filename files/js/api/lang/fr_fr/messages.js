@@ -1,7 +1,7 @@
 ﻿// PS3 Default Messages [French FRA]
 // PS3Xploit Team 2018 / ps3xploit.com
 
-// Translation Credits: @valentinbreiz
+// Translation Credits: @valentinbreiz / @humanshield85
 
 
 // After complete translate the language file update it to latest revision (same as en_us)

@@ -25,7 +25,7 @@ Language		| Code  | Translators
 Arabic			| ar_ar | @[**Azooz_yos**](https://twitter.com/Azooz_yos)
 Català Espanya	| es_ct | @[**minicm94123**](https://twitter.com/minicm94123)
 Dutch NL		| nl_nl | @[**CompanyFart**](https://twitter.com/CompanyFart)
-French			| fr_fr | @[**valentinbreiz**](https://twitter.com/valentinbreiz)
+French			| fr_fr | @[**valentinbreiz**](https://twitter.com/valentinbreiz) / @[**humanshield85**](https://twitter.com/humanshield85)
 German DE		| de_de | @[**FlatracerMod**](https://twitter.com/FlatracerMod)
 Hindi IN		| hi_in | @[**minicm94123**](https://twitter.com/minicm94123)
 Italian			| it_it | @[**neno20115**](https://twitter.com/neno20115)
