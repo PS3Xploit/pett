@@ -2523,6 +2523,11 @@ function execSuccessMessage(chain)
 			reload_page.focus();
 			break;
 			
+			case "sys_sm_get_platform_info":
+			msg_success_text=success_chain_exec_syscall_dump;
+			reload_page.focus();
+			break;
+			
 			case "minver_check":
 			msg_success_text=success_chain_exec_press_again;
 			break;
