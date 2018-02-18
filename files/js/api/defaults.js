@@ -256,6 +256,27 @@ function resetSearchOffsetMsg()
 	document.getElementById('result').innerHTML=result_msg;
 }
 
+function resetOffsetAddresses()
+{
+	// Reset Addresses
+	usb_fp_addr=0;
+	usb_fp2_addr=0;
+	hdd_fp_addr=0;
+	hdd_fp2_addr=0;
+	path_fp_addr=0;
+	path_fp2_addr=0;
+	path_src_fp_addr=0;
+	path_dest_fp_addr=0;
+	fd_addr=0;
+	fd2_addr=0;
+	file_mode_fp_addr=0;
+	
+	if(!base_verified){base_fp_addr=0;jump_2_addr=0;}
+	if(!stk_verified){stack_frame_addr=0;}
+	if(!j2_verified){jump_2_addr=0;}
+	if(!j1_verified){jump_1_addr=0}
+}
+
 function searchResetTimeout()
 {
 	if(t_out!=0){clearTimeout(t_out);}
