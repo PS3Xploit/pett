@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Bolcar memòria Raw VSH";
 var gui_txt_option_get_open_psid="bolcar PSID";
 var gui_txt_option_dump_idps_from_mem="Bolcar IDPs des VSH";
 var gui_txt_option_sys_net_dump="bolcar Sysnet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Bolcar IDPs des Flash";
 
 // File System

@@ -186,6 +186,7 @@ var gui_txt_option_mem_dump_test="Dump Raw VSH Meاستخراج";
 var gui_txt_option_get_open_psid="استخراج PSID";
 var gui_txt_option_dump_idps_from_mem="استخراج IDPS من VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="استخراج IDPS من سعه التخزين خارجية";
 
 // File System

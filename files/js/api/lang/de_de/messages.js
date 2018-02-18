@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Rohen VSH Speicher auslesen";
 var gui_txt_option_get_open_psid="PSID auslesen";
 var gui_txt_option_dump_idps_from_mem="IDPS aus der VSH auslesen";
 var gui_txt_option_sys_net_dump="SysNet auslesen";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="IDPS aus dem Speicher auslesen";
 
 // File System

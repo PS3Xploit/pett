@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Zrzuć Zawartość Pamięci VSH";
 var gui_txt_option_get_open_psid="Zrzuć PSID";
 var gui_txt_option_dump_idps_from_mem="Zrzuć IDPS z VSH";
 var gui_txt_option_sys_net_dump="Zrzuć SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Zrzuć IDPS Z Pamięci Flash";
 
 // File System

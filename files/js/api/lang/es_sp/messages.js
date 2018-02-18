@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Volcar memoria Raw VSH";
 var gui_txt_option_get_open_psid="Volcar PSID";
 var gui_txt_option_dump_idps_from_mem="Volcar IDPS desde VSH";
 var gui_txt_option_sys_net_dump="Volcar SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Volcar IDPS desde Flash";
 
 // File System

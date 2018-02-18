@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Raw Dump pela Memória VSH";
 var gui_txt_option_get_open_psid="PSID Dump";
 var gui_txt_option_dump_idps_from_mem="IDPS Dump pela Memória VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 
 // File System

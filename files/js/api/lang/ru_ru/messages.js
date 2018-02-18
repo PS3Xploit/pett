@@ -185,6 +185,7 @@ var gui_txt_option_mem_dump_test="Raw дамп VSH памяти";
 var gui_txt_option_get_open_psid="Дамп PSID";
 var gui_txt_option_dump_idps_from_mem="Дамп IDPS из VSH";
 var gui_txt_option_sys_net_dump="Дамп SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Дамп IDPS из флеш";
 
 // File System
