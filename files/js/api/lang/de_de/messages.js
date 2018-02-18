@@ -5,8 +5,8 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0000";
-var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+var current_minimum_lang_revision="0001";
+var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
 
@@ -47,7 +47,7 @@ var msg_memdump_start_addr="\nStart Addresse: 0x";
 var msg_memdump_end_addr="\nEnd Addresse: 0x";
 
 // Warnings
-var msg_fd_close_warning="File Descriptoren werden aktuell nicht selbstständig geschlossen!";
+var msg_fd_close_warning="Dateideskriptoren werden aktuell nicht selbstständig geschlossen!";
 var msg_remove_dir_warning="WARNING!\n\nSei vorsichtig beim verwenden dieses syscalls.\n\nDu könntest benötigte Ordner löschen und wärst gezwungen die Firmware erneut zu installieren!";
 var msg_warning_write_protection="Schreibschutz deaktiviert!\n\nMit Vorsicht fortfahren!!!";
 
@@ -59,7 +59,7 @@ var msg_mount_test="** IN TEST PHASE **!\n\Das wird /dev_hdd1/ einbinden\n\nNach
 var msg_default_size="Nutze Standardgröße 0x140";
 var msg_new_size="Neue Dateigröße: ";
 var msg_destination_path_set_new="Neuer Pfad ist gesetzt zu:\n\n";
-var msg_destination_path_incorrect="Der Ziel Pfad ist inkorrekt!\n\nDer Pfad muss gesetzt sein, bevor die Title ID geändert wird.";
+var msg_destination_path_incorrect="Der Ziel Pfad ist inkorrekt!\n\nDer Pfad muss gesetzt sein, bevor die Titel-ID geändert wird.";
 
 // Trigger Messages
 var trigger_msg="Löse den exploit aus...";
@@ -96,7 +96,7 @@ var compat_msg_devs="Das ist nur für Entwickler gedacht!\n\nDie CEX Offsets mü
 var experimental="Stelle diese Seite als Startseite ein!\n\nVERWENDUNG AUF EIGENE GEFAHR!\nEs könnten Fehler existieren und möglicherweiße funktioniert nicht alles!\n\nAlle Modelle mit Firmware 4.xx CEX und 4.81 DEX werden unterstützt";
 
 // Other Messages
-var msg_prerelease="DAS IST EINE FRÜHE VORSCHAU VERÖFFENTLICHUNG!\n\nUNTERSTÜTZUNG ÄLTERER FIRMWARES WURDE NUR TEILWEISE IMPLEMENTIERT!\n\nNUR 4.81/4.82, BIS ZUR NÄCHSTEN VERÖFFENTLICHUNG!";
+var msg_prerelease="DAS IST EINE FRÜHE VORSCHAU!\n\nUNTERSTÜTZUNG ÄLTERER FIRMWARES WURDE NUR TEILWEISE IMPLEMENTIERT!\n\nNUR 4.81/4.82, BIS ZUR NÄCHSTEN VERÖFFENTLICHUNG!";
 var msg_anti_piracy="HAFTUNGSAUSSCHLUSS\n\nWir billigen oder befürworten Piraterie jeglicher Art NICHT!\n\nDurch die Verwendung dieser Anleitung und den Klick auf JA stimmst du zu diese AUSSCHLIEẞLICH für Gründe der Bildung zu verwenden!";
 var msg_anti_piracy_edat="ANTI-PIRATERIE HAFTUNGSAUSSCHLUSS!\n\nDiese Option ist ausschließlich für Test/Entwicklungs-Zwecke gedacht und sollten nicht anderweitig missbraucht werden!\n\nDurch den Klick auf JA stimmst du zu diese AUSSCHLIEẞLICH für gekaufte Titel zu verwenden!";
 
@@ -140,7 +140,7 @@ var msg_no_chain_selected="Keine ROP Kette Hex ausgewählt\n\nNutze die Drop-Dow
 var msg_media_not_supported="Diese Mediumauswahl ist noch nicht implementiert!";
 var msg_cannot_continue="Fortsetzen nicht möglich....Kehre zurück!";
 
-var msg_invalid_title_id="VORSICHT!\n\Die angegebene Title ID hat eine ungültige Größe!\n\Nutze Standard ID.";
+var msg_invalid_title_id="VORSICHT!\n\Die angegebene Titel-ID hat eine ungültige Größe!\n\Nutze Standard ID.";
 
 // index GUI text
 var gui_title="PS3 Exploitation Tutorial Template ";
@@ -317,11 +317,11 @@ var gui_txt_option_chmod="chmod";
 var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Dateigröße:";
-var gui_txt_group_titleid="Title ID:";
+var gui_txt_group_titleid="Titel-ID:";
 
-var gui_txt_btn_set_filesize="Setzen";
+var gui_txt_btn_set_filesize="Festlegen";
 var gui_txt_set_titleid="PS3XPLOIT";
-var gui_txt_btn_set_titleid="Setzen";
+var gui_txt_btn_set_titleid="Festlegen";
 
 var gui_txt_group_path_source="Quelle:";
 var gui_txt_group_path_destination="Ziel: ";
