@@ -1139,6 +1139,10 @@ function useCustomStackFrame()
 		syscallFwriteAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_arg3,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,0x10,addr_idps);
 		break;
 		
+		case "sys_sm_get_platform_info":
+		syscallFwriteAndExit(sys_sm_get_platform_info_ptr,0,0,0,0,0,0,0,sc_sys_sm_get_platform_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_sm_get_platform_info_size,sys_sm_get_platform_info_ptr);
+		break;
+		
 		/*
 		case "dump_idps_from_flash":
 		a1_r4=sc_sso_mode;
@@ -1265,10 +1269,6 @@ function useCustomStackFrame()
 		
 		case "sys_fs_get_mount_info":
 		syscallFwriteAndExit(fs_get_mount_info_arg1,fs_get_mount_info_arg2,fs_get_mount_info_arg3,0,0,0,0,0,sc_sys_fs_get_mount_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_get_fs_info_dump_size,temp_addr_8C);
-		break;
-		
-		case "sys_sm_get_platform_info":
-		syscallFwriteAndExit(sys_sm_get_platform_info_ptr,0,0,0,0,0,0,0,sc_sys_sm_get_platform_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_sm_get_platform_info_size,temp_addr_8C);
 		break;
 		
 		// uses restore_stack1
@@ -1773,6 +1773,12 @@ function setChainOptions(chain)
 		case "sys_storage_report_devices":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest",path_storage_report_devices_dump);
+		init_rop.focus();
+		break;
+		
+		case "sys_sm_get_platform_info":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest",sys_sm_get_platform_info_dump);
 		init_rop.focus();
 		break;
 		
