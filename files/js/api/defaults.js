@@ -41,6 +41,54 @@ function setDefaults()
 
 }
 
+function initRopDefaults()
+{
+	// Store Selected Flash Type Backup For Searching
+	ftype=type;
+	
+	str2u_adjusted=false;// reset str2u adjust
+	
+	// Reset Flag
+	allOffsetsFound=false;
+	
+	// Set some values from web page
+	setPathNames();
+	
+	// Check For Default Page Settings
+	if(default_settings){setArgsFromPage();}
+	
+	// Check For Input Values
+	if(chain_stackframe===""){alert(msg_no_chain_selected);marked_hex.focus();return;}
+	
+	toggleDisableButtons(true);
+	hideElement("debug-alert", true);// hide debug output button by default
+	
+	// Check Flash Type
+	switch(type)
+	{
+		case 0:
+		flash_type=nand_flag;
+		st_sec=0x204;
+		break;
+		case 1:
+		flash_type=nor_flag;
+		st_sec=0x178;
+		break;
+		case 2:
+		flash_type=emmc_flag;
+		st_sec=0x204;
+		break;
+	}
+	
+	// Log Entry
+	if(debug_mode){log_div = logEntry();}
+	
+	// Reset Timeout Value
+	t_out=0;
+	
+	total_loops++;
+}
+
 function toggleAutoReload()
 {
 	if(auto_reload)
@@ -271,10 +319,95 @@ function resetOffsetAddresses()
 	fd2_addr=0;
 	file_mode_fp_addr=0;
 	
+	found_offsets=[];
+	if(base_fp_addr!=0){base_offsets.push(base_fp_addr);}else{base_offsets=[];}
+	if(stack_frame_addr!=0){stack_offsets.push(stack_frame_addr);}else{stack_offsets=[];}
+	if(jump_2_addr!=0){jump2_offsets.push(jump_2_addr);}else{jump2_offsets=[];}
+	if(jump_1_addr!=0){jump1_offsets.push(jump_1_addr);}else{jump1_offsets=[];}
+	
 	if(!base_verified){base_fp_addr=0;}
 	if(!stk_verified){stack_frame_addr=0;}
 	if(!j2_verified){jump_2_addr=0;}
 	if(!j1_verified){jump_1_addr=0}
+	
+	/*
+	for(x=0;x<base_offsets.length;x+=1)
+	{
+		if(base_offsets[x]===exploit_addr)
+		{
+			
+		}
+	}
+	*/
+}
+
+function setDefaultPointerValues()
+{
+	usb_fp=0x40404040;
+	usb_fp2=0x41414141;
+	hdd_fp=0x0000001C;
+	hdd_fp2=0x43434343;
+	usb_fd2=0x45454545;
+	hdd_fd=0x46464646;
+	hdd_fd2=0x47474747;
+	fd=0x48484848;
+	fd2=0x49494949;
+	magic=0x4A4A4A4A;
+}
+
+function setCustomPointerValues()
+{
+	// Set bytes to write for db_rebuild and restore_stack for others
+	if(chain_stackframe==="db_rebuild"){write_bytes=db_rebuild_bytes;}else{write_bytes=restore_stack;}
+	
+	// Set values for AutoSize Read/Write Chains
+	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
+	
+	// Set mount params
+	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2=" CELL_FS_SIMPLEFS";path_src_fp=" /dev_hdd1";}
+}
+
+function setPointerOffsets()
+{
+	file_mode_fp_addr=base_fp_addr+0x2;
+	write_bytes_addr=base_fp_addr+0x4;
+	usb_fp_addr=base_fp_addr+0x8;
+	usb_fp2_addr=base_fp_addr+0xC;
+	hdd_fp_addr=base_fp_addr+0x10;
+	hdd_fp2_addr=base_fp_addr+0x14;
+	usb_fd_addr=base_fp_addr+0x18;
+	usb_fd2_addr=base_fp_addr+0x1C;
+	hdd_fd_addr=base_fp_addr+0x20;
+	hdd_fd2_addr=base_fp_addr+0x24;
+	fd_addr=base_fp_addr+0x28;
+	fd2_addr=base_fp_addr+0x2C;
+	magic_addr=base_fp_addr+0x30;
+	
+	// Path Strings
+	path_fp_addr=base_fp_addr+0x38;
+	path_fp2_addr=path_fp_addr+path_fp.length;
+	
+	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;
+	
+	if(str2u_adjusted)
+	{
+		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x3;
+	}
+	else
+	{
+		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
+	}
+		
+	// Super Hacky Way to fix mount for now :)
+	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}
+}
+
+function checkSearchParams()
+{
+	if(search_max_threshold===0){search_max_threshold = search_max_threshold_backup;}// search threshold reset if zero
+	if(search_base_offset<search_base_offset_min){search_base_offset = search_base_offset_min;}// if too low
+	if(search_base_offset>search_base_offset_max){search_base_offset = search_base_offset_min+search_base_offset_adjust;}// if too high
+	if(base_fp_addr===0){search_base_offset = search_base_offset_min;}// reset start offset for search if zero
 }
 
 function searchResetTimeout()
