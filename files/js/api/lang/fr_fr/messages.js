@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chaîne exécutée avec suc
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Appuyez sur le bouton Exécuter une fois de plus!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dumpé avec succès!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumpé avec succès!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Mémoire Dumpé avec succès!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Source transférée avec succès vers la destination!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>/dev_hdd1/ Monté avec succès! Redémarrez le navigateur et exécutez la chaîne de fichiers E/L à dumpé.</font></b></h3>";

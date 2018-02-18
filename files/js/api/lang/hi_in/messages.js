@@ -84,6 +84,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>चेन को सफल�
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>एक बार एक्जिक्यूट बटन दबाएं!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump सफल!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump सफल!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP सफल मेमोरी का!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>सफल फ़ाइल स्थानांतरण !</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>विभाजन /dev_hdd1/ सफलतापूर्वक घुड़सवार! ब्राउज़र को पुनरारंभ करें और चेन को चलाएं पढ़ना./लेखन. फ़ाइलों का.</font></b></h3>";

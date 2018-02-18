@@ -86,6 +86,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chain Executed Successfully
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Press The Execute Button Once More!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dumped Successfully!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Memory Dumped Successfully!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Successfully Transferred Source To Destination!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted /dev_hdd1/! Restart Browser and Run R/W File Chain To Dump.</font></b></h3>";

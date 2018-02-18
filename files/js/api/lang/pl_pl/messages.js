@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chain Wykonany Prawidłowo!
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Naciśnij Przycisk WYKONAJ Ponownie!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>Zrzut PSID Powiódł Się!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>Zrzut IDPS Powiódł Się!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Zrzut Pamięci Powiódł Się!!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Udało Się Zrzucić Plik/Folder Źródłowy Do Folderu Docelowego!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Udało Się Zamontować /dev_hdd1/! Zresetuj Przeglądarkę i Wybierz Test Odczytu/Zapisu aby Zrzucić Pliki.</font></b></h3>";

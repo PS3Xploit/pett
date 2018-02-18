@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Cadeia executada com sucess
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Pressione o botão de Executar mais uma vez!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump feito com sucesso!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump feito com sucesso!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Dump da Memória feito com sucesso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferido da Origem para o Destino com sucesso!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Partição /dev_hdd1/ montada com sucesso! Reinicie o navegador e utilize a cadeia de Leitura/Escrita de Arquivos para usar o dump.</font></b></h3>";
