@@ -618,7 +618,7 @@ function toggleDisableButtons(state)
 	disableElement("marked_memdump_addr_edit", state);
 	disableElement("marked_memdump_size_edit", state);
 	disableElement("memdump_save_new_values", state);
-	//disableElement("marked_memdump_range", state);
+	disableElement("marked_memdump_range", state);
 	
 	disableElement("disable_trigger", state);
 	disableElement("marked_hex", state);
@@ -1584,14 +1584,14 @@ function setChainOptions(chain)
 		disableElement("path_src_type",true);
 		disableElement("marked_memdump_addr", false);
 		disableElement("marked_memdump_size", false);
+		disableElement("marked_memdump_range", false);
 		disableElement("marked_memdump_addr_edit", false);
 		disableElement("marked_memdump_size_edit", false);
 		disableElement("memdump_save_new_values", false);
 		setValueToHTML("path_dest",path_usb_memdump8);
-		//setMemDumpAddress();
-		//setMemDumpSize();
 		alert(msg_memdump_warning);
 		marked_memdump_addr.focus();
+		//marked_memdump_range.focus();
 		break;
 		
 		case "file_read_write_test":
@@ -2309,78 +2309,128 @@ function saveMemdumpValues()
 	init_rop.focus();
 }
 
-/*
-function setMemDumpRange(preset)
+function saveMemdumpRangeValues(start,end)
 {	
-	//alert(preset);
-	switch(preset)
+	var x;
+	memdump_addr=parseInt(start);
+	memdump_size=parseInt(end);
+	memdump_addr_text=memdump_addr.toString(16).toUpperCase();
+	memdump_size_text=memdump_size.toString(16).toUpperCase();
+	x=path_memdump_start+memdump_addr_text+path_memdump_mid+memdump_size_text+path_memdump_end;
+	setValueToHTML("marked_memdump_addr_edit",memdump_addr_text);
+	setValueToHTML("marked_memdump_size_edit",memdump_size_text);
+	setValueToHTML("path_dest",x);
+	
+	memdump_end=memdump_size-memdump_addr;// this is size [fix later]
+	memdump_end_text=memdump_end.toString(16).toUpperCase();// this is size [fix later]
+	
+	alert(msg_memdump_size+memdump_end_text+msg_memdump_start_addr+memdump_addr_text+msg_memdump_end_addr+memdump_size_text);
+}
+
+
+function setMemDumpRange(marked_memdump_range)
+{	
+	var selection=marked_memdump_range.value;
+	
+	if(selection===0)
 	{
-		case "0":
-		memdump_addr=0x00010000;
-		memdump_size=0x01BEFFF3;
-		break;
-		
-		case "1":
-		memdump_addr=0x10000000;
-		memdump_size=0x0010FFF0;
-		break;
-		
-		case "2":
-		memdump_addr=0x20000000;
-		memdump_size=0x009FFFFF;
-		break;
-		
-		case "3":
-		memdump_addr=0x30000000;
-		memdump_size=0x0003FFE6;
-		break;
-		
-		case "4":
-		memdump_addr=0x40000000;
-		memdump_size=0x0000FFEF;
-		break;
-		
-		case "5":
-		memdump_addr=0x50000000;
-		memdump_size=0x0000FFEF;
-		break;
-		
-		case "6":
-		memdump_addr=0x60000000;
-		memdump_size=0x00000FFE;
-		break;
-		
-		case "7":
-		memdump_addr=0x70000000;
-		memdump_size=0x01FFFFFF;
-		break;
-		
-		case "8":
-		memdump_addr=0x80000000;
-		memdump_size=0x0FFFFFFF;
-		break;
-		
-		case "C":
-		memdump_addr=0xC0000000;
-		memdump_size=0x0FDFFFE9;
-		break;
+		//memdump_addr=0x00010000;
+		//memdump_size=0x01BEFFF3;
+		memdump_addr=mem_preset_0_start;
+		memdump_size=mem_preset_0_size;
 	}
 	
+	if(selection===1)
+	{
+		//memdump_addr=0x10000000;
+		//memdump_size=0x0010FFF0;
+		memdump_addr=mem_preset_1_start;
+		memdump_size=mem_preset_1_size;
+	}
+	
+	if(selection===2)
+	{
+		//memdump_addr=0x20000000;
+		//memdump_size=0x009FFFFF;
+		memdump_addr=mem_preset_2_start;
+		memdump_size=mem_preset_2_size;
+	}
+	
+	if(selection===3)
+	{
+		//memdump_addr=0x30000000;
+		//memdump_size=0x0003FFE6;
+		memdump_addr=mem_preset_3_start;
+		memdump_size=mem_preset_3_size;
+	}
+	
+	if(selection===4)
+	{
+		//memdump_addr=0x40000000;
+		//memdump_size=0x0000FFEF;
+		memdump_addr=mem_preset_4_start;
+		memdump_size=mem_preset_4_size;
+	}
+	
+	if(selection===5)
+	{
+		//memdump_addr=0x50000000;
+		//memdump_size=0x0000FFEF;
+		memdump_addr=mem_preset_5_start;
+		memdump_size=mem_preset_5_size;
+	}
+	
+	if(selection===6)
+	{
+		//memdump_addr=0x60000000;
+		//memdump_size=0x00000FFE;
+		memdump_addr=mem_preset_6_start;
+		memdump_size=mem_preset_6_size;
+	}
+	
+	if(selection===7)
+	{
+		//memdump_addr=0x70000000;
+		//memdump_size=0x01FFFFFF;
+		memdump_addr=mem_preset_7_start;
+		memdump_size=mem_preset_7_size;
+	}
+	
+	if(selection===8)
+	{
+		//memdump_addr=0x80000000;
+		//memdump_size=0x0FFFFFFF;
+		memdump_addr=mem_preset_8_start;
+		memdump_size=mem_preset_8_size;
+	}
+	
+	if(selection===9)
+	{
+		//memdump_addr=0xC0000000;
+		//memdump_size=0x0FDFFFE9;
+		memdump_addr=mem_preset_9_start;
+		memdump_size=mem_preset_9_size;
+	}
+	
+	// alert(memdump_addr.toString(16)+"\n"+memdump_size.toString(16));
+	// setMemDumpAddress(memdump_addr.toString(16));
+	// setMemDumpSize(memdump_size.toString(16));
+	// saveMemdumpRangeValues(memdump_addr.toString(16),memdump_size.toString(16));
 
 	var x;
 	addr_end=memdump_addr+memdump_size;
-	//addr_end=parseInt(memdump_addr)+parseInt(memdump_size);
+	addr_end=parseInt(memdump_addr)+parseInt(memdump_size);
 	memdump_addr_text=memdump_addr.toString(16).toUpperCase();
 	memdump_size_text=addr_end.toString(16).toUpperCase();
-	//alert(memdump_addr_text);
-	//alert(memdump_size_text);
+	alert(memdump_addr_text);
+	alert(memdump_size_text);
 	x=path_memdump_start+memdump_addr_text+path_memdump_mid+memdump_size_text+path_memdump_end;
-	//setValueToHTML("marked_memdump_addr",memdump_addr_text);
-	//setValueToHTML("marked_memdump_size",memdump_size_text);
+	setValueToHTML("marked_memdump_addr",memdump_addr_text);
+	setValueToHTML("marked_memdump_size",memdump_size_text);
 	setValueToHTML("path_dest",x);
-	//saveMemdumpValues();
+	saveMemdumpValues();
 }
-*/
+
 
 // Disable Memory Options in GUI  bug!?!?
 function disableMemDumpOptions()
