@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0001";
+var current_minimum_lang_revision="0003";
 var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
@@ -85,7 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Kette erfolgreich ausgefüh
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Klicke ein weiteres mal auf Ausführen!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS erfolgreich ausgelesen!</font></b></h3>";
-var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Rückgabewert erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Arbeitsspeicher erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Quelle erfolgreich ins Ziel übertragen!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>/dev_hdd1/ wurde erfolgreich eingebunden! Starte den Browser neu und verwende eine Lese/Schreib Datei Kette zum auslesen.</font></b></h3>";
@@ -186,7 +186,7 @@ var gui_txt_option_mem_dump_test="Rohen VSH Speicher auslesen";
 var gui_txt_option_get_open_psid="PSID auslesen";
 var gui_txt_option_dump_idps_from_mem="IDPS aus der VSH auslesen";
 var gui_txt_option_sys_net_dump="SysNet auslesen";
-var gui_txt_sys_sm_get_platform_info="Get Platform Info";
+var gui_txt_sys_sm_get_platform_info="Plattforminformationen erhalten";
 var gui_txt_option_dump_idps_from_flash="IDPS aus dem Speicher auslesen";
 
 // File System
