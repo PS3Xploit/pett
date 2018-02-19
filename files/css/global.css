@@ -234,3 +234,18 @@ body {
 #default_settings {
 	display: none;
 }
+/* #marked_memdump_addr { */
+	/* display: none; */
+/* } */
+/* #marked_memdump_size { */
+	/* display: none; */
+/* } */
+#gui_txt_memdump_range_presets {
+	display: none;
+}
+#marked_memdump_range {
+	display: none;
+}
+#gui_txt_memdump_range_presets {
+	display: none;
+}
