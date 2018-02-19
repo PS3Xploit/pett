@@ -177,8 +177,8 @@ function showGuiText()
 	document.getElementById('gui_txt_syscall_group_memdump').innerHTML=gui_txt_syscall_group_memdump;
 	document.getElementById('gui_txt_memdump_addresses').innerHTML=gui_txt_memdump_addresses;
 	document.getElementById('gui_txt_memdump_size').innerHTML=gui_txt_memdump_size;
-	// document.getElementById('gui_txt_memdump_range_presets').innerHTML=gui_txt_memdump_range_presets;
-	// document.getElementById('gui_txt_option_memdump_presets_default').innerHTML=gui_txt_option_memdump_presets_default;
+	document.getElementById('gui_txt_memdump_range_presets').innerHTML=gui_txt_memdump_range_presets;
+	document.getElementById('gui_txt_option_memdump_presets_default').innerHTML=gui_txt_option_memdump_presets_default;
 	
 	document.getElementById('gui_txt_memdump_address_start').innerHTML=gui_txt_memdump_address_start;
 	document.getElementById('gui_txt_memdump_address_end').innerHTML=gui_txt_memdump_address_end;
