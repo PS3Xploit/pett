@@ -23,6 +23,9 @@ body{background-color:black;text-align:center}h2 a{color:cyan}h5{color:white}p{f
     function setSelected(){
 		document.getElementById("select_default").focus();
     }
+var url = new URL(url_string);
+var c = url.searchParams.get("c");
+alert(c);
 </script>
 
 </head>
