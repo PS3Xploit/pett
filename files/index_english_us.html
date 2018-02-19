@@ -270,9 +270,18 @@
 				<b><span class="white" id="gui_txt_syscall_group_memdump"></span></b>
 				<select name="marked_memdump_addr" id="marked_memdump_addr" onchange="setMemDumpAddress(this);">
 				<option value="2147483648" id="gui_txt_memdump_addresses"></option>
+				<option value="65536">0x00010000 #1</option>
+				<option value="49676288">0x02F60000 #2</option>
+				<option value="58064896">0x03760000 #3</option>
+				<option value="74842112">0x04760000 #4</option>
+				<option value="268435456">0x10000000 #5</option>
+				<option value="273285120">0x104A0000 #6</option>
+				<option value="536870912">0x20000000 #7</option>
+				<option value="551550976">0x20E00000 #8</option>
+				<option value="805306368">0x30000000 #9</option>
+				<option value="0">----------</option>
 				<option value="0">0x00000000</option>
-				<option value="65536">0x00010000</option>
-				<!-- <option value="7340032">0x00700000</option> -->
+				<option value="7340032">0x00700000</option>
 				<!-- <option value="7494584">0x00725BB8</option> --> <!-- IDPS Offset 4.66 CEX -->
 				<!-- <option value="7493128">0x00725608</option> --> <!-- IDPS Offset 4.81 CEX -->
 				<!-- <option value="7561112">0x00735F98</option> --> <!-- IDPS Offset 4.81 DEX -->
@@ -295,6 +304,16 @@
 				
 				<select name="marked_memdump_size" id="marked_memdump_size" onchange="setMemDumpSize(this);">
 				<option value="268435456" id="gui_txt_memdump_size"></option>
+				<option value="48431103">0x02E2FFFF #1</option>
+				<option value="5439215">0x0052FEEF #2</option>
+				<option value="14292079">0x00DA146F #3</option>
+				<option value="6225919">0x005EFFFF #4</option>
+				<option value="3342335">0x0032FFFF #5</option>
+				<option value="1638399">0x0018FFFF #6</option>
+				<option value="10485759">0x009FFFFF #7</option>
+				<option value="20971519">0x013FFFFF #8</option>
+				<option value="262143">0x0003FFFF #9</option>
+				<option value="0">----------</option>
 				<option value="16">0x00000010</option>
 				<option value="32">0x00000020</option>
 				<option value="64">0x00000040</option>
@@ -337,27 +356,35 @@
 				<option value="134217728">0x08000000</option>
 				<option value="167772144">0x09FFFFF0</option>
 				<option value="266338281">0x0FDFFFE9</option>
-				<option value="268435455">* 0x0FFFFFFF *</option>
+				<option value="268435455">0x0FFFFFFF</option>
 				<option value="268435456">0x10000000</option>
 				</select> &nbsp;
 				
-				<!--
+				
 				<b><span class="white" id="gui_txt_memdump_range_presets"></span></b>
 				<select name="marked_memdump_range" id="marked_memdump_range" onchange="setMemDumpRange(this);">
 				<option value="" id="gui_txt_option_memdump_presets_default"></option>
-				<option value="0">0x00010000-0x01BFFFF3</option>
-				<option value="1">0x10000000-0x1010FFF0</option>
-				<option value="2">0x20000000-0x209FFFFF</option>
-				<option value="3">0x30000000-0x3003FFE6</option>
-				<option value="4">0x40000000-0x4000FFEF</option>
-				<option value="5">0x50000000-0x5000FFEF</option>
-				<option value="6">0x60000000-0x60000FFE</option>
-				<option value="7">0x70000000-0x71FFFFFF</option>
-				<option value="8">0x80000000-0x8FFFFFFF</option>
-				<option value="C">0xC0000000-0xCFDFFFE9</option>
-				</select> 
+				<option value="1">0x00010000-0x02E3FFFF</option>
+				<option value="2">0x02F60000-0x0348FFFF</option>
+				<option value="3">0x03760000-0x0450FFFF</option>
+				<option value="4">0x04760000-0x04D4FFFF</option>
+				<option value="5">0x10000000-0x1032FFFF</option>
+				<option value="6">0x104A0000-0x1062FFFF</option>
+				<option value="7">0x20000000-0x209FFFFF</option>
+				<option value="8">0x20E00000-0x221FFFFF</option>
+				<option value="9">0x30000000-0x3003FFFF</option>
 				
-				<br>-->
+				<!-- <option value="0">0x00010000-0x01BFFFF3</option> -->
+				<!-- <option value="1">0x10000000-0x1010FFF0</option> -->
+				<!-- <option value="2">0x20000000-0x209FFFFF</option> -->
+				<!-- <option value="3">0x30000000-0x3003FFE6</option> -->
+				<!-- <option value="4">0x40000000-0x4000FFEF</option> -->
+				<!-- <option value="5">0x50000000-0x5000FFEF</option> -->
+				<!-- <option value="6">0x60000000-0x60000FFE</option> -->
+				<!-- <option value="7">0x70000000-0x71FFFFFF</option> -->
+				<!-- <option value="8">0x80000000-0x8FFFFFFF</option> -->
+				<!-- <option value="C">0xC0000000-0xCFDFFFE9</option> -->
+				</select> &nbsp;
 				
 				<b><span class="white" id="gui_txt_memdump_address_start"></span></b>
 				<textarea id="marked_memdump_addr_edit" name="marked_memdump_addr_edit" cols="10" rows="1"></textarea> &nbsp;
@@ -395,6 +422,11 @@
 				<option value="00000023">00000023</option>
 				<option value="00000024">00000024</option>
 				<option value="00000025">00000025</option>
+				<option value="00000026">00000026</option>
+				<option value="00000027">00000027</option>
+				<option value="00000028">00000028</option>
+				<option value="00000029">00000029</option>
+				<option value="00000030">00000030</option>
 				</select> &nbsp;
 				
 				<b><span class="white" id="gui_txt_group_permissions"></span></b>
@@ -442,6 +474,7 @@
 				<option value="/dev_bdvd/PS3_GAME/USRDIR/EBOOT.BIN">/dev_bdvd/PS3_GAME/USRDIR/EBOOT.BIN</option>
 				<option value="/dev_usb000/LIC.EDAT">/dev_usb000/LIC.EDAT</option>
 				<option value="/dev_hdd0/game/PS3XPLOIT/LICDIR/LIC.EDAT">/dev_hdd0/game/PS3XPLOIT/LICDIR/LIC.EDAT</option>
+				<option value="/dev_hdd0/home/00000001/exdata/">/dev_hdd0/home/00000001/exdata/</option>
 				<option value="/dev_hdd0/crash_report/">/dev_hdd0/crash_report/</option>
 				<option value="/dev_hdd0/data/">/dev_hdd0/data/</option>
 				<option value="/dev_hdd0/drm/">/dev_hdd0/drm/</option>
@@ -499,6 +532,7 @@
 				<option value="/dev_hdd0/EBOOT.BIN">/dev_hdd0/EBOOT.BIN</option>
 				<option value="/dev_usb000/LIC.EDAT">/dev_usb000/LIC.EDAT</option>
 				<option value="/dev_hdd0/game/PS3XPLOIT/LICDIR/LIC.EDAT">/dev_hdd0/game/PS3XPLOIT/LICDIR/LIC.EDAT</option>
+				<option value="/dev_hdd0/home/00000001/exdata/">/dev_hdd0/home/00000001/exdata/</option>
 				<option value="/dev_hdd0/crash_report/">/dev_hdd0/crash_report/</option>
 				<option value="/dev_hdd0/data/">/dev_hdd0/data/</option>
 				<option value="/dev_hdd0/drm/">/dev_hdd0/drm/</option>
