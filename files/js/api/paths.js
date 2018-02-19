@@ -39,6 +39,9 @@ var dev_hdd0_vsh="/dev_hdd0/vsh/";
 var dev_hdd0_xmlhost="/dev_hdd0/xmlhost/";
 
 
+var dev_hdd0_home_exdata="/dev_hdd0/home/00000001/exdata/";
+
+
 var path_db_rebuild="/dev_hdd0/mms/db.err";
 
 var path_hdd_symlink_src="/dev_hdd0/game/";
