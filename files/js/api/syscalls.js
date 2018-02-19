@@ -478,7 +478,10 @@ var sc_sys_net_close_dump=0x000002CF;
 var sys_net_close_dump_id=0x00000001;
 var sys_net_close_dump_pflags_ptr=0x8A000020;
 
-
+// syscall(387, uint8_t platform_info[0x18])
+var sc_sys_sm_get_platform_info=0x00000183;
+var sys_sm_get_platform_info_ptr=0x8A000000;
+var sys_sm_get_platform_info_size=0x00000020;
 
 
 

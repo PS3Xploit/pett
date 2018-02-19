@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chain Wykonany Prawidłowo!
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Naciśnij Przycisk WYKONAJ Ponownie!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>Zrzut PSID Powiódł Się!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>Zrzut IDPS Powiódł Się!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Zrzut Pamięci Powiódł Się!!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Udało Się Zrzucić Plik/Folder Źródłowy Do Folderu Docelowego!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Udało Się Zamontować /dev_hdd1/! Zresetuj Przeglądarkę i Wybierz Test Odczytu/Zapisu aby Zrzucić Pliki.</font></b></h3>";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="Zrzuć Zawartość Pamięci VSH";
 var gui_txt_option_get_open_psid="Zrzuć PSID";
 var gui_txt_option_dump_idps_from_mem="Zrzuć IDPS z VSH";
 var gui_txt_option_sys_net_dump="Zrzuć SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Zrzuć IDPS Z Pamięci Flash";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Test Brzęczyka";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Pamięć/System: ";
 var gui_txt_syscall_chains_mem_sys="Pamięć";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

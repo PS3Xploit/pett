@@ -57,6 +57,7 @@ function showGuiText()
 	document.getElementById('gui_txt_option_get_open_psid').innerHTML=gui_txt_option_get_open_psid;
 	document.getElementById('gui_txt_option_dump_idps_from_mem').innerHTML=gui_txt_option_dump_idps_from_mem;
 	document.getElementById('gui_txt_option_sys_net_dump').innerHTML=gui_txt_option_sys_net_dump;
+	document.getElementById('gui_txt_sys_sm_get_platform_info').innerHTML=gui_txt_sys_sm_get_platform_info;
 	// document.getElementById('gui_txt_option_dump_idps_from_flash').innerHTML=gui_txt_option_dump_idps_from_flash;
 	
 	// File System
@@ -72,7 +73,7 @@ function showGuiText()
 	
 	// Other Syscall Chains
 
-	// Memory/Syatem
+	// Memory/System
 	document.getElementById('gui_txt_syscall_group_mem_sys').innerHTML=gui_txt_syscall_group_mem_sys;
 	document.getElementById('gui_txt_syscall_chains_mem_sys').innerHTML=gui_txt_syscall_chains_mem_sys;
 	document.getElementById('gui_txt_option_sys_rsx_memory_free').innerHTML=gui_txt_option_sys_rsx_memory_free;

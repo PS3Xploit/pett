@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Цепочка выполн
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Нажмите кнопку «Выполнить цепочку» еще раз!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID сдамплен успешно!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS сдамплен успешно!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Память сдамплена успешно!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Успешно передан источник в пункт назначения!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Успешно смонтрирован /dev_hdd1/! Перезапустите браузер и запустите 'R/W File Chain' для дампа.</font></b></h3>";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="Raw дамп VSH памяти";
 var gui_txt_option_get_open_psid="Дамп PSID";
 var gui_txt_option_dump_idps_from_mem="Дамп IDPS из VSH";
 var gui_txt_option_sys_net_dump="Дамп SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Дамп IDPS из флеш";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Тест сигнала";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Память/Система: ";
 var gui_txt_syscall_chains_mem_sys="Память";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

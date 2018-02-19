@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0001";
+var current_minimum_lang_revision="0003";
 var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
 
 var msg_select_vsh_type="Use CEX?\n\nSelecting NO will use DEX offsets";
@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chain Executed Successfully
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Press The Execute Button Once More!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dumped Successfully!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Memory Dumped Successfully!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Successfully Transferred Source To Destination!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted /dev_hdd1/! Restart Browser and Run R/W File Chain To Dump.</font></b></h3>";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="Dump Raw VSH Memory";
 var gui_txt_option_get_open_psid="Dump PSID";
 var gui_txt_option_dump_idps_from_mem="Dump IDPS From VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Dump IDPS From Flash";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Beep Test";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Memory/System: ";
 var gui_txt_syscall_chains_mem_sys="Memory";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

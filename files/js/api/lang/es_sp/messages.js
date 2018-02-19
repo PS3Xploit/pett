@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>¡Cadena ejecutada con éxi
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>¡Pulsa el boton Ejecutar de nuevo!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>¡PSID volcado con éxito!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>¡IDPS volcado con éxito!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>¡Memoria volcada con éxito!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>¡Tranferido origen a destino con éxito!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>¡Montado /dev_hdd1/ con éxito! Reinicia el navegador e inicia la cadena L/E para volcar.</font></b></h3>";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="Volcar memoria Raw VSH";
 var gui_txt_option_get_open_psid="Volcar PSID";
 var gui_txt_option_dump_idps_from_mem="Volcar IDPS desde VSH";
 var gui_txt_option_sys_net_dump="Volcar SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Volcar IDPS desde Flash";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Prueba de pitido";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Memoria/Sistema: ";
 var gui_txt_syscall_chains_mem_sys="Memoria";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

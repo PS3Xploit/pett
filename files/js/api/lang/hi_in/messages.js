@@ -84,6 +84,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>चेन को सफल�
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>एक बार एक्जिक्यूट बटन दबाएं!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump सफल!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump सफल!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP सफल मेमोरी का!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>सफल फ़ाइल स्थानांतरण !</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>विभाजन /dev_hdd1/ सफलतापूर्वक घुड़सवार! ब्राउज़र को पुनरारंभ करें और चेन को चलाएं पढ़ना./लेखन. फ़ाइलों का.</font></b></h3>";
@@ -184,6 +185,7 @@ var gui_txt_option_mem_dump_test="Dump (Raw) स्मृति का VSH";
 var gui_txt_option_get_open_psid="Dump PSID";
 var gui_txt_option_dump_idps_from_mem="Dump IDPS की VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Dump IDPS की Flash";
 
 // File System
@@ -198,7 +200,7 @@ var gui_txt_option_fun_test="कसौटी Bips";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="मेमोरी / सिस्टम: ";
 var gui_txt_syscall_chains_mem_sys="स्मृति";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

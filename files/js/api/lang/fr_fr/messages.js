@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chaîne exécutée avec suc
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Appuyez sur le bouton Exécuter une fois de plus!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dumpé avec succès!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumpé avec succès!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Mémoire Dumpé avec succès!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Source transférée avec succès vers la destination!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>/dev_hdd1/ Monté avec succès! Redémarrez le navigateur et exécutez la chaîne de fichiers E/L à dumpé.</font></b></h3>";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="dump de mémoire VSH brute";
 var gui_txt_option_get_open_psid="Dump PSID";
 var gui_txt_option_dump_idps_from_mem="Dump IDPS de VSH";
 var gui_txt_option_sys_net_dump="Dump SysNet";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="Dump IDPS de Flash";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Test Beep";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Mémoire/Système: ";
 var gui_txt_syscall_chains_mem_sys="Mémoire";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

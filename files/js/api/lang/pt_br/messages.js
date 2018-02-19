@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0001"
+var current_minimum_lang_revision="0003"
 var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -85,6 +85,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Cadeia executada com sucess
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Pressione o botão de Executar mais uma vez!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump feito com sucesso!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump feito com sucesso!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Valor retornado do Syscall Dump feito com sucesso!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Dump da Memória feito com sucesso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferido da Origem para o Destino com sucesso!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Partição /dev_hdd1/ montada com sucesso! Reinicie o navegador e utilize a cadeia de Leitura/Escrita de Arquivos para usar o dump.</font></b></h3>";
@@ -105,7 +106,7 @@ var msg_thread_name="Hello_From_PS3Xploit";
 // Devices
 var msg_device_loaded_into_mem="Dispositivo retornado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
 var msg_get_device_info1="Dispositivo Retornado: ";
-var msg_get_device_info2="\n\nUse ito para a cadeia sys_storage_report_devices";
+var msg_get_device_info2="\n\nUse isto para a cadeia sys_storage_report_devices";
 
 // Debugging
 var msg_debug_placeholder="Lazy XP +1";
@@ -124,7 +125,7 @@ var msg_check_memory="checkMemory: ";
 var msg_chk_mem_arg_error="Erro nos argumentos da função checkMemory! size=0x";
 var msg_malformed_html="HTML Inválido!";
 var msg_string_located=" Encontrado no offset: 0x";
-var msg_string_not_located="não pode ser encontrado no intervalo";
+var msg_string_not_located="não foi encontrado no intervalo";
 
 // Found Offsets
 var msg_found_offsets="Offsets Encontrados: ";
@@ -185,6 +186,7 @@ var gui_txt_option_mem_dump_test="Raw Dump pela Memória VSH";
 var gui_txt_option_get_open_psid="PSID Dump";
 var gui_txt_option_dump_idps_from_mem="IDPS Dump pela Memória VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Dump das Informações da Plataforma";
 var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 
 // File System
@@ -199,7 +201,7 @@ var gui_txt_option_fun_test="Teste do Beep";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="Memória/Sistema: ";
 var gui_txt_syscall_chains_mem_sys="* Memória *";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

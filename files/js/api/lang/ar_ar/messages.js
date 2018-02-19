@@ -86,6 +86,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Chain Executed Successfully
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Press The Execute Button Once More!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dumped Successfully!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Memory Dumped Successfully!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Successfully Transferred Source To Destination!</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted /dev_hdd1/! Restart Browser and Run R/W File Chain To Dump.</font></b></h3>";
@@ -186,6 +187,7 @@ var gui_txt_option_mem_dump_test="Dump Raw VSH Meاستخراج";
 var gui_txt_option_get_open_psid="استخراج PSID";
 var gui_txt_option_dump_idps_from_mem="استخراج IDPS من VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
+var gui_txt_sys_sm_get_platform_info="Get Platform Info";
 var gui_txt_option_dump_idps_from_flash="استخراج IDPS من سعه التخزين خارجية";
 
 // File System
@@ -200,7 +202,7 @@ var gui_txt_option_fun_test="اختبار الصوت";
 
 // Other Syscall Chains
 
-// Memory/Syatem
+// Memory/System
 var gui_txt_syscall_group_mem_sys="الذاكرة / النظام: ";
 var gui_txt_syscall_chains_mem_sys="الذاكرة";
 var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";

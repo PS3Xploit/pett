@@ -1139,6 +1139,10 @@ function useCustomStackFrame()
 		syscallFwriteAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_arg3,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,0x10,addr_idps);
 		break;
 		
+		case "sys_sm_get_platform_info":
+		syscallFwriteAndExit(sys_sm_get_platform_info_ptr,0,0,0,0,0,0,0,sc_sys_sm_get_platform_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_sm_get_platform_info_size,sys_sm_get_platform_info_ptr);
+		break;
+		
 		/*
 		case "dump_idps_from_flash":
 		a1_r4=sc_sso_mode;
@@ -1769,6 +1773,12 @@ function setChainOptions(chain)
 		case "sys_storage_report_devices":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest",path_storage_report_devices_dump);
+		init_rop.focus();
+		break;
+		
+		case "sys_sm_get_platform_info":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest",sys_sm_get_platform_info_dump);
 		init_rop.focus();
 		break;
 		
@@ -2510,6 +2520,11 @@ function execSuccessMessage(chain)
 			
 			case "dump_idps_from_mem":
 			msg_success_text=success_chain_exec_idps;
+			reload_page.focus();
+			break;
+			
+			case "sys_sm_get_platform_info":
+			msg_success_text=success_chain_exec_syscall_dump;
 			reload_page.focus();
 			break;
 			
