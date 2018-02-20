@@ -364,7 +364,7 @@ function setCustomPointerValues()
 	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
 	
 	// Set mount params
-	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_SIMPLEFS";path_src_fp="/dev_hdd1/";}
+	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_SIMPLEFS";path_src_fp="/dev_hdd1";}
 	//if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_FAT";path_src_fp="/dev_hdd1";}
 }
 
@@ -400,7 +400,7 @@ function setPointerOffsets()
 	}
 		
 	// Super Hacky Way to fix mount for now :)
-	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}
+	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}
 }
 
 function checkSearchParams()
