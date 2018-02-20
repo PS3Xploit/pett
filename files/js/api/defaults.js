@@ -1688,8 +1688,8 @@ function setChainOptions(chain)
 		case "dir_read_write_test":
 		setValueToHTML("path_src",usb_dir_ps3xploit);
 		setValueToHTML("path_dest",hdd_dir_ps3xploit);
-		//alert(msg_option_not_available);
-		init_rop.focus();
+		alert(msg_option_not_available);
+		//init_rop.focus();
 		break;
 		
 		case "sys_net_dump":
