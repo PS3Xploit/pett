@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS erfolgreich ausge
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Rückgabewert erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Arbeitsspeicher erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Quelle erfolgreich ins Ziel übertragen!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>/dev_hdd1/ wurde erfolgreich eingebunden! Starte den Browser neu und verwende eine Lese/Schreib Datei Kette zum auslesen.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>PS3 System Browser Info: "+navigator.userAgent+ "</h3>";

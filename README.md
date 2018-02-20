@@ -10,8 +10,8 @@
 <h3 align="center">Preview Images</h3>
 
 <p align="center"><img src="https://i.imgur.com/q391Fkr.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/nYGdjn6.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/7qgQbSD.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/w5dLRUf.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/PVe2cbt.png" width="75%"></p>
 
 <br/>
 
@@ -41,7 +41,12 @@ Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
 
 <h3>Version History</h3>
 
+v0.1.7
+* Updated Mount Options
+
 v0.1.6
+* Added Mount Options
+* Updated Language Index and Misc GUI Tweaks (thanks @Caio99BR)
 * Added Türkçe TR Translation (thanks @yanealaka)
 * Updated Search Functions
 

@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>¡IDPs bolcat amb èxi
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>¡Memòria bolcada amb èxit!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>¡Tranferido origen a destinació amb èxit!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>¡Muntat /dev_hdd1/ amb èxit! Reinicieu el navegador i inicia la cadena L / E per bolcar.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Informació de navegador de sistema PS3: "+navigator.userAgent+ "</h3>";

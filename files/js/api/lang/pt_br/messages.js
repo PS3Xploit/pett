@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump feito com su
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Valor retornado do Syscall Dump feito com sucesso!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Dump da Memória feito com sucesso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferido da Origem para o Destino com sucesso!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Partição /dev_hdd1/ montada com sucesso! Reinicie o navegador e utilize a cadeia de Leitura/Escrita de Arquivos para usar o dump.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Informações do Navegador do Sistema PS3: "+navigator.userAgent+ "</h3>";

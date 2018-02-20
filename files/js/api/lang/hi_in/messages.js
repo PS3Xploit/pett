@@ -87,7 +87,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump सफल!</
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP सफल मेमोरी का!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>सफल फ़ाइल स्थानांतरण !</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>विभाजन /dev_hdd1/ सफलतापूर्वक घुड़सवार! ब्राउज़र को पुनरारंभ करें और चेन को चलाएं पढ़ना./लेखन. फ़ाइलों का.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Info Navegador PS3: "+navigator.userAgent+ "</h3>";

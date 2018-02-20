@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0006";
+var current_minimum_lang_revision="0007";
 var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
 
 var msg_select_vsh_type="Use CEX?\n\nSelecting NO will use DEX offsets";
@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dumped Successful
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Memory Dumped Successfully!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Successfully Transferred Source To Destination!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted /dev_hdd1/! Restart Browser and Run R/W File Chain To Dump.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>PS3 System Browser Info: "+navigator.userAgent+ "</h3>";

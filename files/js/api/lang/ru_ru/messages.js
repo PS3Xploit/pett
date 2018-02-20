@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS сдамплен 
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Память сдамплена успешно!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Успешно передан источник в пункт назначения!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Успешно смонтрирован /dev_hdd1/! Перезапустите браузер и запустите 'R/W File Chain' для дампа.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Информация о браузере системы PS3: "+navigator.userAgent+ "</h3>";
