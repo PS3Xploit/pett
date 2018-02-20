@@ -123,7 +123,7 @@ function initROP()
 			// Verify Stackframe
 			if(verify_stackframe)
 			{
-				stk=checkMemory(stack_frame_addr-0x4,0x100,stack_frame_addr.length,6);
+				stk=checkMemory(stack_frame_addr-0x4,0x100,stack_frame.length,6);
 			}
 			else
 			{
@@ -131,7 +131,14 @@ function initROP()
 			}
 			
 			// Verify Offsets
-			if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&(stackframe_verified)){allOffsetsVerified=true;}
+			if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&((stk===stack_frame)||(stackframe_verified))){allOffsetsVerified=true;}
+			
+			//if(j2===jump_2){j2_verified=true;}
+			//if(j1===jump_1){j1_verified=true;}
+			//if(base===base_fp){base_verified=true;}
+			//if(stk===stack_frame){stk_verified=true;}
+			
+			//if((j2_verified)&&(j1_verified)&&(base_verified)&&(stk_verified)){allOffsetsVerified=true;}
 			
 			if(allOffsetsVerified)
 			{
