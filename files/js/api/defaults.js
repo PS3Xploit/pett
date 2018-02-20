@@ -1052,7 +1052,7 @@ function exportStdcOpenReadCloseDir(src)
 	a1_r31=31;
 	a1_jumpto=g_set_r4_thru_r11;
 	a2_jumpto=g_set_r3_from_r29;
-	a3_jumpto=g_sc_A0;
+	a3_jumpto=g_stdc_opendir;
 	a4_r3=3;
 	a4_r4=4;
 	a4_r5=5;
@@ -1066,9 +1066,9 @@ function exportStdcOpenReadCloseDir(src)
 	a4_r31=31;
 	a4_jumpto=g_set_r4_thru_r11;
 	a5_jumpto=g_set_r3_from_r29;
-	a6_r29=size;
-	a6_jumpto=g_stdc_opendir;
-	extra1=size;
+	a6_r29=0x00000420;
+	a6_jumpto=g_sc_A0;
+	extra1=0x00000420;
 	a7_jumpto=restore_stack;
 	extra2=g_exit_chain;
 }
@@ -1628,6 +1628,7 @@ function setChainOptions(chain)
 		setValueToHTML("path_src",usb_dir_ps3xploit);
 		setValueToHTML("path_dest",hdd_dir_ps3xploit);
 		alert(msg_option_not_available);
+		//init_rop.focus();
 		break;
 		
 		case "sys_net_dump":
