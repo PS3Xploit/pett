@@ -244,3 +244,6 @@ body {
 #gui_txt_memdump_range_presets {
 	display: none;
 }
+#debugging_chains {
+	display: none;
+}
