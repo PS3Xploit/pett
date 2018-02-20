@@ -101,15 +101,12 @@ var msg_prerelease="TO JEST WCZESNA WERSJA TESTOWA!\n\nSTARSZE FW JEST WSPIERANE
 var msg_anti_piracy="OSTRZEŻENIE\n\nNie wspieramy w PIRACTWA!\n\nużywając tego tutorialu, i naciskając TAK, Zgadzasz się używać go TYLKO w celach edukacyjnych!";
 var msg_anti_piracy_edat="OSTRZEŻENIE ANTY-PIRACKIE!\n\nTa opcja jest stworzona TYLKO do testów i nie powinna być nadużywana!\n\nNaciskając TAK zgadzasz się używać tego tylko na tytułach które zakupiłeś!";
 
-var msg_thread_name="Hello_From_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="Urządzenie Zwróciło Wartość do Pamięci!\n\nNacjiśnij Ponownie Przycisk Wykonaj aby Odczytać i Wyświetlić!";
 var msg_get_device_info1="Urządzenie Zwracające: ";
 var msg_get_device_info2="\n\nUżyj Tego Dla sys_storage_report_devices Chain";
 
 // Debugging
-var msg_debug_placeholder="Punkty Lenistwa +1";
 
 var msg_stackframe_check="To sprawdzi domyślną stackframe pod względem problemów.\n\nJeżeli się zawiesi lub nie wyświetli wiadomości to oznacza, że jest problem.";
 
@@ -121,7 +118,6 @@ var verify_skip="<font color='#2a1003'>SUKCES: Nie Sprawdzam Obiektów String w 
 var msg_search_flash_type_start="Parametry Wyszukiwania Ustawione Na ";
 var msg_search_flash_type_end=" Typ Pamięci!";
 
-var msg_check_memory="checkMemory: ";
 var msg_chk_mem_arg_error="checkMemory funkcja zwraca błąd! size=0x";
 var msg_malformed_html="Malformed HTML!";
 var msg_string_located=" Znaleziono w offsecie: 0x";
@@ -131,10 +127,6 @@ var msg_string_not_located="nie można znaleźć w zakresie";
 var msg_found_offsets="Znalezione Offsety: ";
 var msg_verified_offsets="Zweryfikowane Offsety: ";
 var offset_find_success="sukces";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Page Arguments Not Set!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="No ROP Chain Hex Selected\n\nUse The Drop-Down Box To Select One";
@@ -145,16 +137,13 @@ var msg_invalid_title_id="UWAGA!\n\nThe Title ID Entered Has An Invalid Size!\n\
 
 // index GUI text
 var gui_title="PS3 Exploitation Tutorial Template ";
-var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="by ";
 var gui_credits="Podziękowania dla xerpi za userland memory exploit, zecoxao i Joonie za ich długotrwałe wsparcie, mysis za dokumentowanie zrzutów vsh i wtyczki, twórców psdevwiki bez których projekt by nie powstał, STLcardsWS za jego długotrwałe wsparcie i dla całej społeczności ps3 a zwłaszcza dla hakerów i programistów. Dzięki littlebalup za podrzucenie pomysłu i implementacje js dzięki której zrobiliśmy wersję HDD Dumperów i Flasherów. Dziękuję również B7U3 C50SS, Endless i 0x1991337 za tutorial, testowanie syscall i inną pomoc! <font color='yellow'>Więcej szczegółów i informacji na <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Oficjalna Strona Projektu <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Domyślne Ustawienia:";
 var gui_chk_disable_trigger="Wyłącz Trigger:";
 var gui_chk_write_protect="Zabezpiecz Przed Zapisem:";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Tryb Restartu:";
@@ -204,63 +193,30 @@ var gui_txt_option_fun_test="Test Brzęczyka";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Pamięć/System: ";
 var gui_txt_syscall_chains_mem_sys="Pamięć";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="Magazyn Danych";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="System";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Proces/Wątek: ";
 var gui_txt_syscall_chains_proc_thread="Proces";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="ID Procesu";
 
 // Threads
 var gui_txt_syscall_chains_threads="Wątki";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID Wątku";
 
 // Netowrk
 var gui_txt_syscall_group_network="Sieć: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -272,8 +228,6 @@ var gui_txt_option_debug_placeholder="beep_test";
 // LED Control
 var gui_txt_syscall_group_led="Kontrola LED:";
 var gui_txt_syscall_chains_led="* Wybierz Chain *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="Kolor";
 var gui_txt_option_led_color_green="Zielony";
@@ -314,14 +268,11 @@ var gui_txt_user_id_new="User ID Set To: ";
 var gui_txt_home_path_new="\n\nNew Home Path Is: \n\n";
 
 var gui_txt_group_permissions="Uprawnienia:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Rozmiar Pliku:";
 var gui_txt_group_titleid="TitleID:";
 
 var gui_txt_btn_set_filesize="Ustaw";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Ustaw";
 
 var gui_txt_group_path_source="Źródło:";
@@ -351,8 +302,6 @@ var gui_txt_option_search_loops="Pętli";
 var gui_chk_search_verify_jumps="Verify Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
 var gui_chk_search_debug_output="Debgowanie:";
-
-var gui_txt_search_found_offsets="Znaleziono Offsety: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Zainicjuj ROP Chain";

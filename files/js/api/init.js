@@ -49,9 +49,30 @@ var g_fsopen_write_close;
 var g_mount_hdd1;
 var g_unk_game_debug_pafjob;
 var g_mount_flash;
+var g_unk_user_id1;
+var g_unk_user_id2;
+var g_unk_registry1;
+var g_unk_registry_backup;
+var g_unk_registry_restore;
+var g_unk_explore_plugin_bin;
+var g_unk_psp_rif;
+var g_unk_login_xmb;
+var g_start_busy_icon;
+var g_xmb_restore;
+var g_unk_pkg1;
+var g_unk_sync;
+var g_unk_bg_download1;
+var g_unk_bg_download2;
+var g_unk_post_update1;
+var g_unk_post_update2;
+var g_unk_crash_report1;
+var g_unk_http_client;
+var g_unk_fsck;
+var g_unk_debug1;
 var g_tty_write;
 var g_create_new_user;
 var g_remove_act_dat;
+var g_stdc_opendir;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
 
@@ -94,7 +115,6 @@ var _addr;
 var ph=0;
 
 // Path Address Pointers
-var base_fp;
 var stackframe_bin_fp;
 var usb_fp;
 var usb_fp2;
@@ -132,6 +152,7 @@ var allOffsetsVerified=false;
 var result_msg="";
 
 // Required Jumps
+var base_fp;
 var stack_frame;
 var jump_2;
 var jump_1;
@@ -248,20 +269,27 @@ var mem_preset_15_end=0x6030FFFF;
 var mem_preset_16_size=0x01FFFFFF;
 var mem_preset_16_start=0x70000000;
 var mem_preset_16_end=0x71FFFFFF;
+var mem_preset_17_size=0x7FFFFFFF;
 var mem_preset_17_start=0x80000000;
-var mem_preset_17_end=0x90000000;
+var mem_preset_17_end=0x8FFFFFFF;
+var mem_preset_18_size=0x0FDFFFFF;
 var mem_preset_18_start=0xC0000000;
-var mem_preset_18_end=0xCFE00000;
+var mem_preset_18_end=0xCFDFFFFF;
+var mem_preset_19_size=0x0001FFFF;
 var mem_preset_19_start=0xD0010000;
-var mem_preset_19_end=0xD0030000;
+var mem_preset_19_end=0xD002FFFF;
+var mem_preset_20_size=0x0001FFFF;
 var mem_preset_20_start=0xD0050000;
-var mem_preset_20_end=0xD0070000;
+var mem_preset_20_end=0xD006FFFF;
+var mem_preset_21_size=0x0002FFFF;
 var mem_preset_21_start=0xD0080000;
-var mem_preset_21_end=0xD00B0000;
+var mem_preset_21_end=0xD00AFFFF;
+var mem_preset_22_size=0x0003FFFF;
 var mem_preset_22_start=0xD00C0000;
-var mem_preset_22_end=0xD0100000;
+var mem_preset_22_end=0xD00FFFFF;
+var mem_preset_23_size=0x0008FFFF;
 var mem_preset_23_start=0xD0130000;
-var mem_preset_23_end=0xD01C0000;
+var mem_preset_23_end=0xD01BFFFF;
 
 
 // These used in chain at diff spots

@@ -1036,6 +1036,43 @@ function syscallReadWriteFileAuto(src,dest)
 	//a33_jumpto=g_exit_chain;
 }
 
+function exportStdcOpenReadCloseDir(src)
+{
+	a1_r3=src;
+	a1_r4=4;
+	a1_r5=5;
+	a1_r6=6;
+	a1_r7=7;
+	a1_r8=8;
+	a1_r9=9;
+	a1_r10=10;
+	a1_r11=11;
+	a1_r29=29;
+	a1_r30=30;
+	a1_r31=31;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_from_r29;
+	a3_jumpto=g_sc_A0;
+	a4_r3=3;
+	a4_r4=4;
+	a4_r5=5;
+	a4_r6=6;
+	a4_r7=7;
+	a4_r8=8;
+	a4_r9=9;
+	a4_r10=10;
+	a4_r29=29;
+	a4_r30=30;
+	a4_r31=31;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_set_r3_from_r29;
+	a6_r29=size;
+	a6_jumpto=g_stdc_opendir;
+	extra1=size;
+	a7_jumpto=restore_stack;
+	extra2=g_exit_chain;
+}
+
 function syscallRebootOnly(mode,lpar_param,lpar_size)
 {
 	a1_r3=mode;
@@ -1237,20 +1274,7 @@ function useCustomStackFrame()
 		break;
 		
 		case "dir_read_write_test":
-		// a1_r3=path_src_fp_addr;
-		// a1_r4=hdd_fp_addr;
-		// a1_r11=sys_fs_opendir;
-		// a1_jumpto=g_set_r4_thru_r11;
-		// a2_r3=hdd_fp_addr;
-		// a2_r4=path_src_fp_addr;
-		// a2_r5=0;
-		// a2_r11=sys_fs_readdir;
-		// a2_jumpto=g_sc_A0;
-		// a3_r3=reboot_mode;
-		// a3_r4=0;
-		// a3_r5=0;
-		// a3_r11=sc_shutdown;
-		// a3_jumpto=g_sc_A0;
+		exportStdcOpenReadCloseDir(path_src_fp_addr);
 		break;
 		
 		// uses restore_stack1

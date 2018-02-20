@@ -41,6 +41,9 @@ var dev_hdd0_xmlhost="/dev_hdd0/xmlhost/";
 
 var dev_hdd0_home_exdata="/dev_hdd0/home/00000001/exdata/";
 
+var dev_hdd1_crash_report="/dev_hdd1/crash_report/";
+var dev_hdd1_crash_report_kernel="/dev_hdd1/crash_report/kernel/";
+var log_ps3crash_kernel="/dev_hdd1/crash_report/kernel/ps3crash-kernel.dat";
 
 var path_db_rebuild="/dev_hdd0/mms/db.err";
 

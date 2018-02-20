@@ -101,15 +101,12 @@ var msg_prerelease="ESTO ES UNA VERSION ALFA!\n\nSOPORTE PARA FIRMWARES ANTIGUOS
 var msg_anti_piracy="Descargo de Responsabilidad\n\nNo Aprobamos Ni Apoyamos la pirateria de ningun tipo!\n\nal Usar este Tutorial, y aceptar, Acuerdas usarlo con fines didacticos!";
 var msg_anti_piracy_edat="Descargo de Responsabilidad ANTIPIRATERIA!\n\nEsta Opcion esta pensada solo para pruebas y desarrollo, Y no debe abusar de ella!\n\nAl clicar en SI Aceptas Usarlo solo en Titulos que ya compraste!";
 
-var msg_thread_name="Hello_From_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="Valor de Retorno de dispositivo Cargado en memoria!\n\nPresiona nuevamente el boton ejecutar para leer y mostrar en pantalla!";
 var msg_get_device_info1="Retorno de Dispositivo: ";
 var msg_get_device_info2="\n\nUsa para cadena sys_storage_report_devices";
 
 // Debugging
-var msg_debug_placeholder="Lazy XP +1";
 
 var msg_stackframe_check="Esto Verificara los Marcos de pila por Errores.\n\nSi se cuelga o no muestra el Mensaje Exito, Entonces hay Problemas!";
 
@@ -121,7 +118,6 @@ var verify_skip="<font color='#2a1003'>EXITO: Cadenas sin verificar en Memoria!<
 var msg_search_flash_type_start="Parametros de Busqueda para";
 var msg_search_flash_type_end=" tipo de Flash!";
 
-var msg_check_memory="Chequeo de Memoria: ";
 var msg_chk_mem_arg_error="Error de Argumentos para Chequeo de Memoria! peso=0x";
 var msg_malformed_html="HTML Malformado!";
 var msg_string_located=" Hallado en offset: 0x";
@@ -131,10 +127,6 @@ var msg_string_not_located="no es posible encontrar en Rango";
 var msg_found_offsets="Offsets Hallados: ";
 var msg_verified_offsets="Offsets Verificados: ";
 var offset_find_success="Exito";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Argumentos de Pagina no establecidos!\n\nClic en Establecer argumentos y reintenta!";
 var msg_no_chain_selected="sin Cadena ROP Chain Seleccionada\n\nUsa la ventana desplegable para seleccionar una";
@@ -145,16 +137,13 @@ var msg_invalid_title_id="ALERTA!\n\nLa ID del Juego Introducido es Incorrecto!\
 
 // index GUI text
 var gui_title="Plantilla para Tutorial PS3Xploit ";
-var gui_team="por PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="por ";
 var gui_credits="Agradecimientos a xerpi por el port del exploit de memoria de usuario del PS3, a zecoxao y Joonie por su soporte temprano y continuo, mysis por documentar vsh exports y plugins, desde luego a los contribuidores del psdevwiki, a STLcardsWS por su prologada y efectiva contribucion y a toda la Comunidad PS3 de Hackers/Desarrolladores pasados y presentes, Tu sabes quien eres. Gracias tambien a littlebalup por dar la idea y la implementacion js que usamos para elaborar la edicion HDD de Dumpers y Flasher. gracias ademas a B7U3 C50SS, Endless, y 0x1991337 por testear los syscall del tutorial  y otra ayuda! <font color='yellow'>Mas Detalles y Noticias en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Sitio Oficial <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Configuracion Predet.:";
 var gui_chk_disable_trigger="Deshabilitar Lanzador:";
 var gui_chk_write_protect="Protec. Escritura";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Modo de Reinicio:";
@@ -204,63 +193,30 @@ var gui_txt_option_fun_test="Prueba Bips";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Memoria/Sistema: ";
 var gui_txt_syscall_chains_mem_sys="Memoria";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="Almacenamiento";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="Sistema";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Procesos/Hilos: ";
 var gui_txt_syscall_chains_proc_thread="Procesos";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="ID de Proc.";
 
 // Threads
 var gui_txt_syscall_chains_threads="Hilos";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID Hilos";
 
 // Network
 var gui_txt_syscall_group_network="RED: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -272,8 +228,6 @@ var gui_txt_option_debug_placeholder="beep_test";
 // LED Control
 var gui_txt_syscall_group_led="Control de LEDS:";
 var gui_txt_syscall_chains_led="* Selecciona Cadena *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="Cambiar Color";
 var gui_txt_option_led_color_green="Verde";
@@ -314,14 +268,11 @@ var gui_txt_user_id_new="ID de Usuario Fijado a: ";
 var gui_txt_home_path_new="\n\nNuevo Path Home es: \n\n";
 
 var gui_txt_group_permissions="Permisos:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Peso Archivo:";
 var gui_txt_group_titleid="ID del Juego:";
 
 var gui_txt_btn_set_filesize="Establecer";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Establecer";
 
 var gui_txt_group_path_source="Origen:";
@@ -351,8 +302,6 @@ var gui_txt_option_search_loops="Iteraciones";
 var gui_chk_search_verify_jumps="Verificar Jumps:";
 var gui_chk_search_verify_stackframe="Marco de Pila:";
 var gui_chk_search_debug_output="Depurar:";
-
-var gui_txt_search_found_offsets="Offsets Hallados: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Iniciar Cadena ROP";

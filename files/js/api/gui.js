@@ -16,7 +16,7 @@ function showGuiText()
 	// Top Text
 	document.getElementById('fwVerText').innerHTML=msg_detected_fw_1 + vshType + msg_detected_fw_2 + fwVersion + msg_detected_fw_4;
 	document.getElementById('gui_title').innerHTML=gui_title + gui_version;
-	document.getElementById('gui_team').innerHTML=gui_team;
+	document.getElementById('gui_team').innerHTML=guy_by + gui_team;
 	document.getElementById('gui_credits').innerHTML=gui_credits;
 	
 	// Checkboxes First Section
@@ -229,7 +229,7 @@ function showGuiText()
 	document.getElementById('gui_chk_search_verify_stackframe').innerHTML=gui_chk_search_verify_stackframe;
 	document.getElementById('gui_chk_search_debug_output').innerHTML=gui_chk_search_debug_output;
 	
-	document.getElementById('gui_txt_search_found_offsets').innerHTML=gui_txt_search_found_offsets;
+	document.getElementById('gui_txt_search_found_offsets').innerHTML=msg_found_offsets + gui_txt_search_found_offsets;
 	
 	document.getElementById('gui_txt_option_init_rop_btn').innerHTML=gui_txt_option_init_rop_btn;
 	document.getElementById('gui_txt_option_exec_rop_btn').innerHTML=gui_txt_option_exec_rop_btn;

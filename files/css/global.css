@@ -30,15 +30,13 @@
 	margin-bottom: 20px;
 }
 #gui_txt_group_payload_type_help {
-		font-weight: bold;
-		font-style: italic;
+	font-weight: bold;
+	font-style: italic;
 }
 #buttons_launch {
 	text-align: left;
 	margin-top: 3px;
 }
-
-
 #exploit {
 	text-align: left;
 	margin-top: 3px;
@@ -64,20 +62,18 @@
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
-
-
 textarea {
-    vertical-align: middle;
-    margin: 3px 0 5px 0;
+	vertical-align: middle;
+	margin: 3px 0 5px 0;
 	resize: none;
 }
 input {
-    vertical-align: middle;
-    margin: 3px 5px 5px 5px;
+	vertical-align: middle;
+	margin: 3px 5px 5px 5px;
 }
 select, button {
-    vertical-align: middle;
-    margin: 3px 0 4px 0;
+	vertical-align: middle;
+	margin: 3px 0 4px 0;
 }
 a {
 	color: RoyalBlue;
@@ -88,145 +84,142 @@ a:hover {
 	text-decoration: underline;
 }
 body {
-    background-color: #000000;
-    max-width: 100%;
+	background-color: #000000;
+	max-width: 100%;
 }
-
 .red {
-    color: red;
+	color: red;
 	font-weight: bold;
 }
 .red_small {
-    color: red;
+	color: red;
 	font-size: 16px;
 }
 .red_smaller {
-    color: red;
+	color: red;
 	font-size: 14px;
 }
 .red_smallest {
-    color: red;
+	color: red;
 	font-size: 10px;
 }
 .blue {
-    color: blue;
+	color: blue;
 }
 .blue_small {
-    color: blue;
+	color: blue;
 	font-size: 16px;
 }
 .blue_smaller {
-    color: blue;
+	color: blue;
 	font-size: 14px;
 }
 .blue_smallest {
-    color: blue;
+	color: blue;
 	font-size: 10px;
 }
 .green {
-    color: green;
+	color: green;
 }
 .green_small {
-    color: green;
+	color: green;
 	font-size: 16px;
 }
 .green_smaller {
-    color: green;
+	color: green;
 	font-size: 14px;
 }
 .green_smallest {
-    color: green;
+	color: green;
 	font-size: 10px;
 }
 .black {
-    color: black;
+	color: black;
 }
 .black_small {
-    color: black;
+	color: black;
 	font-size: 16px;
 }
 .black_smaller {
-    color: black;
+	color: black;
 	font-size: 14px;
 }
 .black_smallest {
-    color: black;
+	color: black;
 	font-size: 10px;
 }
 .orange {
-    color: #F80;
+	color: #F80;
 }
 .orange_small {
-    color: #F80;
+	color: #F80;
 	font-size: 16px;
 }
 .orange_smaller {
-    color: #F80;
+	color: #F80;
 	font-size: 14px;
 }
 .orange_smallest {
-    color: #F80;
+	color: #F80;
 	font-size: 10px;
 }
 .yellow {
-    color: #EFDD01;
+	color: #EFDD01;
 }
 .yellow_small {
-    color: #EFDD01;
+	color: #EFDD01;
 	font-size: 16px;
 }
 .yellow_smaller {
-    color: #F80;
+	color: #F80;
 	font-size: 14px
 }
 .yellow_smallest {
-    color: #F80;
+	color: #F80;
 	font-size: 10px;
 }
 .teal {
-    color: #01E1EF;
+	color: #01E1EF;
 }
 .teal_small {
-    color: #01E1EF;
+	color: #01E1EF;
 	font-size: 16px;
 }
 .teal_smaller {
-    color: #01E1EF;
+	color: #01E1EF;
 	font-size: 13px;
 	font-weight: bold;
 }
 .teal_smallest {
-    color: #01E1EF;
+	color: #01E1EF;
 	font-size: 10px;
 }
 .pink {
-    color: #FF69B4;
+	color: #FF69B4;
 }
 .pink_small {
-    color: #FF69B4;
+	color: #FF69B4;
 	font-size: 16px;
 }
 .pink_smaller {
-    color: #FF69B4;
+	color: #FF69B4;
 	font-size: 14px;
 }
 .pink_smallest {
-    color: #FF69B4;
+	color: #FF69B4;
 	font-size: 10px;
 }
 .white {
-    color: white;
+	color: white;
 }
 .white_small {
-    color: white;
+	color: white;
 	font-size: 16px;
 }
 .white_smallest {
-    color: white;
+	color: white;
 	font-size: 10px;
 }
-
-
 /* Hide Stuff */
 #gui_chk_default_settings {
 	display: none;
@@ -234,12 +227,14 @@ body {
 #default_settings {
 	display: none;
 }
-/* #marked_memdump_addr { */
-	/* display: none; */
-/* } */
-/* #marked_memdump_size { */
-	/* display: none; */
-/* } */
+/*
+#marked_memdump_addr {
+	display: none;
+}
+#marked_memdump_size {
+	display: none;
+}
+*/
 #gui_txt_memdump_range_presets {
 	display: none;
 }

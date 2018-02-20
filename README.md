@@ -2,13 +2,14 @@
 
 * Official WebSite: [**ps3xploit.com**](https://ps3xploit.com)
 * Official PS3 WebKit ROP Tutorial Thread at: [**psx-place.com**](http://www.psx-place.com/threads/webkit-rop-chain-tutorials-creation-editing-debugging-ps3-development.15826)
+* Official Twitter Main Releases: [**twitter.com/esc0rtd3w**](https://twitter.com/esc0rtd3w)
 * Current PETT Live Version: [**ps3xploit.github.io/pett**](https://ps3xploit.github.io/pett) (Alert: This not work on PS3 Web Browser)
 
 <br/>
 
 <h3 align="center">Preview Images</h3>
 
-<p align="center"><img src="https://i.imgur.com/ZFZI3NP.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/q391Fkr.png" width="75%"></p>
 <p align="center"><img src="https://i.imgur.com/nYGdjn6.png" width="75%"></p>
 <p align="center"><img src="https://i.imgur.com/7qgQbSD.png" width="75%"></p>
 
@@ -34,12 +35,14 @@ Portuguese BR	| pt_br | @[**HollowChris**](https://twitter.com/HollowChris) / @[
 Russian			| ru_ru | @[**ErikPshat**](https://twitter.com/ErikPshat)
 Spanish LA		| es_la | @[**Ripp3RkoS**](https://twitter.com/Ripp3RkoS)
 Spanish Spain	| es_sp | @[**Ivoyko**](https://twitter.com/Ivoyko)
+Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
 
 <br/>
 
 <h3>Version History</h3>
 
 v0.1.6
+* Added Türkçe TR Translation (thanks @yanealaka)
 * Updated Search Functions
 
 v0.1.5

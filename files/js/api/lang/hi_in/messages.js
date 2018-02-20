@@ -100,15 +100,12 @@ var msg_prerelease="यह एक अल्फा संस्करण है!\
 var msg_anti_piracy="त्याग\n\nहम किसी भी प्रकार की चोरी को समर्थन या समर्थन नहीं करते हैं!\n\nइस ट्यूटोरियल का उपयोग करते समय, और स्वीकार करते हैं, आप इसे शैक्षणिक उद्देश्यों के लिए उपयोग करने के लिए सहमत हैं!";
 var msg_anti_piracy_edat="अस्वीकरण ANTIPIRACY!\n\nयह विकल्प केवल परीक्षण और विकास के लिए है, और आपको इसका दुरुपयोग नहीं करना चाहिए!\n\nहाँ स्वीकार करने पर क्लिक करके इसे केवल उन खिताबों में प्रयोग करें जिन्हें आपने पहले ही खरीदा है!";
 
-var msg_thread_name="Hello_From_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="डिवाइस वापसी मूल्य मेमोरी में भरी हुई है!\n\nस्क्रीन पर पढ़ने और दिखाने के लिए फिर से निष्पादित करें बटन दबाएं!";
 var msg_get_device_info1="डिवाइस की वापसी: ";
 var msg_get_device_info2="\n\nश्रृंखला के लिए उपयोग करें sys_storage_report_devices";
 
 // Debugging
-var msg_debug_placeholder="Lazy XP +1";
 
 var msg_stackframe_check="यह समस्याओं के लिए डिफ़ॉल्ट स्टैकफ्रेम की जांच करेगा.\n\nयदि यह क्रैश हो या सफलता संदेश प्रदर्शित नहीं करता है, तो एक समस्या है!";
 
@@ -120,7 +117,6 @@ var verify_skip="<font color='#2a1003'>सफलता:मेमोरी मे
 var msg_search_flash_type_start="के लिए खोजें पैरामीटर";
 var msg_search_flash_type_end=" फ्लैश प्रकार!";
 
-var msg_check_memory="मेमोरी चेक: ";
 var msg_chk_mem_arg_error="मेमोरी चैक के लिए तर्क त्रुटि! peso=0x";
 var msg_malformed_html="HTML विकृत!";
 var msg_string_located=" में पाया offset: 0x";
@@ -130,10 +126,6 @@ var msg_string_not_located="रैंक में यह संभव नही
 var msg_found_offsets="Offsets पाया: ";
 var msg_verified_offsets="Offsets सत्यापित: ";
 var offset_find_success="सफलता";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="पृष्ठ तर्क स्थापित नहीं!\n\nसेट तर्क पर क्लिक करें और पुनः प्रयास करें!";
 var msg_no_chain_selected="चेन के बिना ROP Chain चुना गया\n\nएक का चयन करने के लिए ड्रॉप-डाउन विंडो का उपयोग करें";
@@ -144,16 +136,13 @@ var msg_invalid_title_id="चेतावनी!\n\nID परिचय गेम
 
 // index GUI text
 var gui_title="ट्यूटोरियल के लिए टेम्पलेट PS3Xploit ";
-var gui_team="द्वारा PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="द्वारा ";
 var gui_credits="उपयोगकर्ता मेमोरी के बंदरगाह के लिए एक्सर के लिए धन्यवाद PS3, को zecoxao, Nereidadev और Joonie इसकी प्रारंभिक और निरंतर सहायता के लिए, mysis दस्तावेजीकरण के लिए vsh exports y plugins, निश्चित रूप से के योगदानकर्ताओं के लिए psdevwiki, a STLcardsWS इसके प्रस्तावना और प्रभावी योगदान के लिए और पूरे समुदाय के लिए PS3 पिछले और वर्तमान में हैकर्स / डेवलपर्स का, आप जानते हैं कि आप कौन हैं. धन्यवाद करने के लिए भी littlebalup विचार और कार्यान्वयन देने के लिए js कि हम इस संस्करण को तैयार करने के लिए उपयोग करते हैं डंपर्स और फ्लैशर के एचडीडी इसके अतिरिक्त धन्यवाद B7U3 C50SS, Endless, y 0x1991337 परीक्षण करने के लिए syscall ट्यूटोरियल और अन्य मदद! <font color='yellow'>अधिक विवरण और समाचार में <a href='http://www.psx-place.com'>http://www.psx-place.com</a>.आधिकारिक वेबसाइट <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="डिफ़ॉल्ट सेटिंग्स.:";
 var gui_chk_disable_trigger="लॉन्चर अक्षम करें:";
 var gui_chk_write_protect="लेखन संरक्षण";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="रीस्टार्ट मोड:";
@@ -203,63 +192,30 @@ var gui_txt_option_fun_test="कसौटी Bips";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="मेमोरी / सिस्टम: ";
 var gui_txt_syscall_chains_mem_sys="स्मृति";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="भंडारण";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="प्रणाली";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="प्रक्रियाओं / थ्रेड्स: ";
 var gui_txt_syscall_chains_proc_thread="प्रक्रियाओं";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="ID की प्रक्रिया.";
 
 // Threads
 var gui_txt_syscall_chains_threads="सूत्र";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID सूत्र";
 
 // Network
 var gui_txt_syscall_group_network="RED: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -271,8 +227,6 @@ var gui_txt_option_debug_placeholder="beep_test";
 // LED Control
 var gui_txt_syscall_group_led="एलईडी नियंत्रण:";
 var gui_txt_syscall_chains_led="* चेन का चयन करें *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="रंग बदलें";
 var gui_txt_option_led_color_green="ग्रीन";
@@ -313,14 +267,11 @@ var gui_txt_user_id_new="ID उपयोगकर्ता के सेट क�
 var gui_txt_home_path_new="\n\nनया पथ होम है: \n\n";
 
 var gui_txt_group_permissions="अनुमतियाँ:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="वजन फ़ाइल:";
 var gui_txt_group_titleid="ID गेम का:";
 
 var gui_txt_btn_set_filesize="स्थापित करना";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="स्थापित करना";
 
 var gui_txt_group_path_source="स्रोत:";
@@ -350,8 +301,6 @@ var gui_txt_option_search_loops="बातचीत";
 var gui_chk_search_verify_jumps="सत्यापित करें:";
 var gui_chk_search_verify_stackframe="ढेर फ्रेम:";
 var gui_chk_search_debug_output="डिबग:";
-
-var gui_txt_search_found_offsets="Offsets पाया: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="चेन शुरू करें ROP";

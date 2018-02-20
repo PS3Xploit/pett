@@ -101,15 +101,12 @@ var msg_prerelease="¡AIXÒ ÉS UN PRE LLANÇAMENT!!\n\n¡EL SUPORT AMB ELS FIRM
 var msg_anti_piracy="¡aDVERTÈNCIA!\n\n¡NO vam aprovar ni donem suport a la PIRATERIA de cap tipus!\n\nEn utilitzar aquest tutorial, i en fer clic a SÍ, acceptes usar-lo ÚNICAMENT amb fins educatius!";
 var msg_anti_piracy_edat="¡Notes ANTI-PIRATERIA!\n\n¡Aquesta opció està dissenyada només per a fins de prova i desenvolupament, i no s'ha d'abusar!\n\nEn fer clic a SÍ, acceptes usar-lo ÚNICAMENT amb títols COMPRATS!";
 
-var msg_thread_name="Hola_DESDE_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="¡El valor de dispositiu ha estat carregat a la memòria!\n\n¡Prem el botó Executar de nou per mostrar!";
 var msg_get_device_info1="dispositiu retornat: ";
 var msg_get_device_info2="\n\nFes servir això per a la cadena sys_storage_report_devices";
 
 // Debugging
-var msg_debug_placeholder="Vague XP +1";
 
 var msg_stackframe_check="Això buscarà problemes en l'armadura per defecte.\n\n¡Si falla o no apareix un missatge d'èxit, llavors hi ha un problema!";
 
@@ -121,7 +118,6 @@ var verify_skip="<font color='#2a1003'>ACONSEGUIT: ¡Les cadenes no han estat ve
 var msg_search_flash_type_start="Cercar paràmetres col·locats per ";
 var msg_search_flash_type_end=" ¡Tipus de Flash!";
 
-var msg_check_memory="comprovar memòria: ";
 var msg_chk_mem_arg_error="¡Error de funció d'arguments en comprovar memòria! tamaño=0x";
 var msg_malformed_html="¡HTML mal format!";
 var msg_string_located=" Trobat a l'offset: 0x";
@@ -131,10 +127,6 @@ var msg_string_not_located="no pot ser localitzat en el rang";
 var msg_found_offsets="offsets trobats: ";
 var msg_verified_offsets="offsets verificats: ";
 var offset_find_success="ACONSEGUIT";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="armadura";
-var offset_find_jump2="salto2";
-var offset_find_jump1="salto1";
 
 var msg_page_args_not_set="¡No s'han col·locat arguments a la pàgina!\n\nFeu clic al botó Establir arguments i torneu a provar.";
 var msg_no_chain_selected="¡No s'ha seleccionat Hex de cadena ROP!\n\nUtilitza el quadre desplegable per seleccionar un.";
@@ -145,16 +137,13 @@ var msg_invalid_title_id="¡ALERTA!\n\n¡La identificació de títol introduït 
 
 // index GUI text
 var gui_title="Plantilla del tutorial per al Exploit de PS3 ";
-var gui_team="per PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="per ";
 var gui_credits="Moltes gràcies a xerpi per portar a PS3 l'exploit de pèrdua de memòria en mode usuari, zecoxao & Joonie per la seva suport ràpid i continu, mysis per documentar l'exportació VSH i complements, per descomptat als contribuïdors de psdevwiki, STLcardsWS, NereidaDev per la seva contribució llarga durada ia tota la comunitat de hackers i desenvolupadors de PS3 passats i actuals, vosaltres sabeu qui sou. Gràcies a littlebalup també per donar-me la idea i implementar el js relacionat que fem servir per fer l'edició HDD de les eines de bolcat i flasheo ... Gràcies a B7U3 C50SS, Endless, i 0x1991337 per provar les crides al sistema d'aquest tutorial! <font color='yellow'>Mas detalls i notícies en <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. pàgina oficial: <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Opcions per defecte:";
 var gui_chk_disable_trigger="desactivar desencadenant:";
 var gui_chk_write_protect="Protecció de escriptura:";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Mode de reinici:";
@@ -204,63 +193,30 @@ var gui_txt_option_fun_test="Prova de xiulet";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Memòria / Sistema: ";
 var gui_txt_syscall_chains_mem_sys="memòria";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="emmagatzematge";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="Sistema";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Processos / Fils: ";
 var gui_txt_syscall_chains_proc_thread="Processos";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="ID de Procés";
 
 // Threads
 var gui_txt_syscall_chains_threads="fils";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID de Fil";
 
 // Network
 var gui_txt_syscall_group_network="Red: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -272,8 +228,6 @@ var gui_txt_option_debug_placeholder="Prueba_de_pitido";
 // LED Control
 var gui_txt_syscall_group_led="Control de LED:";
 var gui_txt_syscall_chains_led="* Seleccionar cadena *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="canviar color";
 var gui_txt_option_led_color_green="Verd";
@@ -314,14 +268,11 @@ var gui_txt_user_id_new="ID d'usuari establert a: ";
 var gui_txt_home_path_new="\n\nEl camí d'inici nou és: \n\n";
 
 var gui_txt_group_permissions="Permisos:";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Mida d'arxiu:";
 var gui_txt_group_titleid="ID de títol:";
 
 var gui_txt_btn_set_filesize="Col locar";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Col locar";
 
 var gui_txt_group_path_source="Origen:";
@@ -351,8 +302,6 @@ var gui_txt_option_search_loops="Bucles";
 var gui_chk_search_verify_jumps="verificar Salts:";
 var gui_chk_search_verify_stackframe="armadura:";
 var gui_chk_search_debug_output="Depurar:";
-
-var gui_txt_search_found_offsets="offsets trobats: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="Iniciar Cadena ROP";
