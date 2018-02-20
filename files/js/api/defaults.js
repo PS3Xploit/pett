@@ -786,7 +786,7 @@ function syscallTwoAndExit(r3a,r4a,r5a,r6a,r7a,r8a,r9a,r10a,r11a,r30a,r31a,r3b,r
 	a1_r9=r9a;
 	a1_r10=r10a;
 	a1_r11=r11a;
-	a1_r29=r29a;
+	a1_r29=r3a;
 	a1_r30=r30a;
 	a1_r31=r31a;
 	a1_jumpto=g_set_r4_thru_r11;
@@ -801,7 +801,7 @@ function syscallTwoAndExit(r3a,r4a,r5a,r6a,r7a,r8a,r9a,r10a,r11a,r30a,r31a,r3b,r
 	a4_r9=r9b;
 	a4_r10=r10b;
 	a4_r11=r11b;
-	a4_r29=r29b;
+	a4_r29=r3b;
 	a4_r30=r30b;
 	a4_r31=r31b;
 	a4_jumpto=g_set_r4_thru_r11;
@@ -1521,23 +1521,7 @@ function useCustomStackFrame()
 		
 		// uses restore_stack2
 		case "sys_game_get_temperature":
-		//syscallTwoAndExit(get_temperature_cell,get_temperature_temp_cell_ptr,0,0,0,0,0,0,sc_sys_game_get_temperature,temp_addr_8A,temp_addr_8B,get_temperature_rsx,get_temperature_temp_rsx_ptr,0,0,0,0,0,0,sc_sys_game_get_temperature,temp_addr_8A,temp_addr_8B);
-		
-		a1_r3=get_temperature_cell;
-		a1_r4=get_temperature_temp_cell_ptr;
-		a1_r11=sc_sys_game_get_temperature;
-		a1_jumpto=g_set_r4_thru_r11;
-		a2_jumpto=g_set_r3_from_r29;
-		a3_jumpto=g_sc_A0;
-		a4_r3=get_temperature_rsx;
-		a4_r4=get_temperature_temp_rsx_ptr;
-		a4_r11=sc_sys_game_get_temperature;
-		a4_jumpto=g_set_r4_thru_r11;
-		a5_jumpto=g_set_r3_from_r29;
-		a6_jumpto=g_sc_A0;
-		a7_r11=restore_stack;
-		a7_jumpto=g_set_r4_thru_r11;
-		a8_jumpto=g_exit_chain;
+		syscallTwoAndExit(get_temperature_cell,get_temperature_temp_cell_ptr,0,0,0,0,0,0,sc_sys_game_get_temperature,temp_addr_8A,temp_addr_8B,get_temperature_rsx,get_temperature_temp_rsx_ptr,0,0,0,0,0,0,sc_sys_game_get_temperature,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		case "sys_sm_get_fan_policy":
