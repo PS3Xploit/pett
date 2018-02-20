@@ -10,8 +10,8 @@
 <h3 align="center">Preview Images</h3>
 
 <p align="center"><img src="https://i.imgur.com/q391Fkr.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/nYGdjn6.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/7qgQbSD.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/w5dLRUf.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/PVe2cbt.png" width="75%"></p>
 
 <br/>
 
