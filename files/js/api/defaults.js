@@ -587,13 +587,22 @@ function showFoundOffsets(search)
 	if(jump_2_addr!=0){jump_2_acolor=colorSuccess;}
 	if(jump_1_addr!=0){jump_1_acolor=colorSuccess;}
 	
-	if(allOffsetsFound)
+	/*
+	if(allOffsetsVerified)
 	{
 		base_fp_acolor=colorVerified;
 		stack_frame_acolor=colorVerified;
 		jump_2_acolor=colorVerified;
 		jump_1_acolor=colorVerified;
 	}
+	else
+	{
+		base_fp_acolor=colorSuccess;
+		stack_frame_acolor=colorSuccess;
+		jump_2_acolor=colorSuccess;
+		jump_1_acolor=colorSuccess;
+	}
+	*/
 	
 	showFoundOffsetsMsg();
 }
