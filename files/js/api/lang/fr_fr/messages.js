@@ -53,7 +53,7 @@ var msg_warning_write_protection="Protection en écriture désactivée!\n\nProc�
 
 var msg_cobra_only="ALERT!\n\nCela fonctionne UNIQUEMENT avec COBRA activé sur CFW!";
 
-var msg_mount_test="** DANS LA PHASE DE TEST **!\n\nCela va monter /dev_hdd1/\n\nUne fois monté, vous pouvez redémarrer le navigateur et l'utiliser les chaine L/E pour dump de la partition /dev_hdd1/  vers une destination!";
+var msg_mount_test="** DANS LA PHASE DE TEST **";
 
 // File Operations
 var msg_default_size="Utilisation de la taille par défaut 0x140";

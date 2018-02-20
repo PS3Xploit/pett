@@ -53,7 +53,7 @@ var msg_warning_write_protection="Protección de escritura desactivada!\n\n¡¡�
 
 var msg_cobra_only="¡ALERTA!\n\n¡Esto SOLO funciona en CFW con COBRA activado!";
 
-var msg_mount_test="¡** EN FASE DE PRUEBA **!\n\nEsto montará /dev_hdd1/\n\n¡Una vez montada, puedes reiniciar el navegador y usar la cadena L/E archivo para volcar desde la partición /dev_hdd1/ a un destino!";
+var msg_mount_test="¡** EN FASE DE PRUEBA **";
 
 // File Operations
 var msg_default_size="Usando tamaño por defecto 0x140";

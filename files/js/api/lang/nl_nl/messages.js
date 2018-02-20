@@ -53,7 +53,7 @@ var msg_warning_write_protection="Schrijfbeveiliging uitgeschakeld!\n\nVolg met 
 
 var msg_cobra_only="ATTENTIE!\n\nDit werkt ALLEEN met COBRA ingeschakeld op CFW!";
 
-var msg_mount_test="** IN TESTFASE **!\n\nDit zal worden gemount /dev_hdd1/\n\nZodra u bent aangekoppeld, kunt u de browser opnieuw starten en de R/W-bestandsketen gebruiken om van /dev_hdd1/ partition naar een bestemming te dumpen!";
+var msg_mount_test="** IN TESTFASE **";
 
 // File Operations
 var msg_default_size="Standaardgrootte 0x140 gebruiken";

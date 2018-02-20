@@ -53,7 +53,7 @@ var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\
 
 var msg_cobra_only="ALERTA!\n\nIsto só FUNCIONA com o COBRA ativado na CFW!";
 
-var msg_mount_test="** EM FASE DE TESTE **!\n\nIsto irá montar a partição /dev_hdd1/\n\nAssim que montado você poderá reiniciar o navegador e utilizar a cadeia de Leitura/Escrita de Arquivos para fazer o dump da partição /dev_hdd1/ para o destino!";
+var msg_mount_test="** EM FASE DE TESTE **";
 
 // File Operations
 var msg_default_size="Usando o tamanho padrão 0x140";

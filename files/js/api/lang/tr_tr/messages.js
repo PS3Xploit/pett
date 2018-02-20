@@ -53,7 +53,7 @@ var msg_warning_write_protection="Yazma Koruması Devre dışı!\n\n Dikkatle il
 
 var msg_cobra_only="ALARIM!\n\nSADECE COBRA'yla Çalışır CFW'de Etkindir!";
 
-var msg_mount_test="** Daha Fazla TEST **!\n\nThis will mount /dev_hdd1/\n\nOnce mounted, you can restart browser and use R/W File chain to dump from /dev_hdd1/ partition to a destination!";
+var msg_mount_test="** Daha Fazla TEST **";
 
 // File Operations
 var msg_default_size="Varsayılanı Kullanma Size 0x140";

@@ -53,7 +53,7 @@ var msg_warning_write_protection="Proteccion contra Escritura Deshabilitada!\n\n
 
 var msg_cobra_only="ALERTA!\n\nEsto solo Funciona con COBRA ACTIVADO EN CFW!";
 
-var msg_mount_test="** En Fase de Prueba **!\n\nEsto Montara /dev_hdd1/\n\nAl Montar, puedes reiniciar el Navegador y usa la Cadena para Lect/Esc. de Archivos para hacer dump de la particion /dev_hdd1/ al destino!";
+var msg_mount_test="** En Fase de Prueba **";
 
 // File Operations
 var msg_default_size="Usando Peso Predet. 0x140";

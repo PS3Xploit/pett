@@ -53,7 +53,7 @@ var msg_warning_write_protection="Schreibschutz deaktiviert!\n\nMit Vorsicht for
 
 var msg_cobra_only="VORSICHT!\n\Das funktioniert nur mit aktiviertem COBRA auf CFW!";
 
-var msg_mount_test="** IN TEST PHASE **!\n\Das wird /dev_hdd1/ einbinden\n\nNach dem einbinden kannst du den Browser neustarten und eine Lese/Schreib Datei Kette verwenden um die /dev_hdd1/ partition in ein Ziel auszulesen!";
+var msg_mount_test="** IN TEST PHASE **";
 
 // File Operations
 var msg_default_size="Nutze Standardgröße 0x140";

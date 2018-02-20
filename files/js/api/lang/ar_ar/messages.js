@@ -53,7 +53,7 @@ var msg_warning_write_protection="Write Protection Disabled!\n\nProceed With CAU
 
 var msg_cobra_only="تحذير الخيار لايعمل الا مع الاصدارات التي تدعم كوبرا";
 
-var msg_mount_test="** IN TESTING PHASE **!\n\nThis will mount /dev_hdd1/\n\nOnce mounted, you can restart browser and use R/W File chain to dump from /dev_hdd1/ partition to a destination!";
+var msg_mount_test="** IN TESTING PHASE **";
 
 // File Operations
 var msg_default_size="استخدام الحجم الإفتراضي ";

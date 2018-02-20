@@ -53,7 +53,7 @@ var msg_warning_write_protection="Ochrona Przed Zapisem WYŁĄCZONA!\n\nUważaj 
 
 var msg_cobra_only="OSTRZEŻENIE!\n\nTo Działa Tylko i WYŁĄCZNIE na CFW z Włączoną COBRA!";
 
-var msg_mount_test="** W FAZIE TESTÓW **!\n\nTo zamontuje /dev_hdd1/\n\nkiedy zamontowane, możesz zresetować przeglądarkę i użyć Testu Odczytu/Zapisu Plików aby zrzucić pliki z partycji /dev_hdd1/ do folderu docelowego!";
+var msg_mount_test="** W FAZIE TESTÓW **";
 
 // File Operations
 var msg_default_size="Używam Domyślnego Rozmiaru Pliku 0x140";

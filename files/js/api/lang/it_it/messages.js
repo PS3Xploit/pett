@@ -53,7 +53,7 @@ var msg_warning_write_protection="Protezione Scrittura Disabilitata!\n\nProcedi 
 
 var msg_cobra_only="ATTENZIONE!\n\nFunziona SOLO con COBRA abilitato su CFW!";
 
-var msg_mount_test="** IN FASE DI TEST ** !\n\n/dev_hdd1/ verra' montato \n\nUna volta montato puoi riaprire il browser e usare la R/W File Chain per fare il DUMP dalla partizione /dev_hdd1/ alla destinazione";
+var msg_mount_test="** IN FASE DI TEST **";
 
 // File Operations
 var msg_default_size="Usando dimensione predefinita 0x140";

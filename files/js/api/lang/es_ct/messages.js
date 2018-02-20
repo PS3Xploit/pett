@@ -53,7 +53,7 @@ var msg_warning_write_protection="Protecció d'escriptura desactivada!\n\n¡¡¡
 
 var msg_cobra_only="¡ALERTA!\n\n¡Això NOMÉS funciona en CFW amb COBRA activat!";
 
-var msg_mount_test="¡** EN FASE DE PROVA **!\n\nAixò muntarà / dev_hdd1 /\n\n¡Un cop muntada, pots reiniciar el navegador i utilitzar la cadena L / E arxiu per bolcar des de la partició / dev_hdd1 / a una destinació!";
+var msg_mount_test="¡** EN FASE DE PROVA **";
 
 // File Operations
 var msg_default_size="Usant mida per defecte 0x140";
