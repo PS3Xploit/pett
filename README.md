@@ -9,7 +9,7 @@
 
 <h3 align="center">Preview Images</h3>
 
-<p align="center"><img src="https://i.imgur.com/ZFZI3NP.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/q391Fkr.png" width="75%"></p>
 <p align="center"><img src="https://i.imgur.com/nYGdjn6.png" width="75%"></p>
 <p align="center"><img src="https://i.imgur.com/7qgQbSD.png" width="75%"></p>
 
