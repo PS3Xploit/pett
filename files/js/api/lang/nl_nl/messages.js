@@ -101,15 +101,12 @@ var msg_prerelease="DIT IS EEN VROEGE VOORBEELDVERKLARING!\n\nDE ONDERSTEUNING V
 var msg_anti_piracy="DISCLAIMER\n\nWIJ keuren PIRACY van welke aard dan ook NIET goed!\n\nDoor deze tutorial te gebruiken en op YES te klikken, gaat u ermee akkoord om het ALLEEN voor educatieve doeleinden te gebruiken!";
 var msg_anti_piracy_edat="ANTI-PIRACY DISCLAIMER!\n\nDeze optie is alleen bedoeld voor test- en ontwikkelingsdoeleinden en mag niet worden misbruikt!\n\nDoor op YES te klikken, gaat u ermee akkoord dit ALLEEN voor titels te gebruiken die u hebt gekocht!";
 
-var msg_thread_name="Hallo_van_PS3Xploit";
-
 // Devices
 var msg_device_loaded_into_mem="Apparaatretourwaarde geladen in geheugen!\n\nDruk nogmaals op Execute-knop om te lezen en weer te geven!";
 var msg_get_device_info1="Geretourneerd apparaat: ";
 var msg_get_device_info2="\n\nGebruik dit voor sys_storage_report_devices Chain";
 
 // Debugging
-var msg_debug_placeholder="Luiheid 1XP er bij"; //hello i alterd some translations to make it more locigal and more sense to understand, Did you know jake paul is from Ohio?
 
 var msg_stackframe_check="Hiermee wordt het standaard stackframe op problemen gecontroleerd.\n\nAls het vastloopt of geen succesbericht weergeeft, is er een probleem!";
 
@@ -121,7 +118,6 @@ var verify_skip="<font color='#2a1003'>SUCCESS: Geen strings in het geheugen!</f
 var msg_search_flash_type_start="Zoek naar Params Set voor";
 var msg_search_flash_type_end=" Flash Type!";
 
-var msg_check_memory="controleer geheugen: ";
 var msg_chk_mem_arg_error="vink Geheugenfunctie argumenten fout aan! size=0x";
 var msg_malformed_html="Onjuiste HTML!";
 var msg_string_located=" Gevonden bij offset: 0x";
@@ -131,10 +127,6 @@ var msg_string_not_located="kan niet binnen bereik zijn";
 var msg_found_offsets="Gevonden offsets: ";
 var msg_verified_offsets="Gecontroleerde offsets: ";
 var offset_find_success="success";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Pagina argumenten niet ingesteld!\n\nKlik op de knop Argumenten instellen en probeer het opnieuw!";
 var msg_no_chain_selected="No ROP Chain Hex Geselecteerd!\n\nUse The Drop-Down Box To Select One";
@@ -145,16 +137,13 @@ var msg_invalid_title_id="ALERT!\n\nDe ingevoerde titel ID heeft een ongeldige g
 
 // index GUI text
 var gui_title="PS3 Exploitation Tutorial Template ";
-var gui_team="by PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
+var guy_by="by ";
 var gui_credits="Veel dank aan xerpi voor de userland geheugenlek exploit ps3 port, zecoxao & Joonie voor hun vroege & voortdurende steun, mysis voor het documenteren van vsh exports & plug-ins, de psdevwiki-bijdragers natuurlijk, STLcardsWS voor zijn langdurige bijdrage & alle ps3 community hackers/devs verleden & heden, je weet wie je bent. Dankzij littlebalup en het idee en de bijbehorende js-implementatie die we gebruikten om de HDD-editie van de Dumpers en Flasher te maken. Ook dankzij B7U3 C50SS, Endless en 0x1991337 voor tutorial syscall testen en andere hulp! <font color='yellow'>Meer details & nieuws over <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Officiële website op <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
 var gui_chk_default_settings="Standaard instellingen:";
 var gui_chk_disable_trigger="Schakel Trigger uit:";
 var gui_chk_write_protect="Schrijfbeveiliging:";
-var gui_chk_flash_type_nand="NAND:";
-var gui_chk_flash_type_nor=" NOR:";
-var gui_chk_flash_type_emmc=" eMMC:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Herstartmodus:";
@@ -204,63 +193,30 @@ var gui_txt_option_fun_test="Beep Test";
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Geheugen/System: ";
 var gui_txt_syscall_chains_mem_sys="Geheugen";
-var gui_txt_option_sys_rsx_memory_free="sys_rsx_memory_free";
 
 // Storage
 var gui_txt_syscall_chains_storage="opslagruimte";
-var gui_txt_option_sys_storage_report_devices="sys_storage_report_devices";
-var gui_txt_option_sys_storage_open="sys_storage_open";
-var gui_txt_option_sys_storage_read="sys_storage_read";
-var gui_txt_option_sys_fs_chmod="sys_fs_chmod";
-var gui_txt_option_sys_fs_chown="sys_fs_chown";
-var gui_txt_option_sys_fs_get_fs_info="sys_fs_get_fs_info";
-var gui_txt_option_sys_fs_get_mount_info="sys_fs_get_mount_info";
-var gui_txt_option_sys_fs_link="sys_fs_link";
-var gui_txt_option_sys_fs_mapped_allocate="sys_fs_mapped_allocate";
-var gui_txt_option_sys_fs_mapped_free="sys_fs_mapped_free";
-var gui_txt_option_sys_fs_mkdir="sys_fs_mkdir";
-var gui_txt_option_sys_fs_mount="sys_fs_mount";
-var gui_txt_option_sys_fs_rename="sys_fs_rename";
-var gui_txt_option_sys_fs_rmdir="sys_fs_rmdir";
-var gui_txt_option_sys_fs_stat="sys_fs_stat";
-var gui_txt_option_sys_fs_symbolic_link="sys_fs_symbolic_link";
-var gui_txt_option_sys_fs_unlink="sys_fs_unlink";
-var gui_txt_option_sys_fs_unmount="sys_fs_unmount";
 
 // System
 var gui_txt_syscall_chains_system="Systeem";
-var gui_txt_option_sys_ss_utoken_if="sys_ss_utoken_if";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Process/Thread: ";
 var gui_txt_syscall_chains_proc_thread="Process";
-var gui_txt_option_sys_process_exit="sys_process_exit";
-var gui_txt_option_sys_process_kill="sys_process_kill";
 
+// Process ID
 var gui_txt_syscall_chains_process="Proc ID";
 
 // Threads
 var gui_txt_syscall_chains_threads="Threads";
-var gui_txt_option_ppu_thread_get_priority="thread_get_priority";
-var gui_txt_option_ppu_thread_get_stack_info="thread_get_stack_info";
-var gui_txt_option_sys_ppu_thread_create="sys_ppu_thread_create";
-var gui_txt_option_sys_ppu_thread_exit="sys_ppu_thread_exit";
-var gui_txt_option_sys_ppu_thread_restart="sys_ppu_thread_restart";
-var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
-var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Thread ID
 var gui_txt_syscall_chains_thread_id="Thread ID";
 
 // Netwerk
 var gui_txt_syscall_group_network="Netwerk: ";
-var gui_txt_syscall_chains_sys_net="sys_net";
-var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
-var gui_txt_option_sys_net_read_dump="sys_net_read_dump";
-var gui_txt_option_sys_net_write_dump="sys_net_write_dump";
-var gui_txt_option_sys_net_close_dump="sys_net_close_dump";
 
 var gui_txt_option_url="URL: ";
 
@@ -272,8 +228,6 @@ var gui_txt_option_debug_placeholder="beep_test";
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";
 var gui_txt_syscall_chains_led="* Select Chain *";
-var gui_txt_option_sys_sm_request_led="sys_sm_request_led";
-var gui_txt_option_sys_sm_control_led="sys_sm_control_led";
 
 var gui_txt_syscall_chains_led_color="Verander Kleur";
 var gui_txt_option_led_color_green="Groen";
@@ -314,14 +268,11 @@ var gui_txt_user_id_new="User ID Set To: ";
 var gui_txt_home_path_new="\n\nNew Home Path Is: \n\n";
 
 var gui_txt_group_permissions="Premissies";
-var gui_txt_option_chmod="chmod";
-var gui_txt_option_chown="chown";
 
 var gui_txt_group_filesize="Bestandsgrootte:";
 var gui_txt_group_titleid="Titel:";
 
 var gui_txt_btn_set_filesize="Set";
-var gui_txt_set_titleid="PS3XPLOIT";
 var gui_txt_btn_set_titleid="Set";
 
 var gui_txt_group_path_source="Bron:";
@@ -351,8 +302,6 @@ var gui_txt_option_search_loops="Loops";
 var gui_chk_search_verify_jumps="Verify Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
 var gui_chk_search_debug_output="Debug:";
-
-var gui_txt_search_found_offsets="Gevonden offsets: base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
 
 // Buttons
 var gui_txt_option_init_rop_btn="initialiseer ROP Chain";

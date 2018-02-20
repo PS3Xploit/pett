@@ -1,0 +1,34 @@
+﻿/* Index CSS */
+/* PS3Xploit Team 2018 / ps3xploit.com */
+
+body {
+	background-color: black;
+	text-align: center
+}
+h1 {
+	margin: 10;
+}
+td {
+	valign: middle;
+}
+td h2 {
+	margin: 2;
+}
+td h2 a {
+	color: cyan;
+}
+td h5 {
+	color: white;
+	margin: 2;
+	font-style: italic;
+}
+p {
+	font-style: italic;
+	color: orange;
+}
+span {
+	color: pink;
+}
+tr {
+	text-align: center;
+}
