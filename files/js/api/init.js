@@ -49,9 +49,30 @@ var g_fsopen_write_close;
 var g_mount_hdd1;
 var g_unk_game_debug_pafjob;
 var g_mount_flash;
+var g_unk_user_id1;
+var g_unk_user_id2;
+var g_unk_registry1;
+var g_unk_registry_backup;
+var g_unk_registry_restore;
+var g_unk_explore_plugin_bin;
+var g_unk_psp_rif;
+var g_unk_login_xmb;
+var g_start_busy_icon;
+var g_xmb_restore;
+var g_unk_pkg1;
+var g_unk_sync;
+var g_unk_bg_download1;
+var g_unk_bg_download2;
+var g_unk_post_update1;
+var g_unk_post_update2;
+var g_unk_crash_report1;
+var g_unk_http_client;
+var g_unk_fsck;
+var g_unk_debug1;
 var g_tty_write;
 var g_create_new_user;
 var g_remove_act_dat;
+var g_stdc_opendir;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
 
@@ -94,7 +115,6 @@ var _addr;
 var ph=0;
 
 // Path Address Pointers
-var base_fp;
 var stackframe_bin_fp;
 var usb_fp;
 var usb_fp2;
@@ -132,6 +152,7 @@ var allOffsetsVerified=false;
 var result_msg="";
 
 // Required Jumps
+var base_fp;
 var stack_frame;
 var jump_2;
 var jump_1;
