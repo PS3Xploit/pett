@@ -130,7 +130,10 @@ function initROP()
 				stackframe_verified=true;// fake verify
 			}
 			
-			if(allOffsetsFound)
+			// Verify Offsets
+			if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&(stackframe_verified)){allOffsetsVerified=true;}
+			
+			if(allOffsetsVerified)
 			{
 				if(debug_mode)logAdd(verify_success);
 				if(t_out!=0){searchResetTimeout();}
