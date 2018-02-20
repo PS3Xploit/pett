@@ -2329,6 +2329,8 @@ function saveMemdumpValues()
 	memdump_end_text=memdump_end.toString(16).toUpperCase();// this is size [fix later]
 	
 	alert(msg_memdump_size+memdump_end_text+msg_memdump_start_addr+memdump_addr_text+msg_memdump_end_addr+memdump_size_text);
+	memdump_size=memdump_end;
+
 	
 	init_rop.focus();
 }
