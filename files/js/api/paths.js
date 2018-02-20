@@ -51,6 +51,20 @@ var path_hdd_symlink_src="/dev_hdd0/game/";
 var path_usb_symlink_dest="/dev_usb000/game/";
 
 var path_usb_default="/dev_usb000/";
+var path_usb_000="/dev_usb000/";
+var path_usb_001="/dev_usb001/";
+var path_usb_002="/dev_usb002/";
+var path_usb_003="/dev_usb003/";
+var path_usb_004="/dev_usb004/";
+var path_usb_005="/dev_usb005/";
+var path_usb_006="/dev_usb006/";
+var path_usb_007="/dev_usb007/";
+var path_hdd0_default="/dev_hdd0/";
+var path_hdd1_default="/dev_hdd1/";
+var path_hdd2_default="/dev_hdd2/";
+var path_flash_default="/dev_flash/";
+var path_flash2_default="/dev_flash2/";
+var path_flash3_default="/dev_flash3/";
 
 var rename_test_src="/dev_hdd0/test/";
 var rename_test_dest="/dev_hdd0/PS3Xploit/";
