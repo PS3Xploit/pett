@@ -35,6 +35,7 @@ Portuguese BR	| pt_br | @[**HollowChris**](https://twitter.com/HollowChris) / @[
 Russian			| ru_ru | @[**ErikPshat**](https://twitter.com/ErikPshat)
 Spanish LA		| es_la | @[**Ripp3RkoS**](https://twitter.com/Ripp3RkoS)
 Spanish Spain	| es_sp | @[**Ivoyko**](https://twitter.com/Ivoyko)
+Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
 
 <br/>
 
