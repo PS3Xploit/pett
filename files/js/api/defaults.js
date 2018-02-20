@@ -364,7 +364,8 @@ function setCustomPointerValues()
 	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
 	
 	// Set mount params
-	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2=" CELL_FS_SIMPLEFS";path_src_fp=" /dev_hdd1";}
+	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2=" CELL_FS_SIMPLEFS";path_src_fp=" /dev_hdd1/";}
+	//if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_FAT";path_src_fp=" /dev_hdd1";}
 }
 
 function setPointerOffsets()
@@ -1376,40 +1377,6 @@ function useCustomStackFrame()
 		syscallAndExit(path_dest_fp_addr,sc_fs_mode,0,0,0,0,0,0,sc_sys_fs_mkdir,temp_addr_8A,temp_addr_8B);
 		break;
 		
-		case "sys_fs_mount":
-		a1_r3=path_fp_addr;
-		a1_r4=path_fp2_addr;
-		a1_r5=path_src_fp_addr;
-		a1_r6=fs_mount_arg4;
-		a1_r7=fs_mount_write_protection;
-		a1_r8=fs_mount_arg6;
-		a1_r9=fs_mount_arg7;
-		a1_r10=fs_mount_arg8;
-		a1_r11=sc_sys_fs_mount;
-		a1_jumpto=g_set_r4_thru_r11;
-		a2_jumpto=g_set_r3_from_r29;
-		a3_jumpto=g_sc_A0;
-		a4_r11=restore_stack;
-		a4_jumpto=g_set_r4_thru_r11;
-		a5_jumpto=g_exit_chain;
-		
-		// a1_r3=fs_mount_device_name;
-		// a1_r4=fs_mount_filesystem;
-		// a1_r5=fs_mount_device_path;
-		// a1_r6=fs_mount_arg4;
-		// a1_r7=fs_mount_write_protection;
-		// a1_r8=fs_mount_arg6;
-		// a1_r9=fs_mount_arg7;
-		// a1_r10=fs_mount_arg8;
-		// a1_r11=sc_sys_fs_mount;
-		// a1_jumpto=g_set_r4_thru_r11;
-		// a2_jumpto=g_set_r3_from_r29;
-		// a3_jumpto=g_sc_A0;
-		// a4_r11=restore_stack;
-		// a4_jumpto=g_set_r4_thru_r11;
-		// a5_jumpto=g_exit_chain;
-		break;
-		
 		// uses restore_stack1
 		case "sys_fs_newfs":
 		syscallAndExit(fs_newfs_device_name,fs_newfs_arg2,fs_newfs_arg3,0,0,0,0,0,sc_sys_fs_newfs,temp_addr_8A,temp_addr_8B);
@@ -1445,9 +1412,13 @@ function useCustomStackFrame()
 		syscallAndExit(path_dest_fp_addr,0,0,0,0,0,0,0,sc_sys_fs_unlink,temp_addr_8A,temp_addr_8B);
 		break;
 		
+		case "sys_fs_mount":
+		syscallAndExit(path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		break;
+		
 		// uses restore_stack1
 		case "sys_fs_unmount":
-		syscallAndExit(fs_unmount_path,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
+		syscallAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// does not use restore_stack1 restore_stack
@@ -1794,6 +1765,12 @@ function setChainOptions(chain)
 		write_protection_toggle.focus();
 		break;
 		
+		case "sys_fs_unmount":
+		setValueToHTML("path_src",path_hdd1_default);
+		setValueToHTML("path_dest","");
+		init_rop.focus();
+		break;
+		
 		case "sys_fs_rename":
 		setValueToHTML("path_src",hdd_dir_ps3xploit);
 		setValueToHTML("path_dest",hdd_dir_ps3xploit_new);
@@ -1830,12 +1807,6 @@ function setChainOptions(chain)
 		case "sys_fs_unlink":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest",path_usb_symlink_dest);
-		init_rop.focus();
-		break;
-		
-		case "sys_fs_unmount":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
 		init_rop.focus();
 		break;
 		

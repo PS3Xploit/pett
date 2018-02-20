@@ -127,7 +127,7 @@ var fs_get_mount_info_arg3=0x8A002000;
 
 // sys_fs_mount Parameters
 // r3 = CELL_FS_UTILITY:HDD1
-// r4 = CELL_FS_SIMPLEFS
+// r4 = CELL_FS_SIMPLEFS / CELL_FS_FAT
 // r5 = /dev_hdd1
 // r6-r10 = 0
 var sc_sys_fs_mount=0x00000345;
