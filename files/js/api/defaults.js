@@ -1039,17 +1039,17 @@ function syscallReadWriteFileAuto(src,dest)
 function exportStdcOpenReadCloseDir(src)
 {
 	a1_r3=src;
-	a1_r4=r4;
-	a1_r5=r5;
-	a1_r6=r6;
-	a1_r7=r7;
-	a1_r8=r8;
-	a1_r9=r9;
-	a1_r10=r10;
-	a1_r11=r11;
-	a1_r29=r29;
-	a1_r30=r30;
-	a1_r31=r31;
+	a1_r4=4;
+	a1_r5=5;
+	a1_r6=6;
+	a1_r7=7;
+	a1_r8=8;
+	a1_r9=9;
+	a1_r10=10;
+	a1_r11=11;
+	a1_r29=29;
+	a1_r30=30;
+	a1_r31=31;
 	a1_jumpto=g_set_r4_thru_r11;
 	a2_jumpto=g_set_r3_from_r29;
 	a3_jumpto=g_sc_A0;
@@ -1627,7 +1627,7 @@ function setChainOptions(chain)
 		case "dir_read_write_test":
 		setValueToHTML("path_src",usb_dir_ps3xploit);
 		setValueToHTML("path_dest",hdd_dir_ps3xploit);
-		alert(msg_option_not_available);
+		//alert(msg_option_not_available);
 		break;
 		
 		case "sys_net_dump":
