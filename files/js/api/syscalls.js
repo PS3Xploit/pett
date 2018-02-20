@@ -59,13 +59,13 @@ var write_nwrite=0x8A000100;
 var sc_sys_fs_close=0x00000324;
 
 var sys_fs_opendir=0x00000325;
-var sc_opendir_path;
-var sc_opendir_fd;
+var sc_opendir_path=0x8A000000;
+var sc_opendir_fd=0x8A000100;
 
 var sys_fs_readdir=0x00000326;
-var sc_readdir_fd;
-var sc_readdir_path;
-var sc_readdir_nread;
+var sc_readdir_fd=0x8A000200;
+var sc_readdir_path=0x8A000300;
+var sc_readdir_nread=0x8A000400;
 
 var sys_fs_closedir=0x00000327;
 var sc_closedir_fd;
