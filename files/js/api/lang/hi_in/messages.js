@@ -261,6 +261,11 @@ var gui_txt_memdump_address_start="दीक्षा:";
 var gui_txt_memdump_address_end="अंत:";
 var gui_txt_btn_memdump_set_values="Fijar Nuevos Valores";
 
+var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_option_mount_device="Device Name";
+var gui_txt_option_mount_fs="File System";
+var gui_txt_option_mount_path="Mount Path";
+
 var gui_txt_group_user_id="ID उपयोगकर्ता:";
 var gui_txt_option_user_id_default="* पूर्व निर्धारित *";
 var gui_txt_user_id_new="ID उपयोगकर्ता के सेट के लिए: ";

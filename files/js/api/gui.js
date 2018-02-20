@@ -184,6 +184,10 @@ function showGuiText()
 	document.getElementById('gui_txt_memdump_address_end').innerHTML=gui_txt_memdump_address_end;
 	document.getElementById('gui_txt_btn_memdump_set_values').innerHTML=gui_txt_btn_memdump_set_values;
 	
+	document.getElementById('gui_txt_mounting_setup').innerHTML=gui_txt_mounting_setup;
+	document.getElementById('gui_txt_option_mount_device').innerHTML=gui_txt_option_mount_device;
+	document.getElementById('gui_txt_option_mount_fs').innerHTML=gui_txt_option_mount_fs;
+	document.getElementById('gui_txt_option_mount_path').innerHTML=gui_txt_option_mount_path;
 	
 	document.getElementById('gui_txt_group_user_id').innerHTML=gui_txt_group_user_id;
 	document.getElementById('gui_txt_option_user_id_default').innerHTML=gui_txt_option_user_id_default;

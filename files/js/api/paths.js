@@ -4,6 +4,8 @@
 
 var path_name;
 
+var path_dev_blind="/dev_blind/";
+
 var path_name_test="/dev_hdd0/test/";// 15 bytes
 var path_name_test_new="/dev_hdd0/testnew/";// 15 bytes
 

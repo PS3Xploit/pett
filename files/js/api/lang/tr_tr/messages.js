@@ -308,6 +308,11 @@ var gui_txt_memdump_address_start="Başlat:";
 var gui_txt_memdump_address_end="Bitti:";
 var gui_txt_btn_memdump_set_values="Yeni Değerleri Ayarla";
 
+var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_option_mount_device="Device Name";
+var gui_txt_option_mount_fs="File System";
+var gui_txt_option_mount_path="Mount Path";
+
 var gui_txt_group_user_id="Kullanıcı ID:";
 var gui_txt_option_user_id_default="* Varsayılan *";
 var gui_txt_user_id_new="Kullanıcı Kimliği Belirle: ";

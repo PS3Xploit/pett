@@ -371,6 +371,10 @@ var path_src;
 var path_dest;
 var title_id="PS3XPLOIT";
 
+var mount_device="CELL_FS_IOS:BUILTIN_FLSH1";
+var mount_fs="CELL_FS_FAT";
+var mount_path="/dev_blind";
+
 var db_rebuild_bytes=0x000003E9;
 var memdump_addr=0x80000000;
 var memdump_addr_temp=0x80000000;

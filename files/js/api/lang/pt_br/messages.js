@@ -262,6 +262,11 @@ var gui_txt_memdump_address_start="Início:";
 var gui_txt_memdump_address_end="Fim:";
 var gui_txt_btn_memdump_set_values="Definir novos valores";
 
+var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_option_mount_device="Device Name";
+var gui_txt_option_mount_fs="File System";
+var gui_txt_option_mount_path="Mount Path";
+
 var gui_txt_group_user_id="ID do Usuário:";
 var gui_txt_option_user_id_default="* Padrão *";
 var gui_txt_user_id_new="ID do Usuário definido para: ";

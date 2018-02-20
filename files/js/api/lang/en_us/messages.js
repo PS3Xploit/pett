@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0004";
+var current_minimum_lang_revision="0006";
 var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
 
 var msg_select_vsh_type="Use CEX?\n\nSelecting NO will use DEX offsets";
@@ -261,6 +261,11 @@ var gui_txt_option_memdump_presets_default="* No Preset Selected *";
 var gui_txt_memdump_address_start="Start:";
 var gui_txt_memdump_address_end="End:";
 var gui_txt_btn_memdump_set_values="Set New Values";
+
+var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_option_mount_device="Device Name";
+var gui_txt_option_mount_fs="File System";
+var gui_txt_option_mount_path="Mount Path";
 
 var gui_txt_group_user_id="User ID:";
 var gui_txt_option_user_id_default="* Default *";

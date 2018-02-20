@@ -76,8 +76,6 @@
 
 			<b><span class="white" id="gui_chk_flash_type_nand"></span></b><input type="checkbox" id="flash_type_nand" name="flash_type_nand" onclick="setFlashType(0);"/><b><span class="white" id="gui_chk_flash_type_nor"></span></b><input type="checkbox" id="flash_type_nor" name="flash_type_nor" onclick="setFlashType(1);" checked /><b><span class="white" id="gui_chk_flash_type_emmc"></span></b><input type="checkbox" id="flash_type_emmc" name="flash_type_emmc" onclick="setFlashType(2);"/> &nbsp;
 
-			<b><span class="white" id="gui_chk_write_protect"></font></b><input type="checkbox" id="write_protection_toggle" name="write_protection_toggle" onclick="toggleWriteProtect();" checked /> &nbsp;
-
 			<b><span class="white" id="gui_chk_reboot_mode"></span></b> 
 			<select name="marked_reboot" id="marked_reboot" onchange="rebootSelection(this);">
 			<option value="" id="gui_chk_reboot_mode_select"></option>
@@ -222,7 +220,7 @@
 				<select name="marked_hex_debugging" id="marked_hex_debugging" onchange="chainSelection(this);" >
 				<option value="" id="gui_txt_syscall_chains_debug_sc" selected></option>
 				<option value="beep_test" id="gui_txt_option_debug_placeholder"></option>
-				</select> &nbsp;
+				</select> 
 			</div>
 
 			<hr size="1">
@@ -263,7 +261,7 @@
 			</div>
 			<hr size="1">
 		</div>
-
+		
 		<div id="file_path_selections">
 			<div id="memdump_options">
 				<b><span class="white" id="gui_txt_syscall_group_memdump"></span></b>
@@ -419,6 +417,45 @@
 				<button id="memdump_save_new_values" onclick="saveMemdumpValues();"><span id="gui_txt_btn_memdump_set_values"></span></button>
 			</div>
 			<hr size="1">
+		
+			<div id="mounting_setup">
+				<b><span class="white" id="gui_txt_mounting_setup"></span></b> 
+				
+				<select name="mounting_device" id="mounting_device" onchange="mountSetDevice(this);" >
+				<option value="" id="gui_txt_option_mount_device" selected></option>
+				<option value="CELL_FS_IOS:BUILTIN_FLSH1">CELL_FS_IOS:BUILTIN_FLSH1</option>
+				<option value="CELL_FS_IOS:BUILTIN_FLSH2">CELL_FS_IOS:BUILTIN_FLSH2</option>
+				<option value="CELL_FS_IOS:BUILTIN_FLSH3">CELL_FS_IOS:BUILTIN_FLSH3</option>
+				<option value="CELL_FS_IOS:BUILTIN_FLSH4">CELL_FS_IOS:BUILTIN_FLSH4</option>
+				<option value="BUILTIN_FLASH">BUILTIN_FLASH</option>
+				<option value="BUILTIN_FLSH">BUILTIN_FLSH</option>
+				<option value="CELL_FS_UTILITY:HDD0">CELL_FS_UTILITY:HDD0</option>
+				<option value="CELL_FS_UTILITY:HDD1">CELL_FS_UTILITY:HDD1</option>
+				<option value="CELL_FS_UTILITY:HDD2">CELL_FS_UTILITY:HDD2</option>
+				</select> &nbsp;
+				
+				<select name="mounting_fs" id="mounting_fs" onchange="mountSetFS(this);" >
+				<option value="" id="gui_txt_option_mount_fs" selected></option>
+				<option value="CELL_FS_FAT">CELL_FS_FAT</option>
+				<option value="CELL_FS_SIMPLEFS">CELL_FS_SIMPLEFS</option>
+				</select> &nbsp;
+				
+				<select name="mounting_path" id="mounting_path" onchange="mountSetPath(this);" >
+				<option value="" id="gui_txt_option_mount_path" selected></option>
+				<option value="/dev_blind">/dev_blind</option>
+				<option value="/dev_exploit">/dev_exploit</option>
+				<option value="/dev_hdd0">/dev_hdd0</option>
+				<option value="/dev_hdd1">/dev_hdd1</option>
+				<option value="/dev_hdd2">/dev_hdd2</option>
+				<option value="/dev_flash">/dev_flash</option>
+				<option value="/dev_flash2">/dev_flash2</option>
+				<option value="/dev_flash3">/dev_flash3</option>
+				</select> &nbsp;
+
+				<b><span class="white" id="gui_chk_write_protect"></font></b><input type="checkbox" id="write_protection_toggle" name="write_protection_toggle" onclick="toggleWriteProtect();" checked /> &nbsp;
+			</div>
+			<hr size="1">
+		
 			<div id="file_directory_options">
 				<b><span class="white" id="gui_txt_group_user_id"></span></b>
 				<select name="marked_user_id" id="marked_user_id" onchange="setUserID(this);">
@@ -469,7 +506,7 @@
 				<option value="" id="gui_txt_option_chown"></option>
 				<option value="0x00000000">* 0 *</option>
 				<option value="0x0000270F">9999</option>
-				</select> &nbsp;
+				</select> <br>
 
 				<b><span class="white" id="gui_txt_group_filesize"></span></b>
 				<textarea id="file_size_edit" name="file_size_edit" cols="10" rows="1">0x140</textarea>&nbsp; <!-- 0x38C0 test payload -->
@@ -489,6 +526,7 @@
 				<option value="/dev_usb000/game/PS3XPLOIT/USRDIR/payload.self">/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self</option>
 				<option value="/dev_hdd0/PS3Xploit/hello.txt">/dev_hdd0/PS3Xploit/hello.txt</option>
 				<option value="/dev_usb000/PS3Xploit/hello.txt">/dev_usb000/PS3Xploit/hello.txt</option>
+				<option value="/dev_blind/">/dev_blind/</option>
 				<option value="/dev_hdd0/">/dev_hdd0/</option>
 				<option value="/dev_hdd1/">/dev_hdd1/</option>
 				<option value="/dev_hdd2/">/dev_hdd2/</option>
@@ -547,6 +585,7 @@
 				<option value="/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self">/dev_hdd0/game/PS3XPLOIT/USRDIR/payload.self</option>
 				<option value="/dev_hdd0/PS3Xploit/hello.txt">/dev_hdd0/PS3Xploit/hello.txt</option>
 				<option value="/dev_usb000/PS3Xploit/hello.txt">/dev_usb000/PS3Xploit/hello.txt</option>
+				<option value="/dev_blind/">/dev_blind/</option>
 				<option value="/dev_hdd0/">/dev_hdd0/</option>
 				<option value="/dev_hdd1/">/dev_hdd1/</option>
 				<option value="/dev_hdd2/">/dev_hdd2/</option>
