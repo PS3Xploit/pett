@@ -1041,6 +1041,8 @@ function syscallReadWriteDirectory(src,dest)
 	// Open Source Directory
 	a1_r3=src;
 	a1_r4=sc_opendir_fd;
+	a1_r11=sys_fs_opendir;
+	a1_r29=src;
 	a1_jumpto=g_set_r4_thru_r11;
 	a2_jumpto=g_set_r3_from_r29;
 	a3_jumpto=g_sc_A0;
@@ -1049,28 +1051,31 @@ function syscallReadWriteDirectory(src,dest)
 	a4_r3=dest;
 	a4_r4=sc_fs_mode;
 	a4_r11=sc_sys_fs_mkdir;
+	a4_r29=dest;
 	a4_jumpto=g_set_r4_thru_r11;
 	a5_jumpto=g_set_r3_from_r29;
 	a6_jumpto=g_sc_A0;
 	
 	// Read Source Directory From File Descriptor
 	a7_r3=sc_opendir_fd;
-	a7_r4=sc_opendir_path;
+	a7_r4=sc_readdir_path;
 	a7_r5=sc_readdir_nread;
 	a7_r9=sc_opendir_fd;
 	a7_r11=sys_fs_readdir;
+	a7_r29=sc_opendir_fd;
 	a7_jumpto=g_set_r4_thru_r11;
 	a8_jumpto=g_set_r3_from_r29;
 	a9_jumpto=g_sc_set_r3_from_r9;
 	
-	a10_r3=hdd_fp_addr;
+	a10_r3=sc_opendir_fd;
 	a10_r8=write_buf;// register is r4
 	a10_r10=0;// register is r5
 	extra2=write_nwrite;// register is r6
-	a10_r6=hdd_fp_addr;// register is r9
+	a10_r6=sc_opendir_fd;// register is r9
 	extra5=g_set_r4_thru_r11;
 	extra1=g_set_r3_from_r29;
 	extra3=g_sc_set_r3_from_r9;
+	
 	extra4=sc_sys_fs_write;// register is r11
 	a13_r30=g_set_r31_F8;// must change r31 to not get base_fp overwritten
 	a15_r10=usb_fp_addr;
