@@ -41,7 +41,12 @@ Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
 
 <h3>Version History</h3>
 
+v0.1.7
+* Updated Mount Options
+
 v0.1.6
+* Added Mount Options
+* Updated Language Index and Misc GUI Tweaks (thanks @Caio99BR)
 * Added Türkçe TR Translation (thanks @yanealaka)
 * Updated Search Functions
 
