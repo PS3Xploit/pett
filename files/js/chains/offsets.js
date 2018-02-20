@@ -648,6 +648,10 @@ function ps3chk(){
 						g_mount_hdd1=0x638D7C;
 						g_unk_game_debug_pafjob=0x0D64DC;
 						g_stdc_opendir=0x0ADEDC;
+						g_stdc_readdir=0x0ADC58;
+						g_cellfs_opendir=0x62C0FC;
+						g_cellfs_readdir=0x62C1D4;
+						g_cellfs_closedir=0x62C22C;
 						g_create_new_user=0x0D27E8;
 						//g_unk_user_id1=0x0FB340;
 						//g_unk_user_id2=0x1981D4;

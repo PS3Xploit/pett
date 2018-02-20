@@ -73,6 +73,10 @@ var g_tty_write;
 var g_create_new_user;
 var g_remove_act_dat;
 var g_stdc_opendir;
+var g_stdc_readdir;
+var g_cellfs_opendir;
+var g_cellfs_readdir;
+var g_cellfs_closedir;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
 
