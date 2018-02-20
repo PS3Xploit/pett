@@ -224,13 +224,6 @@ function setDefaultSearchParams()
 		case 2:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		// search_base_offset = 0x801B0000;
-		// search_base_offset_min = 0x801B0000;
-		// search_base_offset_max = search_base_offset_min+0x230000;
-		// search_base_offset_adjust=0xB0000;
-		// search_base_offset_adjust_jump2=0x10000;
-		// search_base_offset_adjust_jump1=0x8000;
-		// search_range_size = 0x200000;
 		search_base_offset = 0x80200000;
 		search_base_offset_min = 0x80200000;
 		search_base_offset_max = search_base_offset_min+0x230000;
@@ -364,8 +357,7 @@ function setCustomPointerValues()
 	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
 	
 	// Set mount params
-	if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_SIMPLEFS";path_src_fp="/dev_hdd1";}
-	//if(chain_stackframe==="sys_fs_mount"){path_fp="CELL_FS_UTILITY:HDD1";path_fp2="CELL_FS_FAT";path_src_fp="/dev_hdd1";}
+	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
 }
 
 function setPointerOffsets()
@@ -389,6 +381,8 @@ function setPointerOffsets()
 	path_fp2_addr=path_fp_addr+path_fp.length;
 	
 	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;
+	path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
+	
 	
 	if(str2u_adjusted)
 	{
@@ -398,9 +392,12 @@ function setPointerOffsets()
 	{
 		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
 	}
+	
 		
 	// Super Hacky Way to fix mount for now :)
-	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}
+	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}
+	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;}
+	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}
 }
 
 function checkSearchParams()
@@ -643,6 +640,10 @@ function toggleDisableButtons(state)
 	disableElement("marked_hex_system_led_action", state);
 	//disableElement("marked_hex_system_fan_speed", state);
 	//disableElement("marked_hex_system_fan_settings", state);
+	
+	disableElement("mounting_device", state);
+	disableElement("mounting_fs", state);
+	disableElement("mounting_path", state);
 	
 	disableElement("marked_reboot", state);
 	disableElement("default_settings", state);
@@ -1418,7 +1419,7 @@ function useCustomStackFrame()
 		
 		// uses restore_stack1
 		case "sys_fs_unmount":
-		syscallAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
+		syscallAndExit(mount_path,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// does not use restore_stack1 restore_stack
@@ -1761,12 +1762,12 @@ function setChainOptions(chain)
 		case "sys_fs_mount":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
-		alert(msg_mount_test);
-		write_protection_toggle.focus();
+		//alert(msg_mount_test);
+		mounting_device.focus();
 		break;
 		
 		case "sys_fs_unmount":
-		setValueToHTML("path_src",path_hdd1_default);
+		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
 		init_rop.focus();
 		break;
@@ -1968,6 +1969,24 @@ function setChainOptions(chain)
 	
 }
 
+
+// Set Mounting Device
+function mountSetDevice(device){
+	mount_device = device.value;
+	mounting_fs.focus();
+} 
+
+// Set Mounting File System
+function mountSetFS(fs){
+	mount_fs = fs.value;
+	mounting_path.focus();
+} 
+
+// Set Mounting File System
+function mountSetPath(path){
+	mount_path = path.value;
+	write_protection_toggle.focus();
+} 
 
 // Get Process ID
 function getProcessID(id){
