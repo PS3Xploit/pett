@@ -42,6 +42,7 @@ Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
 <h3>Version History</h3>
 
 v0.1.6
+* Added Türkçe TR Translation (thanks @yanealaka)
 * Updated Search Functions
 
 v0.1.5
