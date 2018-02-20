@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>Zrzut IDPS Powiódł S
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Zrzut Pamięci Powiódł Się!!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Udało Się Zrzucić Plik/Folder Źródłowy Do Folderu Docelowego!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Udało Się Zamontować /dev_hdd1/! Zresetuj Przeglądarkę i Wybierz Test Odczytu/Zapisu aby Zrzucić Pliki.</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Informacje o Przeglądarce Systemu PS3: "+navigator.userAgent+ "</h3>";
