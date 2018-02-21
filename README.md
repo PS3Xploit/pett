@@ -21,21 +21,21 @@
 
 <h3>Multi-Language Translator Credits</h3>
 
-Language		| Code  | Translators
----------------:|:-----:|:-----------
-Arabic			| ar_ar | @[**Azooz_yos**](https://twitter.com/Azooz_yos)
-Català Espanya	| es_ct | @[**minicm94123**](https://twitter.com/minicm94123)
-Dutch NL		| nl_nl | @[**CompanyFart**](https://twitter.com/CompanyFart)
-French			| fr_fr | @[**valentinbreiz**](https://twitter.com/valentinbreiz) / @[**humanshield85**](https://twitter.com/humanshield85)
-German DE		| de_de | @[**FlatracerMod**](https://twitter.com/FlatracerMod)
-Hindi IN		| hi_in | @[**minicm94123**](https://twitter.com/minicm94123)
-Italian			| it_it | @[**neno20115**](https://twitter.com/neno20115)
-Polish			| pl_pl | @[**Roxu14**](https://twitter.com/Roxu14)
-Portuguese BR	| pt_br | @[**HollowChris**](https://twitter.com/HollowChris) / @[**Caio99BR**](https://twitter.com/Caio99BR)
-Russian			| ru_ru | @[**ErikPshat**](https://twitter.com/ErikPshat)
-Spanish LA		| es_la | @[**Ripp3RkoS**](https://twitter.com/Ripp3RkoS)
-Spanish Spain	| es_sp | @[**Ivoyko**](https://twitter.com/Ivoyko)
-Turkish TR   	| tr_tr | @[**yanealaka**](https://twitter.com/yanealaka)
+Language                 | Code   | Translators
+------------------------:|:------:|:-----------
+Arabic                   | ar     | @[**Azooz_yos**](https://twitter.com/Azooz_yos)
+Spanish (Catalan)        | ca     | @[**minicm94123**](https://twitter.com/minicm94123)
+German                   | de-DE  | @[**FlatracerMod**](https://twitter.com/FlatracerMod)
+Spanish (Latin American) | es-419 | @[**Ripp3RkoS**](https://twitter.com/Ripp3RkoS)
+Spanish                  | es-ES  | @[**Ivoyko**](https://twitter.com/Ivoyko)
+French                   | fr-FR  | @[**valentinbreiz**](https://twitter.com/valentinbreiz) / @[**humanshield85**](https://twitter.com/humanshield85)
+Dutch                    | nl-NL  | @[**CompanyFart**](https://twitter.com/CompanyFart)
+Hindi                    | hi     | @[**minicm94123**](https://twitter.com/minicm94123)
+Italian                  | it-IT  | @[**neno20115**](https://twitter.com/neno20115)
+Polish                   | pl     | @[**Roxu14**](https://twitter.com/Roxu14)
+Portuguese (Brazil)      | pt-BR  | @[**HollowChris**](https://twitter.com/HollowChris) / @[**Caio99BR**](https://twitter.com/Caio99BR)
+Russian                  | ru     | @[**ErikPshat**](https://twitter.com/ErikPshat)
+Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yanealaka)
 
 <br/>
 
