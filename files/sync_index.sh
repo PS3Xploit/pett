@@ -51,6 +51,12 @@ function sync_indexsh()
   local to_write_html;
   local to_write_css;
   local to_write_js;
+  local exp_remove_barrier;
+  local exp_remove_useless;
+
+  # Experimental
+  exp_remove_barrier='!Experimental!';
+  exp_remove_useless='<script src="../js/api/lang/en-US/messages.js"></script>';
 
   # Current dir
   cwd=$(pwd);
@@ -67,6 +73,7 @@ function sync_indexsh()
   lang_list=('ar|Arabic' \
              'ca|Spanish (Catalan)' \
              'de-DE|German' \
+             'en-US_exp|English US (Experimental)' \
              'es-ES|Spanish' \
              'es-419|Spanish (Latin American)' \
              'fr-FR|French' \
@@ -106,10 +113,18 @@ function sync_indexsh()
     # Copy new file
     cp "${match_html}" "${to_write_html}";
 
+    # Experimental
+    if [[ "${to_write_code}" == 'en-US_exp' ]]; then
+      editremovelines "${exp_remove_barrier}" "${to_write_html}";
+      editremovelines "${exp_remove_useless}" "${to_write_html}";
+      editreplacematch "${match_name}" "${to_write_name}" "${to_write_html}";
+
     # Replace 'match' with 'to_write'
-    editreplacematch "${match_css}" "${to_write_css}" "${to_write_html}";
-    editreplacematch "${match_js}" "${to_write_js}" "${to_write_html}";
-    editreplacematch "${match_name}" "${to_write_name}" "${to_write_html}";
+    else
+      editreplacematch "${match_css}" "${to_write_css}" "${to_write_html}";
+      editreplacematch "${match_js}" "${to_write_js}" "${to_write_html}";
+      editreplacematch "${match_name}" "${to_write_name}" "${to_write_html}";
+    fi;
   done;
 }
 
