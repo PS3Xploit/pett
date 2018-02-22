@@ -1,11 +1,11 @@
 // Mensagens Padrões do PS3Xploit [Portuguese BR]
 // PS3Xploit Team 2018 / ps3xploit.com
 
-// Translation Credits: @HollowChris and @Caio99BR
+// Translation Credits: @Caio99BR and @HollowChris
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0004"
+var current_minimum_lang_revision="0007"
 var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -53,7 +53,7 @@ var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\
 
 var msg_cobra_only="ALERTA!\n\nIsto só FUNCIONA com o COBRA ativado na CFW!";
 
-var msg_mount_test="** EM FASE DE TESTE **";
+var msg_mount_test="** EM FASE DE TESTES **";
 
 // File Operations
 var msg_default_size="Usando o tamanho padrão 0x140";
@@ -88,10 +88,10 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump feito com su
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Valor retornado do Syscall Dump feito com sucesso!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Dump da Memória feito com sucesso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferido da Origem para o Destino com sucesso!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Dispositivo Montado com Sucesso!</font></b></h3>";
 
 // Compatibility/Offset Messages
-var ua_msg="<hr><h3>Informações do Navegador do Sistema PS3: "+navigator.userAgent+ "</h3>";
+var ua_msg="<hr><h3>Info do Navegador do Sistema PS3: "+navigator.userAgent+ "</h3>";
 var compat_msg_nops3="Você não está em um Sistema PlayStation! Todos os recursos foram desativados.";
 var compat_msg_devs="Isto é destinado apenas para DESENVOLVEDORES!\n\nOffsets CEX precisam ser manualmente adicionados no arquivo /js/chains/offsets.js, baseado em seus offsets DEX em uso para cada cadeia.";
 var experimental="Configure sua página principal para ser essa página!\n\nUSE POR SUA CONTA E RISCO!\nPode conter bugs e algumas coisas que não funcionam!\n\nTodos os modelos em 4.xx CEX e 4.81 DEX são suportados";
@@ -126,7 +126,7 @@ var msg_string_not_located="não foi encontrado no intervalo";
 // Found Offsets
 var msg_found_offsets="Offsets Encontrados: ";
 var msg_verified_offsets="Offsets Verificados: ";
-var offset_find_success="success";
+var offset_find_success="Sucesso";
 
 var msg_page_args_not_set="Argumentos da pagina não definidos!\n\nClique no botão de Argumentos e tente novamente!";
 var msg_no_chain_selected="Nenhuma Cadeia HEX ROP selecionada\n\nUtilize a Caixa de Seleção para escolher uma cadeia";
@@ -156,7 +156,7 @@ var gui_chk_reboot_mode_off="Desligar";
 
 // Preset Chains
 var gui_txt_preset_chains="Cadeias Predefinidas: ";
-var gui_txt_preset_chains_default="* Padrão/Teste *";
+var gui_txt_preset_chains_default="Padrão/Teste";
 var gui_txt_option_stackframe_test="Teste do Stackframe";
 var gui_txt_option_beep_test="Teste do Beep";
 var gui_txt_option_power_test="Teste de Reinicio";
@@ -168,52 +168,52 @@ var gui_txt_option_sys_tty_read="Teste de Leitura TTY";
 var gui_txt_option_sys_tty_write="Teste de Escrita TTY";
 
 // Dumping
-var gui_txt_preset_chains_dumping="* Fazer Dump *";
+var gui_txt_preset_chains_dumping="Fazer Dump";
 var gui_txt_option_system_info_multi_dump="System Info Multi Dump";
 var gui_txt_option_dump_lv2_syscall_table="Dump da Tabela Syscall LV2";
 var gui_txt_option_mem_dump_test="Raw Dump pela Memória VSH";
 var gui_txt_option_get_open_psid="PSID Dump";
 var gui_txt_option_dump_idps_from_mem="IDPS Dump pela Memória VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
-var gui_txt_sys_sm_get_platform_info="Dump das Informações da Plataforma";
+var gui_txt_sys_sm_get_platform_info="Dump das Info da Plataforma";
 var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 
 // File System
-var gui_txt_preset_chains_file_system="* Sistema de Arquivos *";
+var gui_txt_preset_chains_file_system="Sistema de Arquivos";
 var gui_txt_option_db_rebuild="Reconstriur a Base de Dados";
 var gui_txt_option_file_read_write_test="Teste de Leitura/Escrita de Arquivos";
 var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 
 // Fun
-var gui_txt_preset_chains_fun="* Diversão *";
+var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
 
 // Other Syscall Chains
 
 // Memory/System
 var gui_txt_syscall_group_mem_sys="Memória/Sistema: ";
-var gui_txt_syscall_chains_mem_sys="* Memória *";
+var gui_txt_syscall_chains_mem_sys="Memória";
 
 // Storage
-var gui_txt_syscall_chains_storage="* Armazenamento *";
+var gui_txt_syscall_chains_storage="Armazenamento";
 
 // System
-var gui_txt_syscall_chains_system="* Sistema *";
+var gui_txt_syscall_chains_system="Sistema";
 
 // Process/Thread
 
 // Process
 var gui_txt_syscall_group_proc_thread="Processo/Tarefas: ";
-var gui_txt_syscall_chains_proc_thread="* Processos *";
+var gui_txt_syscall_chains_proc_thread="Processos";
 
 // Process ID
-var gui_txt_syscall_chains_process="* ID do Processo *";
+var gui_txt_syscall_chains_process="ID do Processo";
 
 // Threads
-var gui_txt_syscall_chains_threads="* Tarefas *";
+var gui_txt_syscall_chains_threads="Tarefas";
 
 // Thread ID
-var gui_txt_syscall_chains_thread_id="* ID da Tarefa *";
+var gui_txt_syscall_chains_thread_id="ID da Tarefa";
 
 // Network
 var gui_txt_syscall_group_network="Rede: ";
@@ -222,19 +222,19 @@ var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Depuração: ";
-var gui_txt_syscall_chains_debug_sc="* Chamadas do Sistema (syscalls) *";
+var gui_txt_syscall_chains_debug_sc="Chamadas do Sistema (syscalls)";
 var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";
-var gui_txt_syscall_chains_led="* Selecione a cadeia *";
+var gui_txt_syscall_chains_led="Selecione a cadeia";
 
 var gui_txt_syscall_chains_led_color="* Mudar a cor *";
 var gui_txt_option_led_color_green="Verde";
 var gui_txt_option_led_color_yellow_red="Amarelo/Vermelho";
 var gui_txt_option_led_color_off="Desligado";
 
-var gui_txt_syscall_chains_led_action="* Mudar a ação *";
+var gui_txt_syscall_chains_led_action="Mudar a ação";
 var gui_txt_option_led_action_on="Ligado";
 var gui_txt_option_led_action_off="Desligado";
 var gui_txt_option_led_action_blink_fast="Piscar rápido";
@@ -242,7 +242,7 @@ var gui_txt_option_led_action_blink_slow="Piscar devagar";
 
 // Beep Parameters
 var gui_txt_syscall_group_beep_params="Parâmetros do Beep: ";
-var gui_txt_syscall_chains_beeps="* Número de Beeps *";
+var gui_txt_syscall_chains_beeps="# de Beeps";
 var gui_txt_option_beep_off="Turn Off";
 var gui_txt_option_beep_3="3 Beeps";
 var gui_txt_option_beep_2="2 Beeps";
@@ -253,22 +253,22 @@ var gui_txt_option_beep_flatline="Zumbido Agudo";
 
 // Memory Dump
 var gui_txt_syscall_group_memdump="Dump da Memória:";
-var gui_txt_memdump_addresses="* Endereço do Dump da Memória *";
-var gui_txt_memdump_size="* Tamanho do Dump da Memória *";
+var gui_txt_memdump_addresses="Endereço do Dump da Memória";
+var gui_txt_memdump_size="Tamanho do Dump da Memória";
 var gui_txt_memdump_range_presets="Predefinições:";
-var gui_txt_option_memdump_presets_default="* Nenhuma predifinição selecionada *";
+var gui_txt_option_memdump_presets_default="Nenhuma predifinição selecionada";
 
 var gui_txt_memdump_address_start="Início:";
 var gui_txt_memdump_address_end="Fim:";
 var gui_txt_btn_memdump_set_values="Definir novos valores";
 
-var gui_txt_mounting_setup="Mounting Options: ";
-var gui_txt_option_mount_device="Device Name";
-var gui_txt_option_mount_fs="File System";
-var gui_txt_option_mount_path="Mount Path";
+var gui_txt_mounting_setup="Opções de Montagem: ";
+var gui_txt_option_mount_device="Nome do Dispositivo";
+var gui_txt_option_mount_fs="Sistema de Arquivos";
+var gui_txt_option_mount_path="Destino a ser montado";
 
 var gui_txt_group_user_id="ID do Usuário:";
-var gui_txt_option_user_id_default="* Padrão *";
+var gui_txt_option_user_id_default="Padrão";
 var gui_txt_user_id_new="ID do Usuário definido para: ";
 var gui_txt_home_path_new="\n\nO novo caminho para a pagina inicial é: \n\n";
 
@@ -284,7 +284,7 @@ var gui_txt_group_path_source="Origem:";
 var gui_txt_group_path_destination="Destino: ";
 
 // XMB Transfer
-var gui_txt_syscall_group_xmb_transfer="* Opções de Transferência pela XMB *";
+var gui_txt_syscall_group_xmb_transfer="Opções de Transferência pela XMB";
 var gui_txt_option_xmb_photo="Foto";
 var gui_txt_option_xmb_music="Música";
 var gui_txt_option_xmb_video="Vídeo";
@@ -298,11 +298,11 @@ var gui_txt_group_payload_type_help="Troque o payload padrão com os seus arquiv
 
 // String Search
 var gui_txt_group_string_search="Procurar:";
-var gui_txt_option_search_size="* Size *";
-var gui_txt_option_search_base="* Base *";
-var gui_txt_option_search_stack="* Stack *";
-var gui_txt_option_search_range="* Range *";
-var gui_txt_option_search_loops="* Loops *";
+var gui_txt_option_search_size="Size";
+var gui_txt_option_search_base="Base";
+var gui_txt_option_search_stack="Stack";
+var gui_txt_option_search_range="Range";
+var gui_txt_option_search_loops="Loops";
 
 var gui_chk_search_verify_jumps="Vericar Jumps:";
 var gui_chk_search_verify_stackframe="Stackframe:";
@@ -313,6 +313,6 @@ var gui_txt_option_init_rop_btn="Iniciar a Cadeia ROP";
 var gui_txt_option_exec_rop_btn="Executar a Cadeia";
 var gui_txt_option_reload_page_btn="Recarregar a Pagina";
 var gui_txt_option_reset_btn="Resetar as Opções";
-var gui_txt_option_load_settings_btn="Carregar as Configurações";
-var gui_txt_option_save_settings_btn="Salvar as Configurações";
+var gui_txt_option_load_settings_btn="Carregar as Configs";
+var gui_txt_option_save_settings_btn="Salvar as Configs";
 var gui_txt_option_debug_show_var_btn="Mostrar Todas as Variáveis";
