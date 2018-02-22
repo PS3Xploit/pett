@@ -5,8 +5,8 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0000";
-var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+var current_minimum_lang_revision="0007";
+var gui_incomplete_lang="Текущий перевод не полный, проверьте обновление или пропустите это предупреждение";
 
 var msg_select_vsh_type="Использовать CEX?\n\nПри выборе Нет, будут использоваться смещения DEX";
 
@@ -31,7 +31,7 @@ var msg_minver_loaded_into_mem="Возвращённое значение MinVer
 var msg_minver_start="Ваша минимальная версия  понижения ";
 var msg_minver_mid=" является ";
 var msg_minver_end=" совместимой с CFW в данное время!";
-var msg_minver_compat_not="NOT";
+var msg_minver_compat_not="НЕ";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Возвращённые значения CELL/RSX температуры загружены в память!\n\nНажмите снова кнопку «Выполнить цепочку» для чтения и отображения!";
@@ -85,10 +85,10 @@ var success_chain_exec="<h3><b><font color='#386E38'>Цепочка выполн
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Нажмите кнопку «Выполнить цепочку» еще раз!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID сдамплен успешно!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS сдамплен успешно!</font></b></h3>";
-var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Системный вызов вернул значение - Дамп выполнен успешно!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Память сдамплена успешно!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Успешно передан источник в пункт назначения!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Устройство успешно смонтрировано!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Информация о браузере системы PS3: "+navigator.userAgent+ "</h3>";
@@ -171,11 +171,11 @@ var gui_txt_option_sys_tty_write="Тест записи TTY";
 var gui_txt_preset_chains_dumping="Дампинг";
 var gui_txt_option_system_info_multi_dump="Мультидамп сисинфо";
 var gui_txt_option_dump_lv2_syscall_table="Дамп LV2 системных вызовов";
-var gui_txt_option_mem_dump_test="Raw дамп VSH памяти";
+var gui_txt_option_mem_dump_test="Дамп Raw памяти VSH";
 var gui_txt_option_get_open_psid="Дамп PSID";
 var gui_txt_option_dump_idps_from_mem="Дамп IDPS из VSH";
 var gui_txt_option_sys_net_dump="Дамп SysNet";
-var gui_txt_sys_sm_get_platform_info="Get Platform Info";
+var gui_txt_sys_sm_get_platform_info="Дамп инфо о платформе";
 var gui_txt_option_dump_idps_from_flash="Дамп IDPS из флеш";
 
 // File System
@@ -262,15 +262,15 @@ var gui_txt_memdump_address_start="Начало:";
 var gui_txt_memdump_address_end="Конец:";
 var gui_txt_btn_memdump_set_values="Применить";
 
-var gui_txt_mounting_setup="Mounting Options: ";
-var gui_txt_option_mount_device="Device Name";
-var gui_txt_option_mount_fs="File System";
-var gui_txt_option_mount_path="Mount Path";
+var gui_txt_mounting_setup="Опции монтирования: ";
+var gui_txt_option_mount_device="Наименование устройства";
+var gui_txt_option_mount_fs="Файловая система";
+var gui_txt_option_mount_path="Путь монтирования";
 
 var gui_txt_group_user_id="ID пользователя:";
 var gui_txt_option_user_id_default="* По умолчанию *";
-var gui_txt_user_id_new="User ID Set To: ";
-var gui_txt_home_path_new="\n\nNew Home Path Is: \n\n";
+var gui_txt_user_id_new="ID пользователя установлено на: ";
+var gui_txt_home_path_new="\n\nНовый домашний каталог пользователя: \n\n";
 
 var gui_txt_group_permissions="Права:";
 
