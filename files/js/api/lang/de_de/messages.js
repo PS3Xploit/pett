@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0004";
+var current_minimum_lang_revision="0007";
 var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
@@ -31,7 +31,7 @@ var msg_minver_loaded_into_mem="MinVer in den Arbeitsspeicher geladen!\n\nKlicke
 var msg_minver_start="Deine minimale Downgrade Version ist ";
 var msg_minver_mid=" und ist ";
 var msg_minver_end=" kompatibel mit einer CFW!";
-var msg_minver_compat_not="NOT";
+var msg_minver_compat_not="NEIN";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temperaturen in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS erfolgreich ausge
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Rückgabewert erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>Arbeitsspeicher erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Quelle erfolgreich ins Ziel übertragen!</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Geräte erfolgreich eingehangen!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>PS3 System Browser Info: "+navigator.userAgent+ "</h3>";
@@ -249,7 +249,7 @@ var gui_txt_option_beep_2="2 Signaltöne";
 var gui_txt_option_beep_2f="2 Signaltöne - Schnell";
 var gui_txt_option_beep_1="1 Signalton";
 var gui_txt_option_beep_1f="1 Signalton - Schnell";
-var gui_txt_option_beep_flatline="Nulllinir";
+var gui_txt_option_beep_flatline="Nulllinie";
 
 // Memory Dump
 var gui_txt_syscall_group_memdump="Arbeitsspeicher auslesen:";
@@ -262,10 +262,10 @@ var gui_txt_memdump_address_start="Start:";
 var gui_txt_memdump_address_end="Ende:";
 var gui_txt_btn_memdump_set_values="Neuen Wert festlegen";
 
-var gui_txt_mounting_setup="Mounting Options: ";
-var gui_txt_option_mount_device="Device Name";
-var gui_txt_option_mount_fs="File System";
-var gui_txt_option_mount_path="Mount Path";
+var gui_txt_mounting_setup="Einhänge Optionen: ";
+var gui_txt_option_mount_device="Geräte Name";
+var gui_txt_option_mount_fs="Dateisystem";
+var gui_txt_option_mount_path="Einhänge Pfad";
 
 var gui_txt_group_user_id="Benutzer ID:";
 var gui_txt_option_user_id_default="* Standard *";
