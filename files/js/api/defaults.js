@@ -642,6 +642,7 @@ function toggleDisableButtons(state)
 	disableElement("marked_hex_threads_id", state);
 	
 	disableElement("marked_hex_network", state);
+	disableElement("network_url_edit", state);
 	
 	disableElement("marked_hex_system", state);
 	disableElement("marked_hex_system_led", state);
