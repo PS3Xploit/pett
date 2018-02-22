@@ -5,8 +5,8 @@
 
 
 // After complete translate the language file update it to latest revision (same as en_us)
-var current_minimum_lang_revision="0000";
-var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
+var current_minimum_lang_revision="0007";
+var gui_incomplete_lang="Traduccion Actual Incompleta, considera Actualizarla o solo ignorale";
 
 var msg_select_vsh_type="Consola CEX?\n\nal Seleccionar NO se tomaran los offsets para DEX";
 		
@@ -42,7 +42,7 @@ var msg_temps_celcius=" Celcius";
 // MemDump
 var msg_memdump_warning="Advertencia!\n\nEsta Prueba se colgara si toca un area de memoria sin asignar durante el proceso Dump!\n\nAun asi obtendras un dump valido hasta el cuelgue!";
 var msg_memdump_idps_vsh="Solo FW 4.66/4.81/4.82 esta soportado para el Dump  IDPS Directo de Memoria VSH!\n\nLas Cadenas Basadas en la extraccion Flash IDPS es Diferente.\n\nTodas las Demas Versiones de FW probalemente solo den 0.";
-var msg_memdump_size="Raw VSH MemDump Values\n\nSize: 0x";
+var msg_memdump_size="Valores Raw del MemDump VSH\n\nSize: 0x";
 var msg_memdump_start_addr="\nDireccion Inicio: 0x";
 var msg_memdump_end_addr="\nDireccion Fin: 0x";
 
@@ -88,7 +88,7 @@ var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump Exitoso!</fo
 var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP de Memoria Exitoso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferencia de Archivos Exitosa !</font></b></h3>";
-var success_mount_device="<h3><b><font color='#386E38'>Successfully Mounted Device!</font></b></h3>";
+var success_mount_device="<h3><b><font color='#386E38'>Dispositivo/Medio Montado Exitosamente!</font></b></h3>";
 
 // Compatibility/Offset Messages
 var ua_msg="<hr><h3>Info Navegador PS3: "+navigator.userAgent+ "</h3>";
@@ -129,7 +129,7 @@ var msg_verified_offsets="Offsets Verificados: ";
 var offset_find_success="Exito";
 
 var msg_page_args_not_set="Argumentos de Pagina no establecidos!\n\nClic en Establecer argumentos y reintenta!";
-var msg_no_chain_selected="sin Cadena ROP Chain Seleccionada\n\nUsa la ventana desplegable para seleccionar una";
+var msg_no_chain_selected="sin Cadena ROP Seleccionada\n\nUsa la ventana desplegable para seleccionar una";
 var msg_media_not_supported="Este medio de almacenamiento aun no esta implementado!";
 var msg_cannot_continue="No se puede Continuar....Regresando!";
 
@@ -162,7 +162,7 @@ var gui_txt_option_beep_test="Prueba Bips";
 var gui_txt_option_power_test="Prueba de Energia";
 var gui_txt_option_minver_check="Version Minima de Fabrica";
 var gui_txt_option_sys_game_get_temperature="Mostrar Temperatura";
-var gui_txt_option_game_debug_pafjob_test="Game Debug PafJob Test";
+var gui_txt_option_game_debug_pafjob_test="Prueba de Depuracion PafJob";
 var gui_txt_option_console_write_test="Prueba de Escritura en Consola";
 var gui_txt_option_sys_tty_read="Prueba de Lectura TTY";
 var gui_txt_option_sys_tty_write="Prueba de Escritura TTY";
@@ -262,15 +262,15 @@ var gui_txt_memdump_address_start="Inicio:";
 var gui_txt_memdump_address_end="Fin:";
 var gui_txt_btn_memdump_set_values="Fijar Nuevos Valores";
 
-var gui_txt_mounting_setup="Mounting Options: ";
-var gui_txt_option_mount_device="Device Name";
-var gui_txt_option_mount_fs="File System";
-var gui_txt_option_mount_path="Mount Path";
+var gui_txt_mounting_setup="Opciones de Montaje: ";
+var gui_txt_option_mount_device="Nombre Dispositivo/Medio";
+var gui_txt_option_mount_fs="Sistema de Archivos";
+var gui_txt_option_mount_path="Ruta Montaje";
 
 var gui_txt_group_user_id="ID Usuario:";
 var gui_txt_option_user_id_default="* Predeterminado *";
 var gui_txt_user_id_new="ID de Usuario Fijado a: ";
-var gui_txt_home_path_new="\n\nNuevo Path Home es: \n\n";
+var gui_txt_home_path_new="\n\nLa nueva Ruta Home es: \n\n";
 
 var gui_txt_group_permissions="Permisos:";
 
