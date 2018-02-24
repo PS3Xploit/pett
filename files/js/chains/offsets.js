@@ -676,6 +676,7 @@ function ps3chk(){
 						g_remove_act_dat=0x259120;
 						//g_tty_write=0x0AD31C;
 						g_ps_button_bp=0x12FB14;
+						g_unk_xmb_plugin=0x0DE748;
 						g_init_reboot=0x0C6768;
 						g_init_shutdown=0x0C6730;
 						//g_exit_chain=0x30FD38;
