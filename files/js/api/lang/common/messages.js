@@ -1,11 +1,11 @@
-﻿// PS3 Default Messages [English US]
+﻿// PS3 Default Messages [Common English US]
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Common Language
 
 // Index GUI Version
 var gui_version="<font color='#FFF' size='3'>v0.1.7</font>";
-var global_minimum_lang_revision="0007";
+var global_minimum_lang_revision="0008";
 
 // Other Messages
 var msg_thread_name="Hello_From_PS3Xploit";
