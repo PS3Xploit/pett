@@ -125,6 +125,8 @@
 				<option value="" id="gui_txt_preset_chains_fun" selected></option>
 				<!-- <option value="beep_test" id="gui_txt_option_fun_test"></option> -->
 				<option value="xmb_plugin_test" id="gui_txt_option_xmb_plugin_test"></option>
+				<option value="busy_icon_test" id="gui_txt_option_busy_icon_test"></option>
+				<option value="vsh_printf_test" id="gui_txt_option_vsh_printf_test"></option>
 				</select>
 			</div>
 			<hr size="1">
@@ -428,17 +430,31 @@
 				<option value="CELL_FS_IOS:BUILTIN_FLSH2">CELL_FS_IOS:BUILTIN_FLSH2</option>
 				<option value="CELL_FS_IOS:BUILTIN_FLSH3">CELL_FS_IOS:BUILTIN_FLSH3</option>
 				<option value="CELL_FS_IOS:BUILTIN_FLSH4">CELL_FS_IOS:BUILTIN_FLSH4</option>
-				<option value="BUILTIN_FLASH">BUILTIN_FLASH</option>
-				<option value="BUILTIN_FLSH">BUILTIN_FLSH</option>
+				<option value="CELL_FS_IOS:BUILTIN_FLASH">CELL_FS_IOS:BUILTIN_FLASH</option>
+				<option value="CELL_FS_IOS:BUILTIN_FLSH">CELL_FS_IOS:BUILTIN_FLSH</option>
 				<option value="CELL_FS_UTILITY:HDD0">CELL_FS_UTILITY:HDD0</option>
 				<option value="CELL_FS_UTILITY:HDD1">CELL_FS_UTILITY:HDD1</option>
 				<option value="CELL_FS_UTILITY:HDD2">CELL_FS_UTILITY:HDD2</option>
+				<option value="CELL_FS_IOS:BDVD_DRIVE">CELL_FS_IOS:BDVD_DRIVE</option> <!-- Phat L0x + all newer SATA -->
+				<option value="CELL_FS_IOS:PATA0_BDVD_DRIVE">CELL_FS_IOS:PATA0_BDVD_DRIVE</option> <!-- Phat A0x-K0x PATA -->
+				<option value="CELL_FS_IOS:COMPACT_FLASH">CELL_FS_IOS:COMPACT_FLASH</option>
+				<option value="CELL_FS_IOS:MEMORY_STICK">CELL_FS_IOS:MEMORY_STICK</option>
+				<option value="CELL_FS_IOS:SD_CARD">CELL_FS_IOS:SD_CARD</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE">CELL_FS_IOS:USB_MASS_STORAGE</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE000">CELL_FS_IOS:USB_MASS_STORAGE000</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE001">CELL_FS_IOS:USB_MASS_STORAGE001</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE002">CELL_FS_IOS:USB_MASS_STORAGE002</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE003">CELL_FS_IOS:USB_MASS_STORAGE003</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE004">CELL_FS_IOS:USB_MASS_STORAGE004</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE005">CELL_FS_IOS:USB_MASS_STORAGE005</option>
+				<option value="CELL_FS_IOS:USB_MASS_STORAGE006">CELL_FS_IOS:USB_MASS_STORAGE006</option>
 				</select> &nbsp;
 				
 				<select name="mounting_fs" id="mounting_fs" onchange="mountSetFS(this);" >
 				<option value="" id="gui_txt_option_mount_fs" selected></option>
 				<option value="CELL_FS_FAT">CELL_FS_FAT</option>
 				<option value="CELL_FS_SIMPLEFS">CELL_FS_SIMPLEFS</option>
+				<option value="CELL_FS_ISO9660">CELL_FS_ISO9660</option>
 				</select> &nbsp;
 				
 				<select name="mounting_path" id="mounting_path" onchange="mountSetPath(this);" >
@@ -451,6 +467,18 @@
 				<option value="/dev_flash">/dev_flash</option>
 				<option value="/dev_flash2">/dev_flash2</option>
 				<option value="/dev_flash3">/dev_flash3</option>
+				<option value="/dev_bdvd">/dev_bdvd</option>
+				<option value="/dev_cf">/dev_cf</option>
+				<option value="/dev_ms">/dev_ms</option>
+				<option value="/dev_sd">/dev_sd</option>
+				<option value="/dev_usb">/dev_usb</option>
+				<option value="/dev_usb000">/dev_usb000</option>
+				<option value="/dev_usb001">/dev_usb001</option>
+				<option value="/dev_usb002">/dev_usb002</option>
+				<option value="/dev_usb003">/dev_usb003</option>
+				<option value="/dev_usb004">/dev_usb004</option>
+				<option value="/dev_usb005">/dev_usb005</option>
+				<option value="/dev_usb006">/dev_usb006</option>
 				</select> &nbsp;
 
 				<b><span class="white" id="gui_chk_write_protect"></font></b><input type="checkbox" id="write_protection_toggle" name="write_protection_toggle" onclick="toggleWriteProtect();" checked /> &nbsp;
