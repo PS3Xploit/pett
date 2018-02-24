@@ -39,6 +39,7 @@ var open_path=0x8A000000;
 var open_flag_read=0x00000000;
 var open_flag_create=0x00000241;
 var open_flag_create_append=0x441;
+var open_flag_create_excl=0xC1;
 var open_fd=0x00000000;
 var open_size_default=0x00000140;
 var open_mode=0x8A0000D0;
