@@ -1,0 +1,123 @@
+The error codes used by Cell OS Lv-2
+
+
+The operation is successfully executed.
+SUCCEEDED    0
+CELL_OK	     0
+
+The resource is temporarily unavailable. 
+e.g. The number of threads in the system is exceeding the limit.
+EAGAIN		-2147418111 / 0x80010001
+
+An invalid argument value is specified.
+e.g. An out-of-range argument or an invalid flag.
+EINVAL		-2147418110 / 0x80010002
+
+The feature is not yet implemented.
+ENOSYS		-2147418109 / 0x80010003
+
+Memory allocation failure
+ENOMEM		-2147418108 / 0x80010004
+
+The resource (process, thread, synchronous object, etc) with the
+specified identifier does not exist.
+ESRCH       -2147418107 / 0x80010005
+
+The file does not exist.
+ENOENT		-2147418106 / 0x80010006
+
+The file is not a valid ELF file. (The file is in unrecognized format.)
+ENOEXEC		-2147418105 / 0x80010007
+
+Resource deadlock is avoided.
+EDEADLK     -2147418104 / 0x80010008
+
+The operation is not permitted.
+EPERM       -2147418103 / 0x80010009
+
+The device or resource is busy
+EBUSY		-2147418102 / 0x8001000A
+
+The operation is timed out
+ETIMEDOUT	-2147418101 / 0x8001000B
+
+The operation is aborted
+EABORT		-2147418100 / 0x8001000C
+
+Invalid memory access
+EFAULT		-2147418099 / 0x8001000D
+
+State of the target thread is invalid.
+ESTAT       -2147418097 / 0x8001000F
+
+Alignment is invalid.
+EALIGN      -2147418096 / 0x80010010
+
+Shortage of the kernel resources
+EKRESOURCE  -2147418095 / 0x80010011
+
+The file is a directory
+EISDIR      -2147418094 / 0x80010012
+
+Operation canceled
+ECANCELED   -2147418093 / 0x80010013
+
+Entry already exists
+EEXIST      -2147418092 / 0x80010014
+
+Port is already connected
+EISCONN     -2147418091 / 0x80010015
+
+Port is not connected
+ENOTCONN    -2147418090 / 0x80010016
+
+Program authentication fail
+EAUTHFAIL   -2147418089 / 0x80010017
+
+The file is not a MSELF
+ENOTMSELF   -2147418088 / 0x80010018
+
+System version error
+ESYSVER     -2147418087 / 0x80010019
+
+Fatal system error
+EAUTHFATAL  -2147418086 / 0x8001001A
+
+EDOM          -2147418085 / 0x8001001B
+ERANGE        -2147418084 / 0x8001001C
+EILSEQ        -2147418083 / 0x8001001D
+EFPOS         -2147418082 / 0x8001001E
+EINTR         -2147418081 / 0x8001001F
+EFBIG         -2147418080 / 0x80010020
+EMLINK        -2147418079 / 0x80010021
+ENFILE        -2147418078 / 0x80010022
+ENOSPC        -2147418077 / 0x80010023
+ENOTTY        -2147418076 / 0x80010024
+EPIPE         -2147418075 / 0x80010025
+EROFS         -2147418074 / 0x80010026
+ESPIPE        -2147418073 / 0x80010027
+E2BIG         -2147418072 / 0x80010028
+EACCES        -2147418071 / 0x80010029
+EBADF         -2147418070 / 0x8001002A
+EIO           -2147418069 / 0x8001002B
+EMFILE        -2147418068 / 0x8001002C
+ENODEV        -2147418067 / 0x8001002D
+ENOTDIR       -2147418066 / 0x8001002E
+ENXIO         -2147418065 / 0x8001002F
+EXDEV         -2147418064 / 0x80010030
+EBADMSG       -2147418063 / 0x80010031
+EINPROGRESS   -2147418062 / 0x80010032
+EMSGSIZE      -2147418061 / 0x80010033
+ENAMETOOLONG  -2147418060 / 0x80010034
+ENOLCK        -2147418059 / 0x80010035
+ENOTEMPTY     -2147418058 / 0x80010036
+ENOTSUP       -2147418057 / 0x80010037
+EFSSPECIFIC   -2147418056 / 0x80010038
+EOVERFLOW     -2147418055 / 0x80010039
+ENOTMOUNTED   -2147418054 / 0x8001003A
+ENOTSDATA     -2147418053 / 0x8001003B
+
+SDK version error
+ESDKVER       -2147418052 / 0x8001003C
+ENOLICDISC    -2147418051 / 0x8001003D
+ENOLICENT     -2147418050 / 0x8001003E
