@@ -1229,10 +1229,6 @@ function useCustomStackFrame()
 		syscallAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_no_of_beeps,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B);
 		break;
 		
-		case "xmb_plugin_test":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_unk_xmb_plugin);
-		break;
-		
 		// uses restore_stack1
 		case "power_test":
 		syscallRebootOnly(reboot_mode,0x00000000,0x00000000);
@@ -1589,6 +1585,14 @@ function useCustomStackFrame()
 		syscallAndExit(sys_net_close_dump_id,sys_net_close_dump_pflags_ptr,0,0,0,0,0,0,sc_sys_net_close_dump,temp_addr_8A,temp_addr_8B);
 		break;
 		
+		case "xmb_plugin_test":
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_unk_xmb_plugin);
+		break;
+		
+		case "busy_icon_test":
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_start_busy_icon);
+		break;
+		
 		default:
 		alert(msg_cannot_continue);
 		return;
@@ -1631,11 +1635,11 @@ function setChainOptions(chain)
 		break;
 		
 		case "minver_check":
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "game_debug_pafjob_test":
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "mem_dump_test":
@@ -1697,15 +1701,11 @@ function setChainOptions(chain)
 		break;
 		
 		case "sys_fs_mapped_allocate":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_fs_mapped_free":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "console_write_test":
@@ -1844,11 +1844,11 @@ function setChainOptions(chain)
 		break;
 		
 		case "sys_storage_open":
-		
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_storage_read":
-		
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_process_exit":
@@ -1906,9 +1906,7 @@ function setChainOptions(chain)
 		break;
 		
 		case "sys_sm_request_led":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_sm_control_led":
@@ -1918,15 +1916,11 @@ function setChainOptions(chain)
 		break;
 		
 		case "sys_game_get_temperature":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_sm_get_fan_policy":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		/*
@@ -1939,39 +1933,27 @@ function setChainOptions(chain)
 		*/
 		
 		case "sys_ss_utoken_if":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_rsx_memory_free":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_net_open_dump":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_net_read_dump":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_net_write_dump":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "sys_net_close_dump":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 		
 		case "dump_lv2_syscall_table":
@@ -1981,14 +1963,23 @@ function setChainOptions(chain)
 		break;
 		
 		case "xmb_plugin_test":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
-		init_rop.focus();
+		setDefaultGuiParams();
+		break;
+		
+		case "busy_icon_test":
+		setDefaultGuiParams();
 		break;
 	}
 	
 }
 
+
+// Default GUI Params
+function setDefaultGuiParams(){
+	setValueToHTML("path_src","");
+	setValueToHTML("path_dest","");
+	init_rop.focus();
+} 
 
 // Set Mounting Device
 function mountSetDevice(device){
