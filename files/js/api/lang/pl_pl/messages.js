@@ -187,6 +187,7 @@ var gui_txt_option_dir_read_write_test="Test Odczytu/Zapisu Folderów";
 // Fun
 var gui_txt_preset_chains_fun="Zabawa";
 var gui_txt_option_fun_test="Test Brzęczyka";
+var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
 
 // Other Syscall Chains
 

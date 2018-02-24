@@ -187,6 +187,7 @@ var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 // Fun
 var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
+var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
 
 // Other Syscall Chains
 

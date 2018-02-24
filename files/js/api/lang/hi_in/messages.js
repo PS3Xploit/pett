@@ -186,6 +186,7 @@ var gui_txt_option_dir_read_write_test="पढ़ना / लेखन टेस
 // Fun
 var gui_txt_preset_chains_fun="Fun";
 var gui_txt_option_fun_test="कसौटी Bips";
+var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
 
 // Other Syscall Chains
 
