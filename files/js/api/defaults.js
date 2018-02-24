@@ -1229,6 +1229,10 @@ function useCustomStackFrame()
 		syscallAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_no_of_beeps,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B);
 		break;
 		
+		case "xmb_plugin_test":
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_unk_xmb_plugin);
+		break;
+		
 		// uses restore_stack1
 		case "power_test":
 		syscallRebootOnly(reboot_mode,0x00000000,0x00000000);
@@ -1973,6 +1977,12 @@ function setChainOptions(chain)
 		case "dump_lv2_syscall_table":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest",sys_ss_utoken_lv2_sc_table_dump);
+		init_rop.focus();
+		break;
+		
+		case "xmb_plugin_test":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
 		init_rop.focus();
 		break;
 	}

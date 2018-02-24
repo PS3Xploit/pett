@@ -68,7 +68,8 @@ function showGuiText()
 	
 	// Fun
 	document.getElementById('gui_txt_preset_chains_fun').innerHTML=gui_txt_preset_chains_fun;
-	document.getElementById('gui_txt_option_fun_test').innerHTML=gui_txt_option_fun_test;
+	// document.getElementById('gui_txt_option_fun_test').innerHTML=gui_txt_option_fun_test;
+	document.getElementById('gui_txt_option_xmb_plugin_test').innerHTML=gui_txt_option_xmb_plugin_test;
 	
 	
 	// Other Syscall Chains
