@@ -698,8 +698,11 @@ function ps3chk(){
 						g_unk_premo_plugin=0x0D2160;
 						g_unk_game_exec=0x1316E4;
 						g_unk_upload_util=0x16EB30;
+						g_unk_flash2_post_update=0x0DFDD4;
+						g_unk_mount_hdd=0x0DF64C;
 						g_unk_network_printf=0x0CB6CC;
 						vsh_printf=0x0CB72C;// file name in r3??, message in r4??
+						g_unk_psx_ps2=0x544788;
 						g_init_reboot=0x0C6768;
 						g_init_shutdown=0x0C6730;
 						//g_exit_chain=0x30FD38;

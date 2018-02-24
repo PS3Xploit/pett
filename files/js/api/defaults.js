@@ -358,6 +358,9 @@ function setCustomPointerValues()
 	
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
+	
+	// VSH printf Params
+	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
 }
 
 function setPointerOffsets()
@@ -1593,6 +1596,10 @@ function useCustomStackFrame()
 		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_start_busy_icon);
 		break;
 		
+		case "vsh_printf_test":
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,vsh_printf);
+		break;
+		
 		default:
 		alert(msg_cannot_continue);
 		return;
@@ -1968,6 +1975,12 @@ function setChainOptions(chain)
 		
 		case "busy_icon_test":
 		setDefaultGuiParams();
+		break;
+		
+		case "vsh_printf_test":
+		setValueToHTML("path_src",vsh_printf_arg1);
+		setValueToHTML("path_dest",vsh_printf_arg2);
+		init_rop.focus();
 		break;
 	}
 	

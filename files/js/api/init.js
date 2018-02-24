@@ -100,8 +100,11 @@ var g_unk_update_game_data;
 var g_unk_premo_plugin;
 var g_unk_game_exec;
 var g_unk_upload_util;
+var g_unk_flash2_post_update;
+var g_unk_mount_hdd;
 var g_unk_network_printf;
 var vsh_printf;
+var g_unk_psx_ps2;
 var g_init_reboot;
 var g_init_shutdown;
 var g_exit_chain;// graceful exit
