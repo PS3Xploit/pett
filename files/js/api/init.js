@@ -46,6 +46,7 @@ var g_sc_set_r3_from_r9;// set r3 from r9 and sc
 var g_sc_set_r3_from_r10;// set r3 from r10 and sc
 var g_fopen_write_close;
 var g_fsopen_write_close;
+var g_cellfs_open_write_close1;
 var g_mount_hdd1;
 var g_unk_game_debug_pafjob;
 var g_mount_flash;
@@ -75,6 +76,10 @@ var g_remove_act_dat;
 var g_remove_exdata;
 var g_unk_act_dat1;
 var g_unk_act_dat2;
+var g_unk_rif1;
+var g_unk_rif2;
+var g_unk_rif3;
+var g_unk_exdata_edat1;
 var g_stdc_opendir;
 var g_stdc_readdir;
 var g_cellfs_opendir;

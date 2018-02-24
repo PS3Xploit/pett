@@ -645,6 +645,7 @@ function ps3chk(){
 						//g_fsopen_write_close=0x280450;
 						//g_fsopen_write_close=0x25E850;
 						//g_fsopen_write_close=0x0E11EC;
+						//g_cellfs_open_write_close1=0x27F8A4;
 						g_mount_hdd1=0x638D7C;
 						g_unk_game_debug_pafjob=0x0D64DC;
 						g_stdc_opendir=0x0ADEDC;
@@ -660,7 +661,7 @@ function ps3chk(){
 						//g_unk_explore_plugin_bin=0x15E524;
 						//g_unk_psp_rif=0x256BE0;
 						//g_unk_login_xmb=0x0DD7C0;
-						//g_start_busy_icon=0x0DD944;
+						g_start_busy_icon=0x0DD944;
 						//g_xmb_restore=0x0DE27C;
 						//g_unk_pkg1=0x327F1C;
 						//g_unk_sync=0x3296A8;
@@ -679,6 +680,10 @@ function ps3chk(){
 						g_remove_exdata=0x25A638;
 						g_unk_act_dat1=0x258D58;
 						g_unk_act_dat2=0x25938C;
+						g_unk_rif1=0x25A728;
+						g_unk_rif2=0x25A820;
+						g_unk_rif3=0x25AB60;
+						g_unk_exdata_edat1=0x25ACBC;
 						g_ps_button_bp=0x12FB14;
 						g_unk_xmb_plugin=0x0DE748;
 						g_unk_mount_bdvd=0x544998;
