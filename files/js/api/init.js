@@ -77,6 +77,9 @@ var g_stdc_readdir;
 var g_cellfs_opendir;
 var g_cellfs_readdir;
 var g_cellfs_closedir;
+var g_ps_button_bp;
+var g_init_reboot;
+var g_init_shutdown;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
 
