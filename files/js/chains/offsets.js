@@ -652,7 +652,6 @@ function ps3chk(){
 						g_cellfs_opendir=0x62C0FC;
 						g_cellfs_readdir=0x62C1D4;
 						g_cellfs_closedir=0x62C22C;
-						g_create_new_user=0x0D27E8;
 						//g_unk_user_id1=0x0FB340;
 						//g_unk_user_id2=0x1981D4;
 						//g_unk_registry1=0x536D70;
@@ -673,10 +672,17 @@ function ps3chk(){
 						//g_unk_http_client=0x1BC6E4;
 						//g_unk_fsck=0x0DF2C0;
 						//g_unk_debug1=0x0CA978;
-						g_remove_act_dat=0x259120;
 						//g_tty_write=0x0AD31C;
+						//g_unk_alpha_numeric=0x544F64;
+						g_create_new_user=0x0D27E8;
+						g_remove_act_dat=0x259120;
+						g_remove_exdata=0x25A638;
+						g_unk_act_dat1=0x258D58;
+						g_unk_act_dat2=0x25938C;
 						g_ps_button_bp=0x12FB14;
 						g_unk_xmb_plugin=0x0DE748;
+						g_unk_mount_bdvd=0x544998;
+						g_unk_mount_fat=0x544BD4;
 						g_init_reboot=0x0C6768;
 						g_init_shutdown=0x0C6730;
 						//g_exit_chain=0x30FD38;
