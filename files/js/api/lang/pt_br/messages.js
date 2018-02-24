@@ -188,6 +188,10 @@ var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
 var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
+var gui_txt_option_busy_icon_test="Busy Icon Test";
+var gui_txt_option_vsh_printf_test="VSH printf Test";
+var vsh_printf_arg1="MESSAGE: ";
+var vsh_printf_arg2="HELLO FROM TEAM PS3XPLOIT!";
 
 // Other Syscall Chains
 
