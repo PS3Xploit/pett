@@ -189,8 +189,8 @@ var sc_sys_storage_write=0x0000025B;
 // sys_fs_stat Parameters
 var sc_sys_fs_stat=0x00000328;
 var sys_fs_stat_path=0x00000000;
-var sys_fs_stat_sb=0x8A000000;
 
+var sys_fs_stat_sb=0x8A000000;
 // sys_fs_fstat  Parameters
 var sc_sys_fs_fstat =0x00000329;
 var sys_fs_fstat_path=0x00000000;
@@ -482,6 +482,31 @@ var sys_net_close_dump_pflags_ptr=0x8A000020;
 var sc_sys_sm_get_platform_info=0x00000183;
 var sys_sm_get_platform_info_ptr=0x8A000000;
 var sys_sm_get_platform_info_size=0x00000020;
+
+
+// int sys_prx_register_library(void* library)
+var sc_sys_prx_register_library=0x000001E6;
+var sys_prx_register_library_ptr=0x8A000000;
+
+// int sys_prx_unregister_library(void* library)
+var sc_sys_prx_unregister_library=0x000001E7;
+var sys_prx_unregister_library_ptr=0x8A000000;
+
+// sys_prx_id_t sys_prx_load_module(const char* path, sys_prx_flags_t flags, sys_prx_load_module_option_t* pOpt)
+var sc_sys_prx_load_module=0x000001E0;
+var sys_prx_load_module_path=0x8A001000;
+var sys_prx_load_module_flags=0x00000000;
+var sys_prx_load_module_popt=0x8A002000;// pointer to 0
+
+// int sys_prx_start_module(sys_prx_id_t id, sys_prx_flags_t flags, sys_prx_start_t* pOpt)
+var sc_sys_prx_start_module=0x000001E1;
+var sys_prx_start_module_id=0x00000000;
+var sys_prx_start_module_flags=0x00000000;
+var sys_prx_start_module_popt=0x00000000;
+var sys_prx_start_module_unk1=0x8A003000;
+var sys_prx_start_module_unk2=0x00000000;
+
+
 
 
 
