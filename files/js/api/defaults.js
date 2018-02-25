@@ -1975,21 +1975,25 @@ function setChainOptions(chain)
 		
 		case "xmb_plugin_test":
 		setDefaultGuiParams();
+		alert("DEX 4.81 ONLY");
 		break;
 		
 		case "busy_icon_test":
 		setDefaultGuiParams();
+		alert("DEX 4.81 ONLY");
 		break;
 		
 		case "vsh_printf_test":
 		setValueToHTML("path_src",vsh_printf_arg1);
 		setValueToHTML("path_dest",vsh_printf_arg2);
+		alert("DEX 4.81 ONLY");
 		init_rop.focus();
 		break;
 		
 		case "create_new_user":
 		setValueToHTML("path_src",vsh_printf_arg1);
 		setValueToHTML("path_dest",vsh_printf_arg2);
+		alert("DEX 4.81 ONLY");
 		init_rop.focus();
 		break;
 	}
