@@ -703,6 +703,7 @@ function ps3chk(){
 						g_unk_network_printf=0x0CB6CC;
 						vsh_printf=0x0CB72C;// file name in r3??, message in r4??
 						g_unk_psx_ps2=0x544788;
+						g_unk_manager_signout=0x0FC354;
 						g_init_reboot=0x0C6768;
 						g_init_shutdown=0x0C6730;
 						//g_exit_chain=0x30FD38;

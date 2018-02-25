@@ -1600,6 +1600,10 @@ function useCustomStackFrame()
 		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,vsh_printf);
 		break;
 		
+		case "create_new_user":
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_create_new_user);
+		break;
+		
 		default:
 		alert(msg_cannot_continue);
 		return;
@@ -1978,6 +1982,12 @@ function setChainOptions(chain)
 		break;
 		
 		case "vsh_printf_test":
+		setValueToHTML("path_src",vsh_printf_arg1);
+		setValueToHTML("path_dest",vsh_printf_arg2);
+		init_rop.focus();
+		break;
+		
+		case "create_new_user":
 		setValueToHTML("path_src",vsh_printf_arg1);
 		setValueToHTML("path_dest",vsh_printf_arg2);
 		init_rop.focus();

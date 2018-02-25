@@ -105,6 +105,7 @@ var g_unk_mount_hdd;
 var g_unk_network_printf;
 var vsh_printf;
 var g_unk_psx_ps2;
+var g_unk_manager_signout;
 var g_init_reboot;
 var g_init_shutdown;
 var g_exit_chain;// graceful exit
