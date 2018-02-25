@@ -1991,8 +1991,8 @@ function setChainOptions(chain)
 		break;
 		
 		case "create_new_user":
-		setValueToHTML("path_src",vsh_printf_arg1);
-		setValueToHTML("path_dest",vsh_printf_arg2);
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
 		alert("DEX 4.81 ONLY");
 		init_rop.focus();
 		break;
