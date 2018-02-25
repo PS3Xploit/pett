@@ -1790,7 +1790,7 @@ function setChainOptions(chain)
 		case "sys_fs_unmount":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
-		init_rop.focus();
+		mounting_path.focus();
 		break;
 		
 		case "sys_fs_rename":
@@ -2009,7 +2009,8 @@ function mountSetFS(fs){
 // Set Mounting File System
 function mountSetPath(path){
 	mount_path = path.value;
-	write_protection_toggle.focus();
+	if(chain_stackframe==="sys_fs_mount"){write_protection_toggle.focus();}
+	if(chain_stackframe==="sys_fs_unmount"){init_rop.focus();}
 } 
 
 // Get Process ID
