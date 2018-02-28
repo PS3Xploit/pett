@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0007"
+var current_minimum_lang_revision="0009"
 var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -180,7 +180,7 @@ var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Sistema de Arquivos";
-var gui_txt_option_create_new_user="Create New User";
+var gui_txt_option_create_new_user="Criar Novo Usuário";
 var gui_txt_option_db_rebuild="Reconstriur a Base de Dados";
 var gui_txt_option_file_read_write_test="Teste de Leitura/Escrita de Arquivos";
 var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
@@ -188,11 +188,11 @@ var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 // Fun
 var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
-var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
-var gui_txt_option_busy_icon_test="Busy Icon Test";
-var gui_txt_option_vsh_printf_test="VSH printf Test";
-var vsh_printf_arg1="MESSAGE: ";
-var vsh_printf_arg2="HELLO FROM TEAM PS3XPLOIT!";
+var gui_txt_option_xmb_plugin_test="Teste do Plugin XMB";
+var gui_txt_option_busy_icon_test="Teste do Icone de Ocupado";
+var gui_txt_option_vsh_printf_test="Teste do printf na VSH";
+var vsh_printf_arg1="MENSAGEM: ";
+var vsh_printf_arg2="OLÁ DO PS3XPLOIT TEAM!";
 
 // Other Syscall Chains
 
