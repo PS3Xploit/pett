@@ -31,6 +31,7 @@ var msg_minver_loaded_into_mem="MinVer मेमोरी में भरी �
 var msg_minver_start="डाउनग्रेड के लिए आपका न्यूनतम संस्करण है  ";
 var msg_minver_mid="और यह, आज तक ";
 var msg_minver_end=" यह CFW के साथ संगत है!";
+var msg_minver_compat_not="NOT";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp मेमोरी में भरी हुई मान देता है!\n\nमूल्य दिखाने के लिए फिर से निष्पादित बटन दबाएं!";
@@ -179,6 +180,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS की Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="फ़ाइल सिस्टम";
+var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="फिर से बनाना BD";
 var gui_txt_option_file_read_write_test="पढ़ना / लेखन टेस्ट (फ़ाइलें)";
 var gui_txt_option_dir_read_write_test="पढ़ना / लेखन टेस्ट (निर्देशिकाएं)";

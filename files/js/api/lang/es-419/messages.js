@@ -180,6 +180,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS de Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Sistema de Archivos";
+var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Reconstruir BD";
 var gui_txt_option_file_read_write_test="Prueba de Lectura/Escritura (Archivos)";
 var gui_txt_option_dir_read_write_test="Prueba de Lectura/Escritura (Directorios)";
