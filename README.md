@@ -42,6 +42,7 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 <h3>Version History</h3>
 
 v0.1.7
+* Updated Language Base Files and Fixed Missing Variables (thanks @Caio99BR)
 * Updated Mount Options
 
 v0.1.6
