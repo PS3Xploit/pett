@@ -43,6 +43,9 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 v0.1.7
 * Updated Language Base Files and Fixed Missing Variables (thanks @Caio99BR)
+* Updated "Fun" Preset Chains
+* Added "Create New User" under File Directory Chains
+* Added several gadget addresses to test
 * Updated Mount Options
 
 v0.1.6
