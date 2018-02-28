@@ -126,6 +126,7 @@ var msg_string_not_located="kan niet binnen bereik zijn";
 // Found Offsets
 var msg_found_offsets="Gevonden offsets: ";
 var msg_verified_offsets="Gecontroleerde offsets: ";
+var offset_find_success="success";
 
 var msg_page_args_not_set="Pagina argumenten niet ingesteld!\n\nKlik op de knop Argumenten instellen en probeer het opnieuw!";
 var msg_no_chain_selected="No ROP Chain Hex Geselecteerd!\n\nUse The Drop-Down Box To Select One";
@@ -179,7 +180,6 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS vanuit Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Bestandssysteem";
-var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Database Herbouw";
 var gui_txt_option_file_read_write_test="Lees/Schrijf File Test";
 var gui_txt_option_dir_read_write_test="Lees/Schrijf directory Test";

@@ -22,9 +22,6 @@ var offset_find_stack_frame="stack_frame";
 var offset_find_jump2="jump2";
 var offset_find_jump1="jump1";
 
-var offset_find_success="success";
-var offset_find_verified="verified";
-
 // Index GUI text
 var gui_team="PS3Xploit Team: <b><font color='#7700DA'>W</font><font color='#FFF'> | </font><font color='#7700DA'>esc0rtd3w</font><font color='#FFF'> | </font><font color='#7700DA'>habib</font><font color='#FFF'> | </font><font color='#7700DA'>bguerville</font></b>";
 

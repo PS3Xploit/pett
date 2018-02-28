@@ -126,6 +126,7 @@ var msg_string_not_located="no pot ser localitzat en el rang";
 // Found Offsets
 var msg_found_offsets="offsets trobats: ";
 var msg_verified_offsets="offsets verificats: ";
+var offset_find_success="ACONSEGUIT";
 
 var msg_page_args_not_set="¡No s'han col·locat arguments a la pàgina!\n\nFeu clic al botó Establir arguments i torneu a provar.";
 var msg_no_chain_selected="¡No s'ha seleccionat Hex de cadena ROP!\n\nUtilitza el quadre desplegable per seleccionar un.";
@@ -179,7 +180,6 @@ var gui_txt_option_dump_idps_from_flash="Bolcar IDPs des Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Sistema d'arxius";
-var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Reconstruir sistema de dades";
 var gui_txt_option_file_read_write_test="Prova de Lectura / Escriptura d'arxius";
 var gui_txt_option_dir_read_write_test="Prova de Lectura / Escriptura de directori";

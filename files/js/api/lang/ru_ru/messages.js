@@ -126,6 +126,7 @@ var msg_string_not_located="не может находиться в диапаз
 // Found Offsets
 var msg_found_offsets="Найдены смещения: ";
 var msg_verified_offsets="Проверенные смещения: ";
+var offset_find_success="успешно";
 
 var msg_page_args_not_set="Аргументы страницы не заданы!\n\nНажмите кнопку «Установить аргументы» и повторите попытку!";
 var msg_no_chain_selected="Не выбрана цепочка ROP в хекс\n\nИспользуйте раскрывающийся список для выбора";
@@ -179,7 +180,6 @@ var gui_txt_option_dump_idps_from_flash="Дамп IDPS из флеш";
 
 // File System
 var gui_txt_preset_chains_file_system="Файловая система";
-var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Реконструкция базы данных";
 var gui_txt_option_file_read_write_test="Тест Чтения/Записи файла";
 var gui_txt_option_dir_read_write_test="Тест Чтения/Записи каталога";
