@@ -125,7 +125,6 @@ var msg_string_not_located="रैंक में यह संभव नही
 // Found Offsets
 var msg_found_offsets="Offsets पाया: ";
 var msg_verified_offsets="Offsets सत्यापित: ";
-var offset_find_success="सफलता";
 
 var msg_page_args_not_set="पृष्ठ तर्क स्थापित नहीं!\n\nसेट तर्क पर क्लिक करें और पुनः प्रयास करें!";
 var msg_no_chain_selected="चेन के बिना ROP Chain चुना गया\n\nएक का चयन करने के लिए ड्रॉप-डाउन विंडो का उपयोग करें";
@@ -179,6 +178,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS की Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="फ़ाइल सिस्टम";
+var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="फिर से बनाना BD";
 var gui_txt_option_file_read_write_test="पढ़ना / लेखन टेस्ट (फ़ाइलें)";
 var gui_txt_option_dir_read_write_test="पढ़ना / लेखन टेस्ट (निर्देशिकाएं)";

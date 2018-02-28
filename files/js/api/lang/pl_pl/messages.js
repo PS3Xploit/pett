@@ -126,7 +126,6 @@ var msg_string_not_located="nie można znaleźć w zakresie";
 // Found Offsets
 var msg_found_offsets="Znalezione Offsety: ";
 var msg_verified_offsets="Zweryfikowane Offsety: ";
-var offset_find_success="sukces";
 
 var msg_page_args_not_set="Page Arguments Not Set!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="No ROP Chain Hex Selected\n\nUse The Drop-Down Box To Select One";
@@ -180,6 +179,7 @@ var gui_txt_option_dump_idps_from_flash="Zrzuć IDPS Z Pamięci Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="System Plików";
+var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Odbudowanie Bazy Danych";
 var gui_txt_option_file_read_write_test="Test Odczytu/Zapisu Plików";
 var gui_txt_option_dir_read_write_test="Test Odczytu/Zapisu Folderów";

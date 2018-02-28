@@ -130,11 +130,6 @@ var msg_string_not_located="could not be located in range";
 // Found Offsets
 var msg_found_offsets="Bulunan Ofsetleri Bulundu: ";
 var msg_verified_offsets="Doğrulanmış Ofsetler: ";
-var offset_find_success="TAMAMLANDI";
-var offset_find_base_fp="base_fp";
-var offset_find_stack_frame="stack_frame";
-var offset_find_jump2="jump2";
-var offset_find_jump1="jump1";
 
 var msg_page_args_not_set="Sayfa Argümanları Ayarlanmadı!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="Seçilen ROP Zinciri Seçimi Yok\n\nUse The Drop-Down Box To Select One";
@@ -191,6 +186,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS From Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Dosya sistemi";
+var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Veritabanı Yeniden Oluştur";
 var gui_txt_option_file_read_write_test="Okuma/Yazma Dosyası Testi";
 var gui_txt_option_dir_read_write_test="Dizin Testi Okuma/Yazma";
