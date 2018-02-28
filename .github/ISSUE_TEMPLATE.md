@@ -1,4 +1,8 @@
-## Issue checklist
+## Issue Description
+
+
+
+## Issue Checklist
 
 Note: these are not necessarily requirements
 
@@ -7,5 +11,9 @@ Note: these are not necessarily requirements
 
 ## PS3 FirmWare
 
+-
+
 ## PS3 Model
+
+-
 

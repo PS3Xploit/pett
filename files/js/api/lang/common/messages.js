@@ -1,4 +1,4 @@
-﻿// PS3 Default Messages [Common English US]
+﻿// PS3Xploit Index GUI Common Messages
 // PS3Xploit Team 2018 / ps3xploit.com
 
 // Common Language
