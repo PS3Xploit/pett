@@ -261,7 +261,7 @@ function searchFail()
 		result_msg=msg_string_search_fail;
 	}
 	
-	//recheckVerifyJump1();
+	//showFoundOffsets(offset_find_jump1);
 	document.getElementById('result').innerHTML=result_msg;
 	document.getElementById("reload_page").disabled=false;
 	reload_page.focus();
@@ -284,7 +284,7 @@ function resetSearchOffsetMsg()
 		result_msg=msg_search_offsets;
 	}
 	
-	if((allOffsetsFound)&&(offsets_verified))
+	if((allOffsetsFound)&&(allOffsetsVerified))
 	{
 		result_msg=msg_success_init;
 	}
@@ -293,7 +293,7 @@ function resetSearchOffsetMsg()
 		result_msg=msg_search_offsets;
 	}
 	
-	recheckVerifyJump1();
+	//showFoundOffsets(offset_find_jump1);
 	document.getElementById('result').innerHTML=result_msg;
 }
 
@@ -318,10 +318,10 @@ function resetOffsetAddresses()
 	if(jump_2_addr!=0){jump2_offsets.push(jump_2_addr);}else{jump2_offsets=[];}
 	if(jump_1_addr!=0){jump1_offsets.push(jump_1_addr);}else{jump1_offsets=[];}
 	
-	if(!base_verified){base_fp_addr=0;}
-	if(!stk_verified){stack_frame_addr=0;}
-	if(!j2_verified){jump_2_addr=0;}
-	if(!j1_verified){jump_1_addr=0}
+	//if(!base_verified){base_fp_addr=0;}
+	//if(!stackframe_verified){stack_frame_addr=0;}
+	//if(!j2_verified){jump_2_addr=0;}
+	//if(!j1_verified){jump_1_addr=0}
 	
 	/*
 	for(x=0;x<base_offsets.length;x+=1)
@@ -444,11 +444,6 @@ function verifyStackframeToggle()
 	}
 }
 
-function recheckVerifyJump1()
-{
-	if(jump_1_addr===0){result_msg=msg_search_offsets;}else{result_msg=msg_verify_offsets;}
-}
-
 function disableElement(elem, state)
 {
 	document.getElementById(elem).disabled=state;
@@ -567,45 +562,62 @@ function showFoundOffsetsMsg()
 
 function showFoundOffsets(search)
 {
-	if(base_fp_addr<0){base_fp_addr=0;}
-	if(stack_frame_addr<0){stack_frame_addr=0;}
-	if(jump_2_addr<0){jump_2_addr=0;}
-	if(jump_1_addr<0){jump_1_addr=0;}
-	
-	recheckVerifyJump1();
-	
-	base_fp_color=color;
-	stack_frame_color=color;
-	jump_2_color=color;
-	jump_1_color=color;
-	
-	base_fp_acolor=colorActive;
-	stack_frame_acolor=colorActive;
-	jump_2_acolor=colorActive;
-	jump_1_acolor=colorActive;
-	
-	if(base_fp_addr!=0){base_fp_acolor=colorSuccess;}
-	if(base_fp_addr===0){stack_frame_acolor=colorActive;}
-	if(stack_frame_addr!=0){stack_frame_acolor=colorSuccess;}
-	if(jump_2_addr!=0){jump_2_acolor=colorSuccess;}
-	if(jump_1_addr!=0){jump_1_acolor=colorSuccess;}
-	
-	/*
-	if(allOffsetsVerified)
+	switch(search)
 	{
-		base_fp_acolor=colorVerified;
-		stack_frame_acolor=colorVerified;
-		jump_2_acolor=colorVerified;
-		jump_1_acolor=colorVerified;
+		case offset_find_base_fp:
+		if(base_fp_addr<0){base_fp_addr=0;}
+		if(base_fp_addr!=0){base_fp_acolor=colorSuccess;}
+		if(base_found){base_fp_acolor=colorSuccess;}else{base_fp_acolor=colorActive;}
+		if(base_verified){base_fp_acolor=colorVerified;}
+		if(base_fp_addr===0){base_fp_acolor=colorActive;result_msg=msg_search_offsets;}
+		break;
+		
+		case offset_find_stack_frame:
+		if(stack_frame_addr<0){stack_frame_addr=0;}
+		if(stack_frame_addr!=0){stack_frame_acolor=colorSuccess;}
+		if(stackframe_found){stack_frame_acolor=colorSuccess;}else{stack_frame_acolor=colorActive;}
+		if(stackframe_verified){stack_frame_acolor=colorVerified;}
+		if(stack_frame_addr===0){stack_frame_acolor=colorActive;result_msg=msg_search_offsets;}
+		break;
+		
+		case offset_find_jump2:
+		if(jump_2_addr<0){jump_2_addr=0;}
+		if(jump_2_addr!=0){jump_2_acolor=colorSuccess;}
+		if(j2_found){jump_2_acolor=colorSuccess;}else{jump_2_acolor=colorActive;}
+		if(j2_verified){jump_2_acolor=colorVerified;}
+		if(jump_2_addr===0){jump_2_acolor=colorActive;result_msg=msg_search_offsets;}
+		break;
+		
+		case offset_find_jump1:
+		if(jump_1_addr<0){jump_1_addr=0;}
+		if(jump_1_addr!=0){jump_1_acolor=colorSuccess;}
+		if(j1_found){jump_1_acolor=colorSuccess;}else{jump_1_acolor=colorActive;}
+		if(j1_verified){jump_1_acolor=colorVerified;}
+		if(jump_1_addr===0){jump_1_acolor=colorActive;result_msg=msg_search_offsets;}
+		break;
+		
+		case offset_find_success:
+		if(stack_frame_addr!=0){stack_frame_acolor=colorSuccess;}
+		if(stack_frame_addr!=0){stack_frame_acolor=colorSuccess;}
+		if(jump_2_addr!=0){jump_2_acolor=colorSuccess;}
+		if(jump_1_addr!=0){jump_1_acolor=colorSuccess;}
+		if(base_found){base_fp_acolor=colorSuccess;}
+		if(stackframe_found){stack_frame_acolor=colorSuccess;}
+		if(j2_found){jump_2_acolor=colorSuccess;}
+		if(j1_found){jump_1_acolor=colorSuccess;}
+		break;
+		
+		case offset_find_verified:
+		if(base_verified){base_fp_acolor=colorVerified;}
+		if(stackframe_verified){stack_frame_acolor=colorVerified;}
+		if(j2_verified){jump_2_acolor=colorVerified;}
+		if(j1_verified){jump_1_acolor=colorVerified;}
+		if(allOffsetsVerified){result_msg=msg_verify_offsets;}
+		break;
+		
+		default:
+		break;
 	}
-	else
-	{
-		base_fp_acolor=colorSuccess;
-		stack_frame_acolor=colorSuccess;
-		jump_2_acolor=colorSuccess;
-		jump_1_acolor=colorSuccess;
-	}
-	*/
 	
 	showFoundOffsetsMsg();
 }
@@ -1974,27 +1986,25 @@ function setChainOptions(chain)
 		break;
 		
 		case "xmb_plugin_test":
-		setDefaultGuiParams();
 		alert("DEX 4.81 ONLY");
+		setDefaultGuiParams();
 		break;
 		
 		case "busy_icon_test":
-		setDefaultGuiParams();
 		alert("DEX 4.81 ONLY");
+		setDefaultGuiParams();
 		break;
 		
 		case "vsh_printf_test":
+		alert("DEX 4.81 ONLY");
 		setValueToHTML("path_src",vsh_printf_arg1);
 		setValueToHTML("path_dest",vsh_printf_arg2);
-		alert("DEX 4.81 ONLY");
 		init_rop.focus();
 		break;
 		
 		case "create_new_user":
-		setValueToHTML("path_src","");
-		setValueToHTML("path_dest","");
 		alert("DEX 4.81 ONLY");
-		init_rop.focus();
+		setDefaultGuiParams();
 		break;
 	}
 	
