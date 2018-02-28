@@ -126,7 +126,6 @@ var msg_string_not_located="could not be located in range";
 // Found Offsets
 var msg_found_offsets="Bulunan Ofsetleri Bulundu: ";
 var msg_verified_offsets="Doğrulanmış Ofsetler: ";
-var offset_find_success="TAMAMLANDI";
 
 var msg_page_args_not_set="Sayfa Argümanları Ayarlanmadı!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="Seçilen ROP Zinciri Seçimi Yok\n\nUse The Drop-Down Box To Select One";

@@ -127,7 +127,6 @@ var msg_string_not_located="could not be located in range";
 // Found Offsets
 var msg_found_offsets="Found Offsets: ";
 var msg_verified_offsets="Verified Offsets: ";
-var offset_find_success="success";
 
 var msg_page_args_not_set="Page Arguments Not Set!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="No ROP Chain Hex Selected\n\nUse The Drop-Down Box To Select One";

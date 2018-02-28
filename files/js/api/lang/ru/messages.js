@@ -126,7 +126,6 @@ var msg_string_not_located="не может находиться в диапаз
 // Found Offsets
 var msg_found_offsets="Найдены смещения: ";
 var msg_verified_offsets="Проверенные смещения: ";
-var offset_find_success="успешно";
 
 var msg_page_args_not_set="Аргументы страницы не заданы!\n\nНажмите кнопку «Установить аргументы» и повторите попытку!";
 var msg_no_chain_selected="Не выбрана цепочка ROP в хекс\n\nИспользуйте раскрывающийся список для выбора";

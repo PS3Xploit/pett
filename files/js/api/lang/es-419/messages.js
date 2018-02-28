@@ -126,7 +126,6 @@ var msg_string_not_located="no es posible encontrar en Rango";
 // Found Offsets
 var msg_found_offsets="Offsets Hallados: ";
 var msg_verified_offsets="Offsets Verificados: ";
-var offset_find_success="Exito";
 
 var msg_page_args_not_set="Argumentos de Pagina no establecidos!\n\nClic en Establecer argumentos y reintenta!";
 var msg_no_chain_selected="sin Cadena ROP Seleccionada\n\nUsa la ventana desplegable para seleccionar una";

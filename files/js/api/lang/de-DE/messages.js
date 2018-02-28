@@ -126,7 +126,6 @@ var msg_string_not_located="Konnte in der Reichweite nicht gefunden werden";
 // Found Offsets
 var msg_found_offsets="Gefundene Offsets: ";
 var msg_verified_offsets="Verifizierte Offsets: ";
-var offset_find_success="erfolg";
 
 var msg_page_args_not_set="Seiten Argumente nicht gesetzt!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="Keine ROP Kette Hex ausgewählt\n\nNutze die Drop-Down Liste um eine auszuwählen";

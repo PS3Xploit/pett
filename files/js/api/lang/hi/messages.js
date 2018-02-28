@@ -126,7 +126,6 @@ var msg_string_not_located="रैंक में यह संभव नही
 // Found Offsets
 var msg_found_offsets="Offsets पाया: ";
 var msg_verified_offsets="Offsets सत्यापित: ";
-var offset_find_success="सफलता";
 
 var msg_page_args_not_set="पृष्ठ तर्क स्थापित नहीं!\n\nसेट तर्क पर क्लिक करें और पुनः प्रयास करें!";
 var msg_no_chain_selected="चेन के बिना ROP Chain चुना गया\n\nएक का चयन करने के लिए ड्रॉप-डाउन विंडो का उपयोग करें";

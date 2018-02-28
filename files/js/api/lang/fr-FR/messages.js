@@ -126,7 +126,6 @@ var msg_string_not_located="n'a pas pu être situé à la portée";
 // Found Offsets
 var msg_found_offsets="Offsets Trouvé: ";
 var msg_verified_offsets="Offsets Vérifié: ";
-var offset_find_success="Succès";
 
 var msg_page_args_not_set="Arguments de page non définis!\n\nCliquez sur le bouton Définir les arguments et réessayez!";
 var msg_no_chain_selected="Pas de chaîne ROP Hex sélectionné\n\nUtilisez la liste déroulante pour en sélectionner une";
