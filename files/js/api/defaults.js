@@ -354,7 +354,11 @@ function setCustomPointerValues()
 	if(chain_stackframe==="db_rebuild"){write_bytes=db_rebuild_bytes;}else{write_bytes=restore_stack;}
 	
 	// Set values for AutoSize Read/Write Chains
-	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;}
+	/*
+	004C7EF4 81290014 lwz        r9,0x14(r9) <-- hdd_fd
+	004C7EF8 80090000 lwz        r0,0x0(r9) 
+	*/
+	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;hdd_fd2=g_toc;}
 	
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
@@ -996,16 +1000,17 @@ function syscallReadWriteFileAuto(src,dest)
 	a4_r6=usb_fp_addr;
 	a4_r7=open_mode;
 	a4_r8=0x0;
-	a4_r9=hdd_fd_addr-0x14;// moves into r0
+	a4_r9=hdd_fd_addr;// moves into r0
 	a4_r11=sc_sys_fs_open;
 	a4_jumpto=g_set_r4_thru_r11;
+	a5_r9=hdd_fd_addr-0x14;// moves into r0
 	a5_jumpto=g_set_r5_from_r29;// move size from r29 offset into r5
 	a6_jumpto=g_set_r4_thru_r11;
 	// a7_r3=sc_buzzer_arg1;
 	// a7_r4=sc_buzzer_arg2;
 	// a7_r5=sc_buzzer_arg3;
 	// a7_r11=sc_sys_sm_ring_buzzer;
-	// a7_jumpto=g_set_r4_thru_r11;
+	a7_jumpto=g_set_r3_from_r29;
 	// a8_jumpto=g_set_r3_from_r29;
 	// a9_jumpto=g_sc_A0;
 	// a10_r3=sc_buzzer_arg1;
