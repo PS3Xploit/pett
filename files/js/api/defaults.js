@@ -561,7 +561,7 @@ function showTemps()
 
 function showFoundOffsetsMsg()
 {
-	document.getElementById('outShowOffsets').innerHTML="<h4><b><font color=%22#"+colortext+"%22>"+msg_found_offsets+"</font><font color=%22#"+base_fp_color+"%22>base_fp: </font>"+"<font color=%22#"+base_fp_acolor+"%22>0x"+base_fp_addr.toString(16).toUpperCase()+"</font><font color=%22#"+stack_frame_color+"%22> | stack_frame_addr: </font>"+"<font color=%22#"+stack_frame_acolor+"%22>0x"+stack_frame_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_2_color+"%22> | jump_2_addr: </font>"+"<font color=%22#"+jump_2_acolor+"%22>0x"+jump_2_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_1_color+"%22> | jump_1_addr: </font>"+"<font color=%22#"+jump_1_acolor+"%22>0x"+jump_1_addr.toString(16).toUpperCase()+"</b></h4></font>";
+	document.getElementById('outShowOffsets').innerHTML="<h4><b><font color=%22#"+colortext+"%22>"+msg_found_offsets+"</font><font color=%22#"+base_fp_color+"%22>base_fp: </font>"+"<font color=%22#"+base_fp_acolor+"%22>0x"+base_fp_addr.toString(16).toUpperCase()+"</font><font color=%22#"+stack_frame_color+"%22> | stack_frame_addr: </font>"+"<font color=%22#"+stack_frame_acolor+"%22>0x"+stack_frame_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_2_color+"%22> | jump_2_addr: </font>"+"<font color=%22#"+jump_2_acolor+"%22>0x"+jump_2_addr.toString(16).toUpperCase()+"</font><font color=%22#"+jump_1_color+"%22> | jump_1_addr: </font>"+"<font color=%22#"+jump_1_acolor+"%22>0x"+jump_1_addr.toString(16).toUpperCase()+"</font></b></h4>";
 }
 
 function showFoundOffsets(search)
