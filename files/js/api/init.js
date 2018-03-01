@@ -189,8 +189,7 @@ var stackframe_found=false;
 var j2_found=false;
 var j1_found=false;
 var base_verified=false;
-//var stk_verified=false;
-//var stk_verified_fake=false;// set false if verify_stackframe=true
+var stackframe_verified=false;
 var j2_verified=false;
 var j1_verified=false;
 var allOffsetsFound=false;
@@ -205,7 +204,6 @@ var jump_1;
 var verify_offsets=true;
 var verify_stackframe=true;
 var offsets_verified=false;// superseded
-var stackframe_verified=false;
 
 // Default Addresses
 var base_fp_addr=0;
