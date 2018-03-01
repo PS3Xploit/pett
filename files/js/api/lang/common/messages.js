@@ -93,4 +93,4 @@ var gui_txt_option_chown="chown";
 var gui_txt_set_titleid="PS3XPLOIT";
 
 // Default Found Offsets
-var gui_txt_search_found_offsets=": base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0";
+var gui_txt_search_found_offsets=": base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b></h4>";

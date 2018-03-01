@@ -124,8 +124,8 @@ var msg_string_located=" найден в позиции: 0x";
 var msg_string_not_located="не может находиться в диапазоне";
 
 // Found Offsets
-var msg_found_offsets="Найдены смещения: ";
-var msg_verified_offsets="Проверенные смещения: ";
+var msg_found_offsets="<h4><b>Найдены смещения: ";
+var msg_verified_offsets="<h4><b>Проверенные смещения: ";
 
 var msg_page_args_not_set="Аргументы страницы не заданы!\n\nНажмите кнопку «Установить аргументы» и повторите попытку!";
 var msg_no_chain_selected="Не выбрана цепочка ROP в хекс\n\nИспользуйте раскрывающийся список для выбора";

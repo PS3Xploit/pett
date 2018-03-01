@@ -806,12 +806,18 @@
 
 		<div id="buttons_launch">
 			<span id="outShowOffsets"><div class="red" id="gui_txt_search_found_offsets"></div></span>
+			
 			<button id="init_rop" onclick="initROP();"><span id="gui_txt_option_init_rop_btn"></span></button>
 			<button id="load_rop" type="button" onclick="execTrigger();" disabled><span id="gui_txt_option_exec_rop_btn"></span></button>
-			<button id="reload_page" onclick="reloadPage();"><span id="gui_txt_option_reload_page_btn"></span></button> &nbsp;
-			<button id="reset-options" onclick="setDefaults();"><span id="gui_txt_option_reset_btn"></span></button>
+			<button id="reload_page" onclick="reloadPage();"><span id="gui_txt_option_reload_page_btn"></span></button> &nbsp;&nbsp;
+			
+			<button id="reset-options" onclick="setDefaults();"><span id="gui_txt_option_reset_btn"></span></button> &nbsp;&nbsp;
+			
 			<button id="load_settings" onclick="loadSettings();"><span id="gui_txt_option_load_settings_btn"></span></button>
-			<button id="save_settings" onclick="saveSettings();"><span id="gui_txt_option_save_settings_btn"></span></button> &nbsp;
+			<button id="save_settings" onclick="saveSettings();"><span id="gui_txt_option_save_settings_btn"></span></button> &nbsp;&nbsp;&nbsp;
+
+			<b><span class="white" id="gui_chk_search_debug_output"></span></b><input type="checkbox" id="debug_option" name="debug_option" onclick="debugToggle();"/>
+			
 			<button id="debug-alert" onclick="showAllDebugOutput();"><span id="gui_txt_option_debug_show_var_btn"></span></button>
 		</div>
 

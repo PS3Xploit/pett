@@ -124,8 +124,8 @@ var msg_string_located=" Trobat a l'offset: 0x";
 var msg_string_not_located="no pot ser localitzat en el rang";
 
 // Found Offsets
-var msg_found_offsets="offsets trobats: ";
-var msg_verified_offsets="offsets verificats: ";
+var msg_found_offsets="<h4><b>offsets trobats: ";
+var msg_verified_offsets="<h4><b>offsets verificats: ";
 
 var msg_page_args_not_set="¡No s'han col·locat arguments a la pàgina!\n\nFeu clic al botó Establir arguments i torneu a provar.";
 var msg_no_chain_selected="¡No s'ha seleccionat Hex de cadena ROP!\n\nUtilitza el quadre desplegable per seleccionar un.";

@@ -260,3 +260,7 @@ body {
 #verify_stackframe {
 	display: none;
 }
+
+#search_setup {
+	display: none;
+}

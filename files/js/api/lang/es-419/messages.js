@@ -124,8 +124,8 @@ var msg_string_located=" Hallado en offset: 0x";
 var msg_string_not_located="no es posible encontrar en Rango";
 
 // Found Offsets
-var msg_found_offsets="Offsets Hallados: ";
-var msg_verified_offsets="Offsets Verificados: ";
+var msg_found_offsets="<h4><b>Offsets Hallados: ";
+var msg_verified_offsets="<h4><b>Offsets Verificados: ";
 
 var msg_page_args_not_set="Argumentos de Pagina no establecidos!\n\nClic en Establecer argumentos y reintenta!";
 var msg_no_chain_selected="sin Cadena ROP Seleccionada\n\nUsa la ventana desplegable para seleccionar una";

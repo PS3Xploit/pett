@@ -124,8 +124,8 @@ var msg_string_located=" Trovato all'offset: 0x";
 var msg_string_not_located="Impossibile localizzarlo nel range";
 
 // Found Offsets
-var msg_found_offsets="Trovati Offset: ";
-var msg_verified_offsets="Verified Offsets: ";
+var msg_found_offsets="<h4><b>Trovati Offset: ";
+var msg_verified_offsets="<h4><b>Verified Offsets: ";
 
 var msg_page_args_not_set="Argomento Pagina non Impostato!\n\nClicca il pulsante Imposta Argomenti e Riprova!";
 var msg_no_chain_selected="Nessuna ROP Chain Hex Selezionatan\nUsa la tendina per selezionarne una";

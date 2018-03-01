@@ -125,8 +125,8 @@ var msg_string_located=" Found at offset: 0x";
 var msg_string_not_located="could not be located in range";
 
 // Found Offsets
-var msg_found_offsets="Found Offsets: ";
-var msg_verified_offsets="Verified Offsets: ";
+var msg_found_offsets="<h4><b>Found Offsets: ";
+var msg_verified_offsets="<h4><b>Verified Offsets: ";
 
 var msg_page_args_not_set="Page Arguments Not Set!\n\nClick The Set Arguments Button and Retry!";
 var msg_no_chain_selected="No ROP Chain Hex Selected\n\nUse The Drop-Down Box To Select One";
