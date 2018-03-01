@@ -133,7 +133,7 @@ var auto_reload=false;
 // Memory Searching
 var t_out=0;
 var total_loops=0;
-var max_loops=20;
+var max_loops=40;
 var failCount=0;
 var failCountMax=1;
 var search_max_threshold = 70*0x100000;
