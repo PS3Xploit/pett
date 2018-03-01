@@ -2119,7 +2119,6 @@ function setNumberOfBeeps(beeps){
 } 
 
 // Chain Selector
-var chain_stackframe="";
 function chainSelection(hex){
 	chain_stackframe = hex.value;
 	

@@ -130,6 +130,9 @@ var disable_reboot=true;
 // Auto-Reload Page Flag
 var auto_reload=false;
 
+// Stackframe Chain Placeholder
+var chain_stackframe="";
+
 // Memory Searching
 var t_out=0;
 var total_loops=0;
