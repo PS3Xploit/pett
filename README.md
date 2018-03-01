@@ -40,6 +40,9 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 <h3>Version History</h3>
 
+v0.1.9
+* Nothing Yet :(
+
 v0.1.8
 * Fixed StackFrame Verify. All Offsets Are Now Verified Automatically
 * Added Ready Message as Default Before Chain or Options are Selected
