@@ -48,7 +48,7 @@ var msg_memdump_end_addr="\nEnd Address: 0x";
 
 // Warnings
 var msg_fd_close_warning="File Descriptors Are Currently Not Closed Automatically!";
-var msg_remove_dir_warning="WARNING!\n\nBe carefule while using this syscall.\n\nYou can remove a needed directory and have to reinstall firmware!";
+var msg_remove_dir_warning="WARNING!\n\nBe careful while using this syscall.\n\nYou can remove a needed directory and have to reinstall firmware!";
 var msg_warning_write_protection="Write Protection Disabled!\n\nProceed With CAUTION!!!";
 
 var msg_cobra_only="ALERT!\n\nThis ONLY Works With COBRA Enabled On CFW!";
