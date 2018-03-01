@@ -10,16 +10,24 @@ function initROP()
 		// ==============================================================================
 		// Set basic defaults for each loop
 		initRopDefaults();
-		
-		// Reset Addresses
-		resetOffsetAddresses();
-		
+			
 		// Check to make sure values are not corrupt
 		checkSearchParams();
+			
+		if(firstRun)
+		{
+			
+			// Reset Addresses
+			resetOffsetAddresses();
+			
+			//Set Pointer Values
+			setDefaultPointerValues();
+			setCustomPointerValues();
+			
+			// Prevent Running More Than Once
+			firstRun=false;
+		}
 		
-		//Set Pointer Values
-		setDefaultPointerValues();
-		setCustomPointerValues();
 		
 		// If any offsets are 0x0 then show search message
 		//if((base_fp_addr===0)||(stack_frame_addr===0)||(jump_2_addr===0)||(jump_1_addr===0)){result_msg=msg_search_offsets;showFoundOffsetsMsg();}
@@ -103,10 +111,7 @@ function findBase()
 		base_fp_addr=findJsVariableOffset("base_fp",base_fp,search_base_offset,search_range_size,debug_mode);
 		search_max_threshold-=search_range_size;
 	}while(base_fp_addr==0);
-	if(base_fp_addr!=0){base_found=true;base_offsets.push(base_fp_addr);}else{base_found=false;}
-	
-	// Set Pointer Offsets From Found Base Address
-	setPointerOffsets();
+	if(base_fp_addr!=0){base_found=true;base_offsets.push(base_fp_addr);setPointerOffsets();}else{base_found=false;}
 	
 	return base_found;
 }

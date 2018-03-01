@@ -134,6 +134,7 @@ var auto_reload=false;
 var chain_stackframe="";
 
 // Memory Searching
+var firstRun=true;
 var t_out=0;
 var total_loops=0;
 var max_loops=40;
