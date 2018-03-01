@@ -988,7 +988,7 @@ function syscallReadWriteFileAuto(src,dest)
 	a2_jumpto=g_set_r3_from_r29;
 	a3_jumpto=g_sc_A0;
 	
-	file_size_input_addr=sc_sys_fs_stat+0x28;// Size addr will be sys_fs_stat_sb+0x28
+	file_size_input_addr=sys_fs_stat_sb+0x20;// Size addr will be sys_fs_stat_sb+0x28
 	
 	a4_r3=file_size_input_addr;// r29 moving size into r5
 	a4_r4=open_flag_read;
@@ -999,8 +999,8 @@ function syscallReadWriteFileAuto(src,dest)
 	a4_r9=hdd_fd_addr-0x14;// moves into r0
 	a4_r11=sc_sys_fs_open;
 	a4_jumpto=g_set_r4_thru_r11;
-	a5_jumpto=g_set_r5_from_r29;
-	a6_jumpto=g_sc_A0;
+	a5_jumpto=g_set_r5_from_r29;// move size from r29 offset into r5
+	a6_jumpto=g_set_r4_thru_r11;
 	// a7_r3=sc_buzzer_arg1;
 	// a7_r4=sc_buzzer_arg2;
 	// a7_r5=sc_buzzer_arg3;
