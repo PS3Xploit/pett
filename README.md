@@ -8,9 +8,10 @@
 
 <h3 align="center">Preview Images</h3>
 
-<p align="center"><img src="https://i.imgur.com/q391Fkr.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/w5dLRUf.png" width="75%"></p>
-<p align="center"><img src="https://i.imgur.com/PVe2cbt.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/2Q9KDsH.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/pANB3qf.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/S4hLDu5.png" width="75%"></p>
+<p align="center"><img src="https://i.imgur.com/IEuZaY3.png" width="75%"></p>
 
 <br/>
 
