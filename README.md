@@ -42,6 +42,8 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 <h3>Version History</h3>
 
 v0.1.8
+* Added Ready Message as Default Before Chain or Options are Selected
+* Removed Custom Search Tweaks From GUI (no longer needed)
 * Updated Offset Search
 
 v0.1.7
