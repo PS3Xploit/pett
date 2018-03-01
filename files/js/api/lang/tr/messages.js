@@ -65,6 +65,9 @@ var msg_destination_path_incorrect="Hedef Yolu Yanlış!\n\nIt Must Be Set Befor
 var trigger_msg="Triggering exploit...";
 var trigger_msg2="Trigger: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Bellekte Ofset Aranıyor! Lütfen bekleyin.... <br>If Sabırsızsın, Tarayıcıyı Kapat ve Bulunmazsa Yaklaşık 60-90 Saniye Sonra Yeniden Dene.!</b></h3>";
 var msg_verify_offsets="<h3><b>Verifying Offsets In Memory! Please Wait.... <br>Tarayıcınızı  kapatmayın!</b></h3>";

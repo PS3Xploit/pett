@@ -65,6 +65,9 @@ var msg_destination_path_incorrect="Ścieżka Docelowa Jest Nieprawidłowa!\n\nM
 var trigger_msg="Wykonywanie Exploitu...";
 var trigger_msg2="Wykonywanie: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Poszukiwanie Offsetów w Pamięci! Proszę Czekać.... <br>Jeżeli Jesteś Niecierpliwy, Zamknij Przeglądarkę i Spróbuj Ponownie za Około 60-90 Sekund Jeżeli Nic Nie Znaleziono!</b></h3>";
 var msg_verify_offsets="<h3><b>Weryfikowanie Offsetów w Pamięci! Proszę Czekać.... <br>NIE ZAMYKAJ NARAZIE PRZEGLĄDARKI!</b></h3>";

@@ -65,6 +65,9 @@ var msg_destination_path_incorrect="Путь назначения некорре
 var trigger_msg="Запуск эксплоита...";
 var trigger_msg2="Триггер: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Поиск смещений в памяти! Пожалуйста подождите... <br>Если вы не терпеливы, закройте браузер и повторите попытку через 60-90 секунд!</b></h3>";
 var msg_verify_offsets="<h3><b>Проверка смещений в памяти! Пожалуйста подождите... <br>Не закрывайте браузер!</b></h3>";

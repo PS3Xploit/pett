@@ -66,6 +66,9 @@ var msg_destination_path_incorrect="Destination Path Is Incorrect!\n\nIt Must Be
 var trigger_msg="Triggering exploit...";
 var trigger_msg2="Trigger: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Searching For Offsets In Memory! Please Wait.... <br>If You Are Impatient, Close The Browser and Try Again In About 60-90 Seconds If Not Found!</b></h3>";
 var msg_verify_offsets="<h3><b>Verifying Offsets In Memory! Please Wait.... <br>DO NOT Close The Browser Yet!</b></h3>";

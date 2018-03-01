@@ -65,6 +65,9 @@ var msg_destination_path_incorrect="Bestemmingspad is onjuist!\n\nHet moet worde
 var trigger_msg="Triggering exploit...";
 var trigger_msg2="Trigger: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b> Zoeken naar offsets in het geheugen! Even geduld ... <br>Als u ongeduldig bent, sluit u de browser en probeert u het opnieuw in ongeveer 60-90 seconden als het niet wordt gevonden!</b></h3>";
 var msg_verify_offsets="<h3><b>Offsets in het geheugen verifiëren! Even geduld ... <br> Sluit de browser nog NIET! </b></h3>";

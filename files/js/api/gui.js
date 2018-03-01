@@ -237,6 +237,7 @@ function showGuiText()
 	document.getElementById('gui_chk_search_verify_stackframe').innerHTML=gui_chk_search_verify_stackframe;
 	document.getElementById('gui_chk_search_debug_output').innerHTML=gui_chk_search_debug_output;
 	
+	document.getElementById('msg_search_ready').innerHTML=msg_search_ready;
 	document.getElementById('gui_txt_search_found_offsets').innerHTML=msg_found_offsets + gui_txt_search_found_offsets;
 	
 	document.getElementById('gui_txt_option_init_rop_btn').innerHTML=gui_txt_option_init_rop_btn;

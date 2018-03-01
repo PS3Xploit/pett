@@ -65,6 +65,9 @@ var msg_destination_path_incorrect="Le chemin de destination est incorrect!\n\nI
 var trigger_msg="Déclenchement de l'exploit...";
 var trigger_msg2="Déclencheur: 0x";
 
+// Ready To Search
+var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Recherche de Offset dans la mémoire! S'il vous plaît, attendez.... <br>Si vous êtes impatient, fermez le navigateur et réessayez dans environ 60-90 secondes si rien n'est trouvé!</b></h3>";
 var msg_verify_offsets="<h3><b>Vérification des Offsets en mémoire! S'il vous plaît, attendez.... <br>Ne fermez pas le navigateur !</b></h3>";
