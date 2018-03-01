@@ -48,8 +48,8 @@ function ps3chk(){
 				g_sc_A0=0x1697BC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x3113F4;
-				g_fopen_write_close=0x416AE8;
-				g_mount_hdd1=0x61F9FC;
+				e_fopen_write_close=0x416AE8;
+				s_mount_hdd1=0x61F9FC;
 				g_init_reboot=0x0C4830;
 				g_init_shutdown=0x0C47F8;
 				g_exit_chain=0x2AA664;
@@ -72,8 +72,8 @@ function ps3chk(){
 				g_sc_A0=0x169E40;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x313824;
-				g_fopen_write_close=0x418F20;
-				g_mount_hdd1=0x622084;
+				e_fopen_write_close=0x418F20;
+				s_mount_hdd1=0x622084;
 				g_init_reboot=0x0C4830;
 				g_init_shutdown=0x0C47F8;
 				g_exit_chain=0x2ACAE0;
@@ -96,8 +96,8 @@ function ps3chk(){
 				g_sc_A0=0x169E74;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31385C;
-				g_fopen_write_close=0x418F58;
-				g_mount_hdd1=0x6220C0;
+				e_fopen_write_close=0x418F58;
+				s_mount_hdd1=0x6220C0;
 				g_init_reboot=0x0C4830;
 				g_init_shutdown=0x0C47F8;
 				g_exit_chain=0x2ACB18;
@@ -120,8 +120,8 @@ function ps3chk(){
 				g_sc_A0=0x16E6D8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x319D48;
-				g_fopen_write_close=0x41F70C;
-				g_mount_hdd1=0x62B248;
+				e_fopen_write_close=0x41F70C;
+				s_mount_hdd1=0x62B248;
 				g_init_reboot=0x0C4D34;
 				g_init_shutdown=0x0C4CFC;
 				g_exit_chain=0x2B2F8C;
@@ -144,8 +144,8 @@ function ps3chk(){
 				g_sc_A0=0x16E6D8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x319D4C;
-				g_fopen_write_close=0x41F43C;
-				g_mount_hdd1=0x62AF7C;
+				e_fopen_write_close=0x41F43C;
+				s_mount_hdd1=0x62AF7C;
 				g_init_reboot=0x0C4D34;
 				g_init_shutdown=0x0C4CFC;
 				g_exit_chain=0x2B2F90;
@@ -168,8 +168,8 @@ function ps3chk(){
 				g_sc_A0=0x16E6C8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x319DB4;
-				g_fopen_write_close=0x41F4A4;
-				g_mount_hdd1=0x62AFF0;
+				e_fopen_write_close=0x41F4A4;
+				s_mount_hdd1=0x62AFF0;
 				g_init_reboot=0x0C4D34;
 				g_init_shutdown=0x0C4CFC;
 				g_exit_chain=0x2B2FF8;
@@ -192,8 +192,8 @@ function ps3chk(){
 				g_sc_A0=0x16F1A8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31AFF0;
-				g_fopen_write_close=0x420A78;
-				g_mount_hdd1=0x62CA38;
+				e_fopen_write_close=0x420A78;
+				s_mount_hdd1=0x62CA38;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B3AA4;
@@ -216,8 +216,8 @@ function ps3chk(){
 				g_sc_A0=0x16F1A8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31AFF4;
-				g_fopen_write_close=0x420A7C;
-				g_mount_hdd1=0x62CA40;
+				e_fopen_write_close=0x420A7C;
+				s_mount_hdd1=0x62CA40;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B3AA8;
@@ -240,8 +240,8 @@ function ps3chk(){
 				g_sc_A0=0x16F2A4;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31CA94;
-				g_fopen_write_close=0x422B08;
-				g_mount_hdd1=0x62EE00;
+				e_fopen_write_close=0x422B08;
+				s_mount_hdd1=0x62EE00;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B4A40;
@@ -264,8 +264,8 @@ function ps3chk(){
 				g_sc_A0=0x16F2A4;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31CA98;
-				g_fopen_write_close=0x422B0C;
-				g_mount_hdd1=0x62EE08;
+				e_fopen_write_close=0x422B0C;
+				s_mount_hdd1=0x62EE08;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B4A44;
@@ -288,8 +288,8 @@ function ps3chk(){
 				g_sc_A0=0x16F2A4;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31D51C;
-				g_fopen_write_close=0x423714;
-				g_mount_hdd1=0x62FA20;
+				e_fopen_write_close=0x423714;
+				s_mount_hdd1=0x62FA20;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B5720;
@@ -312,8 +312,8 @@ function ps3chk(){
 				g_sc_A0=0x16F2A4;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31D51C;
-				g_fopen_write_close=0x423714;
-				g_mount_hdd1=0x62FA20;
+				e_fopen_write_close=0x423714;
+				s_mount_hdd1=0x62FA20;
 				g_init_reboot=0x0C4EE4;
 				g_init_shutdown=0x0C4EAC;
 				g_exit_chain=0x2B5720;
@@ -336,8 +336,8 @@ function ps3chk(){
 				g_sc_A0=0x16F4AC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31E94C;
-				g_fopen_write_close=0x42291C;
-				g_mount_hdd1=0x62EF44;
+				e_fopen_write_close=0x42291C;
+				s_mount_hdd1=0x62EF44;
 				g_init_reboot=0x0C4F84;
 				g_init_shutdown=0x0C4F4C;
 				g_exit_chain=0x2B6E84;
@@ -360,8 +360,8 @@ function ps3chk(){
 				g_sc_A0=0x16F4DC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31EC40;
-				g_fopen_write_close=0x422CA0;
-				g_mount_hdd1=0x62F32C;
+				e_fopen_write_close=0x422CA0;
+				s_mount_hdd1=0x62F32C;
 				g_init_reboot=0x0C4F84;
 				g_init_shutdown=0x0C4F4C;
 				g_exit_chain=0x2B7160;
@@ -384,8 +384,8 @@ function ps3chk(){
 				g_sc_A0=0x16F4DC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31FA2C;
-				g_fopen_write_close=0x423A8C;
-				g_mount_hdd1=0x630118;
+				e_fopen_write_close=0x423A8C;
+				s_mount_hdd1=0x630118;
 				g_init_reboot=0x0C4F84;
 				g_init_shutdown=0x0C4F4C;
 				g_exit_chain=0x2B7F4C;
@@ -408,8 +408,8 @@ function ps3chk(){
 				g_sc_A0=0x170294;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x3216BC;
-				g_fopen_write_close=0x425708;
-				g_mount_hdd1=0x633C58;
+				e_fopen_write_close=0x425708;
+				s_mount_hdd1=0x633C58;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2B9680;
@@ -432,8 +432,8 @@ function ps3chk(){
 				g_sc_A0=0x1702EC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x321718;
-				g_fopen_write_close=0x425764;
-				g_mount_hdd1=0x633CB8;
+				e_fopen_write_close=0x425764;
+				s_mount_hdd1=0x633CB8;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2B96DC;
@@ -456,8 +456,8 @@ function ps3chk(){
 				g_sc_A0=0x1702EC;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x321718;
-				g_fopen_write_close=0x425764;
-				g_mount_hdd1=0x633FD8;
+				e_fopen_write_close=0x425764;
+				s_mount_hdd1=0x633FD8;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2B96DC;
@@ -480,8 +480,8 @@ function ps3chk(){
 				g_sc_A0=0x1702A4;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x321EE0;
-				g_fopen_write_close=0x425F6C;
-				g_mount_hdd1=0x634B48;
+				e_fopen_write_close=0x425F6C;
+				s_mount_hdd1=0x634B48;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2B9EB4;
@@ -504,8 +504,8 @@ function ps3chk(){
 				g_sc_A0=0x1702A0;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x32249C;
-				g_fopen_write_close=0x426528;
-				g_mount_hdd1=0x6333A8;
+				e_fopen_write_close=0x426528;
+				s_mount_hdd1=0x6333A8;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2BA470;
@@ -528,8 +528,8 @@ function ps3chk(){
 				g_sc_A0=0x1702A0;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x32249C;
-				g_fopen_write_close=0x426528;
-				g_mount_hdd1=0x6333A8;
+				e_fopen_write_close=0x426528;
+				s_mount_hdd1=0x6333A8;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2BA470;
@@ -552,8 +552,8 @@ function ps3chk(){
 				g_sc_A0=0x1702A0;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31F70C;
-				g_fopen_write_close=0x423798;
-				g_mount_hdd1=0x6306A4;
+				e_fopen_write_close=0x423798;
+				s_mount_hdd1=0x6306A4;
 				g_init_reboot=0x0C4F4C;
 				g_init_shutdown=0x0C4F14;
 				g_exit_chain=0x2BA968;
@@ -576,8 +576,8 @@ function ps3chk(){
 				g_sc_A0=0x1705D8;
 				g_sc_set_r3_from_r9=g_1-0x4;
 				g_sc_set_r3_from_r10=0x31FA94;
-				g_fopen_write_close=0x423B20;
-				g_mount_hdd1=0x63114C;
+				e_fopen_write_close=0x423B20;
+				s_mount_hdd1=0x63114C;
 				g_init_reboot=0x0C526C;
 				g_init_shutdown=0x0C5234;
 				g_exit_chain=0x2BACB0;
@@ -607,9 +607,9 @@ function ps3chk(){
 						g_sc_A0=0x1705D8;
 						g_sc_set_r3_from_r9=g_1-0x4;
 						g_sc_set_r3_from_r10=0x31FA88;
-						g_fopen_write_close=0x423B14;
-						g_mount_hdd1=0x631160;
-						g_unk_game_debug_pafjob=0x0D103C;
+						e_fopen_write_close=0x423B14;
+						s_mount_hdd1=0x631160;
+						s_unk_game_debug_pafjob=0x0D103C;
 						g_mount_flash=0x602B88;
 						g_init_reboot=0x0C526C;
 						g_init_shutdown=0x0C5234;
@@ -641,19 +641,49 @@ function ps3chk(){
 						g_sc_A0=0x177684;
 						g_sc_set_r3_from_r9=g_1-0x4;
 						g_sc_set_r3_from_r10=0x327298;
-						g_fopen_write_close=0x42B708;
+						
+						// Exits
+						g_init_reboot=0x0C6768;
+						g_init_shutdown=0x0C6730;
+						//g_exit_chain=0x30FD38;
+						g_exit_chain=0x2C24DC;
+						
+						// Subs
+						s_cellfs_write=0x524984;
+						s_create_new_user=0x0D27E8;
+						s_mount_hdd1=0x638D7C;
+						s_ps_button_bp=0x12FB14;
+						s_remove_act_dat=0x259120;
+						s_remove_exdata=0x25A638;
+						s_start_busy_icon=0x0DD944;
+						s_unk_create_new_user2=0x0DA588;
+						s_unk_create_new_user3=0x0D28D4;
+						s_unk_flash2_post_update=0x0DFDD4;
+						s_unk_game_exec=0x1316E4;
+						s_unk_game_debug_pafjob=0x0D64DC;
+						s_unk_manager_signout=0x0FC354;
+						s_unk_mount_hdd=0x0DF64C;
+						s_unk_network_printf=0x0CB6CC;
+						s_unk_premo_plugin=0x0D2160;
+						s_unk_psx_ps2=0x544788;
+						s_unk_upload_util=0x16EB30;
+						
+						// Exports
+						e_cellfs_closedir=0x62C22C;
+						e_cellfs_opendir=0x62C0FC;
+						e_cellfs_readdir=0x62C1D4;
+						e_fopen_write_close=0x42B708;
+						e_stdc_opendir=0x0ADEDC;
+						e_stdc_readdir=0x0ADC58;
+						e_unk_game_plugin=0x357BB0;
+						e_unk_vsh_printf=0x0CB72C;// 0x0A14B8 [file name in r3??, message in r4??]
+						e_unk_xmb_plugin=0x0DE748;
+						
+						// Unsorted/New
 						//g_fsopen_write_close=0x280450;
 						//g_fsopen_write_close=0x25E850;
 						//g_fsopen_write_close=0x0E11EC;
 						//g_cellfs_open_write_close1=0x27F8A4;
-						g_mount_hdd1=0x638D7C;
-						g_unk_game_debug_pafjob=0x0D64DC;
-						g_stdc_opendir=0x0ADEDC;
-						g_stdc_readdir=0x0ADC58;
-						g_cellfs_opendir=0x62C0FC;
-						g_cellfs_readdir=0x62C1D4;
-						g_cellfs_closedir=0x62C22C;
-						g_cellfs_write=0x524984;
 						//g_unk_user_id1=0x0FB340;
 						//g_unk_user_id2=0x1981D4;
 						//g_unk_registry1=0x536D70;
@@ -662,7 +692,6 @@ function ps3chk(){
 						//g_unk_explore_plugin_bin=0x15E524;
 						//g_unk_psp_rif=0x256BE0;
 						//g_unk_login_xmb=0x0DD7C0;
-						g_start_busy_icon=0x0DD944;
 						//g_xmb_restore=0x0DE27C;
 						//g_unk_pkg1=0x327F1C;
 						//g_unk_sync=0x3296A8;
@@ -676,9 +705,6 @@ function ps3chk(){
 						//g_unk_debug1=0x0CA978;
 						//g_tty_write=0x0AD31C;
 						//g_unk_alpha_numeric=0x544F64;
-						g_create_new_user=0x0D27E8;
-						g_remove_act_dat=0x259120;
-						g_remove_exdata=0x25A638;
 						//g_unk_act_dat1=0x258D58;
 						//g_unk_act_dat2=0x25938C;
 						//g_unk_rif1=0x25A728;
@@ -687,27 +713,13 @@ function ps3chk(){
 						//g_unk_exdata_edat1=0x25ACBC;
 						//g_unk_thread1=0x11B8AC;
 						//g_unk_prx1=0x61EA18;
-						g_ps_button_bp=0x12FB14;
-						g_unk_xmb_plugin=0x0DE748;
 						//g_unk_mount_bdvd=0x544998;
 						//g_unk_mount_fat=0x544BD4;
 						//g_unk_display_res1=0x0C88F8;
 						//g_unk_display_res2=0x1508A8;
 						//g_unk_game_res=0x0CA1BC;
 						//g_unk_update_game_data=0x1300B4;
-						g_unk_premo_plugin=0x0D2160;
-						g_unk_game_exec=0x1316E4;
-						g_unk_upload_util=0x16EB30;
-						g_unk_flash2_post_update=0x0DFDD4;
-						g_unk_mount_hdd=0x0DF64C;
-						g_unk_network_printf=0x0CB6CC;
-						vsh_printf=0x0CB72C;// file name in r3??, message in r4??
-						g_unk_psx_ps2=0x544788;
-						g_unk_manager_signout=0x0FC354;
-						g_init_reboot=0x0C6768;
-						g_init_shutdown=0x0C6730;
-						//g_exit_chain=0x30FD38;
-						g_exit_chain=0x2C24DC;
+						
 						//showOffsets();
 					}
 					
@@ -731,9 +743,9 @@ function ps3chk(){
 					g_sc_A0=0x1705D8;
 					g_sc_set_r3_from_r9=g_1-0x4;
 					g_sc_set_r3_from_r10=0x31FA8C;
-					g_fopen_write_close=0x423B18;
-					g_mount_hdd1=0x631AFC;
-					g_unk_game_debug_pafjob=0x0D103C;
+					e_fopen_write_close=0x423B18;
+					s_mount_hdd1=0x631AFC;
+					s_unk_game_debug_pafjob=0x0D103C;
 					g_init_reboot=0x0C526C;
 					g_init_shutdown=0x0C5234;
 					g_exit_chain=0x2BACB8;

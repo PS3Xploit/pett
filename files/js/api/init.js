@@ -44,11 +44,8 @@ var g_sc_90;// sc then load r0 from r1+0x90
 var g_sc_A0;// sc then load r0 from r1+0xA0
 var g_sc_set_r3_from_r9;// set r3 from r9 and sc
 var g_sc_set_r3_from_r10;// set r3 from r10 and sc
-var g_fopen_write_close;
 var g_fsopen_write_close;
 var g_cellfs_open_write_close1;
-var g_mount_hdd1;
-var g_unk_game_debug_pafjob;
 var g_mount_flash;
 var g_unk_user_id1;
 var g_unk_user_id2;
@@ -58,7 +55,6 @@ var g_unk_registry_restore;
 var g_unk_explore_plugin_bin;
 var g_unk_psp_rif;
 var g_unk_login_xmb;
-var g_start_busy_icon;
 var g_xmb_restore;
 var g_unk_pkg1;
 var g_unk_sync;
@@ -71,9 +67,6 @@ var g_unk_http_client;
 var g_unk_fsck;
 var g_unk_debug1;
 var g_tty_write;
-var g_create_new_user;
-var g_remove_act_dat;
-var g_remove_exdata;
 var g_unk_act_dat1;
 var g_unk_act_dat2;
 var g_unk_rif1;
@@ -82,14 +75,6 @@ var g_unk_rif3;
 var g_unk_exdata_edat1;
 var g_unk_thread1;
 var g_unk_prx1;
-var g_stdc_opendir;
-var g_stdc_readdir;
-var g_cellfs_opendir;
-var g_cellfs_readdir;
-var g_cellfs_closedir;
-var g_cellfs_write;
-var g_ps_button_bp;
-var g_unk_xmb_plugin;
 var g_unk_mount_bdvd;
 var g_unk_mount_fat;
 var g_unk_display_res1;
@@ -97,19 +82,44 @@ var g_unk_display_res2;
 var g_unk_game_res;
 var g_unk_alpha_numeric;
 var g_unk_update_game_data;
-var g_unk_premo_plugin;
-var g_unk_game_exec;
-var g_unk_upload_util;
-var g_unk_flash2_post_update;
-var g_unk_mount_hdd;
-var g_unk_network_printf;
-var vsh_printf;
-var g_unk_psx_ps2;
-var g_unk_manager_signout;
+
+// Exits
 var g_init_reboot;
 var g_init_shutdown;
 var g_exit_chain;// graceful exit
 var g_init_shutdown;// init beep and shutdown
+
+// Subs
+var s_cellfs_write;
+var s_create_new_user;
+var s_mount_hdd1;
+var s_ps_button_bp;
+var s_remove_act_dat;
+var s_remove_exdata;
+var s_start_busy_icon;
+var s_unk_create_new_user2;
+var s_unk_create_new_user3;
+var s_unk_flash2_post_update;
+var s_unk_game_exec;
+var s_unk_game_debug_pafjob;
+var s_unk_manager_signout;
+var s_unk_mount_hdd;
+var s_unk_network_printf;
+var s_unk_psx_ps2;
+var s_unk_premo_plugin;
+var s_unk_upload_util;
+
+// Exports
+var e_cellfs_closedir;
+var e_cellfs_opendir;
+var e_cellfs_readdir;
+var e_fopen_write_close;
+var e_stdc_opendir;
+var e_stdc_readdir;
+var e_unk_game_plugin;
+var e_unk_vsh_printf;
+var e_unk_xmb_plugin;
+
 
 var debug_mode=false;// log debug to screen
 var disable_trigger=false;// used for testing with alert

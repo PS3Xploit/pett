@@ -889,7 +889,7 @@ function syscallFwriteAndExit(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31,dest,size,sta
 	a4_jumpto=g_set_r4_thru_r11;
 	a5_jumpto=g_set_r3_from_r29;
 	a6_r29=size;
-	a6_jumpto=g_fopen_write_close;
+	a6_jumpto=e_fopen_write_close;
 	extra1=size;
 	a7_jumpto=restore_stack;
 	extra2=g_exit_chain;
@@ -905,7 +905,7 @@ function syscallFwriteAndReboot(dest,size,start_addr,mode,lpar_param,lpar_size)
 	a2_jumpto=g_set_r3_from_r29;
 	padding1=pad4ext;// fix for extsw instruction
 	a3_r31=mode;// is r3 but uses r31 place in chain
-	a3_jumpto=g_fopen_write_close;
+	a3_jumpto=e_fopen_write_close;
 	a4_r6=sc_shutdown;// is r11 but uses r6 place in chain
 	a4_r9=0x00000000;// is r4 but uses r9 place in chain
 	a4_r29=size;// size;
@@ -1140,7 +1140,7 @@ function exportStdcOpenReadCloseDir(src)
 	a1_r31=31;
 	a1_jumpto=g_set_r4_thru_r11;
 	a2_jumpto=g_set_r3_from_r29;
-	a3_jumpto=g_stdc_opendir;
+	a3_jumpto=e_stdc_opendir;
 	a4_r3=3;
 	a4_r4=4;
 	a4_r5=5;
@@ -1221,7 +1221,7 @@ function openReadDeviceAndExit(device_id,src,dest)
 	a6_jumpto=g_set_r4_thru_r11;
 	a7_jumpto=g_set_r3_from_r29;
 	a8_r31=sc_shutdown_soft;
-	a8_jumpto=g_fopen_write_close;
+	a8_jumpto=e_fopen_write_close;
 	a8_r6=sc_shutdown;
 	a8_r29=0x10;
 	a8_r30=temp_addr_8C;
@@ -1276,7 +1276,7 @@ function useCustomStackFrame()
 		// bdp_plugin 000D72C0 482826C9 bl         0x00359988
 		// 000D6644 48008C7D bl         0x000DF2C0
 		case "game_debug_pafjob_test":
-		callExportAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_no_of_beeps,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,g_unk_game_debug_pafjob)
+		callExportAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_no_of_beeps,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,s_unk_game_debug_pafjob)
 		break;
 		
 		// does not use embedded restore_stack
@@ -1354,7 +1354,7 @@ function useCustomStackFrame()
 		extra3=g_sc_set_r3_from_r9;
 		extra4=sc_sys_net_close_dump;// register is r11
 		a13_r30=g_set_r31_F8;
-		a16_jumpto=g_fopen_write_close;
+		a16_jumpto=e_fopen_write_close;
 		a15_jumpto=g_sc_set_r3_from_r10;
 		a17_jumpto=g_set_r4_thru_r11;
 		a18_jumpto=g_sc_A0
@@ -1535,7 +1535,7 @@ function useCustomStackFrame()
 		// a4_jumpto=g_set_r4_thru_r11;
 		// a5_jumpto=g_set_r3_from_r29;
 		// a6_r29=0x20;
-		// a6_jumpto=g_fopen_write_close;
+		// a6_jumpto=e_fopen_write_close;
 		// extra1=0x20;
 		// a7_jumpto=restore_stack;
 		// extra2=g_exit_chain;
@@ -1601,19 +1601,19 @@ function useCustomStackFrame()
 		break;
 		
 		case "xmb_plugin_test":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_unk_xmb_plugin);
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_unk_xmb_plugin);
 		break;
 		
 		case "busy_icon_test":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_start_busy_icon);
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_start_busy_icon);
 		break;
 		
 		case "vsh_printf_test":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,vsh_printf);
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_unk_vsh_printf);
 		break;
 		
 		case "create_new_user":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_create_new_user);
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_create_new_user);
 		break;
 		
 		default:
