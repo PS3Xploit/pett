@@ -199,7 +199,7 @@ function verifyFailTrigger()
 {
 	if(debug_mode)logAdd(verify_fail);
 	if(total_loops<max_loops){reloadInitROP();}
-	else{failCount+1;searchFail();}
+	else{failCount+=1;searchFail();}
 	reload_page.focus();
 }
 
