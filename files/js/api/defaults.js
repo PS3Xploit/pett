@@ -194,12 +194,12 @@ function setDefaultSearchParams()
 		case 0:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x80200000;
+		search_base_offset = 0x80200000;// 0x80190000
 		search_base_offset_min = 0x80200000;
-		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xA0000;
-		search_base_offset_adjust_jump2=0x20000;
-		search_base_offset_adjust_jump1=0x30000;
+		search_base_offset_max = search_base_offset_min+0x240000;
+		search_base_offset_adjust=0x100000;
+		search_base_offset_adjust_jump2=0x100000;
+		search_base_offset_adjust_jump1=0x100000;
 		search_range_size = 0x200000;
 		if(debug_mode){logFoundOffsets();}
 		if(debug_mode){logFlashType();}
@@ -209,12 +209,12 @@ function setDefaultSearchParams()
 		case 1:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x80200000;
+		search_base_offset = 0x80200000;// 0x80190000
 		search_base_offset_min = 0x80200000;
-		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xA0000;
-		search_base_offset_adjust_jump2=0x20000;
-		search_base_offset_adjust_jump1=0x30000;
+		search_base_offset_max = search_base_offset_min+0x240000;
+		search_base_offset_adjust=0x100000;
+		search_base_offset_adjust_jump2=0x100000;
+		search_base_offset_adjust_jump1=0x100000;
 		search_range_size = 0x200000;
 		if(debug_mode){logFoundOffsets();}
 		if(debug_mode){logFlashType();}
@@ -224,12 +224,12 @@ function setDefaultSearchParams()
 		case 2:
 		search_max_threshold = 70*0x100000;
 		search_max_threshold_backup = 70*0x100000;
-		search_base_offset = 0x80200000;
+		search_base_offset = 0x80200000;// 0x80190000
 		search_base_offset_min = 0x80200000;
-		search_base_offset_max = search_base_offset_min+0x230000;
-		search_base_offset_adjust=0xA0000;
-		search_base_offset_adjust_jump2=0x20000;
-		search_base_offset_adjust_jump1=0x30000;
+		search_base_offset_max = search_base_offset_min+0x240000;
+		search_base_offset_adjust=0x100000;
+		search_base_offset_adjust_jump2=0x100000;
+		search_base_offset_adjust_jump1=0x100000;
 		search_range_size = 0x200000;
 		if(debug_mode){logFoundOffsets();}
 		if(debug_mode){logFlashType();}
@@ -470,11 +470,20 @@ function hideElement(elem, state)
 	if(state)
 	{
 		return document.getElementById(elem).style.visibility='hidden';
-		//return document.getElementById(elem).style.display='none';
 	}
 	else{
 		return document.getElementById(elem).style.visibility='visible';
-		//return document.getElementById(elem).style.display='block';
+	}
+}
+
+function removeElement(elem, state)
+{
+	if(state)
+	{
+		return document.getElementById(elem).style.display='none';
+	}
+	else{
+		return document.getElementById(elem).style.display='block';
 	}
 }
 

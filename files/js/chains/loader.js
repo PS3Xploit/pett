@@ -23,6 +23,8 @@ function initROP()
 			//Set Pointer Values
 			setDefaultPointerValues();
 			setCustomPointerValues();
+	
+			//removeElement("rop_chain_view", true);
 			
 			// Prevent Running More Than Once
 			firstRun=false;
