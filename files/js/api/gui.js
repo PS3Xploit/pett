@@ -51,6 +51,7 @@ function showGuiText()
 	
 	// Dumping
 	document.getElementById('gui_txt_preset_chains_dumping').innerHTML=gui_txt_preset_chains_dumping;
+	document.getElementById('gui_txt_option_webkit_search_area').innerHTML=gui_txt_option_webkit_search_area;
 	document.getElementById('gui_txt_option_system_info_multi_dump').innerHTML=gui_txt_option_system_info_multi_dump;
 	document.getElementById('gui_txt_option_dump_lv2_syscall_table').innerHTML=gui_txt_option_dump_lv2_syscall_table;
 	document.getElementById('gui_txt_option_mem_dump_test').innerHTML=gui_txt_option_mem_dump_test;

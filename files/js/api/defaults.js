@@ -1310,6 +1310,10 @@ function useCustomStackFrame()
 		syscallFwriteAndExit(sys_sm_get_platform_info_ptr,0,0,0,0,0,0,0,sc_sys_sm_get_platform_info,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_sm_get_platform_info_size,sys_sm_get_platform_info_ptr);
 		break;
 		
+		case "webkit_search_area":
+		syscallFwriteAndExit(sc_buzzer_arg1,sc_buzzer_arg2,sc_buzzer_arg3,0,0,0,0,0,sc_sys_sm_ring_buzzer,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,0x5FFFFF,0x80100000);
+		break;
+		
 		/*
 		case "dump_idps_from_flash":
 		openReadDeviceAndExit(0x4,path_src_fp_addr,path_dest_fp_addr);
@@ -1868,6 +1872,12 @@ function setChainOptions(chain)
 		case "sys_sm_get_platform_info":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest",sys_sm_get_platform_info_dump);
+		init_rop.focus();
+		break;
+		
+		case "webkit_search_area":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest",webkit_search_area_dump);
 		init_rop.focus();
 		break;
 		
@@ -2693,6 +2703,11 @@ function execSuccessMessage(chain)
 			break;
 			
 			case "sys_sm_get_platform_info":
+			msg_success_text=success_chain_exec_syscall_dump;
+			reload_page.focus();
+			break;
+			
+			case "webkit_search_area":
 			msg_success_text=success_chain_exec_syscall_dump;
 			reload_page.focus();
 			break;

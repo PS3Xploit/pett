@@ -103,6 +103,7 @@ var path_storage_get_device_info_dump="/dev_usb000/sys_storage_get_device_info.b
 var path_storage_report_devices_dump="/dev_usb000/sys_storage_report_devices.bin";
 var sys_ss_utoken_lv2_sc_table_dump="/dev_usb000/sys_ss_utoken_lv2_sc_table_dump.bin";
 var sys_sm_get_platform_info_dump="/dev_usb000/sys_sm_get_platform_info.bin";
+var webkit_search_area_dump="/dev_usb000/webkit_search_area-0x80100000-0x806FFFFF.bin";
 
 var path_usb_memdump0="/dev_usb000/dump_0x00000000-0x04D5FFF9.bin";
 var path_usb_memdump1="/dev_usb000/dump_0x10000000-0x1FFFFFFF.bin";
