@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0009"
+var current_minimum_lang_revision="0010"
 var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -66,7 +66,7 @@ var trigger_msg="Engatilhando exploit...";
 var trigger_msg2="Gatilho: 0x";
 
 // Ready To Search
-var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+var msg_search_ready="<h3><b>Pronto Para Começar! <br>Selecione a Cadeia e as Opções Acima, Então Aperte o Botão Para Iniciar a Cadeia ROP!</b></h3>";
 
 // Search Strings
 var msg_search_offsets="<h3><b>Procurando por offsets na memória! Por favor espere.... <br>Se você é impaciente, feche o navegador e tente novamente em 60-90 segundos</b></h3>";
