@@ -68,6 +68,9 @@ var trigger_msg2="सक्रिय: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>मेमोरी में ऑफ़सेट की तलाश! प्रतीक्षा.... <br>यदि आप अधीर हो, ब्राउज़र बंद करें और इसमें पुन: प्रयास करें 60-90 सेकंड यदि आप उन्हें नहीं मिल सकता है!</b></h3>";
 var msg_verify_offsets="<h3><b>मेमोरी में ऑफसेट जांचना! प्रतीक्षा.... <br>अभी तक ब्राउज़र बंद नहीं करें!</b></h3>";

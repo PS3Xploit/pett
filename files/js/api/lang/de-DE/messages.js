@@ -68,6 +68,9 @@ var trigger_msg2="Auslöser: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Suche nach Offsets im Arbeitsspeicher! Bitte Warten.... <br>Falls du ungeduldig bist, schließe den Browser und versuche es in ca. 60-90 Sekunden erneut, sollte es nichts finden!</b></h3>";
 var msg_verify_offsets="<h3><b>Verifiziere Offsets im Arbeitsspeicher! Bitte Warten.... <br>Den Browser NICHT SCHLIEẞEN!</b></h3>";

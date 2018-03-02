@@ -68,6 +68,9 @@ var trigger_msg2="Trigger: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b> Zoeken naar offsets in het geheugen! Even geduld ... <br>Als u ongeduldig bent, sluit u de browser en probeert u het opnieuw in ongeveer 60-90 seconden als het niet wordt gevonden!</b></h3>";
 var msg_verify_offsets="<h3><b>Offsets in het geheugen verifiëren! Even geduld ... <br> Sluit de browser nog NIET! </b></h3>";

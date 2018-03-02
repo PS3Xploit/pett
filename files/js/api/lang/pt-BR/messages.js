@@ -68,6 +68,9 @@ var trigger_msg2="Gatilho: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Pronto Para Começar! <br>Selecione a Cadeia e as Opções Acima, Então Aperte o Botão Para Iniciar a Cadeia ROP!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Procurando por offsets na memória! Por favor espere.... <br>Se você é impaciente, feche o navegador e tente novamente em 60-90 segundos</b></h3>";
 var msg_verify_offsets="<h3><b>Verificando os offsets na memória! Por favor espere.... <br>NÃO FECHE o navegador agora!!</b></h3>";

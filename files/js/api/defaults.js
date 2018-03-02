@@ -269,8 +269,15 @@ function searchFail()
 
 function reloadInitROP()
 {
+	resetSearchOffsetMsg();
 	t_out=setTimeout(initROP,1000);
 	resetSearchOffsetMsg();
+}
+
+function showWaitMessage(msg)
+{
+	if(msg===""){result_msg=msg_exec_init;}else{result_msg=msg;}
+	document.getElementById('result').innerHTML=result_msg;
 }
 
 function resetSearchOffsetMsg()

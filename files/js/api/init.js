@@ -380,7 +380,7 @@ var addr_psid;
 var out_psid="";
 
 var log_div;
-var msg;// generic message text placeholder
+var msg="";// generic message text placeholder
 var user_id="00000001";
 var user_home_path=""
 

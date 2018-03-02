@@ -68,6 +68,9 @@ var trigger_msg2="Activado: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>Buscando Offsets En Memoria! Espera.... <br>Si te Impacientas, Cierra el Navegador y reintenta en 60-90 Segundos si no los halla!</b></h3>";
 var msg_verify_offsets="<h3><b>Verificando Offsets En Memoria! Espera.... <br>Aun NO CIERRES el navegador!</b></h3>";

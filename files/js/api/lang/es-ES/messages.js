@@ -68,6 +68,9 @@ var trigger_msg2="Desencadenado: 0x";
 // Ready To Search
 var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
 
+// Shows After Initial Exec Button Click
+var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+
 // Search Strings
 var msg_search_offsets="<h3><b>¡Buscando Offsets en la memoria! Por favor espera.... <br>¡Si eres impaciente, cierra el navegador e intentalo de nuevo tras 60-90 segundos!</b></h3>";
 var msg_verify_offsets="<h3><b>¡Verificando Offsets en la memoria! Por favor espera.... <br>¡NO cierres el navegador aún!</b></h3>";
