@@ -2708,7 +2708,7 @@ function execSuccessMessage(chain)
 			break;
 			
 			case "webkit_search_area":
-			msg_success_text=success_chain_exec_syscall_dump;
+			msg_success_text=success_chain_exec_memdump;
 			reload_page.focus();
 			break;
 			
