@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Did Not Verify All 
 var msg_success_init="<h3><b><font color='#386E38'>SUCCESSO!</font><br><font color='#7700DA'>Ora puoi eseguire il CHAIN!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>Chain eseguita correttamente!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>Chain eseguita correttamente!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Premi Esegui un altra volta!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump eseguito!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump eseguito!</font></b></h3>";

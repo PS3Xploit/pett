@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Nicht alle Offsets 
 var msg_success_init="<h3><b><font color='#386E38'>ERFOLG!</font><br><font color='#7700DA'>Du kannst nun deine Kette ausführen!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>Kette erfolgreich ausgeführt!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>Kette erfolgreich ausgeführt!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Klicke ein weiteres mal auf Ausführen!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID erfolgreich ausgelesen!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS erfolgreich ausgelesen!</font></b></h3>";

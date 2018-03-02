@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>¡No se han verific
 var msg_success_init="<h3><b><font color='#386E38'>¡CONSEGUIDO!</font><br><font color='#7700DA'>¡Ahora puedes ejecutar tu cadena!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>¡Cadena ejecutada con éxito!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>¡Cadena ejecutada con éxito!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>¡Pulsa el boton Ejecutar de nuevo!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>¡PSID volcado con éxito!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>¡IDPS volcado con éxito!</font></b></h3>";

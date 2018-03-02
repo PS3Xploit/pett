@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#210003'>Не провере
 var msg_success_init="<h3><b><font color='#386E38'>УСПЕШНО!</font><br><font color='#7700DA'>Теперь вы можете выполнить вашу цепочку!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>Цепочка выполнена успешно!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>Цепочка выполнена успешно!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Нажмите кнопку «Выполнить цепочку» еще раз!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID сдамплен успешно!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS сдамплен успешно!</font></b></h3>";

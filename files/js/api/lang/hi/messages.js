@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>सभी ऑफस
 var msg_success_init="<h3><b><font color='#386E38'>सफलता!</font><br><font color='#7700DA'>अब आप अपने चेन को चला सकते हैं ROP!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>चेन को सफलतापूर्वक सफलता मिली!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>चेन को सफलतापूर्वक सफलता मिली!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>एक बार एक्जिक्यूट बटन दबाएं!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump सफल!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump सफल!</font></b></h3>";

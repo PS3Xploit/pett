@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>Nie Zweryfikowano O
 var msg_success_init="<h3><b><font color='#386E38'>SUKCES!</font><br><font color='#7700DA'>Możesz Teraz Wykonać Swój Chain!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>Chain Wykonany Prawidłowo!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>Chain Wykonany Prawidłowo!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Naciśnij Przycisk WYKONAJ Ponownie!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>Zrzut PSID Powiódł Się!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>Zrzut IDPS Powiódł Się!</font></b></h3>";

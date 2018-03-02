@@ -87,7 +87,7 @@ var msg_string_verify_fail_max="<h3><b><font color='#7700DA'>heeft niet alle off
 var msg_success_init="<h3><b><font color='#386E38'>SUCCESS!</font><br><font color='#7700DA'>U kunt nu uw keten uitvoeren!</font></b></h3>";
 
 // Exec Success
-var success_chain_exec="<h3><b><font color='#386E38'>Chain met succes uitgevoerd!</font></b></h3>";
+var success_chain_exec="<h3><b><font color='#386E38'>Chain met succes uitgevoerd!</font></b><br> &nbsp;</h3>";
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Druk nogmaals op de knop Execute!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID is met succes gedumpt!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS met succes gedumpt!</font></b></h3>";
