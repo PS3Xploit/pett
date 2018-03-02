@@ -172,6 +172,7 @@ var gui_txt_option_sys_tty_write="TTY Write Test";
 
 // Dumping
 var gui_txt_preset_chains_dumping="تفريغ او استخراج السلاسل";
+var gui_txt_option_webkit_search_area="Dump WebKit String Search Area";
 var gui_txt_option_system_info_multi_dump="استخراج معلومات النظام المتعدد";
 var gui_txt_option_dump_lv2_syscall_table="Dump LV2 Syscall Tاستخراج";
 var gui_txt_option_mem_dump_test="Dump Raw VSH Meاستخراج";

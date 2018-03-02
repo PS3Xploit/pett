@@ -171,6 +171,7 @@ var gui_txt_option_sys_tty_write="Prueba de escritura TTY";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Volcado";
+var gui_txt_option_webkit_search_area="Dump WebKit String Search Area";
 var gui_txt_option_system_info_multi_dump="Multi volcado de info de sistema";
 var gui_txt_option_dump_lv2_syscall_table="Volcar tabla de llamadas al sistema LV2";
 var gui_txt_option_mem_dump_test="Volcar memoria Raw VSH";

@@ -171,6 +171,7 @@ var gui_txt_option_sys_tty_write="TTY Schreib Test";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Auslesen";
+var gui_txt_option_webkit_search_area="Dump WebKit String Search Area";
 var gui_txt_option_system_info_multi_dump="Mehrere Systeminformationen auslesen";
 var gui_txt_option_dump_lv2_syscall_table="LV2 Syscall Tabelle auslesen";
 var gui_txt_option_mem_dump_test="Rohen VSH Speicher auslesen";
