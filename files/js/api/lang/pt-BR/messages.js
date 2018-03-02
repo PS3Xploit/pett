@@ -174,7 +174,7 @@ var gui_txt_option_sys_tty_write="Teste de Escrita TTY";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Fazer Dump";
-var gui_txt_option_webkit_search_area="Dump WebKit String Search Area";
+var gui_txt_option_webkit_search_area="Dump WebKit Search Area";
 var gui_txt_option_system_info_multi_dump="System Info Multi Dump";
 var gui_txt_option_dump_lv2_syscall_table="Dump da Tabela Syscall LV2";
 var gui_txt_option_mem_dump_test="Raw Dump pela Memória VSH";

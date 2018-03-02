@@ -174,7 +174,7 @@ var gui_txt_option_sys_tty_write="Тест записи TTY";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Дампинг";
-var gui_txt_option_webkit_search_area="Dump WebKit String Search Area";
+var gui_txt_option_webkit_search_area="Dump WebKit Search Area";
 var gui_txt_option_system_info_multi_dump="Мультидамп сисинфо";
 var gui_txt_option_dump_lv2_syscall_table="Дамп LV2 системных вызовов";
 var gui_txt_option_mem_dump_test="Дамп Raw памяти VSH";
