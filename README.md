@@ -42,7 +42,9 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 <h3>Version History</h3>
 
 v0.1.9
-* Nothing Yet :(
+* Added WebKit String Search Area To Dumping Chains
+* Added Message After Exec Button Clicked, and Before Success/Done Message
+* Updated pt_BR Language (thanks @Caio99BR)
 
 v0.1.8
 * Fixed StackFrame Verify. All Offsets Are Now Verified Automatically
