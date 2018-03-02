@@ -184,10 +184,10 @@ var fd;
 var fd2;
 
 // Used for string verification
-var base;
-var stk;
-var j2;
-var j1;
+var base=0;
+var stk=0;
+var j2=0;
+var j1=0;
 var base_found=false;
 var stackframe_found=false;
 var j2_found=false;
@@ -201,10 +201,10 @@ var allOffsetsVerified=false;
 var result_msg="";
 
 // Required Jumps
-var base_fp;
-var stack_frame;
-var jump_2;
-var jump_1;
+var base_fp=1;
+var stack_frame=1;
+var jump_2=1;
+var jump_1=1;
 var verify_offsets=true;
 var verify_stackframe=true;
 var offsets_verified=false;// superseded
