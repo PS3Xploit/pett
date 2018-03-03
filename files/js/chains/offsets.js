@@ -626,6 +626,7 @@ function ps3chk(){
 						g_set_high_only=g_set_r4_thru_r11+0x7C;
 						g_set_r3_from_r29=0x43552C;
 						g_set_r3_with_ld=0x1A43FC;
+						g_set_r3_with_lwz_from_r31=0x37F0CC;
 						g_set_r5_from_r29=0x4C7EF0;
 						//g_set_r31_E8=0x62ABD8;
 						g_set_r31_F8=0x62E84C;
@@ -641,6 +642,7 @@ function ps3chk(){
 						g_sc_A0=0x177684;
 						g_sc_set_r3_from_r9=g_1-0x4;
 						g_sc_set_r3_from_r10=0x327298;
+						g_sc_set_r3_with_lwz_from_r31=0x1BAC30;// alternate 0x3A4C28 
 						
 						// Exits
 						g_init_reboot=0x0C6768;
@@ -664,6 +666,8 @@ function ps3chk(){
 						s_unk_manager_signout=0x0FC354;
 						s_unk_mount_hdd=0x0DF64C;
 						s_unk_network_printf=0x0CB6CC;
+						//s_unk_npmt=0x0FDFA8;
+						//s_unk_npmt2=0x0FDF7C;
 						s_unk_premo_plugin=0x0D2160;
 						s_unk_psx_ps2=0x544788;
 						s_unk_upload_util=0x16EB30;
@@ -675,9 +679,12 @@ function ps3chk(){
 						e_fopen_write_close=0x42B708;
 						e_stdc_opendir=0x0ADEDC;
 						e_stdc_readdir=0x0ADC58;
+						e_unk_boot2=0x516FF4;
 						e_unk_game_plugin=0x357BB0;
 						e_unk_vsh_printf=0x0CB72C;// 0x0A14B8 [file name in r3??, message in r4??]
 						e_unk_xmb_plugin=0x0DE748;
+						e_turnoff=0x0CD764;// 0x0D673C
+						//e_turnoff2=0x0CD62C;
 						
 						// Unsorted/New
 						//g_fsopen_write_close=0x280450;

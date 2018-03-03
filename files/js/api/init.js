@@ -31,6 +31,7 @@ var g_2;// initial stack control
 var g_set_r4_thru_r11;// set r4-r11 + r29-r31
 var g_set_r3_from_r29;// set r3 from r29
 var g_set_r3_with_ld;
+var g_set_r3_with_lwz_from_r31;
 var g_set_r3_and_clear;
 var g_set_r3_and_sc;
 var g_set_r5_from_r29;
@@ -44,6 +45,7 @@ var g_sc_90;// sc then load r0 from r1+0x90
 var g_sc_A0;// sc then load r0 from r1+0xA0
 var g_sc_set_r3_from_r9;// set r3 from r9 and sc
 var g_sc_set_r3_from_r10;// set r3 from r10 and sc
+var g_sc_set_r3_with_lwz_from_r31;
 var g_fsopen_write_close;
 var g_cellfs_open_write_close1;
 var g_mount_flash;
@@ -105,6 +107,8 @@ var s_unk_game_debug_pafjob;
 var s_unk_manager_signout;
 var s_unk_mount_hdd;
 var s_unk_network_printf;
+var s_unk_npmt;
+var s_unk_npmt2;
 var s_unk_psx_ps2;
 var s_unk_premo_plugin;
 var s_unk_upload_util;
@@ -116,9 +120,12 @@ var e_cellfs_readdir;
 var e_fopen_write_close;
 var e_stdc_opendir;
 var e_stdc_readdir;
+var e_unk_boot2;
 var e_unk_game_plugin;
 var e_unk_vsh_printf;
 var e_unk_xmb_plugin;
+var e_turnoff;
+var e_turnoff2;
 
 
 var debug_mode=false;// log debug to screen
@@ -137,7 +144,7 @@ var chain_stackframe="";
 var firstRun=true;
 var t_out=0;
 var total_loops=0;
-var max_loops=40;
+var max_loops=30;
 var failCount=0;
 var failCountMax=1;
 var search_max_threshold = 70*0x100000;
