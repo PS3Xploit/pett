@@ -5,8 +5,8 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0010"
-var gui_incomplete_lang="O tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
+var current_minimum_lang_revision="0011"
+var gui_incomplete_lang="A tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
 
@@ -66,10 +66,10 @@ var trigger_msg="Engatilhando exploit...";
 var trigger_msg2="Gatilho: 0x";
 
 // Ready To Search
-var msg_search_ready="<h3><b>Pronto Para Começar! <br>Selecione a Cadeia e as Opções Acima, Então Aperte o Botão Para Iniciar a Cadeia ROP!</b></h3>";
+var msg_search_ready="<h3><b>Pronto para começar! <br>Selecione a cadeia e uma das opções acima, então aperte o botão para iniciar a cadeia ROP!</b></h3>";
 
 // Shows After Initial Exec Button Click
-var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+var msg_exec_init="<h3><b>Executando a cadeia! <br>Espere até a execução terminar....</b></h3>";
 
 // Search Strings
 var msg_search_offsets="<h3><b>Procurando por offsets na memória! Por favor espere.... <br>Se você é impaciente, feche o navegador e tente novamente em 60-90 segundos</b></h3>";
@@ -174,7 +174,7 @@ var gui_txt_option_sys_tty_write="Teste de Escrita TTY";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Fazer Dump";
-var gui_txt_option_webkit_search_area="Dump WebKit Search Area";
+var gui_txt_option_webkit_search_area="Dump da Area de Pesquisa do WebKit";
 var gui_txt_option_system_info_multi_dump="System Info Multi Dump";
 var gui_txt_option_dump_lv2_syscall_table="Dump da Tabela Syscall LV2";
 var gui_txt_option_mem_dump_test="Raw Dump pela Memória VSH";
