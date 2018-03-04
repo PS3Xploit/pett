@@ -365,6 +365,7 @@ function setDefaultPointerValues()
 	fd=0x48484848;
 	fd2=0x49494949;
 	magic=0x4A4A4A4A;
+	magic2=0x4B4B4B4B;
 }
 
 function setCustomPointerValues()
@@ -377,7 +378,7 @@ function setCustomPointerValues()
 	004C7EF4 81290014 lwz        r9,0x14(r9) <-- hdd_fd
 	004C7EF8 80090000 lwz        r0,0x0(r9) 
 	*/
-	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fd=g_set_r3_from_r29;hdd_fd2=g_toc;}
+	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){write_bytes=g_set_r3_from_r29;hdd_fd=g_set_r3_from_r29;hdd_fd2=g_toc;}
 	
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
@@ -402,9 +403,10 @@ function setPointerOffsets()
 	fd_addr=base_fp_addr+0x28;
 	fd2_addr=base_fp_addr+0x2C;
 	magic_addr=base_fp_addr+0x30;
+	magic_addr2=base_fp_addr+0x34;
 	
 	// Path Strings
-	path_fp_addr=base_fp_addr+0x38;
+	path_fp_addr=base_fp_addr+0x3C;
 	path_fp2_addr=path_fp_addr+path_fp.length;
 	
 	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;

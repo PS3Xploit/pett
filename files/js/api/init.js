@@ -144,7 +144,7 @@ var chain_stackframe="";
 var firstRun=true;
 var t_out=0;
 var total_loops=0;
-var max_loops=30;
+var max_loops=40;
 var failCount=0;
 var failCountMax=1;
 var search_max_threshold = 70*0x100000;
@@ -190,6 +190,10 @@ var hdd_fd2;
 var fd;
 var fd2;
 
+// Other Pointers
+var magic;
+var magic2;
+
 // Used for string verification
 var base=0;
 var stk=0;
@@ -234,6 +238,8 @@ var jump_2_addr=0;
 var jump_1_addr=0
 var file_mode_fp_addr=0;
 var write_bytes_addr=0;
+var magic_addr=0;
+var magic2_addr=0;
 
 var hdd_fp_addr_backup=0;
 var usb_fp_addr_backup=0;

@@ -111,22 +111,3 @@ function reload_usb_fp2(state)
 		return;
 	}
 }
-
-
-// Main Search Function
-function find_dynamic_offset(placeholder, name, hex)
-{
-	_addr=0;
-	do
-		{
-			if(search_max_threshold<search_range_size){
-			if(total_loops<max_loops){reloadInitROP();}
-			else{searchFail();searchResetTimeout();}
-			return;}
-			hex=hex.replaceAt(0x000/2,hexh2bin(placeholder));
-			if(debug_mode){_addr=findJsVariableOffsetDebug(name,hex,search_base_offset,search_range_size,placeholder,hex.length, log_div);}
-			else{_addr=findJsVariableOffset(name,hex,search_base_offset,search_range_size,placeholder,hex.length);}
-			search_max_threshold-=search_range_size;
-		}while(_addr==0);
-	return _addr;
-}
