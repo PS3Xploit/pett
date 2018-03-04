@@ -29,13 +29,6 @@ function initROP()
 			// Prevent Running More Than Once
 			firstRun=false;
 		}
-		
-		
-		// If any offsets are 0x0 then show search message
-		//if((base_fp_addr===0)||(stack_frame_addr===0)||(jump_2_addr===0)||(jump_1_addr===0)){result_msg=msg_search_offsets;showFoundOffsetsMsg();}
-		
-		// reset string search message to fail if total=max (fix later)
-		if(total_loops===max_loops){result_msg=msg_string_verify_fail;showFoundOffsetsMsg();}
 		// ==============================================================================
 		
 		

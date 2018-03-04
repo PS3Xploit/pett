@@ -300,6 +300,18 @@ function resetSearchOffsetMsg()
 		result_msg=msg_search_offsets;
 	}
 	
+	// If any offsets are 0x0 then show search message
+	if((base_fp_addr===0)||(stack_frame_addr===0)||(jump_2_addr===0)||(jump_1_addr===0))
+	{
+		result_msg=msg_search_offsets;
+	}
+	
+	// reset string search message to fail if total=max (fix later)
+	if(total_loops===max_loops)
+	{
+		result_msg=msg_string_verify_fail;
+	}
+	
 	//showFoundOffsets(offset_find_jump1);
 	document.getElementById('result').innerHTML=result_msg;
 }
@@ -372,6 +384,7 @@ function setCustomPointerValues()
 	
 	// VSH printf Params
 	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
+	//if(chain_stackframe==="vsh_printf_test"){path_fp2="NPMT";}
 }
 
 function setPointerOffsets()
@@ -1634,7 +1647,8 @@ function useCustomStackFrame()
 		break;
 		
 		case "vsh_printf_test":
-		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_unk_vsh_printf);
+		callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_unk_vsh_printf);
+		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,0x0E423C);
 		break;
 		
 		case "create_new_user":
