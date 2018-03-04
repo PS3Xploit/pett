@@ -41,6 +41,9 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 <h3>Version History</h3>
 
+v0.2.0
+* Updated Offset Search Again. Cleaned Up Loader JS
+
 v0.1.9
 * Added WebKit String Search Area To Dumping Chains
 * Added Message After Exec Button Clicked, and Before Success/Done Message

@@ -4,7 +4,7 @@
 // Common Language
 
 // Index GUI Version
-var gui_version="<font color='#FFF' size='3'>v0.1.9</font>";
+var gui_version="<font color='#FFF' size='3'>v0.2.0</font>";
 var global_minimum_lang_revision="0011";
 
 // Other Messages
