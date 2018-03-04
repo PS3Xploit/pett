@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0007";
+var current_minimum_lang_revision="0011";
 var gui_incomplete_lang="Traduccion Actual Incompleta, considera Actualizarla o solo ignorale";
 
 var msg_select_vsh_type="Consola CEX?\n\nal Seleccionar NO se tomaran los offsets para DEX";
@@ -66,10 +66,10 @@ var trigger_msg="Activando Exploit...";
 var trigger_msg2="Activado: 0x";
 
 // Ready To Search
-var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+var msg_search_ready="<h3><b>Listo para empezar! <br>Selecciona Cadenas y Opciones desde Arriba , Luego Presiona el Boton Iniciar Cadena Rop!</b></h3>";
 
 // Shows After Initial Exec Button Click
-var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+var msg_exec_init="<h3><b>Ejecutando Cadena! <br>Por Favor Espera hasta que termine....</b></h3>";
 
 // Search Strings
 var msg_search_offsets="<h3><b>Buscando Offsets En Memoria! Espera.... <br>Si te Impacientas, Cierra el Navegador y reintenta en 60-90 Segundos si no los halla!</b></h3>";
@@ -91,7 +91,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Cadena Ejecutada Exitosamen
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Presione el Boton Ejecutar una vez mas!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump Exitoso!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump Exitoso!</font></b></h3>";
-var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Syscall Return Value Dumped Successfully!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'Dump Exitoso del Valor de retorno de la Syscall!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP de Memoria Exitoso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferencia de Archivos Exitosa !</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Dispositivo/Medio Montado Exitosamente!</font></b></h3>";
@@ -174,31 +174,31 @@ var gui_txt_option_sys_tty_write="Prueba de Escritura TTY";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Dumping";
-var gui_txt_option_webkit_search_area="Dump WebKit Search Area";
+var gui_txt_option_webkit_search_area="Area de Busqueda del WebKit Dump";
 var gui_txt_option_system_info_multi_dump="Informacion de Multi Dump";
 var gui_txt_option_dump_lv2_syscall_table="Dump Tabla Syscall LV2";
 var gui_txt_option_mem_dump_test="Dump (Raw) de memoria VSH";
 var gui_txt_option_get_open_psid="Dump PSID";
 var gui_txt_option_dump_idps_from_mem="Dump IDPS de VSH";
 var gui_txt_option_sys_net_dump="SysNet Dump";
-var gui_txt_sys_sm_get_platform_info="Get Platform Info";
+var gui_txt_sys_sm_get_platform_info="Capturar Info de Plataforma";
 var gui_txt_option_dump_idps_from_flash="Dump IDPS de Flash";
 
 // File System
 var gui_txt_preset_chains_file_system="Sistema de Archivos";
-var gui_txt_option_create_new_user="Create New User";
+var gui_txt_option_create_new_user="Crear Nuevo Usuario ";
 var gui_txt_option_db_rebuild="Reconstruir BD";
 var gui_txt_option_file_read_write_test="Prueba de Lectura/Escritura (Archivos)";
 var gui_txt_option_dir_read_write_test="Prueba de Lectura/Escritura (Directorios)";
 
 // Fun
-var gui_txt_preset_chains_fun="Fun";
+var gui_txt_preset_chains_fun="Entretenimiento";
 var gui_txt_option_fun_test="Prueba Bips";
-var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
-var gui_txt_option_busy_icon_test="Busy Icon Test";
-var gui_txt_option_vsh_printf_test="VSH printf Test";
-var vsh_printf_arg1="MESSAGE: ";
-var vsh_printf_arg2="HELLO FROM TEAM PS3XPLOIT!";
+var gui_txt_option_xmb_plugin_test="Prueba Plugin XMB";
+var gui_txt_option_busy_icon_test="Prueba Icono Ocupado";
+var gui_txt_option_vsh_printf_test="Prueba printf VSH";
+var vsh_printf_arg1="MENSAJE: ";
+var vsh_printf_arg2="HOLA DE PARTE DEL TEAM PS3XPLOIT!";
 
 // Other Syscall Chains
 
