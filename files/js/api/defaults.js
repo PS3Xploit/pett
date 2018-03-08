@@ -374,18 +374,15 @@ function setCustomPointerValues()
 	if(chain_stackframe==="db_rebuild"){write_bytes=db_rebuild_bytes;}else{write_bytes=restore_stack;}
 	
 	// Set values for AutoSize Read/Write Chains
-	/*
-	004C7EF4 81290014 lwz        r9,0x14(r9) <-- hdd_fd
-	004C7EF8 80090000 lwz        r0,0x0(r9) 
-	*/
-	if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){write_bytes=g_set_r3_from_r29;hdd_fd=g_set_r3_from_r29;hdd_fd2=g_toc;}
+	//if((chain_stackframe==="file_read_write_test")&&(useAutoSize)){hdd_fp=pad4;}
 	
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
 	
 	// VSH printf Params
 	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
-	//if(chain_stackframe==="vsh_printf_test"){path_fp2="NPMT";}
+	
+	if(chain_stackframe==="test_only"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
 }
 
 function setPointerOffsets()
@@ -406,7 +403,7 @@ function setPointerOffsets()
 	magic_addr2=base_fp_addr+0x34;
 	
 	// Path Strings
-	path_fp_addr=base_fp_addr+0x3C;
+	path_fp_addr=base_fp_addr+0x3A;
 	path_fp2_addr=path_fp_addr+path_fp.length;
 	
 	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;
@@ -1023,25 +1020,14 @@ function syscallReadWriteFileAuto(src,dest)
 	a2_jumpto=g_set_r3_from_r29;
 	a3_jumpto=g_sc_A0;
 	
-	file_size_input_addr=sys_fs_stat_sb+0x20;// Size addr will be sys_fs_stat_sb+0x28
+	file_size_input_addr=sys_fs_stat_sb+0x24;// Size addr will be sys_fs_stat_sb+0x28
 	
-	a4_r3=file_size_input_addr;// r29 moving size into r5
-	a4_r4=open_flag_read;
-	a4_r5=0x140;
-	a4_r6=usb_fp_addr;
-	a4_r7=open_mode;
-	a4_r8=0x0;
-	a4_r9=hdd_fd_addr;// moves into r0
-	a4_r11=sc_sys_fs_open;
+	a4_9=usb_fp_addr;
+	a4_r31=file_size_input_addr;
 	a4_jumpto=g_set_r4_thru_r11;
-	a5_r9=hdd_fd_addr-0x14;// moves into r0
-	a5_jumpto=g_set_r5_from_r29;// move size from r29 offset into r5
-	a6_jumpto=g_set_r4_thru_r11;
-	// a7_r3=sc_buzzer_arg1;
-	// a7_r4=sc_buzzer_arg2;
-	// a7_r5=sc_buzzer_arg3;
-	// a7_r11=sc_sys_sm_ring_buzzer;
-	a7_jumpto=g_set_r3_from_r29;
+	a5_jumpto=g_set_r6_from_r31;// move size into r6
+	a6_jumpto=g_set_r3_from_r29;
+	a7_jumpto=g_sc_A0;
 	// a8_jumpto=g_set_r3_from_r29;
 	// a9_jumpto=g_sc_A0;
 	// a10_r3=sc_buzzer_arg1;
@@ -1355,6 +1341,7 @@ function useCustomStackFrame()
 		if(useAutoSize)
 		{
 			syscallReadWriteFileAuto(path_src_fp_addr,path_dest_fp_addr);
+			//callExportAndExit(path_src_fp_addr,path_dest_fp_addr,temp_addr_8A+0x100,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_cellfs_rw);
 		}
 		else
 		{
@@ -1649,12 +1636,16 @@ function useCustomStackFrame()
 		break;
 		
 		case "vsh_printf_test":
-		callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_unk_vsh_printf);
-		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,0x0E423C);
+		callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,g_printf);
 		break;
 		
 		case "create_new_user":
 		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_create_new_user);
+		break;
+		
+		case "test_only":
+		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_black_screen);
+		callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_fs_open_write_close);
 		break;
 		
 		default:
@@ -2052,6 +2043,13 @@ function setChainOptions(chain)
 		case "create_new_user":
 		alert("DEX 4.81 ONLY");
 		setDefaultGuiParams();
+		break;
+		
+		case "test_only":
+		alert("DEX 4.81 ONLY");
+		setValueToHTML("path_src",vsh_printf_arg1);
+		setValueToHTML("path_dest",vsh_printf_arg2);
+		init_rop.focus();
 		break;
 	}
 	

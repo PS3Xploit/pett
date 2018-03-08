@@ -194,6 +194,7 @@ var gui_txt_option_dir_read_write_test="Lese/Schreib Test - Ordner";
 // Fun
 var gui_txt_preset_chains_fun="Spaß";
 var gui_txt_option_fun_test="Signalton Test";
+var gui_txt_option_test_only="Chain Test For Devs";
 var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
 var gui_txt_option_busy_icon_test="Busy Icon Test";
 var gui_txt_option_vsh_printf_test="VSH printf Test";

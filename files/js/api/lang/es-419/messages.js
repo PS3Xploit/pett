@@ -194,6 +194,7 @@ var gui_txt_option_dir_read_write_test="Prueba de Lectura/Escritura (Directorios
 // Fun
 var gui_txt_preset_chains_fun="Entretenimiento";
 var gui_txt_option_fun_test="Prueba Bips";
+var gui_txt_option_test_only="Chain Test For Devs";
 var gui_txt_option_xmb_plugin_test="Prueba Plugin XMB";
 var gui_txt_option_busy_icon_test="Prueba Icono Ocupado";
 var gui_txt_option_vsh_printf_test="Prueba printf VSH";

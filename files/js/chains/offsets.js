@@ -571,6 +571,7 @@ function ps3chk(){
 				g_set_high_only=g_set_r4_thru_r11+0x7C;
 				g_set_r3_from_r29=0x42D944;
 				g_set_r3_with_ld=0x19D3B0;
+				g_set_r5_from_r29=0x054AF0;
 				g_sc_80=0x0D9684;
 				g_sc_90=0x42C780;
 				g_sc_A0=0x1705D8;
@@ -614,6 +615,8 @@ function ps3chk(){
 						g_init_reboot=0x0C526C;
 						g_init_shutdown=0x0C5234;
 						g_exit_chain=0x2BACB4;
+					
+						g_printf=0x59A0AC;
 						//showOffsets();
 					} else {
 						// DEX
@@ -624,11 +627,19 @@ function ps3chk(){
 						g_2=0x0976BC;
 						g_set_r4_thru_r11=0x6161B8;
 						g_set_high_only=g_set_r4_thru_r11+0x7C;
+						g_set_r0_from_r31=0x34D400;
 						g_set_r3_from_r29=0x43552C;
 						g_set_r3_with_ld=0x1A43FC;
 						g_set_r3_with_lwz_from_r31=0x37F0CC;
-						g_set_r5_from_r29=0x4C7EF0;
+						g_set_r5_from_r29=0x054BA8;
+						g_set_r5_from_r29_alt=0x4C7EF0;
+						g_set_r5_from_r31=0x1BD760;
+						g_set_r5_from_r31_alt1=0x136EB0;
+						g_set_r5_from_r31_alt2=0x045190;
+						g_set_r6_from_r31=0x428DD4;
+						g_set_r7_from_r31=0x428DCC;
 						//g_set_r31_E8=0x62ABD8;
+						g_set_r12_110=0x029F8C;
 						g_set_r31_F8=0x62E84C;
 						g_set_r31_108=0x62FA14;
 						//g_set_r3_with_ld=0x7A00CC;
@@ -642,7 +653,12 @@ function ps3chk(){
 						g_sc_A0=0x177684;
 						g_sc_set_r3_from_r9=g_1-0x4;
 						g_sc_set_r3_from_r10=0x327298;
-						g_sc_set_r3_with_lwz_from_r31=0x1BAC30;// alternate 0x3A4C28 
+						g_sc_set_r3_with_lwz_from_r31=0x1BAC30;// alternate 0x3A4C28
+						
+						g_default_user_login_id=0x491574;
+						g_printf=0x5A1CA0;
+						g_printf2=0x536CF0;
+						g_printf3=0x1C23C8;
 						
 						// Exits
 						g_init_reboot=0x0C6768;
@@ -651,13 +667,21 @@ function ps3chk(){
 						g_exit_chain=0x2C24DC;
 						
 						// Subs
+						s_cellfs_rw=0x24BB3C;// 0x24BAF8;
+						s_cellfs_read=0x580EA8;
 						s_cellfs_write=0x524984;
 						s_create_new_user=0x0D27E8;
+						s_unk_bg_download1=0x32A6F4;
+						//s_unk_bg_download2=0x32A77C;
+						s_unk_download_exec_kind=0x0F8544;
 						s_mount_hdd1=0x638D7C;
 						s_ps_button_bp=0x12FB14;
 						s_remove_act_dat=0x259120;
 						s_remove_exdata=0x25A638;
 						s_start_busy_icon=0x0DD944;
+						s_unk_act_dat=0x25D710;// 0x25872C;
+						s_unk_black_screen=0x0D7458;
+						s_unk_blue_screen=0x0DA588;
 						s_unk_create_new_user2=0x0DA588;
 						s_unk_create_new_user3=0x0D28D4;
 						s_unk_flash2_post_update=0x0DFDD4;
@@ -666,17 +690,22 @@ function ps3chk(){
 						s_unk_manager_signout=0x0FC354;
 						s_unk_mount_hdd=0x0DF64C;
 						s_unk_network_printf=0x0CB6CC;
+						s_unk_np_debug=0x1C2308;
 						//s_unk_npmt=0x0FDFA8;
 						//s_unk_npmt2=0x0FDF7C;
+						s_unk_sys_util=0x146E70;// screws with network connection
 						s_unk_premo_plugin=0x0D2160;
 						s_unk_psx_ps2=0x544788;
+						s_unk_tty_write=0x0AD31C;
 						s_unk_upload_util=0x16EB30;
+						s_unk_widget=0x36743C;
 						
 						// Exports
 						e_cellfs_closedir=0x62C22C;
 						e_cellfs_opendir=0x62C0FC;
 						e_cellfs_readdir=0x62C1D4;
 						e_fopen_write_close=0x42B708;
+						e_fs_open_write_close=0x25D1B8;
 						e_stdc_opendir=0x0ADEDC;
 						e_stdc_readdir=0x0ADC58;
 						e_unk_boot2=0x516FF4;
@@ -685,6 +714,7 @@ function ps3chk(){
 						e_unk_xmb_plugin=0x0DE748;
 						e_turnoff=0x0CD764;// 0x0D673C
 						//e_turnoff2=0x0CD62C;
+						e_update_mgr_get_status=0x5FCAEC;
 						
 						// Unsorted/New
 						//g_fsopen_write_close=0x280450;
@@ -702,8 +732,6 @@ function ps3chk(){
 						//g_xmb_restore=0x0DE27C;
 						//g_unk_pkg1=0x327F1C;
 						//g_unk_sync=0x3296A8;
-						//g_unk_bg_download1=0x32A6F4;
-						//g_unk_bg_download2=0x32A77C;
 						//g_unk_post_update1=0x0CFDE4;
 						//g_unk_post_update2=0x0D8BB8;
 						//g_unk_crash_report1=0x0DFA24;
@@ -743,6 +771,7 @@ function ps3chk(){
 					g_set_high_only=g_set_r4_thru_r11+0x7C;
 					g_set_r3_from_r29=0x42D93C;
 					g_set_r3_with_ld=0x19D3B0;
+					g_set_r5_from_r29=0x054AF0;
 					g_set_r31_F8=0x6275CC;
 					g_set_r31_108=0x628794;
 					g_sc_80=0x0D9684;
@@ -756,6 +785,8 @@ function ps3chk(){
 					g_init_reboot=0x0C526C;
 					g_init_shutdown=0x0C5234;
 					g_exit_chain=0x2BACB8;
+					
+					g_printf=0x59A4B0;
 					//showOffsets();
 					break;
 					

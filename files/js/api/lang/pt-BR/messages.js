@@ -194,6 +194,7 @@ var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 // Fun
 var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
+var gui_txt_option_test_only="Chain Test For Devs";
 var gui_txt_option_xmb_plugin_test="Teste do Plugin XMB";
 var gui_txt_option_busy_icon_test="Teste do Icone de Ocupado";
 var gui_txt_option_vsh_printf_test="Teste do printf na VSH";
