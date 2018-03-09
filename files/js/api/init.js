@@ -135,6 +135,7 @@ var s_unk_npmt2;
 var s_unk_sys_util;
 var s_unk_premo_plugin;
 var s_unk_psx_ps2;
+var s_unk_thread_exit;
 var s_unk_tty_write;
 var s_unk_upload_util;
 var s_unk_widget;

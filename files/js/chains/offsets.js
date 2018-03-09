@@ -696,6 +696,7 @@ function ps3chk(){
 						s_unk_sys_util=0x146E70;// screws with network connection
 						s_unk_premo_plugin=0x0D2160;
 						s_unk_psx_ps2=0x544788;
+						s_unk_thread_exit=0x43448C;// 0x434454
 						s_unk_tty_write=0x0AD31C;
 						s_unk_upload_util=0x16EB30;
 						s_unk_widget=0x36743C;
