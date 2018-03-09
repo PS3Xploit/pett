@@ -403,7 +403,7 @@ function setPointerOffsets()
 	magic_addr2=base_fp_addr+0x34;
 	
 	// Path Strings
-	path_fp_addr=base_fp_addr+0x3A;
+	path_fp_addr=magic_addr2+0x8;
 	path_fp2_addr=path_fp_addr+path_fp.length;
 	
 	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;
@@ -1645,7 +1645,8 @@ function useCustomStackFrame()
 		
 		case "test_only":
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_black_screen);
-		callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_fs_open_write_close);
+		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
+		callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
 		break;
 		
 		default:
