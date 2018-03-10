@@ -423,7 +423,7 @@ function setPointerOffsets()
 	// Super Hacky Way to fix mount for now :)
 	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}
 	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;}
-	if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}
+	if(chain_stackframe==="sys_fs_mount"){path_src_fp_addr=path_src_fp_addr+0x2;path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;}
 }
 
 function checkSearchParams()
