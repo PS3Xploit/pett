@@ -5,7 +5,7 @@
 
 // Index GUI Version
 var gui_version="<font color='#FFF' size='3'>v0.2.0</font>";
-var global_minimum_lang_revision="0011";
+var global_minimum_lang_revision="0012";
 
 // Other Messages
 var msg_thread_name="Hello_From_PS3Xploit";
@@ -93,4 +93,4 @@ var gui_txt_option_chown="chown";
 var gui_txt_set_titleid="PS3XPLOIT";
 
 // Default Found Offsets
-var gui_txt_search_found_offsets=": base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b></h4>";
+var gui_txt_search_found_offsets="base_fp: 0x0 | stack_frame_addr: 0x0 | jump_2_addr: 0x0 | jump_1_addr: 0x0</b></h4>";

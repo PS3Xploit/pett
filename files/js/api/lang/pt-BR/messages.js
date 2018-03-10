@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0011"
+var current_minimum_lang_revision="0012"
 var gui_incomplete_lang="A tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -194,7 +194,7 @@ var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 // Fun
 var gui_txt_preset_chains_fun="Diversão";
 var gui_txt_option_fun_test="Teste do Beep";
-var gui_txt_option_test_only="Chain Test For Devs";
+var gui_txt_option_test_only="Teste de Cadeia Para Devs";
 var gui_txt_option_xmb_plugin_test="Teste do Plugin XMB";
 var gui_txt_option_busy_icon_test="Teste do Icone de Ocupado";
 var gui_txt_option_vsh_printf_test="Teste do printf na VSH";
