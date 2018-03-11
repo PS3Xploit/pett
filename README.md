@@ -43,6 +43,11 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 v0.2.0
 * Updated Offset Search Again. Cleaned Up Loader JS
+* Fixed Path Convert Issues
+* Added Get FileSize Chain To File System Presets
+* Added Package Options To Paths
+* Added A Test Chain Default For Devs on DEX
+* Updated All Languages From en_us Base (thanks @Caio99BR)
 
 v0.1.9
 * Added WebKit String Search Area To Dumping Chains
