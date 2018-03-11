@@ -507,8 +507,30 @@ var sys_prx_start_module_popt=0x00000000;
 var sys_prx_start_module_unk1=0x8A003000;
 var sys_prx_start_module_unk2=0x00000000;
 
+// syscall(879, 0x10001, out_buffer[0x10]) 
+var sc_sys_ss_media_id=0x0000036F;
+var sys_ss_media_id_arg1=0x00010001;
+//var sys_ss_media_id_arg1=0x00010002;
+var sys_ss_media_id_arg2_ptr=0x8A000000;
 
+// 2Params: 0x20000(=get_disc_access_control),uint32_t * disc_access / 0x20001(=set_disc_access_control),1
+var sc_sys_ss_disc_access_control=0x0000036C;
+var get_disc_access_control=0x00020000;
+var set_disc_access_control=0x00020001;
+var sys_set_disc_access_control_arg1=0x00020000;
+var sys_set_disc_access_control_arg2=0x00000001;
 
+// int sys_ss_get_cache_of_product_mode(uint8_t *ptr [1]);
+// returns 1 byte [Example Slim 2001 NOR: FF]
+var sc_sys_ss_get_cache_of_product_mode=0x00000369;
+var sys_ss_get_cache_of_product_mode_ptr=0x8A000000;
 
+// int sys_ss_get_cache_of_flash_ext_flag(uint8_t *flag [1])
+// returns 1 byte [Example Slim 2001 NOR: FE]
+var sc_sys_ss_get_cache_of_flash_ext_flag=0x0000036A;
+var sys_ss_get_cache_of_flash_ext_flag_ptr=0x8A000100;
 
-
+// int sys_ss_get_boot_device(uint8_t * buf [8]);
+// returns 8 bytes [Example Slim 2001 NOR: 00 00 00 00 00 00 01 11]
+var sc_sys_ss_get_boot_device=0x0000036B;
+var sys_ss_get_boot_device_ptr=0x8A000200;
