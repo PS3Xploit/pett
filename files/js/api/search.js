@@ -8,7 +8,6 @@
 function reload_usb_fp(state)
 {
 	if(state){
-		//return unescape("\u4141")+str2u(path_usb_flash_hex)+unescape("\u0000\u7762\u0000\u0000\u4141\u4141\u4141\u4141")+hexw2bin(gadget1_addr)+hexw2bin(toc_addr)+unescape("\u0000\uFFFF\uFFFF\u4141\uFD7E");// 56 bytes
 		return unescape("\u4141\u2F64\u6576\u5F75\u7362\u3030\u302F\u6964\u7073\u2E68\u6578\u0000\u7762\u0000\u0000\u4141\u4141\u4141\u4141")+hexw2bin(gadget1_addr)+hexw2bin(toc_addr)+unescape("\u0000\uFFFF\uFFFF\u4141\uFD7E");// 56 bytes
 	}
 	else{
@@ -83,7 +82,7 @@ function reload_fd(state)
 function reload_hdd_fp(state)
 {
 	if(state){
-		return unescape("\u4141")+str2u(path_name_src)+unescape("\u0000\u0000\u4141\u4141\uFD7C");// path+12 bytes
+		return unescape("\u4141")+path_name_src.convert()+unescape("\u0000\u0000\u4141\u4141\uFD7C");// path+12 bytes
 	}
 	else{
 		return;
@@ -94,7 +93,7 @@ function reload_hdd_fp(state)
 function reload_hdd_fp2(state)
 {
 	if(state){
-		return unescape("\u4141")+str2u(path_name_dest)+unescape("\u0000\u0000\u4141\u4141\uFD6C");// path+12 bytes
+		return unescape("\u4141")+path_name_dest.convert()+unescape("\u0000\u0000\u4141\u4141\uFD6C");// path+12 bytes
 	}
 	else{
 		return;
@@ -105,7 +104,7 @@ function reload_hdd_fp2(state)
 function reload_usb_fp2(state)
 {
 	if(state){
-		return unescape("\u4141")+str2u(path_usb_default)+unescape("\u0000\u0000\u4141\u4141\uFD6B");// path+12 bytes
+		return unescape("\u4141")+path_usb_default.convert()+unescape("\u0000\u0000\u4141\u4141\uFD6B");// path+12 bytes
 	}
 	else{
 		return;
@@ -202,7 +201,6 @@ function findOffset(name)
 	switch(name)
 	{
 		case "base_fp":
-		//base_fp=unescape("\u4242\u0000")+hexw2bin(setFileMode("wb"))+hexw2bin(write_bytes)+hexw2bin(usb_fp)+hexw2bin(usb_fp2)+hexw2bin(hdd_fp)+hexw2bin(hdd_fp2)+hexw2bin(usb_fd)+hexw2bin(usb_fd2)+hexw2bin(hdd_fd)+hexw2bin(hdd_fd2)+hexw2bin(fd)+hexw2bin(fd2)+hexw2bin(magic)+hexw2bin(magic2)+unescape("\u0000")+str2u(path_fp)+unescape("\u0000")+str2u(path_fp2)+unescape("\u0000")+str2u(path_src_fp)+unescape("\u0000")+str2u(path_dest_fp)+unescape("\u0000\uFD6C");
 		base_fp=unescape("\u4242\u0000")// +0x2
 		+hexw2bin(setFileMode("wb"))// +0x2
 		+hexw2bin(write_bytes)// +0x4

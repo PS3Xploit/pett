@@ -46,8 +46,6 @@ function initRopDefaults()
 	// Store Selected Flash Type Backup For Searching
 	ftype=type;
 	
-	str2u_adjusted=false;// reset str2u adjust
-	
 	// Reset Flag
 	allOffsetsFound=false;
 	
@@ -378,6 +376,7 @@ function setCustomPointerValues()
 	
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
+	if(chain_stackframe==="sys_fs_unmount"){path_fp=mount_path;}
 	
 	// VSH printf Params
 	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
@@ -409,20 +408,6 @@ function setPointerOffsets()
 	path_src_fp_addr=path_fp2_addr+path_fp2.convertedSize();
 	path_dest_fp_addr=path_src_fp_addr+path_src_fp.convertedSize();
 	
-	/*
-	if(str2u_adjusted)
-	{
-		//alert("path_fp.convertedSize: 0x"+path_fp.convertedSize().toString(16));
-		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x3;
-		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}// r3, r4, r5
-	}
-	else
-	{
-		//alert("path_fp.convertedSize: 0x"+path_fp.convertedSize().toString(16));
-		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
-		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x1;path_fp2_addr=path_fp2_addr-0x1;path_src_fp_addr=path_src_fp_addr+0x0;}// r3, r4, r5
-	}
-	*/
 }
 
 function checkSearchParams()
@@ -1490,7 +1475,7 @@ function useCustomStackFrame()
 		
 		// uses restore_stack1
 		case "sys_fs_unmount":
-		syscallAndExit(mount_path,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
+		syscallAndExit(path_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// does not use restore_stack1 restore_stack
@@ -2699,7 +2684,7 @@ function setPayloadMedia(marked_xmb_select)
 		disableElement("copy_payload_media_photo",true);
 		disableElement("copy_payload_media_music",false);
 		disableElement("copy_payload_media_video",true);
-		//return str2u(media_dest);
+		//return media_dest.convert();
 		alert(msg_media_not_supported);
 		break;
 		
@@ -2713,7 +2698,7 @@ function setPayloadMedia(marked_xmb_select)
 		disableElement("copy_payload_media_photo",false);
 		disableElement("copy_payload_media_music",true);
 		disableElement("copy_payload_media_video",true);
-		//return str2u(media_dest);
+		//return media_dest.convert();
 		break;
 		
 		case "video":
@@ -2726,7 +2711,7 @@ function setPayloadMedia(marked_xmb_select)
 		disableElement("copy_payload_media_photo",true);
 		disableElement("copy_payload_media_music",true);
 		disableElement("copy_payload_media_video",false);
-		//return str2u(media_dest);
+		//return media_dest.convert();
 		alert(msg_media_not_supported);
 		break;
 		
@@ -2860,7 +2845,7 @@ function showAllDebugOutput()
 	var sample="sampleX";
 	
     //alert("Page X of X"+"\n"+"sample: "+sample+"\n"+"sample: "+sample+"\n"+"sample: "+sample+"\n"+"sample: "+sample+"\n"+"sample: "+sample+"\n");
-    alert("Page 1 of X"+"\n"+"flash_type_text: "+flash_type_text+"\n"+"chain_stackframe: "+chain_stackframe+"\n"+"str2u_adjusted: "+str2u_adjusted);
+    alert("Page 1 of X"+"\n"+"flash_type_text: "+flash_type_text+"\n"+"chain_stackframe: "+chain_stackframe);
     alert("Page 2 of X"+"\n"+"max_loops: "+max_loops+"\n"+"failCount: "+failCount+"\n"+"failCountMax: "+failCountMax+"\n"+"search_max_threshold: "+search_max_threshold.toString(16)+"\n"+"search_max_threshold_backup: "+search_max_threshold_backup.toString(16)+"\n");
     alert("Page 3 of X"+"\n"+"search_base_offset: "+search_base_offset.toString(16)+"\n"+"search_base_offset_min: "+search_base_offset_min.toString(16)+"\n"+"search_base_offset_max: "+search_base_offset_max.toString(16)+"\n"+"search_base_offset_adjust: "+search_base_offset_adjust.toString(16)+"\n"+"search_base_offset_adjust_jump2: "+search_base_offset_adjust_jump2+"\n");
     alert("Page 4 of X"+"\n"+"search_base_offset_adjust_jump1: "+search_base_offset_adjust_jump1.toString(16)+"\n"+"search_range_size: "+search_range_size.toString(16));
