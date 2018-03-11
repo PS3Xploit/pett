@@ -28,10 +28,12 @@ var msg_settings_save="To experymentalna funkcja która zapisuje ustawienia do c
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer Zwraca Wartość Zapisaną w Pamięci!\n\nNaciśnij Ponownie Wykonaj aby Odczytać i Wyświetlić!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="Minimalna Wersja Systemu Twojego PS3 to: ";
 var msg_minver_mid=" i jest ona ";
 var msg_minver_end=" kompatybilna z CFW na ten moment!";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Temperatury Procesora/Karty Graficznej (CELL/RSX) Zwracają Wartości Zapisane w Pamięci!\n\nNaciśnij Ponownie Wykonaj aby Odczytać i Wyświetlić!";

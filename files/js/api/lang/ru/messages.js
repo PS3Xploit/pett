@@ -28,10 +28,12 @@ var msg_settings_save="Это экспериментально и сохраня
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="Возвращённое значение MinVer загружено в память!\n\nНажмите снова кнопку «Выполнить цепочку» для чтения и отображения!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="Ваша минимальная версия  понижения ";
 var msg_minver_mid=" является ";
 var msg_minver_end=" совместимой с CFW в данное время!";
 var msg_minver_compat_not="НЕ";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Возвращённые значения CELL/RSX температуры загружены в память!\n\nНажмите снова кнопку «Выполнить цепочку» для чтения и отображения!";

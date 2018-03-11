@@ -28,10 +28,12 @@ var msg_settings_save="Ceci est expérimental et enregistre les paramètres dans
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="Valeur de retour MinVer chargée dans la mémoire!\n\nAppuyez de nouveau sur le bouton Executer pour lire et afficher!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="Votre version de downgrade minimale est ";
 var msg_minver_mid=" et elle est ";
 var msg_minver_end=" compatible avec CFW en ce moment!";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="Valeurs de retour CELL/RSX Temp chargées dans la mémoire!\n\nAppuyez de nouveau sur le bouton Executer pour lire et afficher!";

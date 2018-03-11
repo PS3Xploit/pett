@@ -28,10 +28,12 @@ var msg_settings_save="Bu deneysel ve ayarları bir tanımlama bilgisine kaydede
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="Dönüş Değeri Bellekte Yüklendi!\n\nOku ve Göstermek İçin Yürüt düğmesine tekrar basın!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="Minimum İndirme Sürümünüz: ";
 var msg_minver_mid=" Ve Bir ";
 var msg_minver_end=" şu anda CFW ile uyumlu!";
 var msg_minver_compat_not="Değil";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";

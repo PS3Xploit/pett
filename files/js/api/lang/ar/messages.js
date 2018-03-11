@@ -28,10 +28,12 @@ var msg_settings_save="This is experimental and saves settings to a cookie!";
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="ادنى اصدار يمكن الرجوع عليه في جهازك هو ";
 var msg_minver_mid=" وهو ";
 var msg_minver_end=" متوافق مع التهكير في الوقت الحالي";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";

@@ -28,10 +28,12 @@ var msg_settings_save="Questo e' sperimentale e salva impostazioni nei cookie!";
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="Valore di ritorno di MinVer caricato in Memoria!\n\nPremi Esegui un'altra volta per leggerlo e visualizzarlo!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="La tua Versione minima di Downgrade e' ";
 var msg_minver_mid=" ed e' ";
 var msg_minver_end=" compatible with CFW at this time! compatibile con i CFW al momento";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="alore di ritorno di CELL/RSX Temp caricato in Memoria!\n\nPremi Esegui un'altra volta per leggerlo e visualizzarlo!";

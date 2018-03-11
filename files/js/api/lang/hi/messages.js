@@ -28,10 +28,12 @@ var msg_settings_save="यह प्रयोगात्मक है और �
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer मेमोरी में भरी हुई मान देता है!\n\nमूल्य दिखाने के लिए फिर से निष्पादित बटन दबाएं!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="डाउनग्रेड के लिए आपका न्यूनतम संस्करण है  ";
 var msg_minver_mid="और यह, आज तक ";
 var msg_minver_end=" यह CFW के साथ संगत है!";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp मेमोरी में भरी हुई मान देता है!\n\nमूल्य दिखाने के लिए फिर से निष्पादित बटन दबाएं!";
