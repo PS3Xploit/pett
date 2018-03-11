@@ -659,6 +659,8 @@ function ps3chk(){
 						g_printf=0x5A1CA0;
 						g_printf2=0x536CF0;
 						g_printf3=0x1C23C8;
+						g_unk_lwmutex_lock=0x0ACF30;
+						g_unk_r11_compare=0x18BDB4;
 						
 						// Exits
 						g_init_reboot=0x0C6768;
@@ -679,6 +681,16 @@ function ps3chk(){
 						s_remove_act_dat=0x259120;
 						s_remove_exdata=0x25A638;
 						s_start_busy_icon=0x0DD944;
+						s_sys_ppu_thread_detach=0x51A0B4;
+						s_sys_ppu_thread_detach_sleep=0x51A150;
+						s_sys_spu_image_close=0x612610;
+						s_sys_spu_image_get_information=0x612100;
+						s_sys_spu_image_import=0x612A28;
+						s_sys_spu_initialize=0x0CEE2C;
+						s_sys_spu_thread_group_create=0x443BF8;
+						s_sys_spu_thread_initialize=0x443B58;
+						s_sys_spu_thread_group_join=0x443C18;
+						s_sys_spu_thread_group_start=0x444C6C;
 						s_unk_act_dat=0x25D710;// 0x25872C;
 						s_unk_black_screen=0x0D7458;
 						s_unk_blue_screen=0x0DA588;
@@ -693,10 +705,12 @@ function ps3chk(){
 						s_unk_np_debug=0x1C2308;
 						//s_unk_npmt=0x0FDFA8;
 						//s_unk_npmt2=0x0FDF7C;
+						s_unk_r9_fix=0x443C38;
 						s_unk_sys_util=0x146E70;// screws with network connection
 						s_unk_premo_plugin=0x0D2160;
 						s_unk_psx_ps2=0x544788;
 						s_unk_thread_exit=0x43448C;// 0x434454
+						s_unk_thread_sc37=0x0CEE4C;
 						s_unk_tty_write=0x0AD31C;
 						s_unk_upload_util=0x16EB30;
 						s_unk_widget=0x36743C;
@@ -709,9 +723,11 @@ function ps3chk(){
 						e_fs_open_write_close=0x25D1B8;
 						e_stdc_opendir=0x0ADEDC;
 						e_stdc_readdir=0x0ADC58;
+						e_sys_free=0x6125F0;
+						e_sys_spu_image_close=0x6125C8;
 						e_unk_boot2=0x516FF4;
 						e_unk_game_plugin=0x357BB0;
-						e_unk_vsh_printf=0x0CB72C;// 0x0A14B8 [file name in r3??, message in r4??]
+						e_unk_vsh_printf=0x0CB72C;// 0x0A14B8
 						e_unk_xmb_plugin=0x0DE748;
 						e_turnoff=0x0CD764;// 0x0D673C
 						//e_turnoff2=0x0CD62C;
