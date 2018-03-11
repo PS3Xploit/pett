@@ -41,6 +41,9 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 <h3>Version History</h3>
 
+v0.2.1
+* Updated Some Testing Stuff
+
 v0.2.0
 * Updated Offset Search Again. Cleaned Up Loader JS
 * Fixed Path Convert Issues
