@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0011";
+var current_minimum_lang_revision="0013";
 var gui_incomplete_lang="Traduccion Actual Incompleta, considera Actualizarla o solo ignorale";
 
 var msg_select_vsh_type="Consola CEX?\n\nal Seleccionar NO se tomaran los offsets para DEX";
@@ -28,12 +28,12 @@ var msg_settings_save="Esto es experimental y guarda opciones a una cookie!";
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
-var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_filesize_loaded_into_mem="Peso Archivo Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
 var msg_minver_start="Tu Version Minima para Downgrade es  ";
 var msg_minver_mid="y este, a la Fecha ";
 var msg_minver_end=" es compatible con CFW!";
 var msg_minver_compat_not="NO";
-var msg_filesize="File Size is: 0x";
+var msg_filesize="Peso de Archivo es: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Devuelve el valor cargado en memoria!\n\nPresiona nuevamente el Boton Ejecutar para Mostrar el Valor!";
@@ -44,7 +44,7 @@ var msg_temps_celcius=" Celcius";
 // MemDump
 var msg_memdump_warning="Advertencia!\n\nEsta Prueba se colgara si toca un area de memoria sin asignar durante el proceso Dump!\n\nAun asi obtendras un dump valido hasta el cuelgue!";
 var msg_memdump_idps_vsh="Solo FW 4.66/4.81/4.82 esta soportado para el Dump  IDPS Directo de Memoria VSH!\n\nLas Cadenas Basadas en la extraccion Flash IDPS es Diferente.\n\nTodas las Demas Versiones de FW probalemente solo den 0.";
-var msg_memdump_size="Valores Raw del MemDump VSH\n\nSize: 0x";
+var msg_memdump_size="Valores Raw del MemDump VSH\n\nPeso: 0x";
 var msg_memdump_start_addr="\nDireccion Inicio: 0x";
 var msg_memdump_end_addr="\nDireccion Fin: 0x";
 
@@ -190,13 +190,14 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS de Flash";
 var gui_txt_preset_chains_file_system="Sistema de Archivos";
 var gui_txt_option_create_new_user="Crear Nuevo Usuario ";
 var gui_txt_option_db_rebuild="Reconstruir BD";
+var gui_txt_option_get_filesize="Capturar Peso Archivo";//new chain from english
 var gui_txt_option_file_read_write_test="Prueba de Lectura/Escritura (Archivos)";
 var gui_txt_option_dir_read_write_test="Prueba de Lectura/Escritura (Directorios)";
 
 // Fun
 var gui_txt_preset_chains_fun="Entretenimiento";
 var gui_txt_option_fun_test="Prueba Bips";
-var gui_txt_option_test_only="Chain Test For Devs";
+var gui_txt_option_test_only="Cadena de Pruebas para Desarrolladores";
 var gui_txt_option_xmb_plugin_test="Prueba Plugin XMB";
 var gui_txt_option_busy_icon_test="Prueba Icono Ocupado";
 var gui_txt_option_vsh_printf_test="Prueba printf VSH";
