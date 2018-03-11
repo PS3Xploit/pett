@@ -1650,10 +1650,13 @@ function useCustomStackFrame()
 		case "test_only":
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_black_screen);
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
+		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_sys_trace);
+		
 		//syscallAndExit(set_disc_access_control,sys_ss_media_id_arg2_ptr,0,0,0,0,0,0,sc_sys_ss_disc_access_control,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_boot_device_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_boot_device,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_cache_of_product_mode_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_product_mode,temp_addr_8A,temp_addr_8B);
-		syscallAndExit(sys_ss_get_cache_of_flash_ext_flag_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_flash_ext_flag,temp_addr_8A,temp_addr_8B);
+		//syscallAndExit(sys_ss_get_cache_of_flash_ext_flag_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_flash_ext_flag,temp_addr_8A,temp_addr_8B);
+		syscallAndExit(sc_unk_986_ptr,0,0,0,0,0,0,0,sc_unk_986,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		default:

@@ -534,3 +534,7 @@ var sys_ss_get_cache_of_flash_ext_flag_ptr=0x8A000100;
 // returns 8 bytes [Example Slim 2001 NOR: 00 00 00 00 00 00 01 11]
 var sc_sys_ss_get_boot_device=0x0000036B;
 var sys_ss_get_boot_device_ptr=0x8A000200;
+
+var sc_unk_986=0x000003DA;
+var sc_unk_986_ptr=0x8A000500;
+
