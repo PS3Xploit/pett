@@ -151,8 +151,5 @@ function setPathNames()
 	
 	path_fp="/dev_usb000/test.bin";
 	path_fp2="/dev_hdd0/test.bin";
-	
-	//path_name=str2u(path);
-	//return path_name;
 }
 
