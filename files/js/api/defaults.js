@@ -407,7 +407,7 @@ function setPointerOffsets()
 	path_fp2_addr=path_fp_addr+path_fp.convertedSize();
 	
 	path_src_fp_addr=path_fp2_addr+path_fp2.convertedSize();
-	path_dest_fp_addr=path_src_fp_addr+path_src_fp.length;
+	path_dest_fp_addr=path_src_fp_addr+path_src_fp.convertedSize();
 	
 	/*
 	if(str2u_adjusted)
