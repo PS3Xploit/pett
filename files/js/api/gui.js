@@ -65,6 +65,7 @@ function showGuiText()
 	document.getElementById('gui_txt_preset_chains_file_system').innerHTML=gui_txt_preset_chains_file_system;
 	document.getElementById('gui_txt_option_create_new_user').innerHTML=gui_txt_option_create_new_user;
 	document.getElementById('gui_txt_option_db_rebuild').innerHTML=gui_txt_option_db_rebuild;
+	document.getElementById('gui_txt_option_get_filesize').innerHTML=gui_txt_option_get_filesize;
 	document.getElementById('gui_txt_option_file_read_write_test').innerHTML=gui_txt_option_file_read_write_test;
 	document.getElementById('gui_txt_option_dir_read_write_test').innerHTML=gui_txt_option_dir_read_write_test;
 	

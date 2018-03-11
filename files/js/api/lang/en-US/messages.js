@@ -28,10 +28,12 @@ var msg_settings_save="This is experimental and saves settings to a cookie!";
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="MinVer Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
 var msg_minver_start="Your Minimum Downgrade Version is ";
 var msg_minver_mid=" and is ";
 var msg_minver_end=" compatible with CFW at this time!";
 var msg_minver_compat_not="NOT";
+var msg_filesize="File Size is: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="CELL/RSX Temp Return Values Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
@@ -188,6 +190,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS From Flash";
 var gui_txt_preset_chains_file_system="File System";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Database Rebuild";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Read/Write File Test";
 var gui_txt_option_dir_read_write_test="Read/Write Directory Test";
 

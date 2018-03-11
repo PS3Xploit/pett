@@ -559,6 +559,22 @@ function showMinVersion()
 	}
 }
 
+function showFilesize()
+{
+	if(filesize_seen)
+	{
+		filesize=checkMemory(filesize_addr-0x8+0x28,0x100,0x100,10);
+		filesize=s2hex(filesize).toString().slice(0, 8);
+		alert(msg_filesize+filesize.toString());
+	}
+	else
+	{
+		filesize_seen=true;
+		filesize=msg_filesize_loaded_into_mem;
+		alert(filesize.toString());
+	}
+}
+
 function showTemps()
 {
 	if(temps_both_seen)
@@ -1284,6 +1300,10 @@ function useCustomStackFrame()
 		syscallAndExit(0x00006011,0x00000001,temp_addr_8C,0,0,0,0,0,update_manager_if,temp_addr_8A,temp_addr_8B);
 		break;
 		
+		case "get_filesize":
+		syscallAndExit(path_src_fp_addr,filesize_addr,0,0,0,0,0,0,sc_sys_fs_stat,temp_addr_8A,temp_addr_8B);
+		break;
+		
 		// uses restore_stack1
 		// thread stopped at 000D7430 48299C99 bl         0x003710C8 
 		// 000D6544 4829AD45 bl         0x00371288
@@ -1691,6 +1711,12 @@ function setChainOptions(chain)
 		
 		case "minver_check":
 		setDefaultGuiParams();
+		break;
+		
+		case "get_filesize":
+		setValueToHTML("path_src",path_usb_test_bin);
+		setValueToHTML("path_dest","");
+		init_rop.focus();
 		break;
 		
 		case "game_debug_pafjob_test":
@@ -2746,6 +2772,10 @@ function execSuccessMessage(chain)
 			msg_success_text=success_chain_exec_press_again;
 			break;
 			
+			case "get_filesize":
+			msg_success_text=success_chain_exec_press_again;
+			break;
+			
 			case "sys_game_get_temperature":
 			msg_success_text=success_chain_exec_press_again;
 			break;
@@ -2786,6 +2816,10 @@ function postExecTasks(chain)
 	{
 		case "minver_check":
 		setTimeout(showMinVersion(),2000);
+		break;
+		
+		case "get_filesize":
+		setTimeout(showFilesize(),2000);
 		break;
 		
 		case "sys_game_get_temperature":

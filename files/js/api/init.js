@@ -480,6 +480,10 @@ var minver=0x00000000;
 var minver_seen=false;
 var minver_addr=0x89FFFFF0;
 
+var filesize=0x00000000;
+var filesize_seen=false;
+var filesize_addr=0x89EFFFF0;
+
 var temps_both_seen=false;
 
 var temp_cell=0x00000000;
