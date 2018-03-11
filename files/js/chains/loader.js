@@ -14,7 +14,7 @@ function initROP()
 		// Check to make sure values are not corrupt
 		checkSearchParams();
 			
-		if(firstRun)
+		if((firstRun)||(!base_found))
 		{
 			
 			// Reset Addresses
