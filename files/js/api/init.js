@@ -173,7 +173,7 @@ var chain_stackframe="";
 var firstRun=true;
 var t_out=0;
 var total_loops=0;
-var max_loops=40;
+var max_loops=50;
 var failCount=0;
 var failCountMax=1;
 var search_max_threshold = 70*0x100000;
@@ -303,7 +303,7 @@ var isFW356=false;
 
 var write_protect=true;
 
-var str2u_adjusted=false;// used for str2u
+var str2u_adjusted=false;// obsolete
 
 var write_bytes=0x00000000;// used for db_rebuild and others
 var dummy_text="Hello From PS3Xploit Team!";
