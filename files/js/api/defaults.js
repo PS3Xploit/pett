@@ -400,31 +400,29 @@ function setPointerOffsets()
 	fd_addr=base_fp_addr+0x28;
 	fd2_addr=base_fp_addr+0x2C;
 	magic_addr=base_fp_addr+0x30;
-	magic_addr2=base_fp_addr+0x34;
+	magic_addr2=base_fp_addr+0x34;// 55th byte (+0x36) from start
 	
 	// Path Strings
-	path_fp_addr=magic_addr2+0x8;
-	path_fp2_addr=path_fp_addr+path_fp.length;
+	path_fp_addr=base_fp_addr+0x3A;
+	path_fp2_addr=path_fp_addr+path_fp.convertedSize();
 	
-	path_src_fp_addr=path_fp2_addr+path_fp2.length+0x2;
-	path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
+	path_src_fp_addr=path_fp2_addr+path_fp2.convertedSize();
+	path_dest_fp_addr=path_src_fp_addr+path_src_fp.length;
 	
-	
+	/*
 	if(str2u_adjusted)
 	{
+		//alert("path_fp.convertedSize: 0x"+path_fp.convertedSize().toString(16));
 		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x3;
-		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x1;}// r3, r4, r5
+		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;path_src_fp_addr=path_src_fp_addr+0x2;}// r3, r4, r5
 	}
 	else
 	{
+		//alert("path_fp.convertedSize: 0x"+path_fp.convertedSize().toString(16));
 		path_dest_fp_addr=path_src_fp_addr+path_src_fp.length+0x2;
-		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}// r3, r4, r5
+		if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x1;path_fp2_addr=path_fp2_addr-0x1;path_src_fp_addr=path_src_fp_addr+0x0;}// r3, r4, r5
 	}
-	
-		
-	// Super Hacky Way to fix mount for now :)
-	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;}
-	//if(chain_stackframe==="sys_fs_mount"){path_fp_addr=path_fp_addr-0x2;path_fp2_addr=path_fp2_addr+0x1;}
+	*/
 }
 
 function checkSearchParams()

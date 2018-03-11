@@ -202,7 +202,31 @@ function findOffset(name)
 	switch(name)
 	{
 		case "base_fp":
-		base_fp=unescape("\u4242\u0000")+hexw2bin(setFileMode("wb"))+hexw2bin(write_bytes)+hexw2bin(usb_fp)+hexw2bin(usb_fp2)+hexw2bin(hdd_fp)+hexw2bin(hdd_fp2)+hexw2bin(usb_fd)+hexw2bin(usb_fd2)+hexw2bin(hdd_fd)+hexw2bin(hdd_fd2)+hexw2bin(fd)+hexw2bin(fd2)+hexw2bin(magic)+hexw2bin(magic2)+unescape("\u0000")+str2u(path_fp)+unescape("\u0000")+str2u(path_fp2)+unescape("\u0000")+str2u(path_src_fp)+unescape("\u0000")+str2u(path_dest_fp)+unescape("\u0000\uFD6C");
+		//base_fp=unescape("\u4242\u0000")+hexw2bin(setFileMode("wb"))+hexw2bin(write_bytes)+hexw2bin(usb_fp)+hexw2bin(usb_fp2)+hexw2bin(hdd_fp)+hexw2bin(hdd_fp2)+hexw2bin(usb_fd)+hexw2bin(usb_fd2)+hexw2bin(hdd_fd)+hexw2bin(hdd_fd2)+hexw2bin(fd)+hexw2bin(fd2)+hexw2bin(magic)+hexw2bin(magic2)+unescape("\u0000")+str2u(path_fp)+unescape("\u0000")+str2u(path_fp2)+unescape("\u0000")+str2u(path_src_fp)+unescape("\u0000")+str2u(path_dest_fp)+unescape("\u0000\uFD6C");
+		base_fp=unescape("\u4242\u0000")// +0x2
+		+hexw2bin(setFileMode("wb"))// +0x2
+		+hexw2bin(write_bytes)// +0x4
+		+hexw2bin(usb_fp)// +0x4
+		+hexw2bin(usb_fp2)// +0x4
+		+hexw2bin(hdd_fp)// +0x4
+		+hexw2bin(hdd_fp2)// +0x4
+		+hexw2bin(usb_fd)// +0x4
+		+hexw2bin(usb_fd2)// +0x4
+		+hexw2bin(hdd_fd)// +0x4
+		+hexw2bin(hdd_fd2)// +0x4
+		+hexw2bin(fd)// +0x4
+		+hexw2bin(fd2)// +0x4
+		+hexw2bin(magic)// +0x4
+		+hexw2bin(magic2)// +0x4
+		+unescape("\u0000")// +0x2
+		+path_fp.convert()
+		//+unescape("\u0000")// +0x2
+		+path_fp2.convert()
+		//+unescape("\u0000")// +0x2
+		+path_src_fp.convert()
+		//+unescape("\u0000")// +0x2
+		+path_dest_fp.convert()
+		+unescape("\u0000\uFD6C");
 		ph = 0x6CFD;
 
 		do
