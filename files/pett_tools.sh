@@ -24,14 +24,14 @@ if [ -z "$(type -t editreplacematch 2> /dev/null)" ]; then
 fi;
 
 # === Sync Index Automatically ===
-function sync_indexsh()
+function pett_index_sync()
 {
- # Usage: sync_indexsh (Sync all index files with en-US base)
+ # Usage: pett_index_sync (Sync all index files based in en-US)
 
   # Error about missing editreplacematch function
   if [ -z "$(type -t editreplacematch 2> /dev/null)" ]; then
     echo '';
-    echo ' sync_indexsh: The function "editreplacematch" from android_development_shell_tools not found it, exiting!';
+    echo ' pett_index_sync: The function "editreplacematch" from android_development_shell_tools not found it, exiting!';
     echo '';
     return;
   fi;
@@ -64,7 +64,7 @@ function sync_indexsh()
   # Check if we're inside of files/ dir
   if [ ! -d "${cwd}/index" ]; then
     echo '';
-    echo ' sync_indexsh: "index" folder not found, exiting!';
+    echo ' pett_index_sync: "index" folder not found, exiting!';
     echo '';
     return;
   fi;
@@ -128,5 +128,115 @@ function sync_indexsh()
   done;
 }
 
-# Run the command
-sync_indexsh;
+# === Check Lang File Automatically ===
+function pett_lang_check()
+{
+ # Usage: pett_lang_check (Check all lang files for missing variables based on en-US)
+
+  # Error about missing editreplacematch function
+  if [ -z "$(type -t editreplacematch 2> /dev/null)" ]; then
+    echo '';
+    echo ' pett_lang_check: The function "editreplacematch" from android_development_shell_tools not found it, exiting!';
+    echo '';
+    return;
+  fi;
+
+  # Variable
+  local base_file;
+  local check_file;
+  local cwd;
+  local base_list;
+  local lang_list=();
+  local lang_list_size;
+  local temp_search;
+  local tmp_file;
+  export PETT_LAST_LINE;
+
+  # Current dir
+  cwd=$(pwd);
+
+  # Temporary file
+  tmp_file=$(mktemp);
+
+  # Check if we're inside of files/ dir
+  if [ ! -d "${cwd}/index" ]; then
+    echo '';
+    echo ' sync_indexsh: "index" folder not found, exiting!';
+    echo '';
+    return;
+  fi;
+
+  # Current Language List (Code|Name)
+  lang_list=('ar' \
+             'ca' \
+             'de-DE' \
+             'es-ES' \
+             'es-419' \
+             'fr-FR' \
+             'hi' \
+             'it-IT' \
+             'nl-NL' \
+             'pl' \
+             'pt-BR' \
+             'ru' \
+             'tr');
+
+  # Base Language List (Code|Name)
+  base_list='en-US';
+
+  # Get current size
+  lang_list_size="${#lang_list[@]}";
+
+  # Start working
+  for ((i=0; i<lang_list_size; i++)); do
+    # Match List
+    base_file="js/api/lang/${base_list}/messages.js";
+
+    # To Write List
+    check_file="js/api/lang/${lang_list[$i]}/messages.js";
+
+    # Remove comments
+    grep -v '//' "${base_file}" > "${tmp_file}";
+
+    # show what file is now being checked
+    echo -e "\nParsing file ${lang_list[$i]}";
+
+    # Check for the strings on a entire file
+    while read line_search; do
+
+      # Parser variable
+      temp_search=$(echo "${line_search}" | cut -d' ' -f2 | cut -d'=' -f1)
+
+      # Move cursor back to begin
+      echo -ne "\r\033[K  ${temp_search}"
+
+      # Check if line from en-US is on file to check
+      grep -q "${temp_search}" "${check_file}";
+
+      # Output the message of not found string
+      if [[ "${?}" != '0' ]]; then
+
+        # Show message of not found string
+        echo -ne "\n\033[0;31m    String '${temp_search}' not found!\033[0m";
+
+        # Insert new variable below
+        editinsertbelow "${PETT_LAST_LINE}" "${line_search}" "${check_file}";
+      fi
+
+      # Export to be used later
+      export PETT_LAST_LINE="${temp_search}";
+    done < "${tmp_file}";
+
+    echo;
+  done;
+}
+
+# Show new commands available
+echo;
+if [ ! -z "$(type -t pett_lang_check 2> /dev/null)" ]; then
+  echo "'pett_lang_check' is now available!";
+fi;
+if [ ! -z "$(type -t pett_index_sync 2> /dev/null)" ]; then
+  echo "'pett_index_sync' is now available!";
+fi;
+echo;
