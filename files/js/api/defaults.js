@@ -1858,7 +1858,7 @@ function setChainOptions(chain)
 		case "sys_fs_mount":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
-		alert(msg_mount_test);
+		//alert(msg_mount_test);
 		mounting_device.focus();
 		break;
 		
