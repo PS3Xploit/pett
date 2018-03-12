@@ -72,6 +72,12 @@ var path_flash2_default="/dev_flash2/";
 var path_flash3_default="/dev_flash3/";
 
 
+var flash2_etc="/dev_flash2/etc";
+var flash2_atrac="/dev_flash2/etc/activation/atrac";
+var flash2_backup="/dev_flash2/etc/backup/xRegistry.sys";
+var flash2_savedLastCreatedUserId="/dev_flash2/etc/savedLastCreatedUserId";
+var flash2_xRegistry="/dev_flash2/etc/xRegistry.sys";
+
 var flash3_crl1="/dev_flash3/data-revoke/crl/CRL1";
 var flash3_crl2="/dev_flash3/data-revoke/crl/CRL2";
 var flash3_drl1="/dev_flash3/data-revoke/drl/DRL1";
