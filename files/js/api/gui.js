@@ -23,6 +23,7 @@ function showGuiText()
 	document.getElementById('gui_chk_default_settings').innerHTML=gui_chk_default_settings;
 	document.getElementById('gui_chk_disable_trigger').innerHTML=gui_chk_disable_trigger;
 	document.getElementById('gui_chk_write_protect').innerHTML=gui_chk_write_protect;
+	document.getElementById('gui_chk_usb_mount').innerHTML=gui_chk_usb_mount;
 	document.getElementById('gui_chk_flash_type_nand').innerHTML=gui_chk_flash_type_nand;
 	document.getElementById('gui_chk_flash_type_nor').innerHTML=gui_chk_flash_type_nor;
 	document.getElementById('gui_chk_flash_type_emmc').innerHTML=gui_chk_flash_type_emmc;

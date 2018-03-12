@@ -26,6 +26,8 @@ var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
 
 // Set Offset Defaults
 var g_toc;
+var t_disc_load_cmp_stackframe;
+
 var g_1;// leftover webkit code
 var g_2;// initial stack control
 var g_set_r4_thru_r11;// set r4-r11 + r29-r31
@@ -112,6 +114,8 @@ var s_cellfs_rw;
 var s_cellfs_read;
 var s_cellfs_write;
 var s_create_new_user;
+var s_disc_load_check;
+var s_disc_load_check_type;
 var s_unk_bg_download1;
 var s_unk_bg_download2;
 var s_unk_download_exec_kind;
@@ -166,6 +170,7 @@ var e_cellfs_opendir;
 var e_cellfs_readdir;
 var e_fopen_write_close;
 var e_fs_open_write_close;
+var e_memset;
 var e_stdc_opendir;
 var e_stdc_readdir;
 var e_sys_free;
@@ -483,6 +488,7 @@ var title_id="PS3XPLOIT";
 var mount_device="CELL_FS_IOS:BUILTIN_FLSH1";
 var mount_fs="CELL_FS_FAT";
 var mount_path="/dev_blind";
+var usb_mount=false;// change r9 to pointer if usb
 
 var db_rebuild_bytes=0x000003E9;
 var memdump_addr=0x80000000;

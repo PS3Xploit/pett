@@ -141,6 +141,7 @@ var fs_mount_write_protection_off=0x00000000;
 var fs_mount_write_protection_on=0x00000001;
 var fs_mount_arg6=0x00000000;
 var fs_mount_arg7=0x00000000;
+var fs_mount_arg7_usbptr=0x8A000000;
 var fs_mount_arg8=0x00000000;
 
 // sys_fs_unmount Parameters

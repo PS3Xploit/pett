@@ -1470,7 +1470,15 @@ function useCustomStackFrame()
 		break;
 		
 		case "sys_fs_mount":
-		syscallAndExit(path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		if(usb_mount)
+		{
+			syscallAndExit(path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		else
+		{
+			syscallAndExit(path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		
 		break;
 		
 		// uses restore_stack1
@@ -1651,12 +1659,14 @@ function useCustomStackFrame()
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_black_screen);
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
 		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_sys_trace);
+		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,0x51E6B0);
+		callExportAndExit(t_disc_load_cmp_stackframe,0,0x200,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_memset);
 		
 		//syscallAndExit(set_disc_access_control,sys_ss_media_id_arg2_ptr,0,0,0,0,0,0,sc_sys_ss_disc_access_control,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_boot_device_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_boot_device,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_cache_of_product_mode_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_product_mode,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_cache_of_flash_ext_flag_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_flash_ext_flag,temp_addr_8A,temp_addr_8B);
-		syscallAndExit(sc_unk_986_ptr,0,0,0,0,0,0,0,sc_unk_986,temp_addr_8A,temp_addr_8B);
+		//syscallAndExit(sc_unk_986_ptr,0,0,0,0,0,0,0,sc_unk_986,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		default:
@@ -2123,6 +2133,22 @@ function toggleWriteProtect(){
 	{
 		fs_mount_write_protection=0x00000001;
 		write_protect=true;
+	}
+	
+	init_rop.focus();
+} 
+
+// Toggle USB Mounting R9 Pointer Arg
+function toggleUsbMount(){
+	if(usb_mount)
+	{
+		usb_mount=false;
+		alert(msg_mount_usb_disable);
+	}
+	else
+	{
+		usb_mount=true;
+		alert(msg_mount_usb_enable);
 	}
 	
 	init_rop.focus();

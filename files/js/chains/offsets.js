@@ -622,7 +622,11 @@ function ps3chk(){
 						// DEX
 						vshType="DEX";
 						addr_idps=0x735F98;
+						
+						// TOC
 						g_toc=0x705610;
+						t_disc_load_cmp_stackframe=0xD010BC14;
+						
 						g_1=0x0DEBD8;
 						g_2=0x0976BC;
 						g_set_r4_thru_r11=0x6161B8;
@@ -673,6 +677,8 @@ function ps3chk(){
 						//s_cellfs_read=0x580EA8;
 						//s_cellfs_write=0x524984;
 						s_create_new_user=0x0D27E8;
+						s_disc_load_check_type=0x51E5E0;
+						s_disc_load_check=0x51E6B0;
 						//s_unk_bg_download1=0x32A6F4;
 						//s_unk_bg_download2=0x32A77C;
 						//s_unk_download_exec_kind=0x0F8544;
@@ -728,6 +734,7 @@ function ps3chk(){
 						e_cellfs_opendir=0x62C0FC;
 						e_cellfs_readdir=0x62C1D4;
 						e_fopen_write_close=0x42B708;
+						e_memset=0x61AB58;
 						//e_fs_open_write_close=0x25D1B8;
 						e_stdc_opendir=0x0ADEDC;
 						e_stdc_readdir=0x0ADC58;
