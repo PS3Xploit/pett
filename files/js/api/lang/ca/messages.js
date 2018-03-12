@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Bolcar IDPs des Flash";
 var gui_txt_preset_chains_file_system="Sistema d'arxius";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Reconstruir sistema de dades";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Prova de Lectura / Escriptura d'arxius";
 var gui_txt_option_dir_read_write_test="Prova de Lectura / Escriptura de directori";
 
@@ -236,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="ID de Fil";
 // Network
 var gui_txt_syscall_group_network="Red: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="desenvolupament: ";
 var gui_txt_syscall_chains_debug_sc="Crides al sistema";
-var gui_txt_option_debug_placeholder="Prueba_de_pitido";
 
 // LED Control
 var gui_txt_syscall_group_led="Control de LED:";

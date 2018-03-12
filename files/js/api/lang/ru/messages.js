@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Дамп IDPS из флеш";
 var gui_txt_preset_chains_file_system="Файловая система";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Реконструкция базы данных";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Тест Чтения/Записи файла";
 var gui_txt_option_dir_read_write_test="Тест Чтения/Записи каталога";
 
@@ -233,15 +234,12 @@ var gui_txt_syscall_chains_threads="Потоки";
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID потока";
 
-// Netowrk
+// Network
 var gui_txt_syscall_group_network="Сеть: ";
-
-var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Отладка: ";
 var gui_txt_syscall_chains_debug_sc="Системные вызовы";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="Управление светодиодами:";

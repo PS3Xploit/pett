@@ -237,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="Thread ID";
 // Network
 var gui_txt_syscall_group_network="Network: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="Debugging: ";
 var gui_txt_syscall_chains_debug_sc="System Calls";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";

@@ -12,6 +12,7 @@ var msg_thread_name="Hello_From_PS3Xploit";
 
 // Debugging
 var msg_debug_placeholder="Lazy XP +1";
+var gui_txt_option_debug_placeholder="beep_test";
 
 // Check Memory
 var msg_check_memory="checkMemory: ";
@@ -75,6 +76,7 @@ var gui_txt_option_sys_ppu_thread_start="sys_ppu_thread_start";
 var gui_txt_option_sys_ppu_thread_stop="sys_ppu_thread_stop";
 
 // Network
+var gui_txt_option_url="URL: ";
 var gui_txt_syscall_chains_sys_net="sys_net";
 var gui_txt_option_sys_net_open_dump="sys_net_open_dump";
 var gui_txt_option_sys_net_read_dump="sys_net_read_dump";

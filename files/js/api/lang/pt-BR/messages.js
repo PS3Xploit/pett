@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0012"
+var current_minimum_lang_revision="0013"
 var gui_incomplete_lang="A tradução atual está incompleta, considere atualizá-la ou apenas pular este aviso"
 
 var msg_select_vsh_type="Usar a CEX?\n\nSelecionando NÃO, será usado os offsets da DEX";
@@ -28,12 +28,12 @@ var msg_settings_save="Isto é experimental e salva configurações em um cookie
 
 // MinVer/CFW Compatibility
 var msg_minver_loaded_into_mem="A versão mínima retorna um valor carregado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
-var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_filesize_loaded_into_mem="O tamanho do arquivo retorna um valor carregado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
 var msg_minver_start="Sua versão mínima para Downgrade é ";
 var msg_minver_mid=" e é ";
 var msg_minver_end=" compatível com CFW!";
 var msg_minver_compat_not="NÃO";
-var msg_filesize="File Size is: 0x";
+var msg_filesize="O tamanho do arquivo é: 0x";
 
 // CELL/RSX Temperatures
 var msg_temps_loaded_into_mem="A temperatura do CELL/RSX (CPU/GPU) retorna um valor carregado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
@@ -45,7 +45,7 @@ var msg_temps_celcius=" ºC";
 var msg_memdump_warning="Atenção!\n\nEste teste irá travar se uma área não alocada da memória for atingida durante o processo de dump!\n\nVocê terá um dump válido, até o momento que o teste travar!";
 var msg_memdump_idps_vsh="Somente os firmwares 4.66/4.81/4.82 suportam Dump IDPS direto da Memória VSH!\n\nO IDPS Dump direto da Memória VSH é diferente das demais cadeias.\n\nTodos os outros firmwares provavelmente irão fazer um dump só com 0s.";
 var msg_memdump_size="Valores do Dump Raw direto da memória VSH\n\nTamanho: 0x";
-var msg_memdump_start_addr="\nEndereço inícial: 0x";
+var msg_memdump_start_addr="\nEndereço inicial: 0x";
 var msg_memdump_end_addr="\nEnderenço final: 0x";
 
 // Warnings
@@ -56,8 +56,8 @@ var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\
 var msg_cobra_only="ALERTA!\n\nIsto só FUNCIONA com o COBRA ativado na CFW!";
 
 var msg_mount_test="** EM FASE DE TESTES **";
-var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
-var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
+var msg_mount_usb_enable="R9 Pointer Ativado!\n\nO Valor é Definido em um Endereço Temporário";
+var msg_mount_usb_disable="R9 Pointer Desativado!\n\nValor Definido para 0";
 
 // File Operations
 var msg_default_size="Usando o tamanho padrão 0x140";
@@ -70,18 +70,18 @@ var trigger_msg="Engatilhando exploit...";
 var trigger_msg2="Gatilho: 0x";
 
 // Ready To Search
-var msg_search_ready="<h3><b>Pronto para começar! <br>Selecione a cadeia e uma das opções acima, então aperte o botão para iniciar a cadeia ROP!</b></h3>";
+var msg_search_ready="<h3><b>Pronto para começar!<br>Selecione a cadeia e uma das opções acima, então aperte o botão para iniciar a cadeia ROP!</b></h3>";
 
 // Shows After Initial Exec Button Click
-var msg_exec_init="<h3><b>Executando a cadeia! <br>Espere até a execução terminar....</b></h3>";
+var msg_exec_init="<h3><b>Executando a cadeia!<br>Espere até a execução terminar...</b></h3>";
 
 // Search Strings
-var msg_search_offsets="<h3><b>Procurando por offsets na memória! Por favor espere.... <br>Se você é impaciente, feche o navegador e tente novamente em 60-90 segundos</b></h3>";
-var msg_verify_offsets="<h3><b>Verificando os offsets na memória! Por favor espere.... <br>NÃO FECHE o navegador agora!!</b></h3>";
+var msg_search_offsets="<h3><b>Procurando por offsets na memória! Por favor espere...<br>Se você é impaciente, feche o navegador e tente novamente em 60-90 segundos</b></h3>";
+var msg_verify_offsets="<h3><b>Verificando os offsets na memória! Por favor espere...<br>NÃO FECHE o navegador agora!!</b></h3>";
 
 // Fail Search Messages
-var msg_string_search_fail="<h3><b><font color='#7700DA'>Não encontrou todos os offsets!</font><font color='#7700DA'> Se a busca falhar novamente, ajuste as configurações de busca ou REINICIE o navegador!</font></b></h3>";
-var msg_string_search_fail_max="<h3><b><font color='#7700DA'>Não encontrou todos os offsets!</font><font color='#7700DA'> Máximo de tentativas alcançado! Por favor, REINICIEo o navegador!</font></b></h3>";
+var msg_string_search_fail="<h3><b><font color='#7700DA'>Não encontrou todos os offsets!</font><font color='#7700DA'>Se a busca falhar novamente, ajuste as configurações de busca ou REINICIE o navegador!</font></b></h3>";
+var msg_string_search_fail_max="<h3><b><font color='#7700DA'>Não encontrou todos os offsets!</font><font color='#7700DA'>Máximo de tentativas alcançado! Por favor, REINICIE o navegador!</font></b></h3>";
 
 // Verify Strings Fail
 var msg_string_verify_fail="<h3><b><font color='#7700DA'>Não verificou todos os offsets!</font><font color='#7700DA'> Se a verificação falhar novamente, REINICIE o navegador!</font></b></h3>";
@@ -112,7 +112,7 @@ var msg_anti_piracy="AVISO LEGAL\n\nNós NÃO toleramos ou aprovamos PIRATARIA d
 var msg_anti_piracy_edat="AVISO LEGAL ANTI-PIRATARIA!\n\nEsta opção destina-se apenas a fins de teste e desenvolvimento, e não deve ser abusada!\n\nAo clicar em SIM, você aceita usar isso apenas com títulos que foram comprados!";
 
 // Devices
-var msg_device_loaded_into_mem="Dispositivo retornado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
+var msg_device_loaded_into_mem="O nome do dispositivo é retornado na memória!\n\nPressione o botão Executar novamente para carregar e exibir este valor!";
 var msg_get_device_info1="Dispositivo Retornado: ";
 var msg_get_device_info2="\n\nUse isto para a cadeia sys_storage_report_devices";
 
@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 var gui_txt_preset_chains_file_system="Sistema de Arquivos";
 var gui_txt_option_create_new_user="Criar Novo Usuário";
 var gui_txt_option_db_rebuild="Reconstriur a Base de Dados";
+var gui_txt_option_get_filesize="Obter o Tamanho do Arquivo";
 var gui_txt_option_file_read_write_test="Teste de Leitura/Escrita de Arquivos";
 var gui_txt_option_dir_read_write_test="Teste de Leitura/Escrita de Pastas";
 
@@ -236,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="ID da Tarefa";
 // Network
 var gui_txt_syscall_group_network="Rede: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="Depuração: ";
 var gui_txt_syscall_chains_debug_sc="Chamadas do Sistema (syscalls)";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";

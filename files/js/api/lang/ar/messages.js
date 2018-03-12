@@ -61,7 +61,6 @@ var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="استخدام الحجم الإفتراضي ";
-var msg_default_size="استخدام الحجم الإفتراضي ";
 var msg_new_size="New FileSize: ";
 var msg_destination_path_set_new="New Path Set To:\n\n";
 var msg_destination_path_incorrect="Destination Path Is Incorrect!\n\nIt Must Be Set Before Changing Title ID.";
@@ -194,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="استخراج IDPS من سعه الت�
 var gui_txt_preset_chains_file_system="ملف النظام";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="اعادة بناء قاعدة البيانات";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="اختبار قراءة وكتابة ملف";
 var gui_txt_option_dir_read_write_test="اختبار قراءة وكتابة الفهرس";
 
@@ -237,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="Thread ID";
 // Network
 var gui_txt_syscall_group_network="الشبكة: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="التصحيح بمعنى ديبوق: ";
 var gui_txt_syscall_chains_debug_sc="نظام المكالمات";
-var gui_txt_option_debug_placeholder="اختبار_الصافرة";
 
 // LED Control
 var gui_txt_syscall_group_led="التحكم بالأضواء LED:";
