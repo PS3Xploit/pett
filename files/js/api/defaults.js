@@ -1718,7 +1718,8 @@ function setChainOptions(chain)
 		case "get_filesize":
 		setValueToHTML("path_src",path_usb_test_bin);
 		setValueToHTML("path_dest","");
-		init_rop.focus();
+		initAfterSelect=true;
+		path_src_type.focus();
 		break;
 		
 		case "game_debug_pafjob_test":
@@ -2327,6 +2328,8 @@ function setPathNameSrc(path){
 		setValueToHTML("file_size_edit",file_size_display);
 		if (confirm(msg_anti_piracy_edat)){setValueToHTML("path_src",x);}else{reloadPage();}
 	}
+	
+	if(initAfterSelect){initAfterSelect=false;init_rop.focus();}
 } 
 
 function setPathNameDest(path){
@@ -2346,6 +2349,8 @@ function setPathNameDest(path){
 		setValueToHTML("file_size_edit",file_size_display);
 		if (confirm(msg_anti_piracy_edat)){setValueToHTML("path_dest",x);}else{reloadPage();}
 	}
+	
+	if(initAfterSelect){initAfterSelect=false;init_rop.focus();}
 } 
 
 function setUserID(path){
