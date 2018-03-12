@@ -159,6 +159,11 @@ function verifyFailTrigger()
 	reload_page.focus();
 }
 
+function checkOffsets()
+{
+	if((j2_verified)&&(j1_verified)&&(base_verified)&&(stackframe_verified)){allOffsetsVerified=true;}else{allOffsetsVerified=false;}
+}
+
 function verifyOffsets()
 {
 	if(!base_verified)
@@ -167,6 +172,7 @@ function verifyOffsets()
 		if(base===base_fp){base_offsets.push(base_fp_addr);base_verified=true;}else{base_verified=false;base_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_base_fp);
 	}
+	checkOffsets();
 	
 	if(!j2_verified)
 	{
@@ -174,6 +180,7 @@ function verifyOffsets()
 		if(j2===jump_2){jump2_offsets.push(jump_2_addr);j2_verified=true;}else{j2_verified=false;j2_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_jump2);
 	}
+	checkOffsets();
 	
 	if(!j1_verified)
 	{
@@ -181,16 +188,15 @@ function verifyOffsets()
 		if(j1===jump_1){jump1_offsets.push(jump_1_addr);j1_verified=true;}else{j1_verified=false;j1_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_jump1);
 	}
+	checkOffsets();
 	
-	//stack_offsets.push(stack_frame_addr);stackframe_verified=true;stack_frame_acolor=colorVerifiedFake;
 	if(!stackframe_verified)
 	{
 		stk=checkMemory(stack_frame_addr-0x4,0x10000,stack_frame.length,6);
 		if(stk===stack_frame){stack_offsets.push(stack_frame_addr);stackframe_verified=true;}else{stackframe_verified=false;stackframe_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_stack_frame);
 	}
-	
-	if((j2_verified)&&(j1_verified)&&(base_verified)&&(stackframe_verified)){allOffsetsVerified=true;}else{allOffsetsVerified=false;}
+	checkOffsets();
 }
 
 

@@ -69,6 +69,7 @@ function initROP()
 		
 		// Trigger Exploit
 		if((allOffsetsFound)&&(!allOffsetsVerified)){verifyOffsets();}
+		//if((allOffsetsFound)&&(!allOffsetsVerified)){verifyOffsets();}else{allOffsetsFound=false;}
 		
 		if((allOffsetsFound)&&(allOffsetsVerified))
 		{
