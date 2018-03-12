@@ -26,8 +26,6 @@ var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
 
 // Set Offset Defaults
 var g_toc;
-var t_disc_load_cmp_stackframe;
-
 var g_1;// leftover webkit code
 var g_2;// initial stack control
 var g_set_r4_thru_r11;// set r4-r11 + r29-r31
@@ -58,6 +56,7 @@ var g_sc_A0;// sc then load r0 from r1+0xA0
 var g_sc_set_r3_from_r9;// set r3 from r9 and sc
 var g_sc_set_r3_from_r10;// set r3 from r10 and sc
 var g_sc_set_r3_with_lwz_from_r31;
+var g_disc_load_cmp_stackframe;
 
 var g_default_user_login_id;
 var g_printf;

@@ -1661,7 +1661,7 @@ function useCustomStackFrame()
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
 		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_sys_trace);
 		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,0x51E6B0);
-		callExportAndExit(t_disc_load_cmp_stackframe,0,0x200,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_memset);
+		callExportAndExit(g_disc_load_cmp_stackframe,0,0x200,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,e_memset);
 		
 		//syscallAndExit(set_disc_access_control,sys_ss_media_id_arg2_ptr,0,0,0,0,0,0,sc_sys_ss_disc_access_control,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_boot_device_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_boot_device,temp_addr_8A,temp_addr_8B);

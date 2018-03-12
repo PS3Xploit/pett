@@ -625,8 +625,6 @@ function ps3chk(){
 						
 						// TOC
 						g_toc=0x705610;
-						t_disc_load_cmp_stackframe=0xD010BC14;
-						
 						g_1=0x0DEBD8;
 						g_2=0x0976BC;
 						g_set_r4_thru_r11=0x6161B8;
@@ -658,6 +656,7 @@ function ps3chk(){
 						g_sc_set_r3_from_r9=g_1-0x4;
 						g_sc_set_r3_from_r10=0x327298;
 						g_sc_set_r3_with_lwz_from_r31=0x1BAC30;// alternate 0x3A4C28
+						g_disc_load_cmp_stackframe=0xD010BC14;
 						
 						g_default_user_login_id=0x491574;
 						g_printf=0x5A1CA0;
