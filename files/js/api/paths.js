@@ -71,6 +71,12 @@ var path_flash_default="/dev_flash/";
 var path_flash2_default="/dev_flash2/";
 var path_flash3_default="/dev_flash3/";
 
+
+var flash3_crl1="/dev_flash3/data-revoke/crl/CRL1";
+var flash3_crl2="/dev_flash3/data-revoke/crl/CRL2";
+var flash3_drl1="/dev_flash3/data-revoke/drl/DRL1";
+var flash3_drl2="/dev_flash3/data-revoke/drl/DRL2";
+
 var rename_test_src="/dev_hdd0/test/";
 var rename_test_dest="/dev_hdd0/PS3Xploit/";
 
