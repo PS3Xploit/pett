@@ -68,7 +68,7 @@ function initROP()
 		if((base_found)&&(stackframe_found)&&(j2_found)&&(j1_found)){allOffsetsFound=true;showFoundOffsets(offset_find_success);}
 		
 		// Trigger Exploit
-		if(!allOffsetsVerified){verifyOffsets();}
+		if((allOffsetsFound)&&(!allOffsetsVerified)){verifyOffsets();}
 		
 		if((allOffsetsFound)&&(allOffsetsVerified))
 		{
@@ -78,7 +78,7 @@ function initROP()
 		else 
 		{
 			verifyFailTrigger();
-			reloadInitROP();
+			//reloadInitROP();
 		}
 		// ==============================================================================
 		
