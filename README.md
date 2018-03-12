@@ -42,6 +42,8 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 <h3>Version History</h3>
 
 v0.2.1
+* Added USB Pointer Toggle For Mounting Options
+* Added New Paths For Source and Destination Presets
 * Updated Some Testing Stuff
 
 v0.2.0
