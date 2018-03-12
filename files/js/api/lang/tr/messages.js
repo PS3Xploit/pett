@@ -56,6 +56,8 @@ var msg_warning_write_protection="Yazma Koruması Devre dışı!\n\n Dikkatle il
 var msg_cobra_only="ALARIM!\n\nSADECE COBRA'yla Çalışır CFW'de Etkindir!";
 
 var msg_mount_test="** Daha Fazla TEST **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="Varsayılanı Kullanma Size 0x140";
@@ -151,6 +153,7 @@ var gui_credits="Many thanks to xerpi for the userland memory leak exploit B7U3 
 var gui_chk_default_settings="Varsayılan Ayarlar:";
 var gui_chk_disable_trigger="Başlatmayı Devredışı Bırak:";
 var gui_chk_write_protect="Yazmaya Karşı Korumalı:";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Yeniden Başlatma Modu:";
@@ -277,7 +280,7 @@ var gui_txt_memdump_address_start="Başlat:";
 var gui_txt_memdump_address_end="Bitti:";
 var gui_txt_btn_memdump_set_values="Yeni Değerleri Ayarla";
 
-var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_mounting_setup="Mounting: ";
 var gui_txt_option_mount_device="Device Name";
 var gui_txt_option_mount_fs="File System";
 var gui_txt_option_mount_path="Mount Path";

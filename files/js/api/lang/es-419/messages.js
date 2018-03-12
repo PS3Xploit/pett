@@ -56,6 +56,8 @@ var msg_warning_write_protection="Proteccion contra Escritura Deshabilitada!\n\n
 var msg_cobra_only="ALERTA!\n\nEsto solo Funciona con COBRA ACTIVADO EN CFW!";
 
 var msg_mount_test="** En Fase de Prueba **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="Usando Peso Predet. 0x140";
@@ -151,6 +153,7 @@ var gui_credits="Agradecimientos a xerpi por el port del exploit de memoria de u
 var gui_chk_default_settings="Configuracion Predet.:";
 var gui_chk_disable_trigger="Deshabilitar Lanzador:";
 var gui_chk_write_protect="Protec. Escritura";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Modo de Reinicio:";
@@ -278,7 +281,7 @@ var gui_txt_memdump_address_start="Inicio:";
 var gui_txt_memdump_address_end="Fin:";
 var gui_txt_btn_memdump_set_values="Fijar Nuevos Valores";
 
-var gui_txt_mounting_setup="Opciones de Montaje: ";
+var gui_txt_mounting_setup="Montaje: ";
 var gui_txt_option_mount_device="Nombre Dispositivo/Medio";
 var gui_txt_option_mount_fs="Sistema de Archivos";
 var gui_txt_option_mount_path="Ruta Montaje";

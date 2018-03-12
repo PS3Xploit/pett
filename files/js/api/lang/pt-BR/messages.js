@@ -56,6 +56,8 @@ var msg_warning_write_protection="A proteção contra escrita foi desativada!\n\
 var msg_cobra_only="ALERTA!\n\nIsto só FUNCIONA com o COBRA ativado na CFW!";
 
 var msg_mount_test="** EM FASE DE TESTES **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="Usando o tamanho padrão 0x140";
@@ -151,6 +153,7 @@ var gui_credits="Agradeço à @xerpi pelo port para o PS3 do exploit de vazament
 var gui_chk_default_settings="Configurações padrão:";
 var gui_chk_disable_trigger="Desabilitar o gatilho:";
 var gui_chk_write_protect="Proteção contra escrita:";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Modo de reiniciar:";
@@ -277,7 +280,7 @@ var gui_txt_memdump_address_start="Início:";
 var gui_txt_memdump_address_end="Fim:";
 var gui_txt_btn_memdump_set_values="Definir novos valores";
 
-var gui_txt_mounting_setup="Opções de Montagem: ";
+var gui_txt_mounting_setup="Montagem: ";
 var gui_txt_option_mount_device="Nome do Dispositivo";
 var gui_txt_option_mount_fs="Sistema de Arquivos";
 var gui_txt_option_mount_path="Destino a ser montado";

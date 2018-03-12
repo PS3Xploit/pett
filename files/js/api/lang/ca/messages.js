@@ -56,6 +56,8 @@ var msg_warning_write_protection="Protecció d'escriptura desactivada!\n\n¡¡¡
 var msg_cobra_only="¡ALERTA!\n\n¡Això NOMÉS funciona en CFW amb COBRA activat!";
 
 var msg_mount_test="¡** EN FASE DE PROVA **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="Usant mida per defecte 0x140";
@@ -151,6 +153,7 @@ var gui_credits="Moltes gràcies a xerpi per portar a PS3 l'exploit de pèrdua d
 var gui_chk_default_settings="Opcions per defecte:";
 var gui_chk_disable_trigger="desactivar desencadenant:";
 var gui_chk_write_protect="Protecció de escriptura:";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="Mode de reinici:";
@@ -277,7 +280,7 @@ var gui_txt_memdump_address_start="començar:";
 var gui_txt_memdump_address_end="acabar:";
 var gui_txt_btn_memdump_set_values="Posar Nous valors";
 
-var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_mounting_setup="Mounting: ";
 var gui_txt_option_mount_device="Device Name";
 var gui_txt_option_mount_fs="File System";
 var gui_txt_option_mount_path="Mount Path";

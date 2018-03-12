@@ -56,6 +56,8 @@ var msg_warning_write_protection="विकलांग लेखन सुर�
 var msg_cobra_only="चेतावनी!\n\nयह केवल साथ काम करता है COBRA में सक्रिय CFW!";
 
 var msg_mount_test="** टेस्ट चरण में **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="डिफ़ॉल्ट वजन का उपयोग करना. 0x140";
@@ -151,6 +153,7 @@ var gui_credits="उपयोगकर्ता मेमोरी के बं
 var gui_chk_default_settings="डिफ़ॉल्ट सेटिंग्स.:";
 var gui_chk_disable_trigger="लॉन्चर अक्षम करें:";
 var gui_chk_write_protect="लेखन संरक्षण";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode="रीस्टार्ट मोड:";
@@ -277,7 +280,7 @@ var gui_txt_memdump_address_start="दीक्षा:";
 var gui_txt_memdump_address_end="अंत:";
 var gui_txt_btn_memdump_set_values="Fijar Nuevos Valores";
 
-var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_mounting_setup="Mounting: ";
 var gui_txt_option_mount_device="Device Name";
 var gui_txt_option_mount_fs="File System";
 var gui_txt_option_mount_path="Mount Path";

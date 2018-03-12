@@ -56,6 +56,8 @@ var msg_warning_write_protection="Write Protection Disabled!\n\nProceed With CAU
 var msg_cobra_only="تحذير الخيار لايعمل الا مع الاصدارات التي تدعم كوبرا";
 
 var msg_mount_test="** IN TESTING PHASE **";
+var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
+var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
 // File Operations
 var msg_default_size="استخدام الحجم الإفتراضي ";
@@ -152,6 +154,7 @@ var gui_credits="Many thanks to xerpi for the userland memory leak exploit ps3 p
 var gui_chk_default_settings=": الاعدادات الافتراضية";
 var gui_chk_disable_trigger="ايقاف المحفز:";
 var gui_chk_write_protect=": كتابة الأمان";
+var gui_chk_usb_mount="USB:";
 
 // Reboot Mode
 var gui_chk_reboot_mode=": وضع إعادة التشغيل";
@@ -278,7 +281,7 @@ var gui_txt_memdump_address_start="البداية";
 var gui_txt_memdump_address_end="استخراج او تفريغ الذاكرة:";
 var gui_txt_btn_memdump_set_values="وضع قيم جديدة";
 
-var gui_txt_mounting_setup="Mounting Options: ";
+var gui_txt_mounting_setup="Mounting: ";
 var gui_txt_option_mount_device="Device Name";
 var gui_txt_option_mount_fs="File System";
 var gui_txt_option_mount_path="Mount Path";
