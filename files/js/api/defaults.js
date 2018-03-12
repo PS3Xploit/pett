@@ -701,6 +701,7 @@ function toggleDisableButtons(state)
 	disableElement("mounting_device", state);
 	disableElement("mounting_fs", state);
 	disableElement("mounting_path", state);
+	disableElement("usb_mount_toggle", state);
 	
 	disableElement("marked_reboot", state);
 	disableElement("default_settings", state);
