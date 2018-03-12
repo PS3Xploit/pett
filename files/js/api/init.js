@@ -188,7 +188,7 @@ var disable_trigger=false;// used for testing with alert
 
 var page_args_set=false;
 var disable_reboot=true;
-var initAfterSelect=false;// will force jump to load_rop button if true after selection made
+var init_after_select=false;// will force jump to load_rop button if true after selection made
 
 // Auto-Reload Page Flag
 var auto_reload=false;

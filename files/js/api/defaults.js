@@ -1718,7 +1718,7 @@ function setChainOptions(chain)
 		case "get_filesize":
 		setValueToHTML("path_src",path_usb_test_bin);
 		setValueToHTML("path_dest","");
-		initAfterSelect=true;
+		init_after_select=true;
 		path_src_type.focus();
 		break;
 		
@@ -2329,7 +2329,7 @@ function setPathNameSrc(path){
 		if (confirm(msg_anti_piracy_edat)){setValueToHTML("path_src",x);}else{reloadPage();}
 	}
 	
-	if(initAfterSelect){initAfterSelect=false;init_rop.focus();}
+	if(init_after_select){init_after_select=false;init_rop.focus();}
 } 
 
 function setPathNameDest(path){
@@ -2350,7 +2350,7 @@ function setPathNameDest(path){
 		if (confirm(msg_anti_piracy_edat)){setValueToHTML("path_dest",x);}else{reloadPage();}
 	}
 	
-	if(initAfterSelect){initAfterSelect=false;init_rop.focus();}
+	if(init_after_select){init_after_select=false;init_rop.focus();}
 } 
 
 function setUserID(path){
