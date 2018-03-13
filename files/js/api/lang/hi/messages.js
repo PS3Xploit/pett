@@ -192,6 +192,8 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS की Flash";
 // File System
 var gui_txt_preset_chains_file_system="फ़ाइल सिस्टम";
 var gui_txt_option_create_new_user="Create New User";
+var gui_txt_option_mount_usb_as_bdvd="Mount USB000 as BDVD";
+var gui_txt_option_mount_other_as_bdvd="Mount Other Device as BDVD";
 var gui_txt_option_db_rebuild="फिर से बनाना BD";
 var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="पढ़ना / लेखन टेस्ट (फ़ाइलें)";

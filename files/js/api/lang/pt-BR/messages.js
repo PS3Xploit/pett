@@ -192,6 +192,8 @@ var gui_txt_option_dump_idps_from_flash="IDPS Dump pelo Flash";
 // File System
 var gui_txt_preset_chains_file_system="Sistema de Arquivos";
 var gui_txt_option_create_new_user="Criar Novo Usuário";
+var gui_txt_option_mount_usb_as_bdvd="Mount USB000 as BDVD";
+var gui_txt_option_mount_other_as_bdvd="Mount Other Device as BDVD";
 var gui_txt_option_db_rebuild="Reconstriur a Base de Dados";
 var gui_txt_option_get_filesize="Obter o Tamanho do Arquivo";
 var gui_txt_option_file_read_write_test="Teste de Leitura/Escrita de Arquivos";
