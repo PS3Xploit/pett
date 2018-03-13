@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Zrzuć IDPS Z Pamięci Flash";
 var gui_txt_preset_chains_file_system="System Plików";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Odbudowanie Bazy Danych";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Test Odczytu/Zapisu Plików";
 var gui_txt_option_dir_read_write_test="Test Odczytu/Zapisu Folderów";
 
@@ -233,15 +234,12 @@ var gui_txt_syscall_chains_threads="Wątki";
 // Thread ID
 var gui_txt_syscall_chains_thread_id="ID Wątku";
 
-// Netowrk
+// Network
 var gui_txt_syscall_group_network="Sieć: ";
-
-var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Debugowanie: ";
 var gui_txt_syscall_chains_debug_sc="System Calls";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="Kontrola LED:";

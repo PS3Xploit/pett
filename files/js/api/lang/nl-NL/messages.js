@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS vanuit Flash";
 var gui_txt_preset_chains_file_system="Bestandssysteem";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="Database Herbouw";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Lees/Schrijf File Test";
 var gui_txt_option_dir_read_write_test="Lees/Schrijf directory Test";
 
@@ -233,15 +234,12 @@ var gui_txt_syscall_chains_threads="Threads";
 // Thread ID
 var gui_txt_syscall_chains_thread_id="Thread ID";
 
-// Netwerk
+// Network
 var gui_txt_syscall_group_network="Netwerk: ";
-
-var gui_txt_option_url="URL: ";
 
 // Debugging
 var gui_txt_syscall_group_debugging="Debugging: ";
 var gui_txt_syscall_chains_debug_sc="System Calls";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="LED Control:";
@@ -319,7 +317,7 @@ var gui_txt_group_string_search="Zoek:";
 var gui_txt_option_search_size="Groote";
 var gui_txt_option_search_base="Base";
 var gui_txt_option_search_stack="Stack";
-var gui_txt_option_search_range="range";
+var gui_txt_option_search_range="Range";
 var gui_txt_option_search_loops="Loops";
 
 var gui_chk_search_verify_jumps="Verify Jumps:";

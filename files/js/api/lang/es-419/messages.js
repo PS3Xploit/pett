@@ -95,7 +95,7 @@ var success_chain_exec="<h3><b><font color='#386E38'>Cadena Ejecutada Exitosamen
 var success_chain_exec_press_again="<h3><b><font color='#386E38'>Presione el Boton Ejecutar una vez mas!</font></b></h3>";
 var success_chain_exec_psid="<h3><b><font color='#386E38'>PSID Dump Exitoso!</font></b></h3>";
 var success_chain_exec_idps="<h3><b><font color='#386E38'>IDPS Dump Exitoso!</font></b></h3>";
-var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'Dump Exitoso del Valor de retorno de la Syscall!</font></b></h3>";
+var success_chain_exec_syscall_dump="<h3><b><font color='#386E38'>Dump Exitoso del Valor de retorno de la Syscall!</font></b></h3>";
 var success_chain_exec_memdump="<h3><b><font color='#386E38'>DUMP de Memoria Exitoso!</font></b></h3>";
 var success_chain_exec_read_write_file="<h3><b><font color='#386E38'>Transferencia de Archivos Exitosa !</font></b></h3>";
 var success_mount_device="<h3><b><font color='#386E38'>Dispositivo/Medio Montado Exitosamente!</font></b></h3>";
@@ -193,7 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS de Flash";
 var gui_txt_preset_chains_file_system="Sistema de Archivos";
 var gui_txt_option_create_new_user="Crear Nuevo Usuario ";
 var gui_txt_option_db_rebuild="Reconstruir BD";
-var gui_txt_option_get_filesize="Capturar Peso Archivo";//new chain from english
+var gui_txt_option_get_filesize="Capturar Peso Archivo";
 var gui_txt_option_file_read_write_test="Prueba de Lectura/Escritura (Archivos)";
 var gui_txt_option_dir_read_write_test="Prueba de Lectura/Escritura (Directorios)";
 
@@ -237,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="ID Hilos";
 // Network
 var gui_txt_syscall_group_network="RED: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="Depuracion: ";
 var gui_txt_syscall_chains_debug_sc="System Calls";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="Control de LEDS:";

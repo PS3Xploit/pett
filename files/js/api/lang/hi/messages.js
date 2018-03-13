@@ -193,6 +193,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS की Flash";
 var gui_txt_preset_chains_file_system="फ़ाइल सिस्टम";
 var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_db_rebuild="फिर से बनाना BD";
+var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="पढ़ना / लेखन टेस्ट (फ़ाइलें)";
 var gui_txt_option_dir_read_write_test="पढ़ना / लेखन टेस्ट (निर्देशिकाएं)";
 
@@ -236,12 +237,9 @@ var gui_txt_syscall_chains_thread_id="ID सूत्र";
 // Network
 var gui_txt_syscall_group_network="RED: ";
 
-var gui_txt_option_url="URL: ";
-
 // Debugging
 var gui_txt_syscall_group_debugging="घाव साफ़ करना: ";
 var gui_txt_syscall_chains_debug_sc="System Calls";
-var gui_txt_option_debug_placeholder="beep_test";
 
 // LED Control
 var gui_txt_syscall_group_led="एलईडी नियंत्रण:";
