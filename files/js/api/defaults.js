@@ -570,6 +570,54 @@ function syscallTwoAndExit(r3a,r4a,r5a,r6a,r7a,r8a,r9a,r10a,r11a,r30a,r31a,r3b,r
 	a8_jumpto=g_exit_chain;
 }
 
+function syscallThreeAndExit(r3a,r4a,r5a,r6a,r7a,r8a,r9a,r10a,r11a,r30a,r31a,r3b,r4b,r5b,r6b,r7b,r8b,r9b,r10b,r11b,r30b,r31b,r3c,r4c,r5c,r6c,r7c,r8c,r9c,r10c,r11c,r30c,r31c)
+{
+	a1_r3=r3a;
+	a1_r4=r4a;
+	a1_r5=r5a;
+	a1_r6=r6a;
+	a1_r7=r7a;
+	a1_r8=r8a;
+	a1_r9=r9a;
+	a1_r10=r10a;
+	a1_r11=r11a;
+	a1_r30=r30a;
+	a1_r31=r31a;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_from_r29;
+	a3_jumpto=g_sc_A0;
+	a4_r3=r3b;
+	a4_r4=r4b;
+	a4_r5=r5b;
+	a4_r6=r6b;
+	a4_r7=r7b;
+	a4_r8=r8b;
+	a4_r9=r9b;
+	a4_r10=r10b;
+	a4_r11=r11b;
+	a4_r30=r30b;
+	a4_r31=r31b;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_set_r3_from_r29;
+	a6_jumpto=g_sc_A0;
+	a7_r3=r3c;
+	a7_r4=r4c;
+	a7_r5=r5c;
+	a7_r6=r6c;
+	a7_r7=r7c;
+	a7_r8=r8c;
+	a7_r9=r9c;
+	a7_r10=r10c;
+	a7_r11=r11c;
+	a7_r30=r30c;
+	a7_r31=r31c;
+	a7_jumpto=g_set_r4_thru_r11;
+	a8_jumpto=g_set_r3_from_r29;
+	a9_jumpto=g_sc_A0;
+	extra5=restore_stack;
+	a10_jumpto=g_exit_chain;
+}
+
 function syscallAndReboot(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31,mode,lpar_param,lpar_size)
 {
 	a1_r3=r3;
@@ -1185,6 +1233,30 @@ function useCustomStackFrame()
 		syscallAndExit(path_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B);
 		break;
 		
+		// uses restore_stack1
+		case "mount_usb_as_bdvd":
+		if(usb_mount)
+		{
+			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		else
+		{
+			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		break;
+		
+		// uses restore_stack1
+		case "mount_other_as_bdvd":
+		if(usb_mount)
+		{
+			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		else
+		{
+			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
+		}
+		break;
+		
 		// does not use restore_stack1 restore_stack
 		case "sys_storage_get_device_info":
 		syscallAndExit(storage_get_device_info_device,storage_get_device_info_buffer_ptr,storage_get_device_info_arg3,storage_get_device_info_arg4,0,0,0,0,sc_sys_storage_get_device_info,temp_addr_8A,temp_addr_8B);
@@ -1567,6 +1639,20 @@ function setChainOptions(chain)
 		case "sys_fs_unmount":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
+		mounting_path.focus();
+		break;
+		
+		case "mount_usb_as_bdvd":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
+		alert(msg_mount_test);
+		init_rop.focus();
+		break;
+		
+		case "mount_other_as_bdvd":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
+		alert(msg_mount_test);
 		mounting_path.focus();
 		break;
 		

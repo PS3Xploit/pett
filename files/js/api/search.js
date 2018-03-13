@@ -392,7 +392,7 @@ function setDefaultPointerValues()
 {
 	usb_fp=0x40404040;
 	usb_fp2=0x41414141;
-	hdd_fp=0x0000001C;
+	hdd_fp=0x42424242;
 	hdd_fp2=0x43434343;
 	usb_fd2=0x45454545;
 	hdd_fd=0x46464646;
@@ -414,6 +414,8 @@ function setCustomPointerValues()
 	// Set mount params
 	if(chain_stackframe==="sys_fs_mount"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;}
 	if(chain_stackframe==="sys_fs_unmount"){path_fp=mount_path;}
+	if(chain_stackframe==="mount_usb_as_bdvd"){path_fp="CELL_FS_IOS:USB_MASS_STORAGE000";path_fp2="CELL_FS_FAT";path_src_fp="/dev_bdvd";path_dest_addr="/dev_usb000";}
+	if(chain_stackframe==="mount_other_as_bdvd"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;path_dest_addr=mount_path2;}
 	
 	// VSH printf Params
 	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}
