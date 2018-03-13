@@ -1234,6 +1234,18 @@ function useCustomStackFrame()
 		break;
 		
 		// uses restore_stack1
+		case "mount_usb_as_bdvd_no_disc":
+		if(usb_mount)
+		{
+			syscallTwoAndExit(path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr);
+		}
+		else
+		{
+			syscallTwoAndExit(path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr);
+		}
+		break;
+		
+		// uses restore_stack1
 		case "mount_usb_as_bdvd":
 		if(usb_mount)
 		{
@@ -1642,10 +1654,17 @@ function setChainOptions(chain)
 		mounting_path.focus();
 		break;
 		
+		case "mount_usb_as_bdvd_no_disc":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
+		alert(msg_mount_no_disc);
+		init_rop.focus();
+		break;
+		
 		case "mount_usb_as_bdvd":
 		setValueToHTML("path_src","");
 		setValueToHTML("path_dest","");
-		alert(msg_mount_test);
+		alert(msg_mount_yes_disc);
 		init_rop.focus();
 		break;
 		
