@@ -471,15 +471,23 @@ function verifyOffsets()
 	if(!base_verified)
 	{
 		base=checkMemory(base_fp_addr-0x4,0x1000,base_fp.length,6);
-		if(base===base_fp){base_offsets.push(base_fp_addr);base_verified=true;}else{base_verified=false;base_found=false;allOffsetsFound=false;}
+		if(base===base_fp){base_offsets.push(base_fp_addr);base_verified=true;}else{base_fp_addr=0;base_verified=false;base_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_base_fp);
+	}
+	checkOffsets();
+	
+	if(!stackframe_verified)
+	{
+		stk=checkMemory(stack_frame_addr-0x4,0x10000,stack_frame.length,6);
+		if(stk===stack_frame){stack_offsets.push(stack_frame_addr);stackframe_verified=true;}else{stack_frame_addr=0;stackframe_verified=false;stackframe_found=false;allOffsetsFound=false;}
+		showFoundOffsets(offset_find_stack_frame);
 	}
 	checkOffsets();
 	
 	if(!j2_verified)
 	{
 		j2=checkMemory(jump_2_addr-0x4,0x1000,jump_2.length,6);
-		if(j2===jump_2){jump2_offsets.push(jump_2_addr);j2_verified=true;}else{j2_verified=false;j2_found=false;allOffsetsFound=false;}
+		if(j2===jump_2){jump2_offsets.push(jump_2_addr);j2_verified=true;}else{jump_2_addr=0;j2_verified=false;j2_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_jump2);
 	}
 	checkOffsets();
@@ -487,16 +495,8 @@ function verifyOffsets()
 	if(!j1_verified)
 	{
 		j1=checkMemory(jump_1_addr-0x4,0x1000,jump_1.length,6);
-		if(j1===jump_1){jump1_offsets.push(jump_1_addr);j1_verified=true;}else{j1_verified=false;j1_found=false;allOffsetsFound=false;}
+		if(j1===jump_1){jump1_offsets.push(jump_1_addr);j1_verified=true;}else{jump_1_addr=0;j1_verified=false;j1_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_jump1);
-	}
-	checkOffsets();
-	
-	if(!stackframe_verified)
-	{
-		stk=checkMemory(stack_frame_addr-0x4,0x10000,stack_frame.length,6);
-		if(stk===stack_frame){stack_offsets.push(stack_frame_addr);stackframe_verified=true;}else{stackframe_verified=false;stackframe_found=false;allOffsetsFound=false;}
-		showFoundOffsets(offset_find_stack_frame);
 	}
 	checkOffsets();
 }
