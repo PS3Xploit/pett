@@ -66,6 +66,7 @@ function showGuiText()
 	document.getElementById('gui_txt_preset_chains_file_system').innerHTML=gui_txt_preset_chains_file_system;
 	document.getElementById('gui_txt_option_create_new_user').innerHTML=gui_txt_option_create_new_user;
 	document.getElementById('gui_txt_option_mount_usb_as_bdvd').innerHTML=gui_txt_option_mount_usb_as_bdvd;
+	document.getElementById('gui_txt_option_mount_usb_as_bdvd_no_disc').innerHTML=gui_txt_option_mount_usb_as_bdvd_no_disc;
 	document.getElementById('gui_txt_option_mount_other_as_bdvd').innerHTML=gui_txt_option_mount_other_as_bdvd;
 	document.getElementById('gui_txt_option_db_rebuild').innerHTML=gui_txt_option_db_rebuild;
 	document.getElementById('gui_txt_option_get_filesize').innerHTML=gui_txt_option_get_filesize;
