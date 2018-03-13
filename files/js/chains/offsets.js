@@ -721,6 +721,7 @@ function ps3chk(){
 						//s_unk_port_timer_send_destroy=0x14C448;
 						//s_unk_premo_plugin=0x0D2160;
 						//s_unk_psx_ps2=0x544788;
+						s_unk_rsx_device_map=0x03EB6C;
 						s_unk_sys_trace=0x0C6614;// 0x0C37A8
 						s_unk_thread_exit=0x43448C;// 0x434454
 						//s_unk_thread_sc37=0x0CEE4C;
@@ -733,7 +734,7 @@ function ps3chk(){
 						e_cellfs_opendir=0x62C0FC;
 						e_cellfs_readdir=0x62C1D4;
 						e_fopen_write_close=0x42B708;
-						e_memset=0x61AB58;
+						e_memset=0x03FF78;// 0x61AB58
 						//e_fs_open_write_close=0x25D1B8;
 						e_stdc_opendir=0x0ADEDC;
 						e_stdc_readdir=0x0ADC58;
