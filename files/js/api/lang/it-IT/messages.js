@@ -56,6 +56,8 @@ var msg_warning_write_protection="Protezione Scrittura Disabilitata!\n\nProcedi 
 var msg_cobra_only="ATTENZIONE!\n\nFunziona SOLO con COBRA abilitato su CFW!";
 
 var msg_mount_test="** IN FASE DI TEST **";
+var msg_mount_no_disc="This Will Unmount dev_usb000 as dev_bdvd\n\nThere should be NO DISC in the drive!";
+var msg_mount_yes_disc="This Will Unmount dev_bdvd and dev_usb000, then mount dev_usb000 as dev_bdvd\n\nThere should be A DISC present in the drive!";
 var msg_mount_usb_enable="R9 Puntatore abilitato!\n\nIl valore è impostato su Indirizzo temp";
 var msg_mount_usb_disable="R9 Puntatore disabilitato!\n\nIl valore è impostato su 0";
 
@@ -193,6 +195,7 @@ var gui_txt_option_dump_idps_from_flash="Dump IDPS Dalla Flash";
 var gui_txt_preset_chains_file_system="File System";
 var gui_txt_option_create_new_user="Crea un nuovo utente";
 var gui_txt_option_mount_usb_as_bdvd="Mount USB000 as BDVD";
+var gui_txt_option_mount_usb_as_bdvd_no_disc="Mount USB000 as BDVD (No Disc)";
 var gui_txt_option_mount_other_as_bdvd="Mount Other Device as BDVD";
 var gui_txt_option_db_rebuild="Ricostruzione Database";
 var gui_txt_option_get_filesize="Get Filesize";

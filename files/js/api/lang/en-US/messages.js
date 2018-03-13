@@ -56,6 +56,8 @@ var msg_warning_write_protection="Write Protection Disabled!\n\nProceed With CAU
 var msg_cobra_only="ALERT!\n\nThis ONLY Works With COBRA Enabled On CFW!";
 
 var msg_mount_test="** IN TESTING PHASE **";
+var msg_mount_no_disc="This Will Unmount dev_usb000 as dev_bdvd\n\nThere should be NO DISC in the drive!";
+var msg_mount_yes_disc="This Will Unmount dev_bdvd and dev_usb000, then mount dev_usb000 as dev_bdvd\n\nThere should be A DISC present in the drive!";
 var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
 var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
