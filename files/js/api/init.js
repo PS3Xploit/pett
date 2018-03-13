@@ -209,9 +209,9 @@ var search_max_threshold_backup = 70*0x100000;
 var search_base_offset = 0x80200000;// 0x80190000
 var search_base_offset_min = 0x80200000;
 var search_base_offset_max = search_base_offset_min+0x240000;
-var search_base_offset_adjust=0x100000;
-var search_base_offset_adjust_jump2=0x100000;
-var search_base_offset_adjust_jump1=0x100000;
+var search_base_offset_adjust=0x200000;
+var search_base_offset_adjust_jump2=0x20000;
+var search_base_offset_adjust_jump1=0x20000;
 var search_range_size = 0x200000;
 
 // store found offsets
