@@ -1235,26 +1235,14 @@ function useCustomStackFrame()
 		
 		// uses restore_stack1
 		case "mount_usb_as_bdvd_no_disc":
-		if(usb_mount)
-		{
-			syscallTwoAndExit(path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr);
-		}
-		else
-		{
-			syscallTwoAndExit(path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr);
-		}
+		usb_mount=true;
+		syscallTwoAndExit(path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// uses restore_stack1
 		case "mount_usb_as_bdvd":
-		if(usb_mount)
-		{
-			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
-		}
-		else
-		{
-			syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
-		}
+		usb_mount=true;
+		syscallThreeAndExit(path_src_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,fs_unmount_arg2,fs_unmount_arg3,0,0,0,0,0,sc_sys_fs_unmount,temp_addr_8A,temp_addr_8B,path_fp_addr,path_fp2_addr,path_src_fp_addr,fs_mount_arg4,fs_mount_write_protection,fs_mount_arg6,fs_mount_arg7_usbptr,fs_mount_arg8,sc_sys_fs_mount,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// uses restore_stack1
