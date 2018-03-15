@@ -1,138 +1,93 @@
-<!DOCTYPE html>
+<!-- Welcome To Wonderful Things! -->
+<!-- PS3Xploit Team 2018 / ps3xploit.com -->
+
+<!-- Multi-Language Front-End thanks to @neno20115 -->
+
+<!-- <!DOCTYPE HTML> -->
+
 <html>
 <head>
-<script src="ps3xploit_v30.js"></script>
-<meta charset="UTF-8"> 
-<title>PS3Xploit Tools v3.0 - PS3 HAN Enabler</title>
+<title>PS3Xploit Tutorial Template :: Language Selection -[ ps3xploit.com ]-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="files/css/index.css">
 <script>
-function initROP(init)
-{
-	try
-	{
-		if(init===true){frame_fails=0;search_base_off=0;search_size_ext=0;}
-		if(t_out!==0){clearTimeout(t_out);t_out=0;}
-		offset_array=[];
-		disable_all();
-		clearLogEntry();
-		xtra_data_addr=0;
-		stack_frame_addr=0;
-		jump_2_addr=0;
-		jump_1_addr=0;
-		var ps3xploit_ecdsa_key_addr=0, index_key_addr=0;
-		var search_max_threshold=70*0x100000; // 70Mb maximum memory search
-		var search_base=0x80100000;//0x80190000;//
-		var search_size=2*mbytes;
-		search_size_ext=0*mbytes;
-		search_base_off=0*mbytes;
-		total_loops++;
-		
-		xtra_data=start_x.convert()+ps3xploit_ecdsa_key.convert(true)
-		+index_key.convert(true)
-		+unescape("\uFD7E");
-		while(xtra_data_addr===0)
-		{
-			if(search_max_threshold<search_size){load_check();return;}
-			xtra_data=xtra_data.replaceAt(0,hexh2bin(0x7EFD));
-			xtra_data_addr=findJsVariableOffset("xtra_data",xtra_data,search_base,search_size);
-			search_max_threshold-=search_size;
-		}
-		
-		
-		ps3xploit_ecdsa_key_addr=xtra_data_addr+start_x.convertedSize()-0x4;
-		index_key_addr=ps3xploit_ecdsa_key_addr+ps3xploit_ecdsa_key.convertedSize(true);
-		//############################ Building stack frame ###############################################################
-		stack_frame=stack_frame_hookup()
-		+store_word(toc_entry1_addr, vsh_opd_patch+4)
-		+store_word(toc_entry3_addr, vsh_opd_patch+4)
-		+store_word(toc_entry5_addr, vsh_opd_patch+4)
-		+store_word(default_vsh_pub_toc, vsh_ps3xploit_key_toc)
-		+memcpy(vsh_ps3xploit_key_toc-0x20, index_key_addr, (index_key.length/2))
-		+memcpy(vsh_ps3xploit_key_toc,ps3xploit_ecdsa_key_addr,(ps3xploit_ecdsa_key.length/2))
-		+stack_frame_exit();
-//############################ End stack frame ###############################################################		
-		while(stack_frame_addr===0)
-		{
-			if(search_max_threshold<search_size+search_size_ext){frame_fails++;if((frame_fails%10)===0){search_base_off+=0;search_size_ext+=0;}load_check();return;}
-			stack_frame=stack_frame.replaceAt(0,hexh2bin(0x2A2F));
-			stack_frame_addr=findJsVariableOffset("stack_frame",stack_frame,search_base+search_base_off,search_size+search_size_ext);
-			if(stack_frame_addr==-1)if(search_max_threshold<search_size+search_size_ext){frame_fails++;load_check();return;}
-			search_max_threshold-=search_size+search_size_ext;
-		}
-		jump_2=unescape("\u0102\u7EFB")+fill_by_16bytes(0x30,0x8282)+hexw2bin(stack_frame_addr)+unescape("\uFB7E");		
-		while(jump_2_addr===0)
-		{
-			if(search_max_threshold<search_size){load_check();return;}
-			jump_2=jump_2.replaceAt(0,hexh2bin(0x7EFB));
-			jump_2_addr=findJsVariableOffset("jump_2",jump_2,search_base,search_size);
-			if(jump_2_addr==-1)if(search_max_threshold<search_size){load_check();return;}
-			search_max_threshold-=search_size;
-		}
-		jump_1=unescape("\u4141\u7EFA")+hexw2bin(jump_2_addr)+unescape("\uFA7E");
-		while(jump_1_addr===0)
-		{
-			if(search_max_threshold<search_size){load_check();return;}
-			jump_1=jump_1.replaceAt(0,hexh2bin(0x7EFA));
-			jump_1_addr=findJsVariableOffset("jump_1",jump_1,search_base,search_size);
-			if(jump_1_addr==-1)if(search_max_threshold<search_size){load_check();return;}
-			search_max_threshold-=search_size;
-		}
-		var sf=checkMemory(stack_frame_addr-0x4,0x8000,stack_frame.length);
-		var x=checkMemory(xtra_data_addr-0x4,0x1000,xtra_data.length);
-		var j2=checkMemory(jump_2_addr-0x4,0x1000,jump_2.length);
-		var j1=checkMemory(jump_1_addr-0x4,0x1000,jump_1.length);
-		if((j2===jump_2)&&(j1===jump_1)&&(x===xtra_data)&&(sf===stack_frame))
-		{
-			if(t_out!==0){clearTimeout(t_out);}
-			showResult(hr+"<h1><b><font color=%22386E38%22>HAN Enabler initialized successfully.</font></b></h1><h3><b><font color=%22000000%22><span style='color:#000000;'>You can now launch HAN Enabler!</span></b></h3>");
-			enable_trigger();
-		}
-		else
-		{
-			if(x!==xtra_data)logAdd("xtra_data mismatch in memory!");
-			if(sf!==stack_frame)logAdd("stack_frame mismatch in memory!");
-			if(j2!==jump_2)logAdd("jump_2 mismatch in memory!");
-			if(j1!==jump_1)logAdd("jump_1 mismatch in memory!");
-			//logAdd("String mismatch in memory!");
-			load_check();
-		}
-	}
-	catch(e)
-	{
-		debug=true;
-		logAdd(br+"HAN Enabler initialization failed because the following exception was thrown during execution:"+br+e+" at : "+e.lineNumber);
-		debug=false;
-	}
-}
-
-function triggerX()
-{
-		clearLogEntry();
-		showResult(hr+"<h2><b><span style='color:#000000;'>Enabling HAN...</span></b></h2>");
-		disable_all();
-		setTimeout(trigger,1000,jump_1_addr);
-		setTimeout(rop_exit,2000,hr+"<h1><b><font color=%22386E38%22>HAN is successfully enabled</font></b></h1>");
-		cleanGUI();
+function setSelected() {
+	document.getElementById("select_default").focus();
 }
 </script>
 </head>
-	<body id="bodyId" style="background-color:#FFD097">
-	<div id="headerId" style="color:#CC2010">
-	<h1>PS3Xploit Tools v3.0 - PS3 HAN Enabler</h1>
-	<h2><span style="color:#000000">Courtesy of PS3Xploit Team</span></h2><b>esc0rtd3w </b><span style="color:#000000;"> (Debugging & Testing) <b>|</b> </span><b>habib </b><span style="color:#000000"> (Reverse Engineering & Debugging) <b>|</b> </span><b>bguerville </b><span style="color:#000000"> (ROP, Javascript & Debugging)</span><hr>
-	<span style="color:#000000">Many thanks to xerpi for porting the memory leak exploit to ps3, zecoxao & Joonie for their early & renewed support, mysis for documenting vsh/lv2, SSL for his regular & precious advice, kakaroto for the PS3 IDA tools, naherwert for scetool, Rebug Team for producing/updating the only CFW adequate to develop this work & Cobra team for sharing their CobraUSB source, the psdevwiki team of course, STLcardsWS for his long standing contribution & ever constant support.<br>We also wish to thank all the ps3 community hackers/devs, past & present, who directly or indirectly helped us put this project together, you know who you are...</span><hr>
-	<h3>Supports OFW and CFW CEX 4.81+ Firmware</h3>
-	<p><span style="color:#000000">More details & news on</span> <a href="http://www.psx-place.com/forums/ps3xploit">http://www.psx-place.com</a></p>
-	<hr></div>
-	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Initialize HAN Enabler</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
-	<p><button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Enable HAN</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
-	<div id="result" style="color:#CC2010"></div><br>
-	<div id="log"></div>
-	<div id="exploit" ></div>
-	<div id="trigger"></div>
-	<div id="footer"></div>
-	<script>
-		writeEnvInfo();
-		ps3chk();
-	</script>
-	</body>
+
+<body onload="setSelected();">
+<h1 style="color:orange;">PS3 Exploitation Tutorial Template</h1><br>
+<br>
+
+<table cellpadding="16" cellspacing="8" border="2" width="90%" align="center">
+	<colgroup width="23%">
+	<colgroup span="2" width="22%">
+	<colgroup width="23%">
+	<tr>
+		<td colspan="4" style="color:yellow;"><h1>SELECT YOUR LANGUAGE</h1><h5>[Translator Credits]</h5></td><!-- Translated to English or Original -->
+	</tr>
+	<tr>
+		<td><h2><a id="select_default" href="files/index/en-US.html">English (US)</a></h2><h5>Default</h5></td><!-- English (United States) -->
+		<td><h2><a href="files/index/ar.html">Arabic</a></h2><h5>[<span>@Azooz_yos</span>]</h5></td><!-- عربى -->
+		<td><h2><a href="files/index/ca.html">Català</a></h2><h5>[<span>@minicm94123</span>]</h5></td><!-- Spanish (Catalan) [NA on PS3 Systems]-->
+		<td><h2><a href="files/index/es-ES.html">Español</a></h2><h5>[<span>@Ivoyko</span>]</h5></td><!-- Spanish -->
+	</tr>
+	<tr>
+		<td><h2><a href="files/index/es-419.html">Espanyol</a></h2><h5>[<span>@Ripp3RkoS</span>]</h5></td><!-- Spanish (Latin American) [NA on PS3 Systems]-->
+		<td><h2><a href="files/index/fr-FR.html">Français</a></h2><h5>[<span>@valentinbreiz</span>] / [<span>@humanshield85</span>]</h5></td><!-- French -->
+		<td><h2><a href="files/index/de-DE.html">Deutsch</a></h2><h5>[<span>@FlatracerMod</span>]</h5></td><!-- German -->
+		<td><h2><a href="files/index/hi.html">Hindi</a></h2><h5>[<span>@minicm94123</span>]</h5></td><!-- हिन्दी [NA on PS3 Systems]-->
+	</tr>
+	<tr>
+		<td><h2><a href="files/index/it-IT.html">Italiano</a></h2><h5>[<span>@neno20115</span>]</h5></td><!-- Italian -->
+		<td><h2><a href="files/index/nl-NL.html">Nederlands</a></h2><h5>[<span>@CompanyFart</span>]</h5></td><!-- Dutch -->
+		<td><h2><a href="files/index/pl.html">Polski</a></h2><h5>[<span>@Roxu14</span>]</h5></td><!-- Polish -->
+		<td><h2><a href="files/index/pt-BR.html">Português (Brasil)</a></h2><h5>[<span>@HollowChris</span>] / [<span>@Caio99BR</span>]</h5></td><!-- Portuguese (Brazil) -->
+	</tr>
+	<tr>
+		<td><h2><a href="files/index/ru.html">Русский</a></h2><h5>[<span>@ErikPshat</span>]</h5></td><!-- Russian -->
+		<td><h2><a href="files/index/tr.html">Türkçe</a></h2><h5>[<span>@yanealaka</span>]</h5></td><!-- Turkish -->
+		<td><h2><a href="files/index/en-US.html"></a></h2></td><!-- NONE -->
+		<td><h2><a href="files/index/en-US.html"></a></h2></td><!-- NONE -->
+	</tr>
+<!---->
+<!--	<tr>-->
+<!--		<td><h2><a href="files/index/da-DE.html">Dansk</a></h2></td>-->			<!-- Danish -->
+<!--		<td><h2><a href="files/index/en-UK.html">English (UK)</a></h2></td>-->		<!-- English (United Kingdom) -->
+<!--		<td><h2><a href="files/index/no.html">Norsk</a></h2></td>-->			<!-- Norwegian -->
+<!--		<td><h2><a href="files/index/pt-PT.html">Português (Portugal)</a></h2></td>-->	<!-- Portuguese (Portugal) -->
+<!--	</tr>-->
+<!--	<tr>-->
+<!--		<td><h2><a href="files/index/fi-FI.html">Suomi</a></h2></td>-->			<!-- Finnish -->
+<!--		<td><h2><a href="files/index/sv-SE.html">Svenska</a></h2></td>-->			<!-- Swedish -->
+<!--		<td><h2><a href="files/index/ja.html">Japanese</a></h2></td>-->			<!-- 日本語 -->
+<!--		<td><h2><a href="files/index/ko-KR.html">Korean</a></h2></td>-->			<!-- 한국어 -->
+<!--	</tr>-->
+<!--	<tr>-->
+<!--		<td><h2><a href="files/index/zh-Hans.html">Simplified Chinese</a></h2></td>-->		<!-- 简体中文 -->
+<!--		<td><h2><a href="files/index/zh-Hant.html">Traditional Chinese</a></h2></td>-->	<!-- 繁體中文 -->
+<!--		<td><h2><a href="files/index/cs.html">Čeština</a></h2></td>-->			<!-- Czech [NA on PS3 Systems] -->
+<!--		<td><h2><a href="files/index/id.html">Indonesian</a></h2></td>-->			<!-- bahasa Indonesia [NA on PS3 Systems] -->
+<!--	</tr>-->
+<!--	<tr>-->
+<!--		<td><h2><a href="files/index/hu.html">Magyar</a></h2></td>-->			<!-- Hungarian [NA on PS3 Systems] -->
+<!--		<td><h2><a href="files/index/ro.html">Română</a></h2></td>-->			<!-- Romanian [NA on PS3 Systems] -->
+<!--		<td><h2><a href="files/index/vi.html">Tiếng Việt</a></h2></td>-->		<!-- Vietnamese [NA on PS3 Systems] -->
+<!--		<td><h2><a href="files/index/el-GR.html">Ελληνικά</a></h2></td>-->		<!-- Greek [NA on PS3 Systems] -->
+<!--	</tr>-->
+<!--	<tr>-->
+<!--		<td><h2><a href="files/index/th.html">Thai</a></h2></td>-->			<!-- ไทย [NA on PS3 Systems] -->
+<!--		<td><h2><a href="files/index/en-US.html"></a></h2></td>-->			<!-- NONE -->
+<!--		<td><h2><a href="files/index/en-US.html"></a></h2></td>-->			<!-- NONE -->
+<!--		<td><h2><a href="files/index/en-US.html"></a></h2></td>-->			<!-- NONE -->
+<!--	</tr>-->
+<!---->
+</table>
+<br>
+
+<p style="color:green;">Thank You To All The Translators!</p>
+<p>by PS3Xploit Team 2018<br><a class="site" href="http://ps3xploit.com">ps3xploit.com</a></p>
+</body>
 </html>
