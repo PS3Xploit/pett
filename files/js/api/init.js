@@ -115,6 +115,7 @@ var s_cellfs_write;
 var s_create_new_user;
 var s_disc_load_check;
 var s_disc_load_check_type;
+var s_disc_load_check_type2;
 var s_unk_bg_download1;
 var s_unk_bg_download2;
 var s_unk_download_exec_kind;

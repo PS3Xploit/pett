@@ -676,7 +676,8 @@ function ps3chk(){
 						//s_cellfs_read=0x580EA8;
 						//s_cellfs_write=0x524984;
 						s_create_new_user=0x0D27E8;
-						s_disc_load_check_type=0x51E5E0;
+						s_disc_load_check_type=0x519C00;
+						s_disc_load_check_type2=0x51E5E0;
 						s_disc_load_check=0x51E6B0;
 						//s_unk_bg_download1=0x32A6F4;
 						//s_unk_bg_download2=0x32A77C;
