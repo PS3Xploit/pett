@@ -66,14 +66,44 @@
 				/>
 			<Query
 				class="type:x-xmb/folder-pixmap"
-				key="game_xmbm_hdd0"
-				src="xmb://localhost/dev_hdd0/game/XMBMANPLS/USRDIR/game_main.xml#seg_xmb_hdd0_app"
+				key="ps3xploit_xmb"
+				src="xmb://localhost/dev_hdd0/game/PS3XPLOIT/USRDIR/ps3xploit_xmb.xml#ps3xploit_xmb_main"
 				/>
 			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_toolbox_xmb"
+				 src="xmb://localhost/dev_hdd0/game/HANTOOLBX/USRDIR/han_toolbox_xmb.xml#han_toolbox_xmb_main"
+				 />
+			<Query
 				class="type:x-xmb/folder-pixmap"
-				key="game_pett_hdd0"
-				src="xmb://localhost/dev_hdd0/game/PS3XPLOIT/USRDIR/game_main.xml#seg_xmb_pett_app"
+				key="pett_xmb"
+				src="xmb://localhost/dev_hdd0/game/PS3PETXMB/USRDIR/pett_xmb.xml#pett_xmb_main"
 				/>
+			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_xmb_addon1"
+				 src="xmb://localhost/dev_hdd0/game/HANXMBA01/USRDIR/han_xmb_addon1.xml#han_xmb_addon1_main"
+				 />
+			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_xmb_addon2"
+				 src="xmb://localhost/dev_hdd0/game/HANXMBA02/USRDIR/han_xmb_addon2.xml#han_xmb_addon2_main"
+				 />
+			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_xmb_addon3"
+				 src="xmb://localhost/dev_hdd0/game/HANXMBA03/USRDIR/han_xmb_addon3.xml#han_xmb_addon3_main"
+				 />
+			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_xmb_addon4"
+				 src="xmb://localhost/dev_hdd0/game/HANXMBA04/USRDIR/han_xmb_addon4.xml#han_xmb_addon4_main"
+				 />
+			<Query
+				 class="type:x-xmb/folder-pixmap"
+				 key="han_xmb_addon5"
+				 src="xmb://localhost/dev_hdd0/game/HANXMBA05/USRDIR/han_xmb_addon5.xml#han_xmb_addon5_main"
+				 />
 			<Query
 				class="type:x-xmb/folder-pixmap"
 				key="seg_gameexit"
