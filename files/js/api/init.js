@@ -26,6 +26,8 @@ var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
 
 // Set Offset Defaults
 var g_toc;
+var t_disc_load_alloc;
+
 var g_1;// leftover webkit code
 var g_2;// initial stack control
 var g_set_r4_thru_r11;// set r4-r11 + r29-r31
@@ -208,13 +210,13 @@ var failCount=0;
 var failCountMax=1;
 var search_max_threshold = 70*0x100000;
 var search_max_threshold_backup = 70*0x100000;
-var search_base_offset = 0x80200000;// 0x80190000
-var search_base_offset_min = 0x80200000;
-var search_base_offset_max = search_base_offset_min+0x240000;
-var search_base_offset_adjust=0x000000;
-var search_base_offset_adjust_jump2=0x000000;
-var search_base_offset_adjust_jump1=0x000000;
 var search_range_size = 0x200000;
+var search_base_offset = 0x80240000;// 0x80190000
+var search_base_offset_min = 0x80240000;
+var search_base_offset_max = search_base_offset_min+search_range_size+0x40000;
+var search_base_offset_adjust=0x00000;
+var search_base_offset_adjust_jump2=0x00000;
+var search_base_offset_adjust_jump1=0x00000;
 
 // store found offsets
 var found_offsets=[];

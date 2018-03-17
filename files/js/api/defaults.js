@@ -1257,6 +1257,17 @@ function useCustomStackFrame()
 		}
 		break;
 		
+		// uses restore_stack1
+		case "mount_bdvd_as_ps3_disc":
+		// Disc Allocation 0xD008100F
+		/*
+		Sub 0x6396C4 r3=ptr (-PLAYSTATION3)  r4=ptr (CELL_FS_ISO9660)  r5=ptr (/dev_bdvd)  r6=0 r7=1 r8=0 r9=ptr back to r3 address  r10=ptr back to r4 (CELL_FS_ISO9660)
+		*/
+		// Dex Params (r3-r10): 0x6A63B8,0x6A37C0,0x6A3478,0,1,0,0xD00D5B30,0x6A37C0
+		//callExportAndExit(path_fp_addr,path_fp2_addr,path_src_fp_addr,0,1,0,0,path_fp2_addr,0,temp_addr_8A,temp_addr_8B,s_disc_load_check_type3);
+		callExportAndExit(0x6A63B8,0x6A37C0,0x6A3478,0,1,0,0xD00D5B30,0x6A37C0,0,temp_addr_8A,temp_addr_8B,s_disc_load_check_type3);
+		break;
+		
 		// does not use restore_stack1 restore_stack
 		case "sys_storage_get_device_info":
 		syscallAndExit(storage_get_device_info_device,storage_get_device_info_buffer_ptr,storage_get_device_info_arg3,storage_get_device_info_arg4,0,0,0,0,sc_sys_storage_get_device_info,temp_addr_8A,temp_addr_8B);
@@ -1661,6 +1672,13 @@ function setChainOptions(chain)
 		setValueToHTML("path_dest","");
 		alert(msg_mount_test);
 		mounting_path.focus();
+		break;
+		
+		case "mount_bdvd_as_ps3_disc":
+		setValueToHTML("path_src","");
+		setValueToHTML("path_dest","");
+		alert(msg_mount_ps3_disc);
+		init_rop.focus();
 		break;
 		
 		case "sys_fs_rename":

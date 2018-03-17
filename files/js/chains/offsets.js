@@ -625,6 +625,8 @@ function ps3chk(){
 						
 						// TOC
 						g_toc=0x705610;
+						t_disc_load_alloc=0xD008100F;
+						
 						g_1=0x0DEBD8;
 						g_2=0x0976BC;
 						g_set_r4_thru_r11=0x6161B8;

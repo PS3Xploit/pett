@@ -417,6 +417,7 @@ function setCustomPointerValues()
 	if(chain_stackframe==="mount_usb_as_bdvd"){path_fp="CELL_FS_IOS:USB_MASS_STORAGE000";path_fp2="CELL_FS_FAT";path_src_fp="/dev_bdvd";path_dest_fp="/dev_usb000";}
 	if(chain_stackframe==="mount_usb_as_bdvd_no_disc"){path_fp="CELL_FS_IOS:USB_MASS_STORAGE000";path_fp2="CELL_FS_FAT";path_src_fp="/dev_bdvd";path_dest_fp="/dev_usb000";}
 	if(chain_stackframe==="mount_other_as_bdvd"){path_fp=mount_device;path_fp2=mount_fs;path_src_fp=mount_path;path_dest_fp=mount_path2;}
+	if(chain_stackframe==="mount_bdvd_as_ps3_disc"){path_fp="-PLAYSTATION3";path_fp2="CELL_FS_ISO9660";path_src_fp="/dev_bdvd";}
 	
 	// VSH printf Params
 	if(chain_stackframe==="vsh_printf_test"){path_fp=vsh_printf_arg1;path_fp2=vsh_printf_arg1;}

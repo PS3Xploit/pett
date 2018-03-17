@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0014";
+var current_minimum_lang_revision="0015";
 var gui_incomplete_lang="Current translation is incomplete, consider updating or just skip it";
 
 var msg_select_vsh_type="Use CEX?\n\nSelecting NO will use DEX offsets";
@@ -58,6 +58,7 @@ var msg_cobra_only="ALERT!\n\nThis ONLY Works With COBRA Enabled On CFW!";
 var msg_mount_test="** IN TESTING PHASE **";
 var msg_mount_no_disc="This Will Unmount dev_usb000 as dev_bdvd\n\nThere should be NO DISC in the drive!";
 var msg_mount_yes_disc="This Will Unmount dev_bdvd and dev_usb000, then mount dev_usb000 as dev_bdvd\n\nThere should be A DISC present in the drive!";
+var msg_mount_ps3_disc="This Will Mount dev_bdvd as a PS3 Disc\n\nThere should be a DISC present in the drive!";
 var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
 var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
 
@@ -197,6 +198,7 @@ var gui_txt_option_create_new_user="Create New User";
 var gui_txt_option_mount_usb_as_bdvd="Mount USB000 as BDVD";
 var gui_txt_option_mount_usb_as_bdvd_no_disc="Mount USB000 as BDVD No Disc";
 var gui_txt_option_mount_other_as_bdvd="Mount Other Device as BDVD";
+var gui_txt_option_mount_bdvd_as_ps3_disc="Mount BDVD as PS3 Disc";
 var gui_txt_option_db_rebuild="Database Rebuild";
 var gui_txt_option_get_filesize="Get Filesize";
 var gui_txt_option_file_read_write_test="Read/Write File Test";

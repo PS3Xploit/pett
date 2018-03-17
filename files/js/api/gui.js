@@ -68,6 +68,7 @@ function showGuiText()
 	document.getElementById('gui_txt_option_mount_usb_as_bdvd').innerHTML=gui_txt_option_mount_usb_as_bdvd;
 	document.getElementById('gui_txt_option_mount_usb_as_bdvd_no_disc').innerHTML=gui_txt_option_mount_usb_as_bdvd_no_disc;
 	document.getElementById('gui_txt_option_mount_other_as_bdvd').innerHTML=gui_txt_option_mount_other_as_bdvd;
+	document.getElementById('gui_txt_option_mount_bdvd_as_ps3_disc').innerHTML=gui_txt_option_mount_bdvd_as_ps3_disc;
 	document.getElementById('gui_txt_option_db_rebuild').innerHTML=gui_txt_option_db_rebuild;
 	document.getElementById('gui_txt_option_get_filesize').innerHTML=gui_txt_option_get_filesize;
 	document.getElementById('gui_txt_option_file_read_write_test').innerHTML=gui_txt_option_file_read_write_test;
