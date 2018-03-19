@@ -217,9 +217,10 @@ function pett_lang_check()
       if [[ "${?}" != '0' ]]; then
 
         # Show message of not found string
-        echo -ne "\n\033[0;31m    String '${temp_search}' not found!\033[0m";
+        echo -ne "\n\033[0;31m    String '${temp_search}' not found! Adding it...\n    If new string have any '\' fix it manually! \033[0m\n";
 
         # Insert new variable below
+        # TODO: Fix escaping of '\n', currently it remove the '\'
         editinsertbelow "${PETT_LAST_LINE}" "${line_search}" "${check_file}";
       fi
 
