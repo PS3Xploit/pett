@@ -461,6 +461,8 @@
 					<option value="CELL_FS_IOS:USB_MASS_STORAGE004">CELL_FS_IOS:USB_MASS_STORAGE004</option>
 					<option value="CELL_FS_IOS:USB_MASS_STORAGE005">CELL_FS_IOS:USB_MASS_STORAGE005</option>
 					<option value="CELL_FS_IOS:USB_MASS_STORAGE006">CELL_FS_IOS:USB_MASS_STORAGE006</option>
+					<option value="CELL_FS_ADMINFS:">CELL_FS_ADMINFS:</option>
+					<option value="CELL_FS_DUMMY:">CELL_FS_DUMMY:</option>
 					<option value="CELL_FS_HOSTFS:">CELL_FS_HOSTFS:</option>
 					<!-- <option value="CELL_FS_HOSTFS:xmb://localhost/dev_usb000">CELL_FS_HOSTFS:xmb://localhost/dev_usb000</option> -->
 					<!-- <option value="CELL_FS_HOSTFS:xmb://localhost/dev_usb000/">CELL_FS_HOSTFS:xmb://localhost/dev_usb000/</option> -->
@@ -476,13 +478,14 @@
 					<select name="mounting_fs" id="mounting_fs" onchange="mountSetFS(this);" >
 					<option value="" id="gui_txt_option_mount_fs" selected></option>
 					<option value="CELL_FS_FAT">CELL_FS_FAT</option>
+					<option value="CELL_FS_ADMINFS">CELL_FS_ADMINFS</option>
+					<option value="CELL_FS_DUMMYFS">CELL_FS_DUMMYFS</option>
 					<option value="CELL_FS_HOSTFS">CELL_FS_HOSTFS</option>
 					<option value="CELL_FS_ISO9660">CELL_FS_ISO9660</option>
 					<option value="CELL_FS_PATH">CELL_FS_PATH</option>
 					<option value="CELL_FS_SIMPLEFS">CELL_FS_SIMPLEFS</option>
 					<option value="CELL_FS_UFS">CELL_FS_UFS</option>
 					<option value="PSP">PSP</option> <!-- "PSP" MS / "PSP" MC -->
-					<option value="dummy">dummy</option>
 					</select> &nbsp;
 
 					<select name="mounting_path" id="mounting_path" onchange="mountSetPath(this);" >
@@ -507,6 +510,7 @@
 					<option value="/dev_usb004">/dev_usb004</option>
 					<option value="/dev_usb005">/dev_usb005</option>
 					<option value="/dev_usb006">/dev_usb006</option>
+					<option value="/host_root">/host_root</option>
 					<option value="/app_home">/app_home</option>
 					<option value="/app_home/PS3_GAME">/app_home/PS3_GAME</option>
 					<option value="dev_ps2disc">dev_ps2disc</option>
