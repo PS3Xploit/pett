@@ -482,7 +482,7 @@ function verifyOffsets()
 	
 	if(!stackframe_verified)
 	{
-		stk=checkMemory(stack_frame_addr-0x4,0x10000,stack_frame.length,6);
+		stk=checkMemory(stack_frame_addr-0x4,0x20000,stack_frame.length,6);
 		if((stk===stack_frame)&&(stk===stkv)){stack_offsets.push(stack_frame_addr);stackframe_verified=true;}else{stack_frame_addr=0;stackframe_verified=false;stackframe_found=false;allOffsetsFound=false;}
 		showFoundOffsets(offset_find_stack_frame);
 	}
