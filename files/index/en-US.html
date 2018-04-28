@@ -452,9 +452,6 @@
 					<option value="CELL_FS_UTILITY:HDD2">CELL_FS_UTILITY:HDD2</option>
 					<option value="CELL_FS_IOS:BDVD_DRIVE">CELL_FS_IOS:BDVD_DRIVE</option> <!-- Phat L0x + all newer SATA -->
 					<option value="CELL_FS_IOS:PATA0_BDVD_DRIVE">CELL_FS_IOS:PATA0_BDVD_DRIVE</option> <!-- Phat A0x-K0x PATA -->
-					<option value="-PLAYSTATION3">-PLAYSTATION3</option> <!-- Used On Disc Auth -->
-					<option value="-HDDCACHE">-HDDCACHE</option> <!-- Used On Disc Auth -->
-					<option value="-ISO9660_MULTI">-ISO9660_MULTI</option> <!-- Used On Disc Auth -->
 					<option value="CELL_FS_IOS:COMPACT_FLASH">CELL_FS_IOS:COMPACT_FLASH</option>
 					<option value="CELL_FS_IOS:MEMORY_STICK">CELL_FS_IOS:MEMORY_STICK</option>
 					<option value="CELL_FS_IOS:SD_CARD">CELL_FS_IOS:SD_CARD</option>
@@ -474,10 +471,14 @@
 					<!-- <option value="CELL_FS_HOSTFS:http://localhost/">CELL_FS_HOSTFS:http://localhost/</option> -->
 					<option value="CELL_FS_PATH:/dev_hdd0">CELL_FS_PATH:/dev_hdd0</option>
 					<option value="CELL_FS_PATH:/dev_usb000">CELL_FS_PATH:/dev_usb000</option>
-					<option value="CELL_FS_PATH:/dev_usb000/game/">CELL_FS_PATH:/dev_usb000/game/</option>
 					<option value="CELL_FS_PATH:/dev_usb001">CELL_FS_PATH:/dev_usb001</option>
+					<option value="CELL_FS_PATH:/dev_usb000/game/">CELL_FS_PATH:/dev_usb000/game/</option>
 					<option value="CELL_FS_PATH:/dev_usb001/game/">CELL_FS_PATH:/dev_usb001/game/</option>
 					<option value="CELL_FS_PATH:/dev_hdd0/game/">CELL_FS_PATH:/dev_hdd0/game/</option>
+					<option value="CELL_FS_PATH:/dev_hdd0/home/">CELL_FS_PATH:/dev_hdd0/home/</option>
+					<option value="-PLAYSTATION3">-PLAYSTATION3</option> <!-- Used On Disc Auth -->
+					<option value="-HDDCACHE">-HDDCACHE</option> <!-- Used On Disc Auth -->
+					<option value="-ISO9660_MULTI">-ISO9660_MULTI</option> <!-- Used On Disc Auth -->
 					</select> &nbsp;
 
 					<select name="mounting_fs" id="mounting_fs" onchange="mountSetFS(this);" >
@@ -524,6 +525,12 @@
 					<option value="/app_home/PS3_GAME">/app_home/PS3_GAME</option>
 					<option value="dev_ps2disc">dev_ps2disc</option>
 					<option value="dev_ps2disc1">dev_ps2disc1</option>
+					<option value="/dev_hdd0/game">/dev_hdd0/game</option>
+					<option value="/dev_hdd0/home">/dev_hdd0/home</option>
+					<option value="/dev_usb000/game">/dev_usb000/game</option>
+					<option value="/dev_usb000/home">/dev_usb000/home</option>
+					<option value="/dev_usb001/game">/dev_usb001/game</option>
+					<option value="/dev_usb001/home">/dev_usb001/home</option>
 					</select> &nbsp;
 
 					<b><span class="white" id="gui_chk_write_protect"></font></b><input type="checkbox" id="write_protection_toggle" name="write_protection_toggle" onclick="toggleWriteProtect();" checked /> &nbsp;
