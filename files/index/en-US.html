@@ -446,6 +446,7 @@
 					<option value="CELL_FS_IOS:BUILTIN_FLASH">CELL_FS_IOS:BUILTIN_FLASH</option>
 					<option value="CELL_FS_IOS:BUILTIN_FLSH">CELL_FS_IOS:BUILTIN_FLSH</option>
 					<option value="CELL_FS_IOS:ATA_HDD">CELL_FS_IOS:ATA_HDD</option>
+					<option value="CELL_FS_IOS:PATA1_HDD_DRIVE">CELL_FS_IOS:PATA1_HDD_DRIVE</option>
 					<option value="CELL_FS_UTILITY:HDD0">CELL_FS_UTILITY:HDD0</option>
 					<option value="CELL_FS_UTILITY:HDD1">CELL_FS_UTILITY:HDD1</option>
 					<option value="CELL_FS_UTILITY:HDD2">CELL_FS_UTILITY:HDD2</option>
@@ -482,15 +483,17 @@
 					<select name="mounting_fs" id="mounting_fs" onchange="mountSetFS(this);" >
 					<option value="" id="gui_txt_option_mount_fs" selected></option>
 					<option value="CELL_FS_FAT">CELL_FS_FAT</option>
-					<option value="CELL_FS_ADMINFS">CELL_FS_ADMINFS</option>
-					<option value="CELL_FS_DUMMYFS">CELL_FS_DUMMYFS</option>
-					<option value="CELL_FS_HOSTFS">CELL_FS_HOSTFS</option>
-					<option value="CELL_FS_ISO9660">CELL_FS_ISO9660</option>
-					<option value="CELL_FS_PATH">CELL_FS_PATH</option>
+					<option value="CELL_FS_EFAT">CELL_FS_EFAT</option>
+					<option value="CELL_EXTNOR_AREA">CELL_EXTNOR_AREA</option>
 					<option value="CELL_FS_SIMPLEFS">CELL_FS_SIMPLEFS</option>
 					<option value="CELL_FS_CFS">CELL_FS_CFS</option>
 					<option value="CELL_FS_UDF">CELL_FS_UDF</option>
 					<option value="CELL_FS_UFS">CELL_FS_UFS</option>
+					<option value="CELL_FS_ISO9660">CELL_FS_ISO9660</option>
+					<option value="CELL_FS_PATH">CELL_FS_PATH</option>
+					<option value="CELL_FS_ADMINFS">CELL_FS_ADMINFS</option>
+					<option value="CELL_FS_DUMMYFS">CELL_FS_DUMMYFS</option>
+					<option value="CELL_FS_HOSTFS">CELL_FS_HOSTFS</option>
 					<option value="PSP">PSP</option> <!-- "PSP" MS / "PSP" MC -->
 					</select> &nbsp;
 
