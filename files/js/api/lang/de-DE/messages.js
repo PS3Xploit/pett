@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0007";
+var current_minimum_lang_revision="0015";
 var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
@@ -15,20 +15,20 @@ var msg_detected_fw_2=" ";
 //var msg_detected_fw_3=" / MinVer: ";
 var msg_detected_fw_4=" | Unterstützt alle Modelle und 4.xx Firmware";
 
-var compat_msg_wrong_fw1="Deine PS3 ist nicht kompatibel! Deine aktuelle Firmware Version ist ";
-var compat_msg_wrong_fw2=", welche nicht mit PS3Xploit kompatibel ist. Alle Funktionen wurden deaktiviert";
+var compat_msg_wrong_fw1="Deine PS3 ist nicht kompatibel! Wir haben festgestellt, dass deine PS3 mit Firmware ";
+var compat_msg_wrong_fw2="betrieben wird, welche nicht mit PS3Xploit kompatibel ist. Alle Funktionen wurden deaktiviert";
 var compat_msg_success1="Glückwunsch! Wir haben festgestellt, dass deine PS3 mit Firmware ";
-var compat_msg_success2="läuft, welche mit PS3Xploit kompatibel ist! Genieße es!";
+var compat_msg_success2="betrieben wird, welche mit PS3Xploit kompatibel ist! Genieße es!";
 
 var msg_option_not_available="Diese Option ist noch nicht verfügbar!";
 
 // Settings
-var msg_settings_load="Das ist experimentel und lädt Einstellungen aus den Cookies!";
-var msg_settings_save="Das ist experimentel und speichert Einstellungen in den Cookies!";
+var msg_settings_load="Diese Option ist experimentel und lädt Einstellungen aus den Cookies!";
+var msg_settings_save="Diese Option ist experimentel und speichert Einstellungen in den Cookies!";
 
 // MinVer/CFW Compatibility
-var msg_minver_loaded_into_mem="MinVer in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
-var msg_filesize_loaded_into_mem="File Size Return Value Loaded Into Memory!\n\nPress Execute Button Again To Read and Display!";
+var msg_minver_loaded_into_mem="MinVer in den Arbeitsspeicher geladen!\n\nKlicke erneut auf 'Ausführen' um es auszulesen und anzuzeigen!";
+var msg_filesize_loaded_into_mem="Dateigrößen-Rückgabewert in den Arbeitsspeicher geladen!\n\nKlicke erneut auf 'Ausführen' um es auszulesen und anzuzeigen!";
 var msg_minver_start="Deine minimale Downgrade Version ist ";
 var msg_minver_mid=" und ist ";
 var msg_minver_end=" kompatibel mit einer CFW!";
@@ -43,7 +43,7 @@ var msg_temps_celcius=" Celsius";
 
 // MemDump
 var msg_memdump_warning="Warnung!\n\nDieser Test wird einfrieren, wenn ein nicht zugewiesener Speicherbereich während dem auslesen des Speichers getroffen wird.!\n\nDu wirst trotzdem eine gültige auslese erhalten, bis es abstürzt!";
-var msg_memdump_idps_vsh="Nur 4.66/4.81/4.82 werden aktuell für das auslesen der IDPS, direkt aus dem VSH Speicher, unterstützt!\n\nFlash Extract IDPS Based Chain Is Different.\n\nAlle anderen Firmwares werden vermutlich nur Nuller auslesen.";
+var msg_memdump_idps_vsh="Nur 4.66/4.81/4.82 werden aktuell für das auslesen der IDPS, direkt aus dem VSH Speicher, unterstützt!\n\nDie IDPS aus dem Speicher extrahierende Kette ist anders.\n\nAlle anderen Firmwares werden vermutlich nur Nuller auslesen.";
 var msg_memdump_size="Rohe VSH Speicherauslese Werte\n\nGröße: 0x";
 var msg_memdump_start_addr="\nStart Addresse: 0x";
 var msg_memdump_end_addr="\nEnd Addresse: 0x";
@@ -56,11 +56,11 @@ var msg_warning_write_protection="Schreibschutz deaktiviert!\n\nMit Vorsicht for
 var msg_cobra_only="VORSICHT!\n\Das funktioniert nur mit aktiviertem COBRA auf CFW!";
 
 var msg_mount_test="** IN TEST PHASE **";
-var msg_mount_no_disc="This Will Unmount dev_usb000 as dev_bdvd\n\nThere should be NO DISC in the drive!";
-var msg_mount_yes_disc="This Will Unmount dev_bdvd and dev_usb000, then mount dev_usb000 as dev_bdvd\n\nThere should be A DISC present in the drive!";
-var msg_mount_ps3_disc="This Will Mount dev_bdvd as a PS3 Disc\n\nThere should be a DISC present in the drive!";
-var msg_mount_usb_enable="R9 Pointer Enabled!\n\nValue Is Set To Temp Address";
-var msg_mount_usb_disable="R9 Pointer Disabled!\n\nValue Is Set To 0";
+var msg_mount_no_disc="Diese Option wird 'dev_usb000' als 'dev_bdvd' ausbinden\n\nEs darf sich keine Disc im Laufwerk befinden!";
+var msg_mount_yes_disc="Diese Option wird 'dev_bdvd' und 'dev_usb000' ausbinden und anschließend 'dev_usb000' als 'dev_bdvd' einbinden\n\nEs muss sich eine Disc im Laufwerk befinden!";
+var msg_mount_ps3_disc="Diese Option wird 'dev_bdvd' als eine PS3 Disc ausbinden\n\nEs muss sich eine Disc im Laufwerk befinden!";
+var msg_mount_usb_enable="R9 Zeiger aktiviert!\n\nDer Wert ist auf die temporäre Adresse gesetzt";
+var msg_mount_usb_disable="R9 Zeiger deaktiviert!\n\nDer Wert ist auf 0 gesetzt";
 
 // File Operations
 var msg_default_size="Nutze Standardgröße 0x140";
@@ -73,10 +73,10 @@ var trigger_msg="Löse den exploit aus...";
 var trigger_msg2="Auslöser: 0x";
 
 // Ready To Search
-var msg_search_ready="<h3><b>Ready To Begin! <br>Select Chain and Options From Above, Then Press Initialize ROP Chain button!</b></h3>";
+var msg_search_ready="<h3><b>Startbereit! <br>Wähle eine Kette und Option von oben aus. Drücke dann auf das 'ROP-Kette initialisieren' Feld!</b></h3>";
 
 // Shows After Initial Exec Button Click
-var msg_exec_init="<h3><b>Executing Chain! <br>Please Wait Until The Execution Has Finished....</b></h3>";
+var msg_exec_init="<h3><b>Kette wird ausgeführt! <br>Bitte warte bis die Ausführung abgeschlossen ist....</b></h3>";
 
 // Search Strings
 var msg_search_offsets="<h3><b>Suche nach Offsets im Arbeitsspeicher! Bitte Warten.... <br>Falls du ungeduldig bist, schließe den Browser und versuche es in ca. 60-90 Sekunden erneut, sollte es nichts finden!</b></h3>";
@@ -117,7 +117,7 @@ var msg_anti_piracy_edat="ANTI-PIRATERIE HAFTUNGSAUSSCHLUSS!\n\nDiese Option ist
 // Devices
 var msg_device_loaded_into_mem="Geräte in den Arbeitsspeicher geladen!\n\nKlicke erneut auf Ausführen um es auszulesen und anzuzeigen!";
 var msg_get_device_info1="Geräte: ";
-var msg_get_device_info2="\n\nNutze das für sys_storage_report_devices Ketten";
+var msg_get_device_info2="\n\nNutze das für 'sys_storage_report_devices' Ketten";
 
 // Debugging
 
@@ -141,15 +141,15 @@ var msg_found_offsets="<h4><b>Gefundene Offsets: ";
 var msg_verified_offsets="<h4><b>Verifizierte Offsets: ";
 
 var msg_page_args_not_set="Seiten Argumente nicht gesetzt!\n\nClick The Set Arguments Button and Retry!";
-var msg_no_chain_selected="Keine ROP Kette Hex ausgewählt\n\nNutze die Drop-Down Liste um eine auszuwählen";
+var msg_no_chain_selected="Keine ROP Kette Hex gewählt\n\nNutze die Drop-Down Liste um eine auszuwählen";
 var msg_media_not_supported="Diese Mediumauswahl ist noch nicht implementiert!";
 var msg_cannot_continue="Fortsetzen nicht möglich....Kehre zurück!";
 
 var msg_invalid_title_id="VORSICHT!\n\Die angegebene Titel-ID hat eine ungültige Größe!\n\Nutze Standard ID.";
 
 // index GUI text
-var gui_title="PS3 Exploitation Tutorial Template ";
-var guy_by="by ";
+var gui_title="PS3 Exploitation Tutorial Vorlage ";
+var guy_by="vom ";
 var gui_credits="Vielen Dank an xerpi für den Userland Speicherleck Exploit PS3 Port, zecoxao & Joonie für ihre frühe und fortgesetzte Hilfe, mysis für die Dokumentation der vsh Exporte & plugins, natürlich die PSDevWiki Mitwirkende, STLcardsWS für sein langanhaltendes Mitwirken & alle PS3 Community Hacker/Entwickler frühere & heutige, ihr wisst wer ihr seid. Danke an littlebalup für die Idee und auch für die benötigten JavaScript Implementation, welche wir genutzt haben um die HDD Versionen der 'Dumper' und 'Flasher' zu erstellen. Ebenfalls Dank an B7U3 C50SS, Endless und 0x1991337 für syscall Tests und anderweitige Hilfe! <font color='yellow'>Mehr Infos und Neues auf <a href='http://www.psx-place.com'>http://www.psx-place.com</a>. Offizielle Webseite auf <a href='http://ps3xploit.com'>http://ps3xploit.com</a></font>";
 
 // Checkboxes First Section
@@ -182,7 +182,7 @@ var gui_txt_option_sys_tty_write="TTY Schreib Test";
 
 // Dumping
 var gui_txt_preset_chains_dumping="Auslesen";
-var gui_txt_option_webkit_search_area="Dump WebKit Search Area";
+var gui_txt_option_webkit_search_area="WebKit-Suchgebiet auslesen";
 var gui_txt_option_system_info_multi_dump="Mehrere Systeminformationen auslesen";
 var gui_txt_option_dump_lv2_syscall_table="LV2 Syscall Tabelle auslesen";
 var gui_txt_option_mem_dump_test="Rohen VSH Speicher auslesen";
@@ -194,25 +194,25 @@ var gui_txt_option_dump_idps_from_flash="IDPS aus dem Speicher auslesen";
 
 // File System
 var gui_txt_preset_chains_file_system="Dateisystem";
-var gui_txt_option_create_new_user="Create New User";
-var gui_txt_option_mount_usb_as_bdvd="Mount USB000 as BDVD";
-var gui_txt_option_mount_usb_as_bdvd_no_disc="Mount USB000 as BDVD No Disc";
-var gui_txt_option_mount_other_as_bdvd="Mount Other Device as BDVD";
-var gui_txt_option_mount_bdvd_as_ps3_disc="Mount BDVD as PS3 Disc";
+var gui_txt_option_create_new_user="Neuen Benutzer erstellen";
+var gui_txt_option_mount_usb_as_bdvd="Binde 'USB000' als 'BDVD' ein";
+var gui_txt_option_mount_usb_as_bdvd_no_disc="Binde 'USB000' als 'BDVD Keine Disc' ein";
+var gui_txt_option_mount_other_as_bdvd="Binde Andere Geräte als 'BDVD' ein";
+var gui_txt_option_mount_bdvd_as_ps3_disc="Binde 'BDVD' als 'PS3 Disc' ein";
 var gui_txt_option_db_rebuild="Datenbank neu aufbauen";
-var gui_txt_option_get_filesize="Get Filesize";
+var gui_txt_option_get_filesize="Dateigröße erhalten";
 var gui_txt_option_file_read_write_test="Lese/Schreib Test - Datei";
 var gui_txt_option_dir_read_write_test="Lese/Schreib Test - Ordner";
 
 // Fun
 var gui_txt_preset_chains_fun="Spaß";
 var gui_txt_option_fun_test="Signalton Test";
-var gui_txt_option_test_only="Chain Test For Devs";
+var gui_txt_option_test_only="Ketten Test für Entwickler";
 var gui_txt_option_xmb_plugin_test="XMB Plugin Test";
-var gui_txt_option_busy_icon_test="Busy Icon Test";
-var gui_txt_option_vsh_printf_test="VSH printf Test";
-var vsh_printf_arg1="MESSAGE: ";
-var vsh_printf_arg2="HELLO FROM TEAM PS3XPLOIT!";
+var gui_txt_option_busy_icon_test="'Beschäftigt'-Symbol Test";
+var gui_txt_option_vsh_printf_test="VSH 'printf' Test";
+var vsh_printf_arg1="Nachricht: ";
+var vsh_printf_arg2="HALLO VOM TEAM PS3XPLOIT!";
 
 // Other Syscall Chains
 
@@ -285,7 +285,7 @@ var gui_txt_memdump_address_start="Start:";
 var gui_txt_memdump_address_end="Ende:";
 var gui_txt_btn_memdump_set_values="Neuen Wert festlegen";
 
-var gui_txt_mounting_setup="Einhänge: ";
+var gui_txt_mounting_setup="Einhängen: ";
 var gui_txt_option_mount_device="Geräte Name";
 var gui_txt_option_mount_fs="Dateisystem";
 var gui_txt_option_mount_path="Einhänge Pfad";
