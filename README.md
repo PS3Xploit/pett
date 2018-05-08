@@ -41,6 +41,11 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 <h3>Version History</h3>
 
+v0.2.2
+* Fixed Search
+* Updated Language Revision To 0016
+* Added New Mount Paths and Parameters
+
 v0.2.1
 * Added Mount USB as BDVD and Other Preset Chains
 * Updated Offset Verification To Eliminate Random Freezing

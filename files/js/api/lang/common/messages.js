@@ -4,8 +4,8 @@
 // Common Language
 
 // Index GUI Version
-var gui_version="<font color='#FFF' size='3'>v0.2.1</font>";
-var global_minimum_lang_revision="0015";
+var gui_version="<font color='#FFF' size='3'>v0.2.2</font>";
+var global_minimum_lang_revision="0016";
 
 // Other Messages
 var msg_thread_name="Hello_From_PS3Xploit";
