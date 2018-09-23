@@ -682,6 +682,7 @@ function ps3chk(){
 						s_disc_load_check_type2=0x51E5E0;
 						s_disc_load_check_type3=0x6396C4;
 						s_disc_load_check=0x51E6B0;
+						s_get_dir_entries=0x62D63C;
 						//s_unk_bg_download1=0x32A6F4;
 						//s_unk_bg_download2=0x32A77C;
 						//s_unk_download_exec_kind=0x0F8544;
@@ -730,6 +731,7 @@ function ps3chk(){
 						s_unk_thread_exit=0x43448C;// 0x434454
 						//s_unk_thread_sc37=0x0CEE4C;
 						//s_unk_tty_write=0x0AD31C;
+						s_unk_uart_init=0x453DD4;// 0x453DE8
 						//s_unk_upload_util=0x16EB30;
 						//s_unk_widget=0x36743C;
 						
