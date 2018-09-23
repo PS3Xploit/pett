@@ -60,6 +60,7 @@ function showGuiText()
 	document.getElementById('gui_txt_option_dump_idps_from_mem').innerHTML=gui_txt_option_dump_idps_from_mem;
 	document.getElementById('gui_txt_option_sys_net_dump').innerHTML=gui_txt_option_sys_net_dump;
 	document.getElementById('gui_txt_sys_sm_get_platform_info').innerHTML=gui_txt_sys_sm_get_platform_info;
+	document.getElementById('gui_txt_sys_storage_get_device_info').innerHTML=gui_txt_sys_storage_get_device_info;
 	// document.getElementById('gui_txt_option_dump_idps_from_flash').innerHTML=gui_txt_option_dump_idps_from_flash;
 	
 	// File System
