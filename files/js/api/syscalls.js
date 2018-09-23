@@ -76,6 +76,7 @@ var sc_sys_fs_chmod=0x00000342;
 var sc_chmod_arg=0x00000FFF;
 //var sc_chmod_400=0x00000F00;
 //var sc_chmod_640=0x00000FA0;
+//var sc_chmod_644=0x00000FAA;
 //var sc_chmod_660=0x00000FB0;
 var sc_chmod_700=0x00000FC0;
 var sc_chmod_701=0x00000FC1;
@@ -160,8 +161,14 @@ var fs_newfs_arg3=0x8A000200;
 // int sys_storage_get_device_info(uint64_t device, uint8_t *buffer)
 // buffer[40]=total sectors,buffer[48]=sector size,buffer[53]=writable
 var sc_sys_storage_get_device_info=0x00000261;
-var storage_get_device_info_device=0x00000007;// hdd default
+
+// requires using ld instruction to load 8 bytes (example: 01000000+deviceid)
+var storage_get_device_info_device=0x00000007;// default
+var storage_get_device_info_device_hdd=0x00000007;
+var storage_get_device_info_device_nand=0x00000001;
+var storage_get_device_info_device_nor=0x00000004;
 var storage_get_device_info_buffer_ptr=0x8A0000000;// returns id
+
 var storage_get_device_info_arg3=0x00000000;// unk
 var storage_get_device_info_arg4=0x00000000;// unk
 
