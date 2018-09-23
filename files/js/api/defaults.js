@@ -533,6 +533,28 @@ function syscallAndExit(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31)
 	a5_jumpto=g_exit_chain;
 }
 
+function syscallAndExit8(r3,r4,r5,r6,r7,r8,r9,r10,r11,r30,r31)
+{
+	a1_r3=r3;
+	a1_r4=r4;
+	a1_r5=r5;
+	a1_r6=r6;
+	a1_r7=r7;
+	a1_r8=r8;
+	a1_r9=r9;
+	a1_r10=r10;
+	a1_r11=r11;
+	a1_r29=r29;
+	a1_r30=r30;
+	a1_r31=r31;
+	a1_jumpto=g_set_r4_thru_r11;
+	a2_jumpto=g_set_r3_with_ld;
+	a3_jumpto=g_sc_A0;
+	a4_r11=restore_stack;
+	a4_jumpto=g_set_r4_thru_r11;
+	a5_jumpto=g_exit_chain;
+}
+
 function syscallTwoAndExit(r3a,r4a,r5a,r6a,r7a,r8a,r9a,r10a,r11a,r30a,r31a,r3b,r4b,r5b,r6b,r7b,r8b,r9b,r10b,r11b,r30b,r31b)
 {
 	a1_r3=r3a;
@@ -1270,7 +1292,8 @@ function useCustomStackFrame()
 		
 		// does not use restore_stack1 restore_stack
 		case "sys_storage_get_device_info":
-		syscallAndExit(storage_get_device_info_device,storage_get_device_info_buffer_ptr,storage_get_device_info_arg3,storage_get_device_info_arg4,0,0,0,0,sc_sys_storage_get_device_info,temp_addr_8A,temp_addr_8B);
+		//syscallAndExit(storage_get_device_info_device,storage_get_device_info_buffer_ptr,storage_get_device_info_arg3,storage_get_device_info_arg4,0,0,0,0,sc_sys_storage_get_device_info,temp_addr_8A,temp_addr_8B);
+		syscallAndExit8(storage_get_device_info_device_nor,storage_get_device_info_buffer_ptr,0,0,0,0,0,0,sc_sys_storage_get_device_info,temp_addr_8A,temp_addr_8B);
 		break;
 		
 		// does not use embedded restore_stack
@@ -1393,7 +1416,7 @@ function useCustomStackFrame()
 		break;
 		
 		case "dump_lv2_syscall_table":
-		syscallFwriteAndExit(sys_ss_utoken_if_packetid,sys_ss_utoken_if_tokenptr,sys_ss_utoken_if_size_lv2,0,0,0,0,0,sc_sys_ss_utoken_if,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_ss_utoken_if_size_lv2,temp_addr_8D);
+		syscallFwriteAndExit(sys_ss_utoken_if_packetid,0,sys_ss_utoken_if_tokenptr,sys_ss_utoken_if_size_lv2,0,0,0,0,sc_sys_ss_utoken_if,temp_addr_8A,temp_addr_8B,path_dest_fp_addr,sys_ss_utoken_if_size_lv2,temp_addr_8D);
 		break;
 		
 		// uses restore_stack1
@@ -1442,15 +1465,21 @@ function useCustomStackFrame()
 		//callExportAndExit(path_fp_addr,path_fp2_addr,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_thread_exit);
 		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_sys_trace);
 		//callExportAndExit(0,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,0x51E6B0);
-		callExportAndExit(temp_addr_8A,0x80000000,0x200,0,0,0,0,0,0,temp_addr_8B,temp_addr_8C,e_memset);
+		//callExportAndExit(temp_addr_8A,0x80000000,0x200,0,0,0,0,0,0,temp_addr_8B,temp_addr_8C,e_memset);
+		//callExportAndExit(0x68E2C8,0x68E198,0,0,0,0,0,0,0,temp_addr_8B,temp_addr_8C,0x353ADC);
 		//callExportAndExit(2,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_disc_load_check_type);
 		//callExportAndExit(temp_addr_8A,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_rsx_device_map);
+		callExportAndExit(temp_addr_8A,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_uart_init);
 		
 		//syscallAndExit(set_disc_access_control,sys_ss_media_id_arg2_ptr,0,0,0,0,0,0,sc_sys_ss_disc_access_control,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_boot_device_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_boot_device,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_cache_of_product_mode_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_product_mode,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sys_ss_get_cache_of_flash_ext_flag_ptr,0,0,0,0,0,0,0,sc_sys_ss_get_cache_of_flash_ext_flag,temp_addr_8A,temp_addr_8B);
 		//syscallAndExit(sc_unk_986_ptr,0,0,0,0,0,0,0,sc_unk_986,temp_addr_8A,temp_addr_8B);
+		break;
+		
+		case "test_only2":
+		callExportAndExit(temp_addr_8A,0,0,0,0,0,0,0,0,temp_addr_8A,temp_addr_8B,s_unk_uart_init);
 		break;
 		
 		default:
