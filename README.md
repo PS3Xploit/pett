@@ -41,6 +41,10 @@ Turkish                  | tr     | @[**yanealaka**](https://twitter.com/yaneala
 
 <h3>Version History</h3>
 
+v0.2.3
+* Added 4.82 DEX, 4.83 CEX, 4.84 CEX, and 4.84 DEX Offsets (must use 4.82 silk_webkit.sprx for 4.83+)
+* Updated All Language Files 
+
 v0.2.2
 * Fixed Search
 * Updated Language Revision To 0016
