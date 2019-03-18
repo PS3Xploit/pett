@@ -5,7 +5,7 @@
 
 
 // After complete translate the language file update it to latest revision (same as en-US)
-var current_minimum_lang_revision="0015";
+var current_minimum_lang_revision="0016";
 var gui_incomplete_lang="Aktuelle Übersetzung ist unvollständig, ziehe in Betracht es zu übersetzen oder überspringe es einfach";
 
 var msg_select_vsh_type="Nutzt du CEX?\n\nWenn du NEIN auswählst, werden automatisch DEX Offsets genutzt";
@@ -21,6 +21,9 @@ var compat_msg_success1="Glückwunsch! Wir haben festgestellt, dass deine PS3 mi
 var compat_msg_success2="betrieben wird, welche mit PS3Xploit kompatibel ist! Genieße es!";
 
 var msg_option_not_available="Diese Option ist noch nicht verfügbar!";
+
+// This option is only for users with a modified 4.83/4.83 OFW, using the silk_webkit.sprx from firmware 4.82
+var msg_modified_ofw="This version firmware is ONLY supported if using the 4.82 silk_webkit.sprx!";
 
 // Settings
 var msg_settings_load="Diese Option ist experimentel und lädt Einstellungen aus den Cookies!";
