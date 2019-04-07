@@ -6,6 +6,7 @@ var n =  new Date();
 var y = n.getFullYear();
 var m = ("0" + (n.getMonth() + 1)).slice(-2);
 var d = ("0" + n.getDate()).slice(-2);
+var t = n.getTime();
 
 var br="<br>";
 var hr="<hr>";
