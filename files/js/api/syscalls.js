@@ -11,20 +11,20 @@
 //var test_arg6=0xCAFEBABE
 
 // sys_sm_ring_buzzer Parameters
-var sc_sys_sm_ring_buzzer=0x00000188
-var sc_buzzer_arg1=0x00001004
-var sc_buzzer_arg2=0x0000000A
-var sc_buzzer_arg3=0x000001B6
-var sc_buzzer_1_beep=0x000001B6
-var sc_buzzer_2_beeps=0x000001B0
-var sc_buzzer_3_beeps=0x000001B6
-var sc_buzzer_no_of_beeps=0x000001B6
+var sc_sys_sm_ring_buzzer=0x00000188;
+var sc_buzzer_arg1=0x00001004;
+var sc_buzzer_arg2=0x0000000A;
+var sc_buzzer_arg3=0x000001B6;
+var sc_buzzer_1_beep=0x000001B6;
+var sc_buzzer_2_beeps=0x000001B0;
+var sc_buzzer_3_beeps=0x000001B6;
+var sc_buzzer_no_of_beeps=0x000001B6;
 
 // sm_shutdown Parameters
-var sc_shutdown=0x0000017B
-var sc_shutdown_off=0x00001100 // Power Off
-var sc_shutdown_hard=0x00001200 // LV2 Hard Reboot
-var sc_shutdown_soft=0x00000200 // LV2 Soft Reboot
+var sc_shutdown=0x0000017B;
+var sc_shutdown_off=0x00001100; // Power Off
+var sc_shutdown_hard=0x00001200; // LV2 Hard Reboot
+var sc_shutdown_soft=0x00000200; // LV2 Soft Reboot
 
 // sys_fs_mkdir Parameters
 var sc_sys_fs_mkdir=0x0000032B;
